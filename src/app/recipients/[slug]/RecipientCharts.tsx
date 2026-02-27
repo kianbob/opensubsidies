@@ -35,9 +35,9 @@ export function ProgramPieChart({ data }: { data: { program: string; amount: num
   return (
     <div className="bg-white rounded-xl border p-4">
       <h3 className="font-semibold mb-3">Subsidies by Program</h3>
-      <ResponsiveContainer width="100%" height={300}>
-        <PieChart>
-          <Pie data={pieData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={100} label={({ name, percent }) => `${name.length > 20 ? name.slice(0, 20) + '…' : name} ${(percent * 100).toFixed(0)}%`}>
+      <ResponsiveContainer width="100%" height={350}>
+        <PieChart margin={{ top: 20, bottom: 20, left: 20, right: 20 }}>
+          <Pie data={pieData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={80} label={({ name, percent }) => `${name.length > 18 ? name.slice(0, 18) + '…' : name} ${(percent * 100).toFixed(0)}%`} labelLine={true}>
             {pieData.map((_, i) => <Cell key={i} fill={COLORS[i % COLORS.length]} />)}
           </Pie>
           <Tooltip formatter={(v: number) => fmtMoney(v)} />

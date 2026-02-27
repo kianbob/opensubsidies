@@ -23,8 +23,8 @@ export default function EntityTypesClient({ data }: { data: EntityType[] }) {
         <div className="bg-white rounded-xl shadow-sm p-4">
           <h3 className="text-lg font-bold text-gray-900 mb-2">By Total Amount</h3>
           <ResponsiveContainer width="100%" height={350}>
-            <PieChart>
-              <Pie data={pieData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={100} label={({ name, percent }) => `${name.length > 15 ? name.slice(0, 15) + '…' : name} ${(percent * 100).toFixed(0)}%`} labelLine={true}>
+            <PieChart margin={{ top: 20, bottom: 20, left: 20, right: 20 }}>
+              <Pie data={pieData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={80} label={({ name, percent }) => `${name.length > 15 ? name.slice(0, 15) + '…' : name} ${(percent * 100).toFixed(0)}%`} labelLine={true}>
                 {pieData.map((_, i) => <Cell key={i} fill={COLORS[i % COLORS.length]} />)}
               </Pie>
               <Tooltip formatter={(v: number) => `$${(v / 1e9).toFixed(1)}B`} />

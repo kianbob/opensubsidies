@@ -1,7 +1,7 @@
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ShareButtons from '@/components/ShareButtons'
 import Link from 'next/link'
-import { fmt, fmtMoney } from '@/lib/utils'
+import { fmt, fmtMoney, titleCase } from '@/lib/utils'
 import { loadData } from '@/lib/server-utils'
 import RelatedArticles from '@/components/RelatedArticles'
 import type { Metadata } from 'next'
@@ -72,15 +72,20 @@ export default function DoubleDippersPage() {
               </tr>
             </thead>
             <tbody>
-              {data.top.map((r, i) => (
+              {data.top.map((r, i) => {
+                const slug = `${r.name}-${r.state}`.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 80)
+                return (
                 <tr key={r.name} className="border-b border-gray-100 hover:bg-gray-50">
                   <td className="py-2 px-2 text-gray-500">{i + 1}</td>
-                  <td className="py-2 px-2 font-medium">{r.name}</td>
+                  <td className="py-2 px-2 font-medium">
+                    <Link href={`/recipients/${slug}`} className="text-primary hover:underline">{titleCase(r.name)}</Link>
+                  </td>
                   <td className="py-2 px-2">{r.state}</td>
                   <td className="text-right py-2 px-2 font-bold text-primary">{r.programs}</td>
                   <td className="text-right py-2 px-2">{fmtMoney(r.total)}</td>
                 </tr>
-              ))}
+                )
+              })}
             </tbody>
           </table>
         </div>

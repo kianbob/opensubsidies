@@ -157,14 +157,16 @@ const articles = [
     category: 'Accountability',
   },
   {
-    slug: '../doge-farm-subsidies',
+    slug: 'doge-farm-subsidies',
+    path: '/doge-farm-subsidies',
     title: 'DOGE and Farm Subsidies: What Government Efficiency Means for USDA Payments',
     desc: 'How would DOGE evaluate $147B in USDA farm subsidies? 157 programs, 43+ zombie programs, and billions in emergency spending.',
     date: 'February 2026',
     category: 'Policy',
   },
   {
-    slug: '../farm-subsidy-reform',
+    slug: 'farm-subsidy-reform',
+    path: '/farm-subsidy-reform',
     title: 'Farm Subsidy Reform: What the Data Shows About Fixing American Agriculture',
     desc: 'Five data-backed reform ideas from $147B in USDA payment data: consolidate programs, cap spending, means-test large operations.',
     date: 'February 2026',
@@ -187,7 +189,7 @@ export default function AnalysisPage() {
       <p className="text-gray-600 mb-8">Data-driven investigations into how farm subsidies are distributed, who benefits, and what the numbers reveal about U.S. agricultural policy.</p>
       <div className="space-y-6">
         {articles.map(a => (
-          <Link key={a.slug} href={`/analysis/${a.slug}`} className="block bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow border-l-4 border-primary">
+          <Link key={a.slug} href={a.path || `/analysis/${a.slug}`} className="block bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow border-l-4 border-primary">
             <div className="flex items-center gap-3 mb-2">
               <span className="text-xs font-medium bg-green-100 text-primary px-2 py-0.5 rounded-full">{a.category}</span>
               <span className="text-xs text-gray-500">{a.date}</span>

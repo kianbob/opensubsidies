@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { fmt, fmtMoney, formatProgram, titleCase } from '@/lib/utils'
+import { fmt, fmtMoney, formatProgram, titleCase, slugify } from '@/lib/utils'
 import { loadData } from '@/lib/server-utils'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ShareButtons from '@/components/ShareButtons'
@@ -139,7 +139,11 @@ export default async function StateDetailPage({ params }: { params: Promise<{ sl
               {topPrograms.map((p, i) => (
                 <tr key={i} className="hover:bg-gray-50">
                   <td className="px-4 py-3 text-gray-500">{i + 1}</td>
-                  <td className="px-4 py-3">{formatProgram(p.program)}</td>
+                  <td className="px-4 py-3">
+                    <Link href={`/programs/${slugify(p.program)}`} className="text-primary hover:underline">
+                      {formatProgram(p.program)}
+                    </Link>
+                  </td>
                   <td className="px-4 py-3 text-right font-mono">{fmtMoney(p.amount)}</td>
                 </tr>
               ))}
@@ -155,14 +159,21 @@ export default async function StateDetailPage({ params }: { params: Promise<{ sl
             <table className="w-full text-sm">
               <thead className="bg-gray-50"><tr><th className="px-4 py-3 text-left font-semibold">#</th><th className="px-4 py-3 text-left font-semibold">Recipient</th><th className="px-4 py-3 text-left font-semibold hidden md:table-cell">City</th><th className="px-4 py-3 text-right font-semibold">Total</th></tr></thead>
               <tbody className="divide-y divide-gray-100">
-                {topRecipients.slice(0, 25).map((r, i) => (
-                  <tr key={i} className="hover:bg-gray-50">
-                    <td className="px-4 py-3 text-gray-500">{i + 1}</td>
-                    <td className="px-4 py-3 font-medium">{titleCase(r.name)}</td>
-                    <td className="px-4 py-3 text-gray-600 hidden md:table-cell">{titleCase(r.city)}</td>
-                    <td className="px-4 py-3 text-right font-mono text-primary">{fmtMoney(r.amount)}</td>
-                  </tr>
-                ))}
+                {topRecipients.slice(0, 25).map((r, i) => {
+                  const recSlug = `${r.name}-${r.city}-${r.state}`.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 80)
+                  return (
+                    <tr key={i} className="hover:bg-gray-50">
+                      <td className="px-4 py-3 text-gray-500">{i + 1}</td>
+                      <td className="px-4 py-3 font-medium">
+                        <Link href={`/recipients/${recSlug}`} className="text-primary hover:underline">
+                          {titleCase(r.name)}
+                        </Link>
+                      </td>
+                      <td className="px-4 py-3 text-gray-600 hidden md:table-cell">{titleCase(r.city)}</td>
+                      <td className="px-4 py-3 text-right font-mono text-primary">{fmtMoney(r.amount)}</td>
+                    </tr>
+                  )
+                })}
               </tbody>
             </table>
           </div>

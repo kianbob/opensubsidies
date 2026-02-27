@@ -81,6 +81,15 @@ export default function ProgramDecoderPage() {
     return total
   }
 
+  function findProgramSlug(searchKey: string): string | null {
+    // Find the best matching program (highest amount) and return its slug
+    let best: ProgramData | null = null
+    for (const p of programs) {
+      if (p.program.includes(searchKey) && (!best || p.amount > best.amount)) best = p
+    }
+    return best ? slugify(best.program) : null
+  }
+
   const faqItems = [
     { q: 'What is CRP (Conservation Reserve Program)?', a: 'CRP pays farmers annual rent to take environmentally sensitive cropland out of production for 10-15 years. It\'s the largest conservation program at over $15.7 billion since 2017.' },
     { q: 'What is PLC (Price Loss Coverage)?', a: 'PLC is a commodity support program that pays farmers when national average crop prices fall below Congress-set reference prices. It\'s one of the two main "safety net" programs in the Farm Bill.' },
@@ -121,6 +130,7 @@ export default function ProgramDecoderPage() {
           <div className="space-y-4">
             {cat.programs.map(prog => {
               const amount = findAmount(prog.searchKey)
+              const progSlug = findProgramSlug(prog.searchKey)
               return (
                 <div key={prog.acronym} className="bg-white border border-gray-200 rounded-xl p-5 hover:border-green-300 transition-colors">
                   <div className="flex items-start justify-between gap-4 mb-2">
@@ -136,8 +146,8 @@ export default function ProgramDecoderPage() {
                   </div>
                   <p className="text-gray-700 text-sm mb-2"><strong>What it does:</strong> {prog.what}</p>
                   <p className="text-gray-700 text-sm mb-3"><strong>Who it helps:</strong> {prog.who}</p>
-                  {amount > 0 && (
-                    <Link href={`/programs/${slugify(prog.searchKey)}`} className="text-sm text-primary hover:underline">
+                  {progSlug && (
+                    <Link href={`/programs/${progSlug}`} className="text-sm text-primary hover:underline">
                       View full program details →
                     </Link>
                   )}

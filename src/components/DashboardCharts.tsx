@@ -47,8 +47,8 @@ export function TopProgramsPieChart({ data }: { data: { name: string; value: num
   return (
     <div className="w-full h-[350px]">
       <ResponsiveContainer width="100%" height="100%">
-        <PieChart>
-          <Pie data={data} cx="50%" cy="50%" outerRadius={100} innerRadius={40} dataKey="value" nameKey="name" label={({ name, percent }) => `${name.length > 18 ? name.slice(0, 18) + '…' : name} ${(percent * 100).toFixed(0)}%`} labelLine={true}>
+        <PieChart margin={{ top: 20, bottom: 20, left: 20, right: 20 }}>
+          <Pie data={data} cx="50%" cy="50%" outerRadius={80} innerRadius={30} dataKey="value" nameKey="name" label={({ name, percent }) => `${name.length > 16 ? name.slice(0, 16) + '…' : name} ${(percent * 100).toFixed(0)}%`} labelLine={true}>
             {data.map((_, i) => <Cell key={i} fill={COLORS[i % COLORS.length]} />)}
           </Pie>
           <Tooltip formatter={(v: number) => [`$${(v / 1e9).toFixed(2)}B`, 'Amount']} />
