@@ -3,7 +3,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Conservation Programs: CRP, ACEP, and Farm Conservation Subsidies — OpenSubsidies',
+  title: 'Conservation Programs: CRP, ACEP, and Farm Conservation Subsidies',
   description: 'How much goes to conservation vs commodity vs emergency farm programs? Explore CRP, ACEP, and other conservation subsidies with real USDA data.',
   alternates: { canonical: 'https://www.opensubsidies.us/conservation' },
 }

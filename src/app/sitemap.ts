@@ -26,7 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/analysis/covid-spending', '/analysis/trade-war',
     '/analysis/decade-of-disaster', '/analysis/crp-under-threat',
     '/analysis/average-farmer', '/analysis/state-winners-losers',
-    '/county-rankings', '/tools/compare-programs',
+    '/privacy', '/county-rankings', '/tools/compare-programs',
     ...Array.from({ length: 9 }, (_, i) => `/years/${2017 + i}`)]
 
   return [

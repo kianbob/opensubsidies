@@ -214,27 +214,71 @@ export default function HomePage() {
 
       {/* Explore Grid */}
       <section className="max-w-7xl mx-auto px-4 pb-16">
-        <h2 className="text-2xl font-bold font-[family-name:var(--font-heading)] mb-6 text-center">Explore the Data</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          {[
-            { label: 'All States', href: '/states', icon: '🗺️' },
-            { label: 'Top Counties', href: '/counties', icon: '📍' },
-            { label: 'Programs', href: '/programs', icon: '📋' },
-            { label: 'Top Recipients', href: '/recipients', icon: '👤' },
-            { label: 'Dashboard', href: '/dashboard', icon: '📊' },
-            { label: 'Analysis', href: '/analysis', icon: '🔍' },
-            { label: 'Rankings', href: '/rankings', icon: '🏆' },
-            { label: 'Categories', href: '/categories', icon: '📂' },
-            { label: 'Trends', href: '/trends', icon: '📈' },
-            { label: 'Tools', href: '/tools', icon: '🛠️' },
-            { label: 'Glossary', href: '/glossary', icon: '📖' },
-            { label: 'Downloads', href: '/downloads', icon: '📥' },
-          ].map(item => (
-            <Link key={item.href} href={item.href} className="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow text-center border border-gray-100">
-              <span className="text-2xl">{item.icon}</span>
-              <div className="text-sm font-medium text-gray-900 mt-1">{item.label}</div>
-            </Link>
-          ))}
+        <h2 className="text-2xl font-bold font-[family-name:var(--font-heading)] mb-8 text-center">Explore the Data</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {/* Browse Data */}
+          <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+            <h3 className="font-semibold text-gray-900 mb-3 flex items-center gap-2">
+              <span className="w-8 h-8 bg-green-100 text-primary rounded-lg flex items-center justify-center text-sm">📊</span>
+              Browse Data
+            </h3>
+            <div className="space-y-1.5">
+              {[
+                { label: 'States', href: '/states', sub: '59 states & territories' },
+                { label: 'Counties', href: '/counties', sub: '28,875 counties' },
+                { label: 'Programs', href: '/programs', sub: '157 USDA programs' },
+                { label: 'Top Recipients', href: '/recipients', sub: '2,000 largest' },
+                { label: 'Dashboard', href: '/dashboard', sub: 'Interactive overview' },
+              ].map(item => (
+                <Link key={item.href} href={item.href} className="flex items-center justify-between px-3 py-2 rounded-lg hover:bg-green-50 group transition-colors">
+                  <span className="text-sm font-medium text-gray-800 group-hover:text-primary">{item.label}</span>
+                  <span className="text-xs text-gray-400">{item.sub}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+          {/* Analysis & Rankings */}
+          <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+            <h3 className="font-semibold text-gray-900 mb-3 flex items-center gap-2">
+              <span className="w-8 h-8 bg-amber-100 text-amber-700 rounded-lg flex items-center justify-center text-sm">🔍</span>
+              Analysis & Rankings
+            </h3>
+            <div className="space-y-1.5">
+              {[
+                { label: 'Analysis Articles', href: '/analysis', sub: '18 deep dives' },
+                { label: 'State Rankings', href: '/rankings', sub: 'Total, per-capita, avg' },
+                { label: 'County Rankings', href: '/county-rankings', sub: 'Top subsidy counties' },
+                { label: 'Categories', href: '/categories', sub: 'Program groupings' },
+                { label: 'Trends', href: '/trends', sub: 'Year-over-year' },
+              ].map(item => (
+                <Link key={item.href} href={item.href} className="flex items-center justify-between px-3 py-2 rounded-lg hover:bg-amber-50 group transition-colors">
+                  <span className="text-sm font-medium text-gray-800 group-hover:text-amber-700">{item.label}</span>
+                  <span className="text-xs text-gray-400">{item.sub}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+          {/* Tools & Resources */}
+          <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+            <h3 className="font-semibold text-gray-900 mb-3 flex items-center gap-2">
+              <span className="w-8 h-8 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center text-sm">🛠️</span>
+              Tools & Resources
+            </h3>
+            <div className="space-y-1.5">
+              {[
+                { label: 'Compare States', href: '/compare', sub: 'Side-by-side' },
+                { label: 'Interactive Tools', href: '/tools', sub: '5 calculators' },
+                { label: 'Farm Subsidy Facts', href: '/facts', sub: '25 key facts' },
+                { label: 'Glossary', href: '/glossary', sub: '17 terms defined' },
+                { label: 'Downloads', href: '/downloads', sub: 'Free JSON datasets' },
+              ].map(item => (
+                <Link key={item.href} href={item.href} className="flex items-center justify-between px-3 py-2 rounded-lg hover:bg-blue-50 group transition-colors">
+                  <span className="text-sm font-medium text-gray-800 group-hover:text-blue-700">{item.label}</span>
+                  <span className="text-xs text-gray-400">{item.sub}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

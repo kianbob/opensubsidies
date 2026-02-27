@@ -4,7 +4,7 @@ import EmergencySpendingChart from '@/components/EmergencySpendingChart'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Farm Emergency Payments: CFAP, MFP, and Disaster Relief — OpenSubsidies',
+  title: 'Farm Emergency Payments: CFAP, MFP, and Disaster Relief',
   description: 'How CFAP, MFP, and disaster programs reshaped farm subsidies. $60+ billion in emergency payments from COVID relief, trade war compensation, and natural disaster programs.',
   alternates: { canonical: 'https://www.opensubsidies.us/emergency-spending' },
 }
