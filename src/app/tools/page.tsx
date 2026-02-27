@@ -13,8 +13,9 @@ const tools = [
   { href: '/tools/calculator', title: 'Subsidy Calculator', desc: 'Enter any dollar amount and see how it compares to farm subsidy payments.', icon: '🧮' },
   { href: '/tools/recipient-search', title: 'Recipient Search', desc: 'Search top recipients by name, farm, or city. Find out who receives farm subsidies.', icon: '🔎' },
   { href: '/tools/state-profile', title: 'State Profile Generator', desc: 'Generate a shareable profile card for any state with key subsidy stats and trends.', icon: '🗺️' },
+  { href: '/tools/compare-programs', title: 'Compare Programs', desc: 'Compare up to 4 USDA programs side-by-side with spending charts and state breakdowns.', icon: '📊' },
   { href: '/rankings', title: 'State Rankings', desc: 'Rank all states by total subsidies, per-capita spending, payment count, or average payment.', icon: '🏆' },
-  { href: '/categories', title: 'Program Categories', desc: 'Browse 107 farm programs organized by type: conservation, disaster, commodity, and loans.', icon: '📂' },
+  { href: '/categories', title: 'Program Categories', desc: 'Browse 157 farm programs organized by type: conservation, disaster, commodity, and loans.', icon: '📂' },
   { href: '/trends', title: 'Spending Trends', desc: 'See how farm subsidy spending has changed over time with interactive charts.', icon: '📈' },
   { href: '/search', title: 'Search Everything', desc: 'Search across all states, counties, programs, and recipients.', icon: '🔍' },
   { href: '/downloads', title: 'Download Data', desc: 'Download raw JSON datasets for your own analysis.', icon: '📥' },
@@ -39,9 +40,9 @@ export default function ToolsPage() {
       <section className="mt-12 prose max-w-none text-gray-600">
         <h2 className="font-[family-name:var(--font-heading)] text-gray-900">About These Tools</h2>
         <p>
-          These interactive tools let you explore {new Intl.NumberFormat().format(8114240)} USDA farm subsidy
+          These interactive tools let you explore over 31.7 million USDA farm subsidy
           payment records in different ways. All tools run entirely in your browser — no server requests needed
-          after the page loads. Data comes from the USDA Farm Service Agency, covering 2017–2025.
+          after the page loads. Data comes from the USDA Farm Service Agency, covering 9 years (2017–2025).
         </p>
       </section>
     </div>

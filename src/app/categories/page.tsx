@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Program Categories — Farm Subsidy Programs by Type',
-  description: 'Browse 107 USDA farm subsidy programs organized by category: Conservation, Disaster/Emergency, Commodity, Loans, and more.',
+  description: 'Browse 157 USDA farm subsidy programs organized by category: Conservation, Disaster/Emergency, Commodity, Loans, and more.',
 }
 
 type Program = { program: string; code: string; payments: number; amount: number }
@@ -45,7 +45,7 @@ export default function CategoriesPage() {
     <div className="max-w-5xl mx-auto px-4 py-10">
       <Breadcrumbs items={[{ label: 'Categories' }]} />
       <h1 className="text-3xl font-bold font-[family-name:var(--font-heading)] mb-2">Program Categories</h1>
-      <p className="text-gray-600 mb-8">107 USDA farm subsidy programs organized into {cats.length} categories by purpose and type.</p>
+      <p className="text-gray-600 mb-8">157 USDA farm subsidy programs organized into {cats.length} categories by purpose and type.</p>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
         {cats.map(c => (

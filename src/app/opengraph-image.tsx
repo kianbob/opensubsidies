@@ -14,11 +14,11 @@ export default function Image() {
         <div style={{ display: 'flex', gap: 40, fontSize: 22, opacity: 0.8 }}>
           <span>8M+ Payments</span>
           <span>·</span>
-          <span>107 Programs</span>
+          <span>157 Programs</span>
           <span>·</span>
           <span>50 States</span>
           <span>·</span>
-          <span>21,895 Counties</span>
+          <span>28,875 Counties</span>
         </div>
         <div style={{ fontSize: 18, opacity: 0.6, marginTop: 32 }}>TheDataProject.ai</div>
       </div>

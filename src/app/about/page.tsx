@@ -49,7 +49,7 @@ export default function AboutPage() {
           <li><strong>{fmt(stats.totalPrograms)} programs</strong> including crop subsidies, conservation, disaster relief, and loans</li>
           <li><strong>{fmt(stats.totalStates)} states and territories</strong> with county-level breakdowns</li>
           <li><strong>{fmt(stats.totalCounties)} counties</strong> with individual subsidy totals</li>
-          <li><strong>Top 1,000 recipients</strong> with names, locations, and amounts</li>
+          <li><strong>Top 2,000 recipients</strong> with names, locations, and amounts</li>
           <li><strong>6+ analysis articles</strong> investigating concentration, geographic disparities, and policy questions</li>
         </ul>
 

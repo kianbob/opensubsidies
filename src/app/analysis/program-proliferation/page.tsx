@@ -6,8 +6,8 @@ import type { Metadata } from 'next'
 import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
-  title: '107 Programs and Counting: The Complexity of Farm Subsidies',
-  description: 'Why does the USDA have 107 different farm subsidy programs? An analysis of program proliferation, overlap, and the gap between largest and smallest.',
+  title: '157 Programs and Counting: The Complexity of Farm Subsidies',
+  description: 'Why does the USDA have 157 different farm subsidy programs? An analysis of program proliferation, overlap, and the gap between largest and smallest.',
 }
 
 type Program = { program: string; code: string; payments: number; amount: number }
@@ -29,7 +29,7 @@ export default function ProgramProliferationPage() {
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'Program Proliferation' }]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'Article',
-        headline: '107 Programs and Counting: The Complexity of Farm Subsidies',
+        headline: '157 Programs and Counting: The Complexity of Farm Subsidies',
         author: { '@type': 'Organization', name: 'TheDataProject.ai' },
         publisher: { '@type': 'Organization', name: 'OpenSubsidies' }, datePublished: '2026-02-27',
       })}} />
@@ -37,15 +37,15 @@ export default function ProgramProliferationPage() {
       <div className="mb-8">
         <span className="text-sm font-medium text-primary">Analysis · February 2026</span>
         <h1 className="text-3xl md:text-4xl font-bold font-[family-name:var(--font-heading)] mt-2 mb-4">
-          107 Programs and Counting: The Complexity of Farm Subsidies
+          157 Programs and Counting: The Complexity of Farm Subsidies
         </h1>
         <p className="text-lg text-gray-600">
-          The USDA administers 107 distinct farm subsidy programs. Some distribute billions, others barely thousands.
+          The USDA administers 157 distinct farm subsidy programs. Some distribute billions, others barely thousands.
           Why so many, and what does it mean for farmers and taxpayers?
         </p>
       </div>
 
-      <ShareButtons title="107 Programs and Counting: The Complexity of Farm Subsidies" />
+      <ShareButtons title="157 Programs and Counting: The Complexity of Farm Subsidies" />
 
       <div className="prose max-w-none">
         <div className="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-lg my-6 not-prose">
