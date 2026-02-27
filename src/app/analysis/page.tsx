@@ -43,6 +43,13 @@ const articles = [
     date: 'February 2026',
     category: 'Recipients',
   },
+  {
+    slug: 'per-capita',
+    title: 'Farm Subsidies Per Capita: Which States Get the Most Per Person?',
+    desc: 'North Dakota gets $6,000+ per person. California gets under $100. The per-capita view tells a different story.',
+    date: 'February 2026',
+    category: 'Geography',
+  },
 ]
 
 export default function AnalysisPage() {
