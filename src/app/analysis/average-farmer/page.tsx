@@ -3,6 +3,7 @@ import ShareButtons from '@/components/ShareButtons'
 import Link from 'next/link'
 import { loadData, fmtMoney, fmt } from '@/lib/utils'
 import type { Metadata } from 'next'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'What Does the Average Farmer Actually Get? The $4,600 Reality',
@@ -111,7 +112,8 @@ export default function AverageFarmerPage() {
           <Link href="/analysis/subsidy-concentration">the 10% problem</Link> or{' '}
           <Link href="/analysis/small-vs-large">small farms vs. large operations</Link>.
         </p>
-      </div>
+            <RelatedArticles currentSlug="average-farmer" />
+</div>
     </article>
   )
 }

@@ -3,6 +3,7 @@ import ShareButtons from '@/components/ShareButtons'
 import Link from 'next/link'
 import { loadData, fmtMoney, fmt } from '@/lib/utils'
 import type { Metadata } from 'next'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'CRP Under Threat: Is Conservation Keeping Up with Emergency Spending?',
@@ -110,7 +111,8 @@ export default function CrpUnderThreatPage() {
           Read more about <Link href="/analysis/conservation-vs-commodity">conservation vs. commodity spending</Link> or
           explore the full <Link href="/programs">programs list</Link>.
         </p>
-      </div>
+            <RelatedArticles currentSlug="crp-under-threat" />
+</div>
     </article>
   )
 }

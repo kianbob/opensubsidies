@@ -2,6 +2,8 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import { loadData, fmtMoney, fmt } from '@/lib/utils'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import RelatedArticles from '@/components/RelatedArticles'
+import ShareButtons from '@/components/ShareButtons'
 
 export const metadata: Metadata = {
   title: 'County Hotspots: Where Farm Subsidies Concentrate',
@@ -36,6 +38,7 @@ export default function CountyHotspots() {
         <h1 className="text-3xl md:text-4xl font-bold font-[family-name:var(--font-heading)] mt-2 mb-4">
           County Hotspots: Where Farm Subsidies Concentrate
         </h1>
+      <ShareButtons title="" />
         <p className="text-lg text-gray-600">
           Farm subsidy dollars don&apos;t spread evenly across America&apos;s 3,000+ counties.
           A handful of agricultural powerhouses collect outsized shares.
@@ -111,7 +114,8 @@ export default function CountyHotspots() {
           <p>USDA Farm Service Agency payment data (1995–2024). County-level aggregations from FSA payment files.
           Explore all counties on the <Link href="/counties" className="text-primary hover:underline">Counties page</Link>.</p>
         </div>
-      </div>
+            <RelatedArticles currentSlug="county-hotspots" />
+</div>
     </article>
   )
 }

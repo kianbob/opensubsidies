@@ -3,6 +3,7 @@ import ShareButtons from '@/components/ShareButtons'
 import Link from 'next/link'
 import { loadData, fmtMoney, fmt } from '@/lib/utils'
 import type { Metadata } from 'next'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'State Winners & Losers: Who Gained Most from Emergency Spending?',
@@ -153,7 +154,8 @@ export default function StateWinnersLosersPage() {
           For state-by-state details, explore our <Link href="/compare">state comparison tool</Link> or
           see the full <Link href="/rankings">state rankings</Link>.
         </p>
-      </div>
+            <RelatedArticles currentSlug="state-winners-losers" />
+</div>
     </article>
   )
 }

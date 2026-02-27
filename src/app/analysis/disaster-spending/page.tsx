@@ -1,6 +1,8 @@
 import Breadcrumbs from '@/components/Breadcrumbs'
 import { loadData, fmtMoney, fmt } from '@/lib/utils'
 import type { Metadata } from 'next'
+import RelatedArticles from '@/components/RelatedArticles'
+import ShareButtons from '@/components/ShareButtons'
 
 export const metadata: Metadata = {
   title: 'The Disaster Money Machine: $20 Billion in Emergency Farm Payments',
@@ -34,6 +36,7 @@ export default function DisasterSpending() {
         <h1 className="text-3xl md:text-4xl font-bold font-[family-name:var(--font-heading)] mt-2 mb-4">
           The Disaster Money Machine: {fmtMoney(disasterTotal)} in Emergency Farm Payments
         </h1>
+      <ShareButtons title="" />
         <p className="text-lg text-gray-600">
           Emergency and disaster relief programs now account for {disasterPct}% of all farm subsidy spending.
           What started as a safety net has become the primary mechanism for federal agricultural support.
@@ -99,7 +102,8 @@ export default function DisasterSpending() {
           <p>Analysis based on USDA Farm Service Agency payment records, 2017-2025. Programs classified as
           &quot;emergency/disaster&quot; based on program name containing Emergency, Disaster, Relief, ELAP, or CFAP.</p>
         </div>
-      </div>
+            <RelatedArticles currentSlug="disaster-spending" />
+</div>
     </article>
   )
 }

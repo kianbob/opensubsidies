@@ -3,6 +3,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import ShareButtons from '@/components/ShareButtons'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: '107 Programs and Counting: The Complexity of Farm Subsidies',
@@ -145,7 +146,8 @@ export default function ProgramProliferationPage() {
           Every Farm Bill brings calls for consolidation, yet the number of programs tends to grow. The political
           incentive to create visible new programs outweighs the unglamorous work of streamlining existing ones.
         </p>
-      </div>
+            <RelatedArticles currentSlug="program-proliferation" />
+</div>
     </article>
   )
 }

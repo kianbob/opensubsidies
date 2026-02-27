@@ -2,6 +2,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import ShareButtons from '@/components/ShareButtons'
 import { loadData, fmtMoney, fmt } from '@/lib/utils'
 import type { Metadata } from 'next'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'Trade War Fallout: $39 Billion in Tariff Bailout Payments (2018-2019)',
@@ -145,7 +146,8 @@ export default function TradeWar() {
           <p>Analysis based on USDA Farm Service Agency payment records, 2017-2025. Trade war era
           programs include Market Facilitation Program (MFP) Rounds 1 and 2, and related CCC payments.</p>
         </div>
-      </div>
+            <RelatedArticles currentSlug="trade-war" />
+</div>
     </article>
   )
 }

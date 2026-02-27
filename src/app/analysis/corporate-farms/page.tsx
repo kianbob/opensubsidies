@@ -2,6 +2,8 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import { loadData, fmtMoney, fmt } from '@/lib/utils'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import RelatedArticles from '@/components/RelatedArticles'
+import ShareButtons from '@/components/ShareButtons'
 
 export const metadata: Metadata = {
   title: 'When Corporations Collect: The Biggest Non-Family Farm Subsidy Recipients',
@@ -33,6 +35,7 @@ export default function CorporateFarms() {
         <h1 className="text-3xl md:text-4xl font-bold font-[family-name:var(--font-heading)] mt-2 mb-4">
           When Corporations Collect: The Biggest Non-Family Recipients
         </h1>
+      <ShareButtons title="" />
         <p className="text-lg text-gray-600">
           Farm subsidies were created to help family farmers. But LLCs, partnerships, and corporations
           are among the largest recipients. Here are the top corporate entities in our database.
@@ -97,7 +100,8 @@ export default function CorporateFarms() {
           <p className="font-semibold text-gray-900 mb-1">📊 Explore the Data</p>
           <p>See all top recipients on our <Link href="/recipients" className="text-primary hover:underline">Recipients page</Link>.</p>
         </div>
-      </div>
+            <RelatedArticles currentSlug="corporate-farms" />
+</div>
     </article>
   )
 }

@@ -3,6 +3,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import ShareButtons from '@/components/ShareButtons'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'Clawbacks and Corrections: When the USDA Takes Money Back',
@@ -142,7 +143,8 @@ export default function NegativePaymentsPage() {
           contend that most payments are properly administered and clawbacks often result from administrative
           errors rather than fraud.
         </p>
-      </div>
+            <RelatedArticles currentSlug="negative-payments" />
+</div>
     </article>
   )
 }

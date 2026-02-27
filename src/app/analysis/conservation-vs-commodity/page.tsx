@@ -1,6 +1,8 @@
 import Breadcrumbs from '@/components/Breadcrumbs'
 import { loadData, fmtMoney, fmt } from '@/lib/utils'
 import type { Metadata } from 'next'
+import RelatedArticles from '@/components/RelatedArticles'
+import ShareButtons from '@/components/ShareButtons'
 
 export const metadata: Metadata = {
   title: 'Conservation vs. Commodity: Two Philosophies of Farm Spending',
@@ -30,6 +32,7 @@ export default function ConservationVsCommodity() {
         <h1 className="text-3xl md:text-4xl font-bold font-[family-name:var(--font-heading)] mt-2 mb-4">
           Conservation vs. Commodity: Two Philosophies of Farm Spending
         </h1>
+      <ShareButtons title="" />
       </div>
 
       <div className="prose max-w-none">
@@ -78,7 +81,8 @@ export default function ConservationVsCommodity() {
           But when Congress writes the farm bill, the conservation vs. commodity debate still drives
           the biggest allocation decisions.
         </p>
-      </div>
+            <RelatedArticles currentSlug="conservation-vs-commodity" />
+</div>
     </article>
   )
 }

@@ -2,6 +2,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import ShareButtons from '@/components/ShareButtons'
 import { loadData, fmtMoney, fmt } from '@/lib/utils'
 import type { Metadata } from 'next'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'COVID Changed Farm Subsidies Forever: The $38.7 Billion Story',
@@ -140,7 +141,8 @@ export default function CovidSpending() {
           <p>Analysis based on USDA Farm Service Agency payment records, 2017-2025.
           COVID-era programs include CFAP 1, CFAP 2, Pandemic Livestock Indemnity, and related emergency programs.</p>
         </div>
-      </div>
+            <RelatedArticles currentSlug="covid-spending" />
+</div>
     </article>
   )
 }

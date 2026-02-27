@@ -2,6 +2,8 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import { loadData, fmtMoney, fmt } from '@/lib/utils'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import RelatedArticles from '@/components/RelatedArticles'
+import ShareButtons from '@/components/ShareButtons'
 
 export const metadata: Metadata = {
   title: 'Are Farm Subsidy Payment Limits Working?',
@@ -32,6 +34,7 @@ export default function PaymentLimits() {
         <h1 className="text-3xl md:text-4xl font-bold font-[family-name:var(--font-heading)] mt-2 mb-4">
           Are Farm Subsidy Payment Limits Working?
         </h1>
+      <ShareButtons title="" />
         <p className="text-lg text-gray-600">
           Federal law caps most commodity payments at $125,000 per person per year. Yet the top recipients
           in the USDA database have collected millions. How?
@@ -107,7 +110,8 @@ export default function PaymentLimits() {
           <p>USDA Farm Service Agency payment data (1995–2024). Recipient names and amounts from FSA payment files.
           See the full list on our <Link href="/recipients" className="text-primary hover:underline">Top Recipients page</Link>.</p>
         </div>
-      </div>
+            <RelatedArticles currentSlug="payment-limits" />
+</div>
     </article>
   )
 }

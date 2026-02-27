@@ -3,6 +3,7 @@ import ShareButtons from '@/components/ShareButtons'
 import Link from 'next/link'
 import { loadData, fmtMoney, fmt } from '@/lib/utils'
 import type { Metadata } from 'next'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'A Decade of Disaster: How Emergency Programs Took Over Farm Subsidies',
@@ -107,7 +108,8 @@ export default function DecadeOfDisasterPage() {
           Explore <Link href="/analysis/disaster-spending">our disaster spending analysis</Link> for program-level
           details, or see <Link href="/trends">spending trends</Link> over time.
         </p>
-      </div>
+            <RelatedArticles currentSlug="decade-of-disaster" />
+</div>
     </article>
   )
 }

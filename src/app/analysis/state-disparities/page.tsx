@@ -2,6 +2,8 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import Link from 'next/link'
 import { loadData, fmtMoney, fmt } from '@/lib/utils'
 import type { Metadata } from 'next'
+import RelatedArticles from '@/components/RelatedArticles'
+import ShareButtons from '@/components/ShareButtons'
 
 export const metadata: Metadata = {
   title: 'Texas Gets $3.8B, Vermont Gets $37M: The Geography of Farm Subsidies',
@@ -28,6 +30,7 @@ export default function StateDisparities() {
         <h1 className="text-3xl md:text-4xl font-bold font-[family-name:var(--font-heading)] mt-2 mb-4">
           Texas Gets {fmtMoney(states[0]?.amount)}, Vermont Gets {fmtMoney(bottom5[bottom5.length-1]?.amount)}: The Geography of Farm Subsidies
         </h1>
+      <ShareButtons title="" />
         <p className="text-lg text-gray-600">
           Farm subsidies aren&apos;t spread evenly across America. A handful of agricultural powerhouses receive
           the vast majority of federal dollars, while smaller states get a fraction.
@@ -80,7 +83,8 @@ export default function StateDisparities() {
           <p className="font-semibold text-gray-900 mb-1">📊 Explore the Data</p>
           <p>See the full breakdown for every state on our <Link href="/states" className="text-primary hover:underline">States page</Link>.</p>
         </div>
-      </div>
+            <RelatedArticles currentSlug="state-disparities" />
+</div>
     </article>
   )
 }

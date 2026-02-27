@@ -2,6 +2,8 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import { loadData, fmtMoney, fmt } from '@/lib/utils'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import RelatedArticles from '@/components/RelatedArticles'
+import ShareButtons from '@/components/ShareButtons'
 
 export const metadata: Metadata = {
   title: 'Farm Subsidies Per Capita: Which States Get the Most Per Person?',
@@ -49,6 +51,7 @@ export default function PerCapitaPage() {
         <h1 className="text-3xl md:text-4xl font-bold font-[family-name:var(--font-heading)] mt-2 mb-4">
           Farm Subsidies Per Capita: Which States Get the Most Per Person?
         </h1>
+      <ShareButtons title="" />
         <p className="text-lg text-gray-600">
           Total spending tells one story. Per-capita spending tells another. When you divide farm subsidies
           by state population, the rankings shift dramatically — rural states with small populations dominate.
@@ -110,7 +113,8 @@ export default function PerCapitaPage() {
           <p>Farm subsidy data from USDA FSA (2017-2025). Population estimates from U.S. Census Bureau (2024).
           Per capita = total state subsidies ÷ state population.</p>
         </div>
-      </div>
+            <RelatedArticles currentSlug="per-capita" />
+</div>
     </article>
   )
 }

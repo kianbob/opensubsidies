@@ -2,6 +2,8 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import { loadData, fmtMoney, fmt } from '@/lib/utils'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import RelatedArticles from '@/components/RelatedArticles'
+import ShareButtons from '@/components/ShareButtons'
 
 export const metadata: Metadata = {
   title: 'The Conservation Reserve Program: Paying Farmers Not to Farm',
@@ -31,6 +33,7 @@ export default function CRPConservation() {
         <h1 className="text-3xl md:text-4xl font-bold font-[family-name:var(--font-heading)] mt-2 mb-4">
           The Conservation Reserve Program: Paying Farmers Not to Farm
         </h1>
+      <ShareButtons title="" />
         <p className="text-lg text-gray-600">
           The CRP pays landowners annual rent to take environmentally sensitive cropland out of production.
           It&apos;s one of the largest farm programs — and one of the most debated.
@@ -118,7 +121,8 @@ export default function CRPConservation() {
           <p>USDA Farm Service Agency payment data (1995–2024). Program totals from FSA payment files.
           Explore all programs on the <Link href="/programs" className="text-primary hover:underline">Programs page</Link>.</p>
         </div>
-      </div>
+            <RelatedArticles currentSlug="crp-conservation" />
+</div>
     </article>
   )
 }

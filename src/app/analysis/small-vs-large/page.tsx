@@ -2,6 +2,8 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import { loadData, fmtMoney, fmt } from '@/lib/utils'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import RelatedArticles from '@/components/RelatedArticles'
+import ShareButtons from '@/components/ShareButtons'
 
 export const metadata: Metadata = {
   title: 'Small Farms vs. Large Operations: Who Really Benefits from Subsidies?',
@@ -52,6 +54,7 @@ export default function SmallVsLarge() {
         <h1 className="text-3xl md:text-4xl font-bold font-[family-name:var(--font-heading)] mt-2 mb-4">
           Small Farms vs. Large Operations: Who Really Benefits?
         </h1>
+      <ShareButtons title="" />
         <p className="text-lg text-gray-600">
           Farm subsidies are pitched as support for American farmers. But the distribution of payments
           tells a very different story — one dominated by the largest operations.
@@ -136,7 +139,8 @@ export default function SmallVsLarge() {
           <p>USDA Farm Service Agency payment data (1995–2024). Farm count statistics from USDA Census of Agriculture.
           See individual recipients on the <Link href="/recipients" className="text-primary hover:underline">Top Recipients page</Link>.</p>
         </div>
-      </div>
+            <RelatedArticles currentSlug="small-vs-large" />
+</div>
     </article>
   )
 }

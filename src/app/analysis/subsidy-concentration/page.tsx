@@ -1,6 +1,8 @@
 import Breadcrumbs from '@/components/Breadcrumbs'
 import { loadData, fmtMoney, fmt } from '@/lib/utils'
 import type { Metadata } from 'next'
+import RelatedArticles from '@/components/RelatedArticles'
+import ShareButtons from '@/components/ShareButtons'
 
 export const metadata: Metadata = {
   title: 'The 10% Problem: How Most Farm Subsidies Go to the Biggest Operations',
@@ -33,6 +35,7 @@ export default function SubsidyConcentration() {
         <h1 className="text-3xl md:text-4xl font-bold font-[family-name:var(--font-heading)] mt-2 mb-4">
           The 10% Problem: How Most Farm Subsidies Go to the Biggest Operations
         </h1>
+      <ShareButtons title="" />
         <p className="text-lg text-gray-600">
           The federal government distributed {fmtMoney(stats.totalAmount)} in farm subsidies from 2017 to 2025 —
           but the money is staggeringly concentrated. According to the USDA, 69% of American farms receive
@@ -107,7 +110,8 @@ export default function SubsidyConcentration() {
           <p>Analysis based on {fmt(stats.totalPayments)} USDA Farm Service Agency payment records from 2017-2025.
           Data downloaded directly from FSA&apos;s public payment files.</p>
         </div>
-      </div>
+            <RelatedArticles currentSlug="subsidy-concentration" />
+</div>
     </article>
   )
 }
