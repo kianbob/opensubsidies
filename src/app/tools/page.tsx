@@ -11,6 +11,8 @@ export const metadata: Metadata = {
 const tools = [
   { href: '/compare', title: 'Compare States', desc: 'Side-by-side comparison of up to 4 states with charts and program overlap analysis.', icon: '⚖️' },
   { href: '/tools/calculator', title: 'Subsidy Calculator', desc: 'Enter any dollar amount and see how it compares to farm subsidy payments.', icon: '🧮' },
+  { href: '/tools/recipient-search', title: 'Recipient Search', desc: 'Search top recipients by name, farm, or city. Find out who receives farm subsidies.', icon: '🔎' },
+  { href: '/tools/state-profile', title: 'State Profile Generator', desc: 'Generate a shareable profile card for any state with key subsidy stats and trends.', icon: '🗺️' },
   { href: '/rankings', title: 'State Rankings', desc: 'Rank all states by total subsidies, per-capita spending, payment count, or average payment.', icon: '🏆' },
   { href: '/categories', title: 'Program Categories', desc: 'Browse 107 farm programs organized by type: conservation, disaster, commodity, and loans.', icon: '📂' },
   { href: '/trends', title: 'Spending Trends', desc: 'See how farm subsidy spending has changed over time with interactive charts.', icon: '📈' },

@@ -18,6 +18,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/analysis/payment-limits', '/analysis/crp-conservation', '/analysis/small-vs-large', '/analysis/county-hotspots',
     '/compare', '/downloads', '/methodology', '/glossary', '/tools', '/state-programs',
     '/categories', '/rankings', '/trends', '/tools/calculator',
+    '/tools/recipient-search', '/tools/state-profile',
+    '/facts', '/farm-subsidies-explained', '/emergency-spending', '/conservation',
     '/analysis/negative-payments', '/analysis/program-proliferation',
     '/analysis/covid-spending', '/analysis/trade-war',
     '/analysis/decade-of-disaster', '/analysis/crp-under-threat',
