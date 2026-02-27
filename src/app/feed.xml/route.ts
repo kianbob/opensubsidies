@@ -26,6 +26,13 @@ const articles = [
   { slug: 'what-147b-buys', title: 'What $147 Billion in Farm Subsidies Could Buy Instead', desc: '$147B could fund 2.2M teachers, 5.8M Pell Grants, or 6 years of NASA.' },
 ]
 
+const standalonArticles = [
+  { path: '/doge-farm-subsidies', title: 'DOGE and Farm Subsidies: What Government Efficiency Means for USDA Payments', desc: 'How would DOGE evaluate $147B in USDA farm subsidies? 157 programs, zombie programs, and emergency spending.' },
+  { path: '/farm-subsidy-reform', title: 'Farm Subsidy Reform: What the Data Shows About Fixing American Agriculture', desc: 'Five data-backed reform ideas from $147B in USDA payment data.' },
+  { path: '/farm-subsidy-lookup', title: 'Farm Subsidy Lookup: Search Recipients by Name, State, or County', desc: 'Look up farm subsidies by recipient name, state, county, or program.' },
+  { path: '/usda-payments', title: 'USDA Payments: Complete Database of Farm Service Agency Disbursements', desc: 'Explore $147B+ in USDA Farm Service Agency payments.' },
+]
+
 export function GET() {
   const stats = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'public', 'data', 'stats.json'), 'utf8'))
   const states = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'public', 'data', 'states.json'), 'utf8')) as { abbr: string; name: string; amount: number }[]
@@ -57,6 +64,13 @@ export function GET() {
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <atom:link href="${base}/feed.xml" rel="self" type="application/rss+xml"/>
 ${articleItems}
+${standalonArticles.map(a => `    <item>
+      <title>${a.title}</title>
+      <link>${base}${a.path}</link>
+      <description>${a.desc}</description>
+      <guid>${base}${a.path}</guid>
+      <pubDate>${new Date('2026-02-27').toUTCString()}</pubDate>
+    </item>`).join('\n')}
 ${stateItems}
   </channel>
 </rss>`

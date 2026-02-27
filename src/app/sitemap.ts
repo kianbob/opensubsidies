@@ -32,6 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/subsidy-map', '/program-decoder', '/state-dependency',
     '/analysis/double-dippers', '/analysis/farm-crisis-2025',
     '/analysis/zombie-programs', '/analysis/what-147b-buys',
+    '/farm-subsidy-lookup', '/doge-farm-subsidies', '/farm-subsidy-reform', '/usda-payments',
     ...Array.from({ length: 9 }, (_, i) => `/years/${2017 + i}`)]
 
   return [

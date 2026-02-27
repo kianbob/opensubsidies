@@ -23,6 +23,8 @@ const allArticles = [
   { slug: 'farm-crisis-2025', title: 'The 2025 Farm Crisis', category: 'Crisis' },
   { slug: 'zombie-programs', title: 'Zombie Programs Nobody Uses', category: 'Accountability' },
   { slug: 'what-147b-buys', title: 'What $147B Could Buy Instead', category: 'Spending' },
+  { slug: '../doge-farm-subsidies', title: 'DOGE and Farm Subsidies', category: 'Policy' },
+  { slug: '../farm-subsidy-reform', title: 'Farm Subsidy Reform', category: 'Policy' },
 ]
 
 export default function RelatedArticles({ currentSlug }: { currentSlug: string }) {

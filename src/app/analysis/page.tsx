@@ -156,6 +156,20 @@ const articles = [
     category: 'Accountability',
   },
   {
+    slug: '../doge-farm-subsidies',
+    title: 'DOGE and Farm Subsidies: What Government Efficiency Means for USDA Payments',
+    desc: 'How would DOGE evaluate $147B in USDA farm subsidies? 157 programs, 43+ zombie programs, and billions in emergency spending.',
+    date: 'February 2026',
+    category: 'Policy',
+  },
+  {
+    slug: '../farm-subsidy-reform',
+    title: 'Farm Subsidy Reform: What the Data Shows About Fixing American Agriculture',
+    desc: 'Five data-backed reform ideas from $147B in USDA payment data: consolidate programs, cap spending, means-test large operations.',
+    date: 'February 2026',
+    category: 'Policy',
+  },
+  {
     slug: 'what-147b-buys',
     title: 'What $147 Billion in Farm Subsidies Could Buy Instead',
     desc: '$147B could fund 2.2M teachers, 5.8M Pell Grants, or 6 years of NASA. Putting farm subsidies in perspective.',

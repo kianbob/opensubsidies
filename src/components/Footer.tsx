@@ -42,6 +42,10 @@ export default function Footer() {
               <li><Link href="/emergency-spending" className="hover:text-white transition-colors">Emergency Spending</Link></li>
               <li><Link href="/farm-bill" className="hover:text-white transition-colors">Farm Bill Guide</Link></li>
               <li><Link href="/crop-insurance" className="hover:text-white transition-colors">Crop Insurance Guide</Link></li>
+              <li><Link href="/farm-subsidy-lookup" className="hover:text-white transition-colors">Farm Subsidy Lookup</Link></li>
+              <li><Link href="/usda-payments" className="hover:text-white transition-colors">USDA Payments</Link></li>
+              <li><Link href="/doge-farm-subsidies" className="hover:text-white transition-colors">DOGE & Farm Subsidies</Link></li>
+              <li><Link href="/farm-subsidy-reform" className="hover:text-white transition-colors">Farm Subsidy Reform</Link></li>
               <li><Link href="/program-decoder" className="hover:text-white transition-colors">Program Decoder</Link></li>
               <li><Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
             </ul>
