@@ -1,5 +1,22 @@
 [
-  {"state":"ND","ratio":0.082,"farmIncome":8200000000,"subsidies":672000000},
-  {"state":"SD","ratio":0.071,"farmIncome":7100000000,"subsidies":504000000},
-  {"state":"MT","ratio":0.065,"farmIncome":4800000000,"subsidies":312000000}
+  {"state":"ND","name":"North Dakota","ratio":0.69,"farmIncome":11200000000,"subsidies":7701560128},
+  {"state":"SD","name":"South Dakota","ratio":0.58,"farmIncome":11730000000,"subsidies":6802760637},
+  {"state":"KS","name":"Kansas","ratio":0.42,"farmIncome":20410000000,"subsidies":8573305662},
+  {"state":"NE","name":"Nebraska","ratio":0.30,"farmIncome":26650000000,"subsidies":7995942306},
+  {"state":"MT","name":"Montana","ratio":0.55,"farmIncome":6366000000,"subsidies":3501476657},
+  {"state":"IA","name":"Iowa","ratio":0.35,"farmIncome":33368000000,"subsidies":11678803399},
+  {"state":"MN","name":"Minnesota","ratio":0.33,"farmIncome":24697000000,"subsidies":8150148576},
+  {"state":"AR","name":"Arkansas","ratio":0.38,"farmIncome":10857000000,"subsidies":4125637126},
+  {"state":"MS","name":"Mississippi","ratio":0.36,"farmIncome":7085000000,"subsidies":2550515593},
+  {"state":"OK","name":"Oklahoma","ratio":0.29,"farmIncome":15622000000,"subsidies":4530440341},
+  {"state":"TX","name":"Texas","ratio":0.18,"farmIncome":69876000000,"subsidies":12577642112},
+  {"state":"IL","name":"Illinois","ratio":0.25,"farmIncome":33230000000,"subsidies":8307556541},
+  {"state":"IN","name":"Indiana","ratio":0.22,"farmIncome":18296000000,"subsidies":4025175702},
+  {"state":"MO","name":"Missouri","ratio":0.26,"farmIncome":22001000000,"subsidies":5720350982},
+  {"state":"OH","name":"Ohio","ratio":0.19,"farmIncome":19811000000,"subsidies":3764182192},
+  {"state":"WI","name":"Wisconsin","ratio":0.13,"farmIncome":28931000000,"subsidies":3761053303},
+  {"state":"GA","name":"Georgia","ratio":0.16,"farmIncome":22812000000,"subsidies":3649864979},
+  {"state":"CO","name":"Colorado","ratio":0.15,"farmIncome":19122000000,"subsidies":2868371296},
+  {"state":"NC","name":"North Carolina","ratio":0.07,"farmIncome":34049000000,"subsidies":2383462255},
+  {"state":"CA","name":"California","ratio":0.02,"farmIncome":308810000000,"subsidies":6177618141}
 ]

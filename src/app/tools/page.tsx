@@ -20,6 +20,9 @@ const tools = [
   { href: '/trends', title: 'Spending Trends', desc: 'See how farm subsidy spending has changed over time with interactive charts.', icon: '📈' },
   { href: '/search', title: 'Search Everything', desc: 'Search across all states, counties, programs, and recipients.', icon: '🔍' },
   { href: '/downloads', title: 'Download Data', desc: 'Download raw JSON datasets for your own analysis.', icon: '📥' },
+  { href: '/program-decoder', title: 'Program Decoder', desc: 'Plain-English guide to every USDA program acronym: CRP, PLC, ARC, CFAP, MFP, and more.', icon: '🔤' },
+  { href: '/state-dependency', title: 'State Dependency', desc: 'Which states rely most on federal farm payments? North Dakota at 69% vs California at 2%.', icon: '📉' },
+  { href: '/subsidy-map', title: 'Subsidy Map', desc: 'Rank all 50 states by total subsidies, per capita, or dependency percentage.', icon: '🗺️' },
 ]
 
 export default function ToolsPage() {

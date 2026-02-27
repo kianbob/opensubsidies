@@ -83,6 +83,11 @@ export default function DashboardPage() {
           Drill into any state on the <a href="/states" className="text-primary hover:underline">States page</a>, or explore
           individual <a href="/programs" className="text-primary hover:underline">programs</a> for detailed breakdowns.
         </p>
+        <p>
+          See how subsidies break down by <a href="/entity-types" className="text-primary hover:underline">entity type</a> (individuals
+          vs. corporations vs. partnerships), or explore the <a href="/analysis/payment-distribution" className="text-primary hover:underline">payment
+          distribution analysis</a> to understand how concentrated farm subsidy payments really are.
+        </p>
       </section>
     </main>
   )

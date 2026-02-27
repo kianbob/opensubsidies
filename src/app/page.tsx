@@ -69,6 +69,27 @@ export default function HomePage() {
         <SpendingTimeline yearly={yearly} />
       </section>
 
+      {/* Your Tax Dollars at Work */}
+      <section className="max-w-7xl mx-auto px-4 pt-10">
+        <div className="bg-amber-50 rounded-2xl p-6 border border-amber-200">
+          <h2 className="text-lg font-bold font-[family-name:var(--font-heading)] mb-4 text-center text-amber-900">Your Tax Dollars at Work</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+            <Link href="/tools/taxpayer-calculator" className="group hover:bg-amber-100 rounded-xl p-4 transition-colors">
+              <div className="text-2xl font-bold text-amber-800 group-hover:text-primary">$109/year</div>
+              <div className="text-sm text-gray-600 mt-1">per taxpayer goes to farm subsidies</div>
+            </Link>
+            <Link href="/analysis/double-dippers" className="group hover:bg-amber-100 rounded-xl p-4 transition-colors">
+              <div className="text-2xl font-bold text-amber-800 group-hover:text-primary">93%</div>
+              <div className="text-sm text-gray-600 mt-1">of top recipients collect from 3+ programs</div>
+            </Link>
+            <Link href="/analysis/zombie-programs" className="group hover:bg-amber-100 rounded-xl p-4 transition-colors">
+              <div className="text-2xl font-bold text-amber-800 group-hover:text-primary">46</div>
+              <div className="text-sm text-gray-600 mt-1">zombie programs still exist at USDA</div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Explore by Year */}
       <section className="max-w-7xl mx-auto px-4 pt-6 text-center">
         <p className="text-sm text-gray-500">
@@ -134,6 +155,16 @@ export default function HomePage() {
               ))}
             </tbody>
           </table>
+        </div>
+      </section>
+
+      {/* State Dependency Insight */}
+      <section className="max-w-7xl mx-auto px-4 pb-6">
+        <div className="bg-green-50 border-l-4 border-primary rounded-r-lg p-4">
+          <p className="text-sm text-gray-800">
+            💡 In North Dakota, farm subsidies equal 69% of total farm income — the highest dependency rate in the nation.{' '}
+            <Link href="/entity-types" className="text-primary font-medium hover:underline">See the full analysis →</Link>
+          </p>
         </div>
       </section>
 
@@ -212,6 +243,25 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* New Research */}
+      <section className="max-w-7xl mx-auto px-4 pb-12">
+        <h2 className="text-2xl font-bold font-[family-name:var(--font-heading)] mb-6 text-center">New Research</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {[
+            { title: 'Double Dippers', desc: '93% of top recipients collect from multiple programs', href: '/analysis/double-dippers' },
+            { title: 'Farm Crisis 2025', desc: 'Bankruptcies up 46% while subsidies flow to the top', href: '/analysis/farm-crisis-2025' },
+            { title: 'What $147B Buys', desc: 'What farm subsidies could fund instead', href: '/analysis/what-147b-buys' },
+            { title: 'Zombie Programs', desc: '46 USDA programs nobody uses', href: '/analysis/zombie-programs' },
+          ].map(item => (
+            <Link key={item.href} href={item.href} className="bg-white rounded-xl shadow-sm p-5 border-l-4 border-primary hover:shadow-md transition-shadow">
+              <h3 className="font-semibold text-gray-900">{item.title}</h3>
+              <p className="text-sm text-gray-600 mt-1">{item.desc}</p>
+              <span className="text-sm text-primary font-medium mt-2 inline-block">Read →</span>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       {/* Explore Grid */}
       <section className="max-w-7xl mx-auto px-4 pb-16">
         <h2 className="text-2xl font-bold font-[family-name:var(--font-heading)] mb-8 text-center">Explore the Data</h2>
@@ -229,6 +279,7 @@ export default function HomePage() {
                 { label: 'Programs', href: '/programs', sub: '157 USDA programs' },
                 { label: 'Top Recipients', href: '/recipients', sub: '2,000 largest' },
                 { label: 'Dashboard', href: '/dashboard', sub: 'Interactive overview' },
+                { label: 'Entity Types', href: '/entity-types', sub: 'Who gets paid' },
               ].map(item => (
                 <Link key={item.href} href={item.href} className="flex items-center justify-between px-3 py-2 rounded-lg hover:bg-green-50 group transition-colors">
                   <span className="text-sm font-medium text-gray-800 group-hover:text-primary">{item.label}</span>
@@ -271,6 +322,8 @@ export default function HomePage() {
                 { label: 'Farm Subsidy Facts', href: '/facts', sub: '25 key facts' },
                 { label: 'Glossary', href: '/glossary', sub: '17 terms defined' },
                 { label: 'Downloads', href: '/downloads', sub: 'Free JSON datasets' },
+                { label: 'Taxpayer Calculator', href: '/tools/taxpayer-calculator', sub: 'Your cost' },
+                { label: 'Farm Bill Guide', href: '/tools/farm-bill-guide', sub: '2024 Farm Bill' },
               ].map(item => (
                 <Link key={item.href} href={item.href} className="flex items-center justify-between px-3 py-2 rounded-lg hover:bg-blue-50 group transition-colors">
                   <span className="text-sm font-medium text-gray-800 group-hover:text-blue-700">{item.label}</span>

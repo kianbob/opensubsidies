@@ -22,6 +22,8 @@ export default function Footer() {
               <li><Link href="/trends" className="hover:text-white transition-colors">Trends</Link></li>
               <li><Link href="/entity-types" className="hover:text-white transition-colors">Entity Types</Link></li>
               <li><Link href="/payment-distribution" className="hover:text-white transition-colors">Payment Distribution</Link></li>
+              <li><Link href="/subsidy-map" className="hover:text-white transition-colors">Subsidy Map</Link></li>
+              <li><Link href="/state-dependency" className="hover:text-white transition-colors">State Dependency</Link></li>
               <li><Link href="/downloads" className="hover:text-white transition-colors">Downloads</Link></li>
             </ul>
           </div>
@@ -40,6 +42,7 @@ export default function Footer() {
               <li><Link href="/emergency-spending" className="hover:text-white transition-colors">Emergency Spending</Link></li>
               <li><Link href="/farm-bill" className="hover:text-white transition-colors">Farm Bill Guide</Link></li>
               <li><Link href="/crop-insurance" className="hover:text-white transition-colors">Crop Insurance Guide</Link></li>
+              <li><Link href="/program-decoder" className="hover:text-white transition-colors">Program Decoder</Link></li>
               <li><Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
             </ul>
           </div>

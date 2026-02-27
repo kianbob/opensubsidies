@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.opensubsidies.us/faq' },
 }
 
-const faqs = [
+const faqs: { q: string; a: string; href?: string }[] = [
   { q: 'What are farm subsidies?', a: 'Farm subsidies are government financial assistance payments made to farmers and agricultural businesses. In the US, these are primarily administered by the USDA Farm Service Agency (FSA) and include direct payments, crop insurance subsidies, conservation payments, and disaster assistance.' },
   { q: 'Where does this data come from?', a: 'All data comes from the USDA Farm Service Agency (FSA) public payment records, released under the Freedom of Information Act. These records document payments made through various farm programs.' },
   { q: 'How often is the data updated?', a: 'We update our data periodically as new USDA FSA records become available. The current dataset covers payments from 2000 through 2025.' },
@@ -18,6 +19,8 @@ const faqs = [
   { q: 'How are payment amounts calculated?', a: 'Payment calculations vary by program. Some are based on historical production, others on current market prices, acreage, or documented losses. Each program has its own formula and eligibility criteria.' },
   { q: 'Can I search for a specific recipient?', a: 'Yes! Use our search page to find specific recipients, states, counties, or programs. You can also browse the top recipients page for the largest payment recipients.' },
   { q: 'Is this data adjusted for inflation?', a: 'No, all dollar amounts shown are nominal values — the actual amounts paid in each year. This means older payments may appear smaller relative to recent ones due to inflation.' },
+  { q: 'Who receives the most farm subsidies?', a: 'Large commodity crop operations and corporations receive the bulk of farm subsidies. Our entity types analysis breaks down payments by individuals, partnerships, corporations, and other entity types. See the full breakdown on our entity types page.', href: '/entity-types' },
+  { q: 'How much do farm subsidies cost taxpayers?', a: 'The average American taxpayer contributes about $109 per year to farm subsidies. Use our taxpayer calculator to see your personal cost based on your income and filing status.', href: '/tools/taxpayer-calculator' },
 ]
 
 export default function FAQPage() {
@@ -40,7 +43,10 @@ export default function FAQPage() {
         {faqs.map((f, i) => (
           <details key={i} className="group border border-gray-200 rounded-lg">
             <summary className="cursor-pointer px-4 py-3 font-medium text-green-800 hover:bg-green-50 rounded-lg">{f.q}</summary>
-            <p className="px-4 pb-4 text-gray-700">{f.a}</p>
+            <p className="px-4 pb-4 text-gray-700">
+              {f.a}
+              {f.href && <>{' '}<Link href={f.href} className="text-primary hover:underline font-medium">Learn more →</Link></>}
+            </p>
           </details>
         ))}
       </div>

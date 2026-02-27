@@ -51,6 +51,8 @@ export default function AboutPage() {
           <li><strong>{fmt(stats.totalCounties)} counties</strong> with individual subsidy totals</li>
           <li><strong>Top 2,000 recipients</strong> with names, locations, and amounts</li>
           <li><strong>6+ analysis articles</strong> investigating concentration, geographic disparities, and policy questions</li>
+          <li><strong><Link href="/entity-types" className="text-primary">Entity type analysis</Link></strong> — how subsidies flow to individuals, corporations, and partnerships</li>
+          <li><strong><Link href="/tools/taxpayer-calculator" className="text-primary">Taxpayer cost calculator</Link></strong> — see how much farm subsidies cost you personally ($109/year average)</li>
         </ul>
 
         <h2 className="font-[family-name:var(--font-heading)]">Data Sources</h2>

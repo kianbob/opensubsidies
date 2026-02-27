@@ -129,6 +129,8 @@ export default function CropInsurancePage() {
           <li><Link href="/categories" className="text-primary hover:underline">Programs by category</Link></li>
           <li><Link href="/analysis/conservation-vs-commodity" className="text-primary hover:underline">Conservation vs. Commodity spending</Link></li>
           <li><Link href="/farm-subsidies-explained" className="text-primary hover:underline">Farm Subsidies Explained</Link></li>
+          <li><Link href="/farm-bill" className="text-primary hover:underline">The Farm Bill: Complete Guide</Link></li>
+          <li><Link href="/entity-types" className="text-primary hover:underline">Who Gets Farm Subsidies?</Link></li>
           <li><Link href="/dashboard" className="text-primary hover:underline">Interactive Dashboard</Link></li>
         </ul>
       </div>

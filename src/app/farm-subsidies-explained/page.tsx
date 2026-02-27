@@ -265,6 +265,28 @@ export default function FarmSubsidiesExplainedPage() {
           }),
         }}
       />
+
+      {/* Related Pages */}
+      <div className="mt-12 pt-8 border-t border-gray-200">
+        <h2 className="text-xl font-bold font-[family-name:var(--font-heading)] mb-4">Related Resources</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+          {[
+            { href: '/farm-bill', title: 'The Farm Bill', desc: 'How farm legislation works and its history since 1933' },
+            { href: '/crop-insurance', title: 'Crop Insurance', desc: 'The $10-13B/year program separate from FSA payments' },
+            { href: '/entity-types', title: 'Who Gets Subsidies?', desc: 'Individual farmers vs. corporations vs. government' },
+            { href: '/tools/taxpayer-calculator', title: 'Taxpayer Calculator', desc: 'How much of YOUR taxes go to farm subsidies' },
+            { href: '/analysis/double-dippers', title: 'Double Dippers', desc: '93% of top recipients collect from 3+ programs' },
+            { href: '/program-decoder', title: 'Program Decoder', desc: 'What every USDA program acronym actually means' },
+          ].map(p => (
+            <Link key={p.href} href={p.href} className="flex gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors border border-gray-100">
+              <div>
+                <div className="font-semibold text-primary text-sm">{p.title}</div>
+                <div className="text-xs text-gray-500">{p.desc}</div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
     </div>
   )
 }
