@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import { Suspense } from 'react'
 import { loadData } from '@/lib/utils'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import SearchClient from '@/components/SearchClient'
@@ -19,7 +20,9 @@ export default function SearchPage() {
     <main className="max-w-4xl mx-auto px-4 py-8">
       <Breadcrumbs items={[{ label: 'Search' }]} />
       <h1 className="text-3xl font-bold font-[family-name:var(--font-heading)] mb-6">Search</h1>
-      <SearchClient states={states} counties={counties} programs={programs} recipients={recipients} />
+      <Suspense fallback={<p>Loading search...</p>}>
+        <SearchClient states={states} counties={counties} programs={programs} recipients={recipients} />
+      </Suspense>
     </main>
   )
 }
