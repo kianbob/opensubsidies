@@ -8,6 +8,10 @@ const articles = [
   { slug: 'conservation-vs-commodity', title: 'Conservation vs. Commodity: Two Philosophies of Farm Spending', desc: 'CRP pays farmers not to farm. Commodity programs pay them to produce.' },
   { slug: 'corporate-farms', title: 'When Corporations Collect: The Biggest Non-Family Recipients', desc: 'LLCs, partnerships, and corporations collecting millions in farm subsidies.' },
   { slug: 'per-capita', title: 'Farm Subsidies Per Capita by State', desc: 'North Dakota gets $6,000+ per person. California gets under $100.' },
+  { slug: 'payment-limits', title: 'Are Farm Subsidy Payment Limits Working?', desc: 'Top recipients collect far more than the $125K cap through LLCs and partnerships.' },
+  { slug: 'crp-conservation', title: 'The Conservation Reserve Program: Paying Farmers Not to Farm', desc: '$5.36B to keep land out of production. Is it worth it?' },
+  { slug: 'small-vs-large', title: 'Small Farms vs. Large Operations: Who Really Benefits?', desc: '69% of farms get nothing. The distribution tells the real story.' },
+  { slug: 'county-hotspots', title: 'County Hotspots: Where Farm Subsidies Concentrate', desc: 'Some individual counties receive more than entire states.' },
 ]
 
 export function GET() {
