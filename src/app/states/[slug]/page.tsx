@@ -3,77 +3,80 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { loadData, fmt, fmtMoney } from '@/lib/utils'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import ShareButtons from '@/components/ShareButtons'
 import StateYearlyChart from '@/components/StateYearlyChart'
+import fs from 'fs'
+import path from 'path'
 
 type State = { abbr: string; name: string; payments: number; amount: number; topPrograms: { program: string; amount: number }[] }
-type County = { state: string; stateName: string; county: string; fips: string; payments: number; amount: number }
-type StateYear = { state: string; year: number; payments: number; amount: number }
+type StateDetail = State & { counties: { county: string; fips: string; payments: number; amount: number }[]; yearly: { year: number; payments: number; amount: number }[]; topRecipients: { name: string; city: string; state: string; amount: number; payments: number }[] }
+
+function loadStateDetail(slug: string): StateDetail | null {
+  try {
+    const filePath = path.join(process.cwd(), 'public', 'data', 'states', `${slug}.json`)
+    return JSON.parse(fs.readFileSync(filePath, 'utf8'))
+  } catch { return null }
+}
 
 export const dynamicParams = true
 
 export function generateStaticParams() {
   const states = loadData('states.json') as State[]
-  const sorted = [...states].sort((a, b) => b.amount - a.amount)
-  return sorted.slice(0, 20).map(s => ({ slug: s.abbr.toLowerCase() }))
+  return [...states].sort((a, b) => b.amount - a.amount).slice(0, 20).map(s => ({ slug: s.abbr.toLowerCase() }))
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params
-  const states = loadData('states.json') as State[]
-  const state = states.find(s => s.abbr.toLowerCase() === slug)
+  const state = loadStateDetail(slug)
   if (!state) return { title: 'State Not Found' }
   return {
-    title: `${state.name} Farm Subsidies | OpenSubsidies`,
-    description: `${state.name} received ${fmtMoney(state.amount)} in USDA farm subsidies across ${fmt(state.payments)} payments.`,
+    title: `${state.name} Farm Subsidies — ${fmtMoney(state.amount)} in USDA Payments`,
+    description: `${state.name} received ${fmtMoney(state.amount)} in USDA farm subsidies across ${fmt(state.payments)} payments. See top programs, counties, and recipients.`,
     alternates: { canonical: `https://www.opensubsidies.us/states/${slug}` },
   }
 }
 
 export default async function StateDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
-  const states = loadData('states.json') as State[]
-  const state = states.find(s => s.abbr.toLowerCase() === slug)
+  const state = loadStateDetail(slug)
   if (!state) notFound()
 
-  const stateYearly = (loadData('state-yearly.json') as StateYear[])
-    .filter(sy => sy.state === state.abbr)
-    .sort((a, b) => a.year - b.year)
-
-  const counties = (loadData('counties.json') as County[])
-    .filter(c => c.state === state.abbr)
-    .sort((a, b) => b.amount - a.amount)
+  const { counties, yearly, topRecipients, topPrograms } = state
 
   return (
     <main className="max-w-6xl mx-auto px-4 py-8">
       <Breadcrumbs items={[{ label: 'States', href: '/states' }, { label: state.name }]} />
-      <h1 className="text-3xl font-bold font-[family-name:var(--font-heading)] mb-2">{state.name} Farm Subsidies</h1>
-      <p className="text-gray-600 mb-8">{state.name} ({state.abbr}) received {fmtMoney(state.amount)} across {fmt(state.payments)} payments.</p>
+      <div className="flex items-start justify-between mb-2">
+        <h1 className="text-3xl font-bold font-[family-name:var(--font-heading)]">{state.name} Farm Subsidies</h1>
+        <ShareButtons title={`${state.name} received ${fmtMoney(state.amount)} in farm subsidies`} />
+      </div>
+      <p className="text-gray-600 mb-8">{state.name} ({state.abbr}) received {fmtMoney(state.amount)} across {fmt(state.payments)} USDA Farm Service Agency payments from 2023 to 2025.</p>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
-        <div className="bg-green-50 rounded-lg p-4"><p className="text-sm text-gray-500">Total Amount</p><p className="text-xl font-bold text-green-800">{fmtMoney(state.amount)}</p></div>
-        <div className="bg-green-50 rounded-lg p-4"><p className="text-sm text-gray-500">Payments</p><p className="text-xl font-bold text-green-800">{fmt(state.payments)}</p></div>
-        <div className="bg-green-50 rounded-lg p-4"><p className="text-sm text-gray-500">Counties</p><p className="text-xl font-bold text-green-800">{fmt(counties.length)}</p></div>
-        <div className="bg-green-50 rounded-lg p-4"><p className="text-sm text-gray-500">Programs</p><p className="text-xl font-bold text-green-800">{state.topPrograms.length}</p></div>
+        <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">Total Subsidies</p><p className="text-xl font-bold text-green-800">{fmtMoney(state.amount)}</p></div>
+        <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">Payments</p><p className="text-xl font-bold text-green-800">{fmt(state.payments)}</p></div>
+        <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">Counties</p><p className="text-xl font-bold text-green-800">{fmt(counties.length)}</p></div>
+        <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">Top Programs</p><p className="text-xl font-bold text-green-800">{topPrograms.length}</p></div>
       </div>
 
-      {stateYearly.length > 0 && (
+      {yearly.length > 1 && (
         <section className="mb-10">
           <h2 className="text-xl font-semibold font-[family-name:var(--font-heading)] mb-4">Yearly Trends</h2>
-          <StateYearlyChart data={stateYearly} />
+          <StateYearlyChart data={yearly} />
         </section>
       )}
 
       <section className="mb-10">
-        <h2 className="text-xl font-semibold font-[family-name:var(--font-heading)] mb-4">Top Programs</h2>
-        <div className="overflow-x-auto">
+        <h2 className="text-xl font-semibold font-[family-name:var(--font-heading)] mb-4">Top Programs in {state.name}</h2>
+        <div className="bg-white rounded-xl shadow-sm overflow-hidden">
           <table className="w-full text-sm">
-            <thead><tr className="border-b-2 border-green-700 text-left"><th className="py-2 pr-4">#</th><th className="py-2 pr-4">Program</th><th className="py-2 text-right">Amount</th></tr></thead>
-            <tbody>
-              {state.topPrograms.map((p, i) => (
-                <tr key={i} className="border-b border-gray-200 hover:bg-green-50">
-                  <td className="py-2 pr-4 text-gray-500">{i + 1}</td>
-                  <td className="py-2 pr-4">{p.program}</td>
-                  <td className="py-2 text-right tabular-nums font-medium">{fmtMoney(p.amount)}</td>
+            <thead className="bg-gray-50"><tr><th className="px-4 py-3 text-left font-semibold">#</th><th className="px-4 py-3 text-left font-semibold">Program</th><th className="px-4 py-3 text-right font-semibold">Amount</th></tr></thead>
+            <tbody className="divide-y divide-gray-100">
+              {topPrograms.map((p, i) => (
+                <tr key={i} className="hover:bg-gray-50">
+                  <td className="px-4 py-3 text-gray-500">{i + 1}</td>
+                  <td className="px-4 py-3">{p.program}</td>
+                  <td className="px-4 py-3 text-right font-mono">{fmtMoney(p.amount)}</td>
                 </tr>
               ))}
             </tbody>
@@ -81,19 +84,19 @@ export default async function StateDetailPage({ params }: { params: Promise<{ sl
         </div>
       </section>
 
-      {counties.length > 0 && (
-        <section>
-          <h2 className="text-xl font-semibold font-[family-name:var(--font-heading)] mb-4">Counties in {state.name}</h2>
-          <div className="overflow-x-auto">
+      {topRecipients.length > 0 && (
+        <section className="mb-10">
+          <h2 className="text-xl font-semibold font-[family-name:var(--font-heading)] mb-4">Top Recipients in {state.name}</h2>
+          <div className="bg-white rounded-xl shadow-sm overflow-hidden">
             <table className="w-full text-sm">
-              <thead><tr className="border-b-2 border-green-700 text-left"><th className="py-2 pr-4">#</th><th className="py-2 pr-4">County</th><th className="py-2 pr-4 text-right">Payments</th><th className="py-2 text-right">Amount</th></tr></thead>
-              <tbody>
-                {counties.map((c, i) => (
-                  <tr key={c.fips} className="border-b border-gray-200 hover:bg-green-50">
-                    <td className="py-2 pr-4 text-gray-500">{i + 1}</td>
-                    <td className="py-2 pr-4">{c.county}</td>
-                    <td className="py-2 pr-4 text-right tabular-nums">{fmt(c.payments)}</td>
-                    <td className="py-2 text-right tabular-nums font-medium">{fmtMoney(c.amount)}</td>
+              <thead className="bg-gray-50"><tr><th className="px-4 py-3 text-left font-semibold">#</th><th className="px-4 py-3 text-left font-semibold">Recipient</th><th className="px-4 py-3 text-left font-semibold hidden md:table-cell">City</th><th className="px-4 py-3 text-right font-semibold">Total</th></tr></thead>
+              <tbody className="divide-y divide-gray-100">
+                {topRecipients.slice(0, 25).map((r, i) => (
+                  <tr key={i} className="hover:bg-gray-50">
+                    <td className="px-4 py-3 text-gray-500">{i + 1}</td>
+                    <td className="px-4 py-3 font-medium">{r.name}</td>
+                    <td className="px-4 py-3 text-gray-600 hidden md:table-cell">{r.city}</td>
+                    <td className="px-4 py-3 text-right font-mono text-primary">{fmtMoney(r.amount)}</td>
                   </tr>
                 ))}
               </tbody>
@@ -101,6 +104,41 @@ export default async function StateDetailPage({ params }: { params: Promise<{ sl
           </div>
         </section>
       )}
+
+      {counties.length > 0 && (
+        <section className="mb-10">
+          <h2 className="text-xl font-semibold font-[family-name:var(--font-heading)] mb-4">Counties in {state.name}</h2>
+          <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+            <table className="w-full text-sm">
+              <thead className="bg-gray-50"><tr><th className="px-4 py-3 text-left font-semibold">#</th><th className="px-4 py-3 text-left font-semibold">County</th><th className="px-4 py-3 text-right font-semibold">Payments</th><th className="px-4 py-3 text-right font-semibold">Amount</th></tr></thead>
+              <tbody className="divide-y divide-gray-100">
+                {counties.map((c, i) => (
+                  <tr key={c.fips || i} className="hover:bg-gray-50">
+                    <td className="px-4 py-3 text-gray-500">{i + 1}</td>
+                    <td className="px-4 py-3">{c.county}</td>
+                    <td className="px-4 py-3 text-right font-mono">{fmt(c.payments)}</td>
+                    <td className="px-4 py-3 text-right font-mono">{fmtMoney(c.amount)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      )}
+
+      {/* SEO Content */}
+      <section className="mt-10 prose max-w-none text-gray-600">
+        <h2 className="font-[family-name:var(--font-heading)] text-gray-900">About {state.name} Farm Subsidies</h2>
+        <p>
+          From 2023 to 2025, the USDA Farm Service Agency distributed {fmtMoney(state.amount)} in farm subsidy
+          payments to recipients in {state.name}. The state&apos;s largest program was {topPrograms[0]?.program} at
+          {' '}{fmtMoney(topPrograms[0]?.amount)}. {counties.length > 0 ? `Payments went to recipients in ${counties.length} counties.` : ''}
+        </p>
+        <p>
+          This data comes from publicly available USDA FSA payment files. All payment amounts, recipient names,
+          and program details are public records. <Link href="/about">Learn more about our data sources</Link>.
+        </p>
+      </section>
     </main>
   )
 }

@@ -1,7 +1,8 @@
 // @ts-nocheck
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
+import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 
 type State = { abbr: string; name: string; amount: number }
@@ -19,7 +20,8 @@ function fmtMoney(n: number) {
 export default function SearchClient({ states, counties, programs, recipients }: {
   states: State[]; counties: County[]; programs: Program[]; recipients: Recipient[]
 }) {
-  const [query, setQuery] = useState('')
+  const searchParams = useSearchParams()
+  const [query, setQuery] = useState(searchParams.get('q') || '')
   const q = query.toLowerCase().trim()
 
   const results = useMemo(() => {

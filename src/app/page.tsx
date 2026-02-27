@@ -18,8 +18,11 @@ export default function HomePage() {
           <p className="text-lg text-green-200 mb-2 max-w-2xl mx-auto">
             The most comprehensive open database of U.S. farm subsidy payments — {fmt(stats.totalPayments)} payments across {fmt(stats.totalPrograms)} programs, every state and county.
           </p>
-          <p className="text-sm text-green-200 mb-8">
+          <p className="text-sm text-green-200 mb-2">
             Data from USDA Farm Service Agency · 2023–2025 · Open data, no paywalls
+          </p>
+          <p className="text-xs text-green-300 mb-6">
+            🟢 Data current through January 2025 · Last updated February 2026
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link href="/states" className="px-6 py-3 bg-white text-primary font-semibold rounded-lg hover:bg-green-50 transition-colors">
@@ -134,6 +137,28 @@ export default function HomePage() {
               ))}
             </tbody>
           </table>
+        </div>
+      </section>
+
+      {/* Explore Grid */}
+      <section className="max-w-7xl mx-auto px-4 pb-16">
+        <h2 className="text-2xl font-bold font-[family-name:var(--font-heading)] mb-6 text-center">Explore the Data</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          {[
+            { label: 'All States', href: '/states', icon: '🗺️' },
+            { label: 'Top Counties', href: '/counties', icon: '📍' },
+            { label: 'Programs', href: '/programs', icon: '📋' },
+            { label: 'Top Recipients', href: '/recipients', icon: '👤' },
+            { label: 'Dashboard', href: '/dashboard', icon: '📊' },
+            { label: 'Analysis', href: '/analysis', icon: '🔍' },
+            { label: 'Downloads', href: '/downloads', icon: '📥' },
+            { label: 'FAQ', href: '/faq', icon: '❓' },
+          ].map(item => (
+            <Link key={item.href} href={item.href} className="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow text-center border border-gray-100">
+              <span className="text-2xl">{item.icon}</span>
+              <div className="text-sm font-medium text-gray-900 mt-1">{item.label}</div>
+            </Link>
+          ))}
         </div>
       </section>
 
