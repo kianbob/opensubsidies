@@ -1,9 +1,9 @@
 {
-  "totalPayments": 8114240,
-  "totalAmount": 40023911029.97,
+  "totalPayments": 31759593,
+  "totalAmount": 147286964899.63,
   "totalStates": 59,
-  "totalCounties": 21895,
-  "totalPrograms": 107,
+  "totalCounties": 28875,
+  "totalPrograms": 157,
   "yearRange": [
     "2000",
     "2001",
@@ -32,6 +32,6 @@
     "2024",
     "2025"
   ],
-  "dataYears": "2023-2025",
+  "dataYears": "2017-2025",
   "lastUpdated": "2026-02-27"
 }

@@ -26,7 +26,7 @@ export default function MethodologyPage() {
 
         <h2 className="font-[family-name:var(--font-heading)]">Data Processing Pipeline</h2>
         <ol>
-          <li><strong>Download:</strong> We download all available Excel payment files from the FSA website. Our current dataset includes 22 files covering 2023–2025.</li>
+          <li><strong>Download:</strong> We download all available Excel payment files from the FSA website. Our current dataset includes 83 files covering 2017–2025.</li>
           <li><strong>Parse:</strong> Each Excel file is parsed using the <code>xlsx</code> npm library. Each row represents a single payment with 16 fields including recipient name, address, state, county, amount, program code, and program year.</li>
           <li><strong>Clean:</strong> State abbreviations are mapped to full state names. County names are standardized. Program codes are matched to program descriptions.</li>
           <li><strong>Aggregate:</strong> Payments are aggregated by state, county, program, and recipient. Top recipients are identified by summing all payments to the same name within the same state.</li>
@@ -44,7 +44,7 @@ export default function MethodologyPage() {
         <h2 className="font-[family-name:var(--font-heading)]">Limitations</h2>
         <ul>
           <li><strong>Recipient matching:</strong> Recipients are matched by name and state. The same entity may appear under slightly different names (e.g., &quot;SMITH FARMS LLC&quot; vs &quot;SMITH FARMS, LLC&quot;), which may lead to some undercounting of individual totals.</li>
-          <li><strong>Historical coverage:</strong> Our current dataset covers 2023–2025. The FSA publishes data going back to 1995, and we plan to backfill historical data over time.</li>
+          <li><strong>Historical coverage:</strong> Our current dataset covers 2017–2025. The FSA publishes data going back to 1995, and we plan to backfill historical data over time.</li>
           <li><strong>Negative payments:</strong> Some payments are negative (refunds, corrections, clawbacks). These are included in all totals.</li>
           <li><strong>Crop insurance:</strong> Federal crop insurance subsidies (administered by RMA, not FSA) are NOT included in this dataset. They represent a separate, large category of farm support.</li>
         </ul>

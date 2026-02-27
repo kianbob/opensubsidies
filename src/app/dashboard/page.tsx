@@ -5,7 +5,7 @@ import { YearlyTrendChart, TopStatesBarChart, TopProgramsPieChart } from '@/comp
 
 export const metadata: Metadata = {
   title: 'Farm Subsidy Dashboard — Interactive Overview',
-  description: 'Interactive dashboard showing farm subsidy trends, top states, and biggest programs. $40B across 8M+ payments visualized.',
+  description: 'Interactive dashboard showing farm subsidy trends, top states, and biggest programs. $147B across 31M+ payments visualized.',
   alternates: { canonical: 'https://www.opensubsidies.us/dashboard' },
 }
 

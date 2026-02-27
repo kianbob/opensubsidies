@@ -77,7 +77,7 @@ export default function RecipientsPage() {
           but through entity structures and family attribution rules, many operations receive far more.
         </p>
         <p>
-          This data comes from publicly available USDA FSA payment files covering 2023-2025. All recipient names
+          This data comes from publicly available USDA FSA payment files covering 2017-2025. All recipient names
           and payment amounts are public records. See our <Link href="/analysis/corporate-farms" className="text-primary hover:underline">analysis of corporate recipients</Link> for
           more context on how payment limits work in practice.
         </p>

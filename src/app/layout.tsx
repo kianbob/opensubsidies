@@ -10,10 +10,10 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfa
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.opensubsidies.us'),
   title: {
-    default: 'OpenSubsidies — Where $40 Billion in Farm Subsidies Really Goes',
+    default: 'OpenSubsidies — Where $147 Billion in Farm Subsidies Really Goes',
     template: '%s | OpenSubsidies',
   },
-  description: 'Track every dollar of U.S. farm subsidies. 8 million+ payment records, 107 programs, every state and county. Free, open data from USDA.',
+  description: 'Track every dollar of U.S. farm subsidies. 31 million+ payment records, 157 programs, every state and county. Free, open data from USDA.',
   alternates: { canonical: './' },
   openGraph: {
     siteName: 'OpenSubsidies',

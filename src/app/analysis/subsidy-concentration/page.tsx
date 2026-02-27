@@ -104,7 +104,7 @@ export default function SubsidyConcentration() {
 
         <div className="bg-gray-50 border border-gray-200 p-4 rounded-lg my-6 not-prose text-sm text-gray-600">
           <p className="font-semibold text-gray-900 mb-1">📊 Data Source</p>
-          <p>Analysis based on {fmt(stats.totalPayments)} USDA Farm Service Agency payment records from 2023-2025.
+          <p>Analysis based on {fmt(stats.totalPayments)} USDA Farm Service Agency payment records from 2017-2025.
           Data downloaded directly from FSA&apos;s public payment files.</p>
         </div>
       </div>

@@ -22,7 +22,7 @@ export default function DownloadsPage() {
       <Breadcrumbs items={[{ label: 'Downloads' }]} />
       <h1 className="text-3xl font-bold font-[family-name:var(--font-heading)] mb-2">Download Farm Subsidy Data</h1>
       <p className="text-gray-600 mb-8">
-        All data is free to download and use. Processed from USDA Farm Service Agency payment files (2023-2025).
+        All data is free to download and use. Processed from USDA Farm Service Agency payment files (2017-2025).
         JSON format, ready for analysis.
       </p>
 
@@ -47,7 +47,7 @@ export default function DownloadsPage() {
           All data is derived from USDA Farm Service Agency (FSA) payment files, publicly available at{' '}
           <a href="https://www.fsa.usda.gov/tools/informational/freedom-information-act-foia/electronic-reading-room/frequently-requested/payment-files" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
             fsa.usda.gov
-          </a>. We processed 22 Excel files covering 2023-2025 into these JSON datasets.
+          </a>. We processed 83 Excel files covering 2017-2025 into these JSON datasets.
         </p>
         <h3 className="font-semibold text-gray-900 mt-4 mb-1">License</h3>
         <p className="text-sm text-gray-600">

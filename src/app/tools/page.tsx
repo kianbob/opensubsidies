@@ -39,7 +39,7 @@ export default function ToolsPage() {
         <p>
           These interactive tools let you explore {new Intl.NumberFormat().format(8114240)} USDA farm subsidy
           payment records in different ways. All tools run entirely in your browser — no server requests needed
-          after the page loads. Data comes from the USDA Farm Service Agency, covering 2023–2025.
+          after the page loads. Data comes from the USDA Farm Service Agency, covering 2017–2025.
         </p>
       </section>
     </div>

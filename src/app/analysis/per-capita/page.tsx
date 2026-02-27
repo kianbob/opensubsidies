@@ -107,7 +107,7 @@ export default function PerCapitaPage() {
 
         <div className="bg-gray-50 border border-gray-200 p-4 rounded-lg my-6 not-prose text-sm text-gray-600">
           <p className="font-semibold text-gray-900 mb-1">📊 Methodology</p>
-          <p>Farm subsidy data from USDA FSA (2023-2025). Population estimates from U.S. Census Bureau (2024).
+          <p>Farm subsidy data from USDA FSA (2017-2025). Population estimates from U.S. Census Bureau (2024).
           Per capita = total state subsidies ÷ state population.</p>
         </div>
       </div>

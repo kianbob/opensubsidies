@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'The Disaster Money Machine: $20 Billion in Emergency Farm Payments',
-  description: 'Emergency and disaster programs now dwarf traditional farm subsidies. ECAP, CFAP, and livestock relief programs paid out over $20 billion in 2023-2025.',
+  description: 'Emergency and disaster programs now dwarf traditional farm subsidies. ECAP, CFAP, and livestock relief programs paid out over $20 billion in 2017-2025.',
 }
 
 export default function DisasterSpending() {
@@ -96,7 +96,7 @@ export default function DisasterSpending() {
 
         <div className="bg-gray-50 border border-gray-200 p-4 rounded-lg my-6 not-prose text-sm text-gray-600">
           <p className="font-semibold text-gray-900 mb-1">📊 Data Source</p>
-          <p>Analysis based on USDA Farm Service Agency payment records, 2023-2025. Programs classified as
+          <p>Analysis based on USDA Farm Service Agency payment records, 2017-2025. Programs classified as
           &quot;emergency/disaster&quot; based on program name containing Emergency, Disaster, Relief, ELAP, or CFAP.</p>
         </div>
       </div>

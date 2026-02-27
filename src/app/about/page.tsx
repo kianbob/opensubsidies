@@ -5,7 +5,7 @@ import { loadData, fmtMoney, fmt } from '@/lib/utils'
 
 export const metadata: Metadata = {
   title: 'About OpenSubsidies — Free Farm Subsidy Transparency Platform',
-  description: 'OpenSubsidies makes $40B in USDA farm subsidy data accessible and searchable. Learn about our mission, data sources, and methodology.',
+  description: 'OpenSubsidies makes $147B in USDA farm subsidy data accessible and searchable. Learn about our mission, data sources, and methodology.',
   alternates: { canonical: 'https://www.opensubsidies.us/about' },
 }
 
@@ -60,7 +60,7 @@ export default function AboutPage() {
           <a href="https://www.fsa.usda.gov/tools/informational/freedom-information-act-foia/electronic-reading-room/frequently-requested/payment-files" target="_blank" rel="noopener noreferrer" className="text-primary">
             Electronic Reading Room
           </a>. These are official government records released under the Freedom of Information Act.
-          Our current dataset covers 2023–2025 (22 Excel files, 678MB of raw data).
+          Our current dataset covers 2017–2025 (83 Excel files, 2.6GB of raw data).
         </p>
         <p>
           For full details on how we process this data, see our <Link href="/methodology" className="text-primary">Methodology page</Link>.

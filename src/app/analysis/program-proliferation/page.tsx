@@ -132,7 +132,7 @@ export default function ProgramProliferationPage() {
       <div className="prose max-w-none">
         <h2 className="font-[family-name:var(--font-heading)]">The Case for Simplification</h2>
         <p>
-          With 107 programs, navigating the farm subsidy system is a challenge for farmers, administrators, and
+          With 157 programs, navigating the farm subsidy system is a challenge for farmers, administrators, and
           oversight bodies alike. The complexity creates:
         </p>
         <ul>

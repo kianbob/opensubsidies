@@ -57,7 +57,7 @@ export default function CalculatorClient({ recipients, states, stats }: {
           <div className="bg-white rounded-xl shadow-sm p-6 border-l-4 border-blue-500">
             <p className="text-sm text-gray-500 mb-1">Percentage of Total</p>
             <p className="text-xl font-bold">
-              That&apos;s <span className="text-blue-600">{(amount / stats.totalAmount * 100).toFixed(4)}%</span> of all $40B in farm subsidies
+              That&apos;s <span className="text-blue-600">{(amount / stats.totalAmount * 100).toFixed(4)}%</span> of all $147B in farm subsidies
             </p>
             <p className="text-sm text-gray-500 mt-1">
               And {(amount / topState.amount * 100).toFixed(2)}% of {topState.name}&apos;s total subsidies

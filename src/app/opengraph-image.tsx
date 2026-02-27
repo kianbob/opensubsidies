@@ -10,7 +10,7 @@ export default function Image() {
     (
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', background: 'linear-gradient(135deg, #166534 0%, #15803d 50%, #22c55e 100%)', color: 'white', fontFamily: 'system-ui' }}>
         <div style={{ fontSize: 72, fontWeight: 700, marginBottom: 16 }}>OpenSubsidies</div>
-        <div style={{ fontSize: 32, opacity: 0.9, marginBottom: 32 }}>$40 Billion in Farm Subsidies. Every Dollar. Every Recipient.</div>
+        <div style={{ fontSize: 32, opacity: 0.9, marginBottom: 32 }}>$147 Billion in Farm Subsidies. Every Dollar. Every Recipient.</div>
         <div style={{ display: 'flex', gap: 40, fontSize: 22, opacity: 0.8 }}>
           <span>8M+ Payments</span>
           <span>·</span>
