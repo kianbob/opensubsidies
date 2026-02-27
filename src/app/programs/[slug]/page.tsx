@@ -94,12 +94,6 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
         </div>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
-        <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">Total Distributed</p><p className="text-xl font-bold text-green-800">{fmtMoney(program.amount)}</p></div>
-        <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">Total Payments</p><p className="text-xl font-bold text-green-800">{fmt(program.payments)}</p></div>
-        <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">% of All Subsidies</p><p className="text-xl font-bold text-green-800">{pctOfTotal}%</p></div>
-      </div>
-
       <div className="bg-amber-50 border-l-4 border-accent p-4 rounded-r-lg mb-8">
         <p className="font-semibold text-gray-900">💡 Key Insight</p>
         <p className="text-sm text-gray-700 mt-1">
@@ -142,7 +136,7 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
           {programs.filter(p => p.program !== program.program).slice(Math.max(0, rank - 2), Math.max(0, rank - 2) + 3).map(p => (
             <Link key={p.code} href={`/programs/${slugify(p.program)}`} className="bg-white rounded-xl shadow-sm p-4 hover:shadow-md transition-shadow border border-gray-100">
-              <p className="font-medium text-sm text-gray-900 line-clamp-2">{p.program}</p>
+              <p className="font-medium text-sm text-gray-900 line-clamp-2">{formatProgram(p.program)}</p>
               <p className="text-primary font-bold mt-1">{fmtMoney(p.amount)}</p>
               <p className="text-xs text-gray-500">{fmt(p.payments)} payments</p>
             </Link>

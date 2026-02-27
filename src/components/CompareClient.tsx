@@ -1,6 +1,7 @@
 // @ts-nocheck
 'use client'
 import { useState, useEffect, useMemo } from 'react'
+import { formatProgram } from '@/lib/format-program'
 import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts'
 
 const COLORS = ['#15803d', '#2563eb', '#dc2626', '#d97706']
@@ -25,7 +26,7 @@ export default function CompareClient() {
 
   const chartData = useMemo(() => {
     if (!picks.length) return []
-    const years = [...new Set(yearly.filter(r => selected.includes(r.state)).map(r => r.year))].sort()
+    const years = [...new Set(yearly.filter(r => selected.includes(r.state)).map(r => r.year))].sort().filter(y => y >= 2017)
     return years.map(y => {
       const row: Record<string, number> = { year: y }
       picks.forEach(p => {
@@ -100,7 +101,7 @@ export default function CompareClient() {
                 <tbody className="divide-y">
                   {allPrograms.slice(0, 15).map(prog => (
                     <tr key={prog} className="hover:bg-gray-50">
-                      <td className="px-3 py-2 text-xs">{prog}</td>
+                      <td className="px-3 py-2 text-xs">{formatProgram(prog)}</td>
                       {picks.map(p => {
                         const tp = p.topPrograms.find(t => t.program === prog)
                         return <td key={p.abbr} className="px-3 py-2 text-right font-mono text-xs">{tp ? fmtM(tp.amount) : '—'}</td>

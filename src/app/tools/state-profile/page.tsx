@@ -24,7 +24,7 @@ export default function StateProfilePage() {
       <section className="mt-16 prose max-w-none text-gray-600">
         <h2 className="font-[family-name:var(--font-heading)] text-gray-900">About State Profiles</h2>
         <p>
-          Each state profile provides a comprehensive snapshot of farm subsidy activity. Data covers payments from 2000 through 2025
+          Each state profile provides a comprehensive snapshot of farm subsidy activity. Data covers payments from 2017 through 2025
           across all USDA programs tracked by the Farm Subsidy Database. The national rank reflects total subsidy amounts across
           all 59 tracked jurisdictions including states, territories, and armed forces regions.
         </p>

@@ -44,6 +44,54 @@ export default function SearchClient({ states, counties, programs, recipients }:
         className="w-full max-w-lg mb-8 px-4 py-3 text-lg border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
         autoFocus
       />
+      {q.length === 0 && (
+        <div className="space-y-10">
+          {/* Popular Searches */}
+          <section>
+            <h2 className="text-lg font-semibold text-gray-700 mb-3">Popular Searches</h2>
+            <div className="flex flex-wrap gap-2">
+              {[
+                { label: 'Texas', href: '/states/tx' },
+                { label: 'Iowa', href: '/states/ia' },
+                { label: 'CRP', query: 'CRP' },
+                { label: 'CFAP', query: 'CFAP' },
+                { label: 'Conservation', query: 'Conservation' },
+                { label: 'Top Recipients', href: '/recipients' },
+                { label: 'Emergency Relief', query: 'Emergency' },
+              ].map((item) =>
+                item.href ? (
+                  <Link key={item.label} href={item.href} className="px-4 py-2 bg-green-50 text-green-800 border border-green-200 rounded-full text-sm font-medium hover:bg-green-100 transition-colors">
+                    {item.label}
+                  </Link>
+                ) : (
+                  <button key={item.label} onClick={() => setQuery(item.query!)} className="px-4 py-2 bg-green-50 text-green-800 border border-green-200 rounded-full text-sm font-medium hover:bg-green-100 transition-colors cursor-pointer">
+                    {item.label}
+                  </button>
+                )
+              )}
+            </div>
+          </section>
+
+          {/* Browse by Category */}
+          <section>
+            <h2 className="text-lg font-semibold text-gray-700 mb-3">Browse by Category</h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {[
+                { label: 'States', count: '59', href: '/states', icon: '🗺️' },
+                { label: 'Counties', count: '28,875', href: '/counties', icon: '🏘️' },
+                { label: 'Programs', count: '157', href: '/programs', icon: '🌾' },
+                { label: 'Recipients', count: '2,000', href: '/recipients', icon: '👤' },
+              ].map((cat) => (
+                <Link key={cat.label} href={cat.href} className="border border-gray-200 rounded-xl p-5 text-center hover:shadow-md hover:border-green-300 transition-all no-underline">
+                  <div className="text-2xl mb-2">{cat.icon}</div>
+                  <div className="font-semibold text-gray-900">{cat.label}</div>
+                  <div className="text-sm text-gray-500">{cat.count}</div>
+                </Link>
+              ))}
+            </div>
+          </section>
+        </div>
+      )}
       {q.length > 0 && q.length < 2 && <p className="text-gray-500">Type at least 2 characters to search...</p>}
       {results && (
         <div className="space-y-8">

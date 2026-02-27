@@ -56,7 +56,8 @@ export default async function RecipientDetailPage({ params }: { params: Promise<
   const stats = loadData('stats.json') as { totalPayments: number; totalAmount: number }
   const name = titleCase(r.name)
   const rawName = r.name.toUpperCase()
-  const entityType = rawName.includes(' LLC') || rawName.includes(' L L C') ? 'LLC'
+  const entityType = rawName.includes(' DEPT ') || rawName.includes(' DEPARTMENT') || rawName.includes(' COUNTY ') || rawName.includes(' STATE OF ') || rawName.includes(' CITY OF ') || rawName.includes(' COMMISSION') || rawName.includes(' AUTHORITY') || rawName.includes(' DISTRICT') ? 'Government Entity'
+    : rawName.includes(' LLC') || rawName.includes(' L L C') ? 'LLC'
     : rawName.includes(' INC') || rawName.includes(' INCORPORATED') ? 'Corporation'
     : rawName.includes(' LTD') || rawName.includes(' LIMITED') ? 'Corporation'
     : rawName.includes(' LP') || rawName.includes(' PARTNERSHIP') ? 'Partnership'
@@ -109,7 +110,7 @@ export default async function RecipientDetailPage({ params }: { params: Promise<
         <div className="bg-green-50 rounded-xl p-4">
           <p className="text-sm text-gray-500">Avg Payment</p>
           <p className="text-xl font-bold text-green-800">{fmtMoney(avgPayment)}</p>
-          <p className="text-xs text-gray-500 mt-0.5">{avgRatio > 1.1 ? `${((avgRatio - 1) * 100).toFixed(0)}% above` : avgRatio < 0.9 ? `${((1 - avgRatio) * 100).toFixed(0)}% below` : 'Near'} national avg</p>
+          <p className="text-xs text-gray-500 mt-0.5">{avgRatio > 100 ? `${Math.round(avgRatio).toLocaleString()}x` : avgRatio > 1.1 ? `${((avgRatio - 1) * 100).toFixed(0)}% above` : avgRatio < 0.9 ? `${((1 - avgRatio) * 100).toFixed(0)}% below` : 'Near'} national avg</p>
         </div>
       </div>
 

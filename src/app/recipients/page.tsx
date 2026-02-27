@@ -38,7 +38,7 @@ export default function RecipientsPage() {
       <div className="bg-amber-50 border-l-4 border-accent p-4 rounded-r-lg mb-8">
         <p className="font-semibold text-gray-900">💡 Key Insight</p>
         <p className="text-sm text-gray-700 mt-1">
-          The top recipient, {recipients[0]?.name} ({recipients[0]?.city}, {recipients[0]?.state}), collected {fmtMoney(recipients[0]?.amount)} — 
+          The top recipient, {titleCase(recipients[0]?.name)} ({titleCase(recipients[0]?.city)}, {recipients[0]?.state}), collected {fmtMoney(recipients[0]?.amount)} — 
           more than {fmtMoney(recipients[0]?.amount - recipients[recipients.length - 1]?.amount)} above the lowest ranked recipient.
           {topStates[0] && ` ${topStates[0][0]} leads with ${topStates[0][1]} recipients in the top 2,000.`}
         </p>
