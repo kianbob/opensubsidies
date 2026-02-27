@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import type { Metadata } from 'next'
 
@@ -56,6 +57,22 @@ export default function DownloadsPage() {
           This data is derived from U.S. government public records and is in the public domain.
           You are free to use it for any purpose.
         </p>
+      </div>
+
+      <div className="mt-12 pt-8 border-t border-gray-200">
+        <h2 className="text-xl font-bold font-[family-name:var(--font-heading)] mb-4">Explore More</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+          {[
+            { href: '/methodology', title: 'Methodology', desc: 'How we processed and cleaned the USDA payment data.' },
+            { href: '/about', title: 'About OpenSubsidies', desc: 'Learn about the project and our mission.' },
+            { href: '/faq', title: 'FAQ', desc: 'Frequently asked questions about the data and site.' },
+          ].map(l => (
+            <Link key={l.href} href={l.href} className="p-3 rounded-lg hover:bg-gray-50 border border-gray-100">
+              <div className="font-semibold text-primary text-sm">{l.title}</div>
+              <div className="text-xs text-gray-500">{l.desc}</div>
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   )

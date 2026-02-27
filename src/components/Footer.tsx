@@ -25,6 +25,9 @@ export default function Footer() {
               <li><Link href="/subsidy-map" className="hover:text-white transition-colors">Subsidy Map</Link></li>
               <li><Link href="/state-dependency" className="hover:text-white transition-colors">State Dependency</Link></li>
               <li><Link href="/downloads" className="hover:text-white transition-colors">Downloads</Link></li>
+              <li><Link href="/who-gets-farm-subsidies" className="hover:text-white transition-colors">Who Gets Subsidies</Link></li>
+              <li><Link href="/how-much-farm-subsidies" className="hover:text-white transition-colors">How Much Subsidies</Link></li>
+              <li><Link href="/biggest-farm-subsidies" className="hover:text-white transition-colors">Biggest Subsidies</Link></li>
             </ul>
           </div>
           <div>

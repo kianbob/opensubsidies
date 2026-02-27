@@ -180,6 +180,23 @@ export default function FactsPage() {
           Want to dig deeper? Use our <Link href="/tools" className="text-primary hover:underline">interactive tools</Link> to explore, compare, and analyze farm subsidy data yourself.
         </p>
       </section>
+
+      <div className="mt-12 pt-8 border-t border-gray-200">
+        <h2 className="text-xl font-bold font-[family-name:var(--font-heading)] mb-4">Explore More</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+          {[
+            { href: '/farm-subsidies-explained', title: 'Farm Subsidies Explained', desc: 'A beginner\'s guide to how U.S. farm subsidies work.' },
+            { href: '/tools/subsidy-quiz', title: 'Subsidy Quiz', desc: 'Test your knowledge of farm subsidy facts.' },
+            { href: '/analysis/subsidy-concentration', title: 'Subsidy Concentration', desc: 'Who really benefits from farm subsidies?' },
+            { href: '/analysis/covid-spending', title: 'COVID Spending Analysis', desc: 'How pandemic relief reshaped farm subsidies.' },
+          ].map(l => (
+            <Link key={l.href} href={l.href} className="p-3 rounded-lg hover:bg-gray-50 border border-gray-100">
+              <div className="font-semibold text-primary text-sm">{l.title}</div>
+              <div className="text-xs text-gray-500">{l.desc}</div>
+            </Link>
+          ))}
+        </div>
+      </div>
     </div>
   )
 }

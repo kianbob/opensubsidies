@@ -31,6 +31,9 @@ const standalonArticles = [
   { path: '/farm-subsidy-reform', title: 'Farm Subsidy Reform: What the Data Shows About Fixing American Agriculture', desc: 'Five data-backed reform ideas from $147B in USDA payment data.' },
   { path: '/farm-subsidy-lookup', title: 'Farm Subsidy Lookup: Search Recipients by Name, State, or County', desc: 'Look up farm subsidies by recipient name, state, county, or program.' },
   { path: '/usda-payments', title: 'USDA Payments: Complete Database of Farm Service Agency Disbursements', desc: 'Explore $147B+ in USDA Farm Service Agency payments.' },
+  { path: '/who-gets-farm-subsidies', title: 'Who Gets Farm Subsidies? The Complete Breakdown by Recipient Type', desc: 'Individual farmers receive 79% of payments, but corporations and LLCs collect the largest checks.' },
+  { path: '/how-much-farm-subsidies', title: 'How Much Does the US Spend on Farm Subsidies? $147B and Counting', desc: 'The US spent $147B on farm subsidies from 2017-2025, averaging ~$16B/year and peaking at $38.7B in 2020.' },
+  { path: '/biggest-farm-subsidies', title: 'Biggest Farm Subsidies: Largest Programs and Top Recipients', desc: 'CRP leads at $15.7B. See the top 15 programs and top 15 recipients.' },
 ]
 
 export function GET() {

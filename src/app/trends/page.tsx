@@ -1,6 +1,7 @@
 import { loadData, fmtMoney, fmt } from '@/lib/utils'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import TrendsCharts from '@/components/TrendsCharts'
+import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -67,6 +68,23 @@ export default function TrendsPage() {
           The post-2018 era has been defined by massive one-time emergency programs, making total spending far more volatile
           and harder to budget.
         </p>
+      </div>
+
+      <div className="mt-12 pt-8 border-t border-gray-200">
+        <h2 className="text-xl font-bold font-[family-name:var(--font-heading)] mb-4">Explore More</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+          {[
+            { href: '/tools/timeline-explorer', title: 'Timeline Explorer', desc: 'Interactive tool to explore spending trends by program and year.' },
+            { href: '/analysis/covid-spending', title: 'COVID Spending Analysis', desc: 'How pandemic relief reshaped farm subsidies in 2020.' },
+            { href: '/analysis/trade-war', title: 'Trade War Analysis', desc: 'The impact of MFP trade war payments on farm spending.' },
+            { href: '/years/2020', title: '2020: The Record Year', desc: 'Explore the biggest farm subsidy year in history.' },
+          ].map(l => (
+            <Link key={l.href} href={l.href} className="p-3 rounded-lg hover:bg-gray-50 border border-gray-100">
+              <div className="font-semibold text-primary text-sm">{l.title}</div>
+              <div className="text-xs text-gray-500">{l.desc}</div>
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   )

@@ -91,6 +91,23 @@ export default function CategoriesPage() {
           </div>
         </section>
       ))}
+
+      <div className="mt-12 pt-8 border-t border-gray-200">
+        <h2 className="text-xl font-bold font-[family-name:var(--font-heading)] mb-4">Explore More</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+          {[
+            { href: '/program-decoder', title: 'Program Decoder', desc: 'Look up any USDA program code and see what it means.' },
+            { href: '/programs', title: 'All Programs', desc: 'Browse all 157 USDA farm subsidy programs.' },
+            { href: '/analysis/conservation-vs-commodity', title: 'Conservation vs. Commodity', desc: 'How conservation spending compares to commodity support.' },
+            { href: '/analysis/program-proliferation', title: 'Program Proliferation', desc: 'Why the number of farm subsidy programs keeps growing.' },
+          ].map(l => (
+            <Link key={l.href} href={l.href} className="p-3 rounded-lg hover:bg-gray-50 border border-gray-100">
+              <div className="font-semibold text-primary text-sm">{l.title}</div>
+              <div className="text-xs text-gray-500">{l.desc}</div>
+            </Link>
+          ))}
+        </div>
+      </div>
     </div>
   )
 }

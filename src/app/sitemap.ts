@@ -37,6 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/analysis/zombie-programs', '/analysis/what-147b-buys',
     '/farm-subsidy-lookup', '/doge-farm-subsidies', '/farm-subsidy-reform', '/usda-payments',
     '/tools/subsidy-quiz', '/tools/county-finder',
+    '/who-gets-farm-subsidies', '/how-much-farm-subsidies', '/biggest-farm-subsidies',
     ...Array.from({ length: 9 }, (_, i) => `/years/${2017 + i}`)]
 
   return [
