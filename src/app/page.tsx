@@ -164,7 +164,7 @@ export default function HomePage() {
         <div className="bg-green-50 border-l-4 border-primary rounded-r-lg p-4">
           <p className="text-sm text-gray-800">
             💡 In North Dakota, farm subsidies equal 69% of total farm income — the highest dependency rate in the nation.{' '}
-            <Link href="/entity-types" className="text-primary font-medium hover:underline">See the full analysis →</Link>
+            <Link href="/state-dependency" className="text-primary font-medium hover:underline">See the full analysis →</Link>
           </p>
         </div>
       </section>
@@ -297,7 +297,7 @@ export default function HomePage() {
             </h3>
             <div className="space-y-1.5">
               {[
-                { label: 'Analysis Articles', href: '/analysis', sub: '18 deep dives' },
+                { label: 'Analysis Articles', href: '/analysis', sub: '22+ deep dives' },
                 { label: 'State Rankings', href: '/rankings', sub: 'Total, per-capita, avg' },
                 { label: 'County Rankings', href: '/county-rankings', sub: 'Top subsidy counties' },
                 { label: 'Categories', href: '/categories', sub: 'Program groupings' },
@@ -319,12 +319,12 @@ export default function HomePage() {
             <div className="space-y-1.5">
               {[
                 { label: 'Compare States', href: '/compare', sub: 'Side-by-side' },
-                { label: 'Interactive Tools', href: '/tools', sub: '5 calculators' },
+                { label: 'Interactive Tools', href: '/tools', sub: '10+ tools' },
                 { label: 'Farm Subsidy Facts', href: '/facts', sub: '25 key facts' },
                 { label: 'Glossary', href: '/glossary', sub: '17 terms defined' },
                 { label: 'Downloads', href: '/downloads', sub: 'Free JSON datasets' },
                 { label: 'Taxpayer Calculator', href: '/tools/taxpayer-calculator', sub: 'Your cost' },
-                { label: 'Farm Bill Guide', href: '/tools/farm-bill-guide', sub: '2024 Farm Bill' },
+                { label: 'Farm Bill Guide', href: '/farm-bill', sub: '2024 Farm Bill' },
               ].map(item => (
                 <Link key={item.href} href={item.href} className="flex items-center justify-between px-3 py-2 rounded-lg hover:bg-blue-50 group transition-colors">
                   <span className="text-sm font-medium text-gray-800 group-hover:text-blue-700">{item.label}</span>
