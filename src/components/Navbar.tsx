@@ -8,6 +8,7 @@ const links = [
   { label: 'Counties', href: '/counties' },
   { label: 'Programs', href: '/programs' },
   { label: 'Top Recipients', href: '/recipients' },
+  { label: 'Analysis', href: '/analysis' },
   { label: 'About', href: '/about' },
 ]
 
