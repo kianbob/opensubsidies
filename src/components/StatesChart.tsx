@@ -11,7 +11,7 @@ export default function StatesChart({ data }: { data: { name: string; amount: nu
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis type="number" tickFormatter={(v) => `$${(v / 1e9).toFixed(1)}B`} />
           <YAxis type="category" dataKey="name" width={70} tick={{ fontSize: 12 }} />
-          <Tooltip formatter={(v: number) => [`$${(v / 1e6).toFixed(1)}M`, 'Amount']} />
+          <Tooltip formatter={(v: number) => [v >= 1e9 ? `$${(v / 1e9).toFixed(2)}B` : `$${(v / 1e6).toFixed(1)}M`, 'Total Subsidies']} />
           <Bar dataKey="amount" fill="#15803d" radius={[0, 4, 4, 0]} />
         </BarChart>
       </ResponsiveContainer>
