@@ -4,8 +4,8 @@ import { loadData, fmt, fmtMoney } from '@/lib/utils'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Top 1,000 Farm Subsidy Recipients — Who Gets the Most?',
-  description: 'The top 1,000 recipients of USDA farm subsidies collected billions in taxpayer dollars. See every name, location, and amount.',
+  title: 'Top 2,000 Farm Subsidy Recipients — Who Gets the Most?',
+  description: 'The top 2,000 recipients of USDA farm subsidies collected billions in taxpayer dollars from 2017-2025. See every name, location, and amount.',
   alternates: { canonical: 'https://www.opensubsidies.us/recipients' },
 }
 
@@ -27,7 +27,7 @@ export default function RecipientsPage() {
 
       {/* Key Stats */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-        <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">Top 1,000 Total</p><p className="text-xl font-bold text-green-800">{fmtMoney(totalTop1000)}</p></div>
+        <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">Top Recipients Total</p><p className="text-xl font-bold text-green-800">{fmtMoney(totalTop1000)}</p></div>
         <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">#1 Recipient</p><p className="text-xl font-bold text-green-800">{fmtMoney(recipients[0]?.amount)}</p></div>
         <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">Avg per Payment</p><p className="text-xl font-bold text-green-800">{fmtMoney(avgPayment)}</p></div>
         <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">States Represented</p><p className="text-xl font-bold text-green-800">{Object.keys(stateCounts).length}</p></div>
@@ -38,7 +38,7 @@ export default function RecipientsPage() {
         <p className="font-semibold text-gray-900">💡 Key Insight</p>
         <p className="text-sm text-gray-700 mt-1">
           The top recipient, {recipients[0]?.name} ({recipients[0]?.city}, {recipients[0]?.state}), collected {fmtMoney(recipients[0]?.amount)} — 
-          more than {fmtMoney(recipients[0]?.amount - recipients[999]?.amount)} above the 1,000th recipient.
+          more than {fmtMoney(recipients[0]?.amount - recipients[recipients.length - 1]?.amount)} above the lowest ranked recipient.
           {topStates[0] && ` ${topStates[0][0]} leads with ${topStates[0][1]} recipients in the top 1,000.`}
         </p>
       </div>

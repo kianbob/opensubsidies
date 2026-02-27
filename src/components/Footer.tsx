@@ -8,6 +8,7 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-3 text-sm uppercase tracking-wider">Explore</h3>
             <ul className="space-y-2 text-sm">
+              <li><Link href="/years/2025" className="hover:text-white transition-colors">Years</Link></li>
               <li><Link href="/states" className="hover:text-white transition-colors">States</Link></li>
               <li><Link href="/counties" className="hover:text-white transition-colors">Counties</Link></li>
               <li><Link href="/programs" className="hover:text-white transition-colors">Programs</Link></li>

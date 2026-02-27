@@ -41,7 +41,11 @@ export default async function StateDetailPage({ params }: { params: Promise<{ sl
   const state = loadStateDetail(slug)
   if (!state) notFound()
 
+  const stats = loadData('stats.json') as { totalPayments: number; totalAmount: number }
   const { counties, yearly, topRecipients, topPrograms } = state
+  const nationalAvg = stats.totalAmount / stats.totalPayments
+  const stateAvg = state.amount / state.payments
+  const avgRatio = stateAvg / nationalAvg
 
   return (
     <main className="max-w-6xl mx-auto px-4 py-8">
@@ -56,15 +60,32 @@ export default async function StateDetailPage({ params }: { params: Promise<{ sl
         <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">Total Subsidies</p><p className="text-xl font-bold text-green-800">{fmtMoney(state.amount)}</p></div>
         <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">Payments</p><p className="text-xl font-bold text-green-800">{fmt(state.payments)}</p></div>
         <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">Counties</p><p className="text-xl font-bold text-green-800">{fmt(counties.length)}</p></div>
-        <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">Top Programs</p><p className="text-xl font-bold text-green-800">{topPrograms.length}</p></div>
+        <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">Avg Payment</p><p className="text-xl font-bold text-green-800">{fmtMoney(stateAvg)}</p><p className="text-xs text-gray-500 mt-0.5">{avgRatio > 1.1 ? `${((avgRatio - 1) * 100).toFixed(0)}% above` : avgRatio < 0.9 ? `${((1 - avgRatio) * 100).toFixed(0)}% below` : 'Near'} national avg</p></div>
       </div>
 
-      {yearly.length > 1 && (
-        <section className="mb-10">
-          <h2 className="text-xl font-semibold font-[family-name:var(--font-heading)] mb-4">Yearly Trends</h2>
-          <StateYearlyChart data={yearly} />
-        </section>
-      )}
+      {yearly.length > 1 && (() => {
+        const peakYear = yearly.reduce((a, b) => a.amount > b.amount ? a : b);
+        const covid = yearly.find(y => y.year === 2020);
+        const baseline = yearly.find(y => y.year === 2017);
+        return (
+          <>
+            {/* Key Insight */}
+            <div className="bg-amber-50 border-l-4 border-accent p-4 rounded-r-lg mb-6">
+              <p className="font-semibold text-gray-900">💡 Key Insight</p>
+              <p className="text-sm text-gray-700 mt-1">
+                {state.name}&apos;s peak subsidy year was <strong>{peakYear.year}</strong> at {fmtMoney(peakYear.amount)}
+                {covid && baseline && covid.amount > baseline.amount * 2
+                  ? `. COVID-era spending in 2020 (${fmtMoney(covid.amount)}) was ${(covid.amount / (baseline?.amount || 1)).toFixed(1)}× the 2017 baseline.`
+                  : '.'}
+              </p>
+            </div>
+            <section className="mb-10">
+              <h2 className="text-xl font-semibold font-[family-name:var(--font-heading)] mb-4">Yearly Trends</h2>
+              <StateYearlyChart data={yearly} />
+            </section>
+          </>
+        );
+      })()}
 
       <section className="mb-10">
         <h2 className="text-xl font-semibold font-[family-name:var(--font-heading)] mb-4">Top Programs in {state.name}</h2>

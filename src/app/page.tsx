@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import { loadData, fmtMoney, fmt } from '@/lib/utils'
+import SpendingTimeline from '@/components/SpendingTimeline'
 
 export default function HomePage() {
   const stats = loadData('stats.json')
   const states = loadData('states.json').slice(0, 10)
   const programs = loadData('programs.json').slice(0, 10)
   const recipients = loadData('top-recipients.json').slice(0, 5)
+  const yearly = loadData('yearly.json')
 
   return (
     <>
@@ -52,6 +54,45 @@ export default function HomePage() {
               <div className="text-sm text-gray-600 mt-1">{s.label}</div>
             </Link>
           ))}
+        </div>
+      </section>
+
+      {/* Spending Timeline */}
+      <section className="max-w-7xl mx-auto px-4 pt-12">
+        <SpendingTimeline yearly={yearly} />
+      </section>
+
+      {/* Explore by Year */}
+      <section className="max-w-7xl mx-auto px-4 pt-6 text-center">
+        <p className="text-sm text-gray-500">
+          Explore by Year:{' '}
+          {[2017,2018,2019,2020,2021,2022,2023,2024,2025].map((y, i) => (
+            <span key={y}>{i > 0 && ' · '}<Link href={`/years/${y}`} className="text-primary hover:underline font-medium">{y}</Link></span>
+          ))}
+        </p>
+      </section>
+
+      {/* Historical Context */}
+      <section className="max-w-5xl mx-auto px-4 py-10">
+        <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-8 border border-blue-100">
+          <h2 className="text-2xl font-bold font-[family-name:var(--font-heading)] mb-4 text-center">Historical Context</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-gray-700">
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-1">🌐 2018–2019: Trade War</h3>
+              <p>US-China tariffs triggered the Market Facilitation Program — billions in direct payments to offset lost export markets.</p>
+              <Link href="/analysis/trade-war" className="text-primary text-xs hover:underline">Read analysis →</Link>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-1">🦠 2020: COVID Pandemic</h3>
+              <p>CFAP programs pushed spending to $38.7B — the all-time peak — as supply chains collapsed and markets crashed.</p>
+              <Link href="/analysis/covid-spending" className="text-primary text-xs hover:underline">Read analysis →</Link>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-1">🌪️ 2022–2024: Disasters</h3>
+              <p>Drought, wildfires, and hurricanes drove ongoing emergency spending that kept payments elevated above pre-2018 levels.</p>
+              <Link href="/analysis/disaster-spending" className="text-primary text-xs hover:underline">Read analysis →</Link>
+            </div>
+          </div>
         </div>
       </section>
 

@@ -15,7 +15,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/analysis/payment-limits', '/analysis/crp-conservation', '/analysis/small-vs-large', '/analysis/county-hotspots',
     '/compare', '/downloads', '/methodology', '/glossary', '/tools', '/state-programs',
     '/categories', '/rankings', '/trends', '/tools/calculator',
-    '/analysis/negative-payments', '/analysis/program-proliferation']
+    '/analysis/negative-payments', '/analysis/program-proliferation',
+    '/analysis/covid-spending', '/analysis/trade-war',
+    ...Array.from({ length: 9 }, (_, i) => `/years/${2017 + i}`)]
 
   return [
     ...staticRoutes.map(r => ({ url: `${base}${r}`, lastModified: new Date(), changeFrequency: 'weekly' as const, priority: r === '' ? 1 : 0.8 })),

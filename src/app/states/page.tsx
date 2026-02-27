@@ -21,14 +21,23 @@ export default function StatesPage() {
       <h1 className="text-3xl font-bold font-[family-name:var(--font-heading)] mb-2">Farm Subsidies by State</h1>
       <p className="text-gray-600 mb-6">All {sorted.length} states and territories ranked by total subsidy payments from 2017 to 2025.</p>
 
-      {/* Key Insight */}
-      <div className="bg-amber-50 border-l-4 border-accent p-4 rounded-r-lg mb-8">
-        <p className="font-semibold text-gray-900">💡 Key Insight</p>
-        <p className="text-sm text-gray-700 mt-1">
-          The top 5 states ({sorted.slice(0, 5).map(s => s.name).join(', ')}) received {fmtMoney(sorted.slice(0, 5).reduce((s, x) => s + x.amount, 0))} — 
-          that&apos;s {((sorted.slice(0, 5).reduce((s, x) => s + x.amount, 0) / sorted.reduce((s, x) => s + x.amount, 0)) * 100).toFixed(0)}% of all farm subsidies
-          going to just 5 states.
-        </p>
+      {/* Key Insights */}
+      <div className="grid md:grid-cols-2 gap-4 mb-8">
+        <div className="bg-amber-50 border-l-4 border-accent p-4 rounded-r-lg">
+          <p className="font-semibold text-gray-900">💡 Geographic Concentration</p>
+          <p className="text-sm text-gray-700 mt-1">
+            The top 5 states ({sorted.slice(0, 5).map(s => s.name).join(', ')}) received {fmtMoney(sorted.slice(0, 5).reduce((s, x) => s + x.amount, 0))} — 
+            that&apos;s {((sorted.slice(0, 5).reduce((s, x) => s + x.amount, 0) / sorted.reduce((s, x) => s + x.amount, 0)) * 100).toFixed(0)}% of all farm subsidies
+            going to just 5 states.
+          </p>
+        </div>
+        <div className="bg-amber-50 border-l-4 border-accent p-4 rounded-r-lg">
+          <p className="font-semibold text-gray-900">💡 9 Years of Data</p>
+          <p className="text-sm text-gray-700 mt-1">
+            Our dataset covers 2017–2025, capturing the trade war payments (2018-19), COVID emergency spending (2020),
+            and the return to baseline — revealing which states depend most on emergency programs vs traditional subsidies.
+          </p>
+        </div>
       </div>
 
       <section className="mb-10">

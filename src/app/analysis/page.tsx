@@ -9,6 +9,20 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: 'covid-spending',
+    title: 'COVID Changed Farm Subsidies Forever: The $38.7 Billion Story',
+    desc: 'In 2020, pandemic relief programs shattered every spending record in USDA history. CFAP, emergency payments, and the new baseline.',
+    date: 'February 2026',
+    category: 'Spending',
+  },
+  {
+    slug: 'trade-war',
+    title: 'Trade War Fallout: $39 Billion in Tariff Bailout Payments (2018-2019)',
+    desc: 'US-China tariffs triggered the Market Facilitation Program — billions in direct payments to offset lost export markets.',
+    date: 'February 2026',
+    category: 'Policy',
+  },
+  {
     slug: 'subsidy-concentration',
     title: 'The 10% Problem: How Most Farm Subsidies Go to the Biggest Operations',
     desc: '69% of farms get nothing. The top 10% collect nearly three-fourths of all payments. Who are they?',
