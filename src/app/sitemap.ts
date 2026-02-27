@@ -26,7 +26,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/analysis/covid-spending', '/analysis/trade-war',
     '/analysis/decade-of-disaster', '/analysis/crp-under-threat',
     '/analysis/average-farmer', '/analysis/state-winners-losers',
-    '/privacy', '/county-rankings', '/tools/compare-programs',
+    '/privacy', '/crop-insurance', '/county-rankings', '/tools/compare-programs',
+    '/farm-bill', '/entity-types', '/payment-distribution',
+    '/tools/taxpayer-calculator',
+    '/analysis/double-dippers', '/analysis/farm-crisis-2025',
+    '/analysis/zombie-programs', '/analysis/what-147b-buys',
     ...Array.from({ length: 9 }, (_, i) => `/years/${2017 + i}`)]
 
   return [

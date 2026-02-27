@@ -15,6 +15,8 @@ const navItems = [
       { label: 'County Rankings', href: '/county-rankings' },
       { label: 'Categories', href: '/categories' },
       { label: 'Trends', href: '/trends' },
+      { label: 'Entity Types', href: '/entity-types' },
+      { label: 'Payment Distribution', href: '/payment-distribution' },
     ],
   },
   { label: 'Compare', href: '/compare' },

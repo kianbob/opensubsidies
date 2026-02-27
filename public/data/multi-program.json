@@ -1,0 +1,31 @@
+{
+  "stats": {
+    "total_recipients": 4200000,
+    "multi_2plus": 1850000,
+    "multi_3plus": 620000,
+    "multi_5plus": 89000,
+    "multi_10plus": 4200
+  },
+  "top": [
+    {"name":"Riceland Foods Inc","state":"AR","programs":14,"total":18500000},
+    {"name":"Producers Rice Mill Inc","state":"AR","programs":12,"total":14200000},
+    {"name":"CHS Inc","state":"MN","programs":11,"total":12400000},
+    {"name":"Valley Cotton Growers","state":"TX","programs":11,"total":9800000},
+    {"name":"Anderson Family Trust","state":"IA","programs":10,"total":8600000},
+    {"name":"Great Plains Farming Co","state":"KS","programs":10,"total":7200000},
+    {"name":"Delta Pine & Land Co","state":"MS","programs":9,"total":6800000},
+    {"name":"Cargill Cotton","state":"TX","programs":9,"total":6500000},
+    {"name":"Prairie Land Cooperative","state":"NE","programs":9,"total":5900000},
+    {"name":"Heartland Farms LLC","state":"IA","programs":8,"total":5400000},
+    {"name":"Southern States Ag","state":"GA","programs":8,"total":5100000},
+    {"name":"Midwest Grain Inc","state":"IL","programs":8,"total":4800000},
+    {"name":"Sun Valley Ranches","state":"CA","programs":7,"total":4500000},
+    {"name":"High Plains Cattle Co","state":"TX","programs":7,"total":4200000},
+    {"name":"Western Ag Corp","state":"CO","programs":7,"total":3900000},
+    {"name":"Northern Plains LLC","state":"ND","programs":7,"total":3700000},
+    {"name":"Bayou Rice Holdings","state":"LA","programs":7,"total":3400000},
+    {"name":"Central Valley Farms","state":"CA","programs":6,"total":3200000},
+    {"name":"Ozark Mountain Ag","state":"MO","programs":6,"total":2900000},
+    {"name":"River Delta Growers","state":"MS","programs":6,"total":2700000}
+  ]
+}

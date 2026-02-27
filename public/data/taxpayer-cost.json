@@ -1,0 +1,30 @@
+{
+  "total": 147000000000,
+  "years": 9,
+  "taxpayers": 150000000,
+  "households": 131000000,
+  "perTaxpayer": 982,
+  "perTaxpayerPerYear": 109,
+  "perHousehold": 1122,
+  "perHouseholdPerYear": 125,
+  "comparisons": [
+    {"label":"School teachers' salaries","count":2200000,"unit":"teachers for a year"},
+    {"label":"Pell Grants","count":5800000,"unit":"full Pell Grants"},
+    {"label":"VA hospital beds","count":490000,"unit":"beds for a year"},
+    {"label":"Miles of highway","count":73500,"unit":"miles of 2-lane road"},
+    {"label":"NASA budgets","count":6,"unit":"years of NASA funding"},
+    {"label":"National parks","count":234,"unit":"years of NPS budget"},
+    {"label":"Clean water projects","count":14700,"unit":"municipal water systems"}
+  ],
+  "federalComparisons": [
+    {"label":"Defense","amount":886000000000},
+    {"label":"Social Security","amount":1354000000000},
+    {"label":"Medicare","amount":848000000000},
+    {"label":"Medicaid","amount":616000000000},
+    {"label":"Farm Subsidies (annual)","amount":16300000000},
+    {"label":"Education","amount":102000000000},
+    {"label":"NASA","amount":25800000000},
+    {"label":"EPA","amount":12100000000},
+    {"label":"Foreign Aid","amount":51000000000}
+  ]
+}

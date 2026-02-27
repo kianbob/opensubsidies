@@ -1,0 +1,58 @@
+{
+  "buckets": [
+    {
+      "range": "$1M-$2M",
+      "count": 199,
+      "totalAmount": 386480740,
+      "percentOfRecipients": 10,
+      "percentOfAmount": 4.7
+    },
+    {
+      "range": "$2M-$5M",
+      "count": 1525,
+      "totalAmount": 4439153031,
+      "percentOfRecipients": 76.3,
+      "percentOfAmount": 53.9
+    },
+    {
+      "range": "$5M-$10M",
+      "count": 199,
+      "totalAmount": 1311045848,
+      "percentOfRecipients": 10,
+      "percentOfAmount": 15.9
+    },
+    {
+      "range": "$10M-$25M",
+      "count": 53,
+      "totalAmount": 776009849,
+      "percentOfRecipients": 2.6,
+      "percentOfAmount": 9.4
+    },
+    {
+      "range": "$25M-$50M",
+      "count": 17,
+      "totalAmount": 587639851,
+      "percentOfRecipients": 0.9,
+      "percentOfAmount": 7.1
+    },
+    {
+      "range": "$50M-$100M",
+      "count": 6,
+      "totalAmount": 393598570,
+      "percentOfRecipients": 0.3,
+      "percentOfAmount": 4.8
+    },
+    {
+      "range": "$100M+",
+      "count": 1,
+      "totalAmount": 346598388,
+      "percentOfRecipients": 0.1,
+      "percentOfAmount": 4.2
+    }
+  ],
+  "totalRecipients": 2000,
+  "totalAmount": 8240526277,
+  "median": 2736427,
+  "average": 4120263,
+  "note": "Distribution of top 2,000 recipients. Most of 31.8M total payments are much smaller."
+}

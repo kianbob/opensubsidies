@@ -134,6 +134,34 @@ const articles = [
     date: 'February 2026',
     category: 'Policy',
   },
+  {
+    slug: 'double-dippers',
+    title: 'Double Dippers: Recipients Collecting from Multiple Programs',
+    desc: 'Over 620,000 recipients collect from 3+ USDA programs simultaneously. Top recipients tap into 14 programs at once.',
+    date: 'February 2026',
+    category: 'Accountability',
+  },
+  {
+    slug: 'farm-crisis-2025',
+    title: 'The 2025 Farm Crisis: Bankruptcies Up 46% While Subsidies Flow to the Top',
+    desc: '315 farm bankruptcies in 2025, 15K fewer farms, $44B in projected losses — and subsidies still flow to the biggest operations.',
+    date: 'February 2026',
+    category: 'Crisis',
+  },
+  {
+    slug: 'zombie-programs',
+    title: 'Zombie Programs: The USDA Programs Nobody Uses',
+    desc: '43 programs with fewer than 100 payments each. Bureaucratic inertia keeps them alive while serving almost nobody.',
+    date: 'February 2026',
+    category: 'Accountability',
+  },
+  {
+    slug: 'what-147b-buys',
+    title: 'What $147 Billion in Farm Subsidies Could Buy Instead',
+    desc: '$147B could fund 2.2M teachers, 5.8M Pell Grants, or 6 years of NASA. Putting farm subsidies in perspective.',
+    date: 'February 2026',
+    category: 'Spending',
+  },
 ]
 
 export default function AnalysisPage() {

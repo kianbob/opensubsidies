@@ -14,6 +14,7 @@ const tools = [
   { href: '/tools/recipient-search', title: 'Recipient Search', desc: 'Search top recipients by name, farm, or city. Find out who receives farm subsidies.', icon: '🔎' },
   { href: '/tools/state-profile', title: 'State Profile Generator', desc: 'Generate a shareable profile card for any state with key subsidy stats and trends.', icon: '🗺️' },
   { href: '/tools/compare-programs', title: 'Compare Programs', desc: 'Compare up to 4 USDA programs side-by-side with spending charts and state breakdowns.', icon: '📊' },
+  { href: '/tools/taxpayer-calculator', title: 'Taxpayer Calculator', desc: 'How much of your taxes go to farm subsidies? Enter your income to find out.', icon: '💰' },
   { href: '/rankings', title: 'State Rankings', desc: 'Rank all states by total subsidies, per-capita spending, payment count, or average payment.', icon: '🏆' },
   { href: '/categories', title: 'Program Categories', desc: 'Browse 157 farm programs organized by type: conservation, disaster, commodity, and loans.', icon: '📂' },
   { href: '/trends', title: 'Spending Trends', desc: 'See how farm subsidy spending has changed over time with interactive charts.', icon: '📈' },

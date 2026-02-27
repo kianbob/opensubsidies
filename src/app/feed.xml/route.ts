@@ -20,6 +20,10 @@ const articles = [
   { slug: 'crp-under-threat', title: 'CRP Under Threat: Is Conservation Keeping Up with Emergency Spending?', desc: 'The $15.7B Conservation Reserve Program faces pressure as emergency spending dwarfs it.' },
   { slug: 'average-farmer', title: 'What Does the Average Farmer Actually Get? The $4,600 Reality', desc: '31.8M payments / $147B = $4,600 average. But most farmers get far less.' },
   { slug: 'state-winners-losers', title: 'State Winners & Losers: Who Gained Most from Emergency Spending?', desc: 'Comparing 2017 baseline to 2020 peak reveals which states benefited most.' },
+  { slug: 'double-dippers', title: 'Double Dippers: Recipients Collecting from Multiple Programs', desc: 'Over 620,000 recipients collect from 3+ USDA programs. Top recipients tap 14 programs at once.' },
+  { slug: 'farm-crisis-2025', title: 'The 2025 Farm Crisis: Bankruptcies Up 46%', desc: '315 farm bankruptcies in 2025 while subsidies flow to the largest operations.' },
+  { slug: 'zombie-programs', title: 'Zombie Programs: USDA Programs Nobody Uses', desc: '43 programs with fewer than 100 payments each persist through bureaucratic inertia.' },
+  { slug: 'what-147b-buys', title: 'What $147 Billion in Farm Subsidies Could Buy Instead', desc: '$147B could fund 2.2M teachers, 5.8M Pell Grants, or 6 years of NASA.' },
 ]
 
 export function GET() {

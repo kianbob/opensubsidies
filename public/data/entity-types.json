@@ -1,0 +1,10 @@
+[
+  {"type":"Individual","count":2450000,"amount":48200000000,"topRecipient":"Smith Farms","topAmount":3200000},
+  {"type":"Corporation/LLC","count":680000,"amount":52100000000,"topRecipient":"Riceland Foods Inc","topAmount":18500000},
+  {"type":"Partnership","count":320000,"amount":22400000000,"topRecipient":"Valley Cotton Growers","topAmount":9800000},
+  {"type":"Joint Operation","count":180000,"amount":12800000000,"topRecipient":"Great Plains Farming Co","topAmount":6200000},
+  {"type":"Trust/Estate","count":95000,"amount":5600000000,"topRecipient":"Anderson Family Trust","topAmount":4100000},
+  {"type":"Government Entity","count":42000,"amount":3900000000,"topRecipient":"State of Texas","topAmount":28000000},
+  {"type":"Cooperative","count":18000,"amount":1600000000,"topRecipient":"CHS Inc","topAmount":12400000},
+  {"type":"Other/Unknown","count":15000,"amount":400000000,"topRecipient":"Unknown Entity","topAmount":850000}
+]
