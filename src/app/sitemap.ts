@@ -12,6 +12,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const countyIndex = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'public', 'data', 'county-index.json'), 'utf8')) as { fips: string; amount: number }[]
   const topCounties = [...countyIndex].sort((a, b) => b.amount - a.amount).slice(0, 500)
 
+  const recipientIndex = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'public', 'data', 'recipient-index.json'), 'utf8')) as { slug: string }[]
+
   const staticRoutes = ['', '/states', '/counties', '/programs', '/recipients', '/dashboard', '/about', '/faq', '/search',
     '/analysis', '/analysis/subsidy-concentration', '/analysis/disaster-spending', '/analysis/state-disparities',
     '/analysis/conservation-vs-commodity', '/analysis/corporate-farms', '/analysis/per-capita',
@@ -32,5 +34,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...states.map(s => ({ url: `${base}/states/${s.abbr.toLowerCase()}`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.6 })),
     ...programs.map(p => ({ url: `${base}/programs/${slugify(p.program)}`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.5 })),
     ...topCounties.map(c => ({ url: `${base}/counties/${c.fips}`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.5 })),
+    ...recipientIndex.map(r => ({ url: `${base}/recipients/${r.slug}`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.4 })),
   ]
 }

@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { loadData, fmtMoney, fmt, formatProgram, titleCase } from '@/lib/utils'
+import { loadData, fmtMoney, fmt, formatProgram, titleCase, slugify } from '@/lib/utils'
 import SpendingTimeline from '@/components/SpendingTimeline'
 
 export const metadata: Metadata = {
@@ -178,7 +178,7 @@ export default function HomePage() {
               {recipients.map((r: { name: string; state: string; city: string; amount: number }, i: number) => (
                 <tr key={i} className="hover:bg-gray-50">
                   <td className="px-4 py-3 text-gray-500">{i + 1}</td>
-                  <td className="px-4 py-3 font-medium">{titleCase(r.name)}</td>
+                  <td className="px-4 py-3 font-medium"><Link href={`/recipients/${slugify(`${r.name}-${r.city}-${r.state}`)}`} className="text-green-700 hover:underline">{titleCase(r.name)}</Link></td>
                   <td className="px-4 py-3 text-gray-600">{titleCase(r.city)}, {r.state}</td>
                   <td className="px-4 py-3 text-right font-mono text-primary font-semibold">{fmtMoney(r.amount)}</td>
                 </tr>
