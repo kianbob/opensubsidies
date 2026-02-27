@@ -8,7 +8,7 @@ import ProgramsChart from '@/components/ProgramsChart'
 export const metadata: Metadata = {
   title: 'All 157 USDA Farm Subsidy Programs Ranked',
   description: `All 157 USDA farm subsidy programs ranked by total payments from 2017-2025. See which programs distribute the most money.`,
-  alternates: { canonical: 'https://www.opensubsidies.us/programs' },
+  alternates: { canonical: 'https://www.opensubsidies.org/programs' },
 }
 
 export default function ProgramsPage() {

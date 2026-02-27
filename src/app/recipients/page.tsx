@@ -7,7 +7,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 export const metadata: Metadata = {
   title: 'Top 2,000 Farm Subsidy Recipients — Who Gets the Most?',
   description: 'The top 2,000 recipients of USDA farm subsidies collected billions in taxpayer dollars from 2017-2025. See every name, location, and amount.',
-  alternates: { canonical: 'https://www.opensubsidies.us/recipients' },
+  alternates: { canonical: 'https://www.opensubsidies.org/recipients' },
 }
 
 export default function RecipientsPage() {

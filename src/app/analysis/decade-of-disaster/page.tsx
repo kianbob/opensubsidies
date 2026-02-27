@@ -9,7 +9,7 @@ import RelatedArticles from '@/components/RelatedArticles'
 export const metadata: Metadata = {
   title: 'A Decade of Disaster: How Emergency Programs Took Over Farm Subsidies',
   description: 'Emergency and disaster programs went from supplemental to dominant in US farm spending. Pre-2018 vs post-2018 data tells the story.',
-  alternates: { canonical: 'https://www.opensubsidies.us/analysis/decade-of-disaster' },
+  alternates: { canonical: 'https://www.opensubsidies.org/analysis/decade-of-disaster' },
 }
 
 export default function DecadeOfDisasterPage() {
@@ -36,7 +36,7 @@ export default function DecadeOfDisasterPage() {
         '@context': 'https://schema.org', '@type': 'Article',
         headline: 'A Decade of Disaster: How Emergency Programs Took Over Farm Subsidies',
         author: { '@type': 'Organization', name: 'TheDataProject.ai' },
-        publisher: { '@type': 'Organization', name: 'OpenSubsidies', url: 'https://www.opensubsidies.us' },
+        publisher: { '@type': 'Organization', name: 'OpenSubsidies', url: 'https://www.opensubsidies.org' },
         datePublished: '2026-02-27', dateModified: '2026-02-27',
       })}} />
 

@@ -6,7 +6,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Farm Subsidy Recipient Lookup — Search by Name',
   description: 'Look up farm subsidies by name. Search over 2,000 top USDA payment recipients to see total amounts, payment counts, programs, and locations.',
-  alternates: { canonical: 'https://www.opensubsidies.us/tools/recipient-search' },
+  alternates: { canonical: 'https://www.opensubsidies.org/tools/recipient-search' },
 }
 
 const faqSchema = {

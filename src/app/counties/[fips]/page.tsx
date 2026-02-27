@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: { params: Promise<{ fips: str
   return {
     title: `${county.county} County, ${county.stateName} Farm Subsidies — ${fmtMoney(county.totalAmount)}`,
     description: `${county.county} County, ${county.stateName} received ${fmtMoney(county.totalAmount)} in USDA farm subsidies across ${fmt(county.totalPayments)} payments from 2017 to 2025.`,
-    alternates: { canonical: `https://www.opensubsidies.us/counties/${fips}` },
+    alternates: { canonical: `https://www.opensubsidies.org/counties/${fips}` },
   }
 }
 

@@ -7,7 +7,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'USDA Payments: Complete Database of Farm Service Agency Disbursements',
   description: 'Explore $147B+ in USDA Farm Service Agency payments. Search FSA disbursements by state, county, program, or recipient. Complete database from 2017-2025.',
-  alternates: { canonical: 'https://www.opensubsidies.us/usda-payments' },
+  alternates: { canonical: 'https://www.opensubsidies.org/usda-payments' },
 }
 
 export default function UsdaPaymentsPage() {

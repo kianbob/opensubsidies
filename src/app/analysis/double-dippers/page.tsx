@@ -9,7 +9,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Double Dippers: Recipients Collecting from Multiple Programs',
   description: 'Over 620,000 farm subsidy recipients collect from 3+ USDA programs simultaneously. Top recipients tap into 14 programs at once, raising questions about payment limit circumvention.',
-  alternates: { canonical: 'https://www.opensubsidies.us/analysis/double-dippers' },
+  alternates: { canonical: 'https://www.opensubsidies.org/analysis/double-dippers' },
 }
 
 export default function DoubleDippersPage() {
@@ -26,7 +26,7 @@ export default function DoubleDippersPage() {
         '@context': 'https://schema.org', '@type': 'Article',
         headline: 'Double Dippers: Recipients Collecting from Multiple Programs',
         author: { '@type': 'Organization', name: 'TheDataProject.ai' },
-        publisher: { '@type': 'Organization', name: 'OpenSubsidies', url: 'https://www.opensubsidies.us' },
+        publisher: { '@type': 'Organization', name: 'OpenSubsidies', url: 'https://www.opensubsidies.org' },
         datePublished: '2026-02-27', dateModified: '2026-02-27',
       })}} />
 

@@ -7,7 +7,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Top Farm Subsidy Program by State — Which Programs Dominate Where?',
   description: 'See which farm subsidy programs are the largest in each state. Emergency spending dominates some states while CRP leads in others.',
-  alternates: { canonical: 'https://www.opensubsidies.us/state-programs' },
+  alternates: { canonical: 'https://www.opensubsidies.org/state-programs' },
 }
 
 export default function StateProgramsPage() {

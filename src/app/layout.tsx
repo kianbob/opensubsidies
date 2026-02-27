@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.opensubsidies.us'),
+  metadataBase: new URL('https://www.opensubsidies.org'),
   title: {
     default: 'OpenSubsidies — Where $147 Billion in Farm Subsidies Really Goes',
     template: '%s | OpenSubsidies',
@@ -39,10 +39,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               '@context': 'https://schema.org',
               '@type': 'WebSite',
               name: 'OpenSubsidies',
-              url: 'https://www.opensubsidies.us',
+              url: 'https://www.opensubsidies.org',
               potentialAction: {
                 '@type': 'SearchAction',
-                target: { '@type': 'EntryPoint', urlTemplate: 'https://www.opensubsidies.us/search?q={search_term_string}' },
+                target: { '@type': 'EntryPoint', urlTemplate: 'https://www.opensubsidies.org/search?q={search_term_string}' },
                 'query-input': 'required name=search_term_string',
               },
               publisher: { '@type': 'Organization', name: 'TheDataProject.ai', url: 'https://thedataproject.ai' },

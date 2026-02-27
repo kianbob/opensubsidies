@@ -3,7 +3,7 @@ import fs from 'fs'
 import path from 'path'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = 'https://www.opensubsidies.us'
+  const base = 'https://www.opensubsidies.org'
   const states = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'public', 'data', 'states.json'), 'utf8')) as { abbr: string }[]
   const programs = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'public', 'data', 'programs.json'), 'utf8')) as { program: string }[]
   

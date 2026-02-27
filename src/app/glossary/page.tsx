@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Farm Subsidy Glossary — Key Terms Explained',
   description: 'Definitions of key farm subsidy terms: CRP, ARC, PLC, commodity payments, conservation programs, and more.',
-  alternates: { canonical: 'https://www.opensubsidies.us/glossary' },
+  alternates: { canonical: 'https://www.opensubsidies.org/glossary' },
 }
 
 const terms = [

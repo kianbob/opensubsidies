@@ -7,7 +7,7 @@ import SpendingTimeline from '@/components/SpendingTimeline'
 export const metadata: Metadata = {
   title: 'OpenSubsidies — Where $147 Billion in Farm Subsidies Really Goes',
   description: 'Track every dollar of U.S. farm subsidies. 31 million+ payment records, 157 programs, every state and county. Free, open data from USDA Farm Service Agency, 2017-2025.',
-  alternates: { canonical: 'https://www.opensubsidies.us' },
+  alternates: { canonical: 'https://www.opensubsidies.org' },
 }
 
 export default function HomePage() {

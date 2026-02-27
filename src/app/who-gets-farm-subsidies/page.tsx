@@ -8,7 +8,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Who Gets Farm Subsidies? The Complete Breakdown by Recipient Type',
   description: 'Find out who gets farm subsidies in the U.S. Individual farmers receive 79% of payments, but corporations and LLCs collect the largest checks. Explore $147B in USDA data.',
-  alternates: { canonical: 'https://www.opensubsidies.us/who-gets-farm-subsidies' },
+  alternates: { canonical: 'https://www.opensubsidies.org/who-gets-farm-subsidies' },
 }
 
 interface EntityType {

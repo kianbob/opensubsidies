@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Interactive Tools — Explore Farm Subsidy Data',
   description: 'Interactive tools to explore, compare, and analyze U.S. farm subsidy data. Compare states, calculate subsidy context, and more.',
-  alternates: { canonical: 'https://www.opensubsidies.us/tools' },
+  alternates: { canonical: 'https://www.opensubsidies.org/tools' },
 }
 
 const tools = [

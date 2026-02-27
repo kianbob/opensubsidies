@@ -128,7 +128,7 @@ export default function QuizClient() {
 
   if (finished) {
     const shareText = `I scored ${score}/${QUESTIONS.length} on the Farm Subsidy Quiz! 🌾 How much do YOU know about where $147 billion goes? Take the quiz:`
-    const shareUrl = 'https://www.opensubsidies.us/tools/subsidy-quiz'
+    const shareUrl = 'https://www.opensubsidies.org/tools/subsidy-quiz'
     return (
       <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8 text-center max-w-xl mx-auto">
         <div className="text-6xl mb-4">{score === QUESTIONS.length ? '🏆' : score >= 7 ? '🌾' : '🌱'}</div>

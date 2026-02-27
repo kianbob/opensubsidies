@@ -7,7 +7,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'How Much of Your Taxes Goes to Farm Subsidies? Calculator',
   description: 'Interactive calculator showing how much of your federal taxes fund farm subsidies. The average taxpayer contributes $982 over 9 years — $109/year — to the $147B farm subsidy system.',
-  alternates: { canonical: 'https://www.opensubsidies.us/tools/taxpayer-calculator' },
+  alternates: { canonical: 'https://www.opensubsidies.org/tools/taxpayer-calculator' },
 }
 
 export default function TaxpayerCalculatorPage() {

@@ -8,7 +8,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'USDA Program Name Decoder: What Every Farm Program Actually Does',
   description: 'Plain-English guide to every major USDA farm program acronym: CRP, PLC, ARC, CFAP, MFP, DMC, EQIP, and more. What they do, who they help, and how much they cost.',
-  alternates: { canonical: 'https://www.opensubsidies.us/program-decoder' },
+  alternates: { canonical: 'https://www.opensubsidies.org/program-decoder' },
 }
 
 type ProgramData = { program: string; amount: number; payments: number }

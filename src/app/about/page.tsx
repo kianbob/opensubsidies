@@ -6,7 +6,7 @@ import { loadData } from '@/lib/server-utils'
 export const metadata: Metadata = {
   title: 'About OpenSubsidies — Free Farm Subsidy Transparency Platform',
   description: 'OpenSubsidies makes $147B in USDA farm subsidy data accessible and searchable. Learn about our mission, data sources, and methodology.',
-  alternates: { canonical: 'https://www.opensubsidies.us/about' },
+  alternates: { canonical: 'https://www.opensubsidies.org/about' },
 }
 
 export default function AboutPage() {
@@ -18,7 +18,7 @@ export default function AboutPage() {
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'Organization',
-        name: 'OpenSubsidies', url: 'https://www.opensubsidies.us',
+        name: 'OpenSubsidies', url: 'https://www.opensubsidies.org',
         description: 'Free, open platform for exploring U.S. farm subsidy data',
         parentOrganization: { '@type': 'Organization', name: 'TheDataProject.ai', url: 'https://thedataproject.ai' },
       })}} />

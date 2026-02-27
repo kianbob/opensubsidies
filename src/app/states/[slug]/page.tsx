@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${state.name} Farm Subsidies — ${fmtMoney(state.amount)} in USDA Payments`,
     description: `${state.name} received ${fmtMoney(state.amount)} in USDA farm subsidies across ${fmt(state.payments)} payments. See top programs, counties, and recipients.`,
-    alternates: { canonical: `https://www.opensubsidies.us/states/${slug}` },
+    alternates: { canonical: `https://www.opensubsidies.org/states/${slug}` },
   }
 }
 

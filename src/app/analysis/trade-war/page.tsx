@@ -25,7 +25,7 @@ export default function TradeWar() {
         '@context': 'https://schema.org', '@type': 'Article',
         headline: 'Trade War Fallout: $39 Billion in Tariff Bailout Payments',
         author: { '@type': 'Organization', name: 'TheDataProject.ai' },
-        publisher: { '@type': 'Organization', name: 'OpenSubsidies', url: 'https://www.opensubsidies.us' },
+        publisher: { '@type': 'Organization', name: 'OpenSubsidies', url: 'https://www.opensubsidies.org' },
         datePublished: '2026-02-27', dateModified: '2026-02-27',
       })}} />
 

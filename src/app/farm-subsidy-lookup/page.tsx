@@ -7,7 +7,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Farm Subsidy Lookup: Search Recipients by Name, State, or County',
   description: 'Look up farm subsidies by recipient name, state, county, or program. Search our database of $147B+ in USDA farm payments across 157 programs.',
-  alternates: { canonical: 'https://www.opensubsidies.us/farm-subsidy-lookup' },
+  alternates: { canonical: 'https://www.opensubsidies.org/farm-subsidy-lookup' },
 }
 
 export default function FarmSubsidyLookupPage() {

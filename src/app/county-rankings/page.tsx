@@ -7,7 +7,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'County Rankings — Farm Subsidies by County',
   description: 'Rank U.S. counties by total farm subsidies, number of payments, and average payment size. See which counties receive the most USDA subsidies.',
-  alternates: { canonical: 'https://www.opensubsidies.us/county-rankings' },
+  alternates: { canonical: 'https://www.opensubsidies.org/county-rankings' },
 }
 
 export default function CountyRankingsPage() {

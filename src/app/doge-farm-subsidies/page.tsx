@@ -8,7 +8,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'DOGE and Farm Subsidies: What Government Efficiency Means for USDA Payments',
   description: 'How would DOGE (Department of Government Efficiency) evaluate $147B in USDA farm subsidies? 157 programs, 46 zombie programs, and billions in emergency spending.',
-  alternates: { canonical: 'https://www.opensubsidies.us/doge-farm-subsidies' },
+  alternates: { canonical: 'https://www.opensubsidies.org/doge-farm-subsidies' },
 }
 
 export default function DogeFarmSubsidiesPage() {
@@ -22,7 +22,7 @@ export default function DogeFarmSubsidiesPage() {
         '@context': 'https://schema.org', '@type': 'Article',
         headline: 'DOGE and Farm Subsidies: What Government Efficiency Means for USDA Payments',
         author: { '@type': 'Organization', name: 'TheDataProject.ai' },
-        publisher: { '@type': 'Organization', name: 'OpenSubsidies', url: 'https://www.opensubsidies.us' },
+        publisher: { '@type': 'Organization', name: 'OpenSubsidies', url: 'https://www.opensubsidies.org' },
         datePublished: '2026-02-27', dateModified: '2026-02-27',
       })}} />
 

@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${formatProgram(program.program)} — ${fmtMoney(program.amount)} in Farm Subsidies`,
     description: `The ${formatProgram(program.program)} distributed ${fmtMoney(program.amount)} across ${fmt(program.payments)} payments from 2017-2025.`,
-    alternates: { canonical: `https://www.opensubsidies.us/programs/${slug}` },
+    alternates: { canonical: `https://www.opensubsidies.org/programs/${slug}` },
   }
 }
 

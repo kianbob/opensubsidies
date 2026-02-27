@@ -8,7 +8,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Who Gets Farm Subsidies? Individual Farmers vs Corporations vs Government',
   description: 'Breakdown of farm subsidy recipients by entity type: individuals, corporations, LLCs, partnerships, trusts, and government entities. Corporations collect disproportionate shares.',
-  alternates: { canonical: 'https://www.opensubsidies.us/entity-types' },
+  alternates: { canonical: 'https://www.opensubsidies.org/entity-types' },
 }
 
 export default function EntityTypesPage() {

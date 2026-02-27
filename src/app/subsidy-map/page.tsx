@@ -8,7 +8,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Farm Subsidy Map: Every State Ranked by USDA Payments (2017–2025)',
   description: 'Interactive ranking of all 50 states by total farm subsidies, per-capita spending, and dependency on federal payments. Texas leads with $12.6B, but North Dakota is most dependent at 69%.',
-  alternates: { canonical: 'https://www.opensubsidies.us/subsidy-map' },
+  alternates: { canonical: 'https://www.opensubsidies.org/subsidy-map' },
 }
 
 export default function SubsidyMapPage() {
@@ -62,7 +62,7 @@ export default function SubsidyMapPage() {
           '@type': 'Dataset',
           name: 'U.S. Farm Subsidy Payments by State (2017–2025)',
           description: 'Total USDA farm subsidy payments to all 50 states and territories from 2017 to 2025.',
-          url: 'https://www.opensubsidies.us/subsidy-map',
+          url: 'https://www.opensubsidies.org/subsidy-map',
           creator: { '@type': 'Organization', name: 'OpenSubsidies' },
         }) }}
       />

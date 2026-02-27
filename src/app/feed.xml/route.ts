@@ -40,7 +40,7 @@ export function GET() {
   const stats = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'public', 'data', 'stats.json'), 'utf8'))
   const states = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'public', 'data', 'states.json'), 'utf8')) as { abbr: string; name: string; amount: number }[]
   const topStates = [...states].sort((a, b) => b.amount - a.amount).slice(0, 20)
-  const base = 'https://www.opensubsidies.us'
+  const base = 'https://www.opensubsidies.org'
 
   const articleItems = articles.map(a => `    <item>
       <title>${a.title}</title>

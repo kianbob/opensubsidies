@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: '25 Farm Subsidy Facts That Will Surprise You',
   description: 'Surprising facts and statistics about U.S. farm subsidies: who gets them, how much they cost, and where the money goes. Backed by USDA data.',
-  alternates: { canonical: 'https://www.opensubsidies.us/facts' },
+  alternates: { canonical: 'https://www.opensubsidies.org/facts' },
 }
 
 export default function FactsPage() {

@@ -6,12 +6,12 @@ export default function Breadcrumbs({ items }: { items: Crumb[] }) {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
-    itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.opensubsidies.us' },
+    itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.opensubsidies.org' },
       ...items.map((item, i) => ({
         '@type': 'ListItem',
         position: i + 2,
         name: item.label,
-        ...(item.href ? { item: `https://www.opensubsidies.us${item.href}` } : {}),
+        ...(item.href ? { item: `https://www.opensubsidies.org${item.href}` } : {}),
       }))],
   }
   return (

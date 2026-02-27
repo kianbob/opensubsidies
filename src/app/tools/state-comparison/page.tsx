@@ -6,7 +6,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'State Comparison Tool — Compare Farm Subsidies Across States',
   description: 'Compare farm subsidy data across 2-4 states side-by-side with per-capita spending, emergency program breakdowns, and bar charts.',
-  alternates: { canonical: 'https://www.opensubsidies.us/tools/state-comparison' },
+  alternates: { canonical: 'https://www.opensubsidies.org/tools/state-comparison' },
 }
 
 export default function StateComparisonPage() {

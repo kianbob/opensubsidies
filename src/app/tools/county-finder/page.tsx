@@ -6,7 +6,7 @@ import CountyFinderClient from './CountyFinderClient'
 export const metadata: Metadata = {
   title: 'Find Your County\'s Farm Subsidies — County Finder Tool',
   description: 'Search all U.S. counties to find farm subsidy totals, payment counts, and more. Type-ahead search across 28,000+ counties.',
-  alternates: { canonical: 'https://www.opensubsidies.us/tools/county-finder' },
+  alternates: { canonical: 'https://www.opensubsidies.org/tools/county-finder' },
 }
 
 export default function CountyFinderPage() {

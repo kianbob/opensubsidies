@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Privacy Policy',
   description: 'OpenSubsidies privacy policy. We collect minimal data and never sell your information.',
-  alternates: { canonical: 'https://www.opensubsidies.us/privacy' },
+  alternates: { canonical: 'https://www.opensubsidies.org/privacy' },
 }
 
 export default function PrivacyPage() {

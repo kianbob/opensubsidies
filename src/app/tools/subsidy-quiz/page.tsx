@@ -6,7 +6,7 @@ import QuizClient from './QuizClient'
 export const metadata: Metadata = {
   title: 'Farm Subsidy Quiz — How Much Do You Really Know?',
   description: 'Test your knowledge of U.S. farm subsidies with 10 data-driven questions. How much does the government spend? Who benefits most? Find out.',
-  alternates: { canonical: 'https://www.opensubsidies.us/tools/subsidy-quiz' },
+  alternates: { canonical: 'https://www.opensubsidies.org/tools/subsidy-quiz' },
 }
 
 export default function SubsidyQuizPage() {

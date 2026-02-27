@@ -28,7 +28,7 @@ export default function DisasterSpending() {
         '@context': 'https://schema.org', '@type': 'Article',
         headline: 'The Disaster Money Machine: Emergency Farm Payments',
         author: { '@type': 'Organization', name: 'TheDataProject.ai' },
-        publisher: { '@type': 'Organization', name: 'OpenSubsidies', url: 'https://www.opensubsidies.us' },
+        publisher: { '@type': 'Organization', name: 'OpenSubsidies', url: 'https://www.opensubsidies.org' },
         datePublished: '2026-02-27', dateModified: '2026-02-27',
       })}} />
 

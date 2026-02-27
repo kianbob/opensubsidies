@@ -8,7 +8,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Biggest Farm Subsidies: Largest Programs and Top Recipients',
   description: 'The biggest farm subsidy programs and largest recipients. CRP leads at $15.7B, followed by CFAP and Price Loss Coverage. See the top 15 programs and recipients.',
-  alternates: { canonical: 'https://www.opensubsidies.us/biggest-farm-subsidies' },
+  alternates: { canonical: 'https://www.opensubsidies.org/biggest-farm-subsidies' },
 }
 
 interface Program {

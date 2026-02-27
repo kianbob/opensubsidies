@@ -9,7 +9,7 @@ import CountiesClient from '@/components/CountiesClient'
 export const metadata: Metadata = {
   title: 'Farm Subsidies by County — 28,875 U.S. Counties Ranked',
   description: 'Search and explore farm subsidy payments across 28,875 U.S. counties. See which counties receive the most USDA farm subsidies.',
-  alternates: { canonical: 'https://www.opensubsidies.us/counties' },
+  alternates: { canonical: 'https://www.opensubsidies.org/counties' },
 }
 
 export default function CountiesPage() {

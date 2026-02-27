@@ -7,7 +7,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'What $147 Billion in Farm Subsidies Could Buy Instead',
   description: '$147 billion in farm subsidies could fund 2.2 million teachers, 5.8 million Pell Grants, or 6 years of NASA. Here\'s what America spent on farm payments — and what else it could have bought.',
-  alternates: { canonical: 'https://www.opensubsidies.us/analysis/what-147b-buys' },
+  alternates: { canonical: 'https://www.opensubsidies.org/analysis/what-147b-buys' },
 }
 
 export default function What147BBuysPage() {
@@ -33,7 +33,7 @@ export default function What147BBuysPage() {
         '@context': 'https://schema.org', '@type': 'Article',
         headline: 'What $147 Billion in Farm Subsidies Could Buy Instead',
         author: { '@type': 'Organization', name: 'TheDataProject.ai' },
-        publisher: { '@type': 'Organization', name: 'OpenSubsidies', url: 'https://www.opensubsidies.us' },
+        publisher: { '@type': 'Organization', name: 'OpenSubsidies', url: 'https://www.opensubsidies.org' },
         datePublished: '2026-02-27', dateModified: '2026-02-27',
       })}} />
 

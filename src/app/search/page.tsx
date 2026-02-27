@@ -7,7 +7,7 @@ import SearchClient from '@/components/SearchClient'
 export const metadata: Metadata = {
   title: 'Search Farm Subsidies',
   description: 'Search across states, counties, programs, and recipients in US farm subsidy data.',
-  alternates: { canonical: 'https://www.opensubsidies.us/search' },
+  alternates: { canonical: 'https://www.opensubsidies.org/search' },
 }
 
 export default function SearchPage() {

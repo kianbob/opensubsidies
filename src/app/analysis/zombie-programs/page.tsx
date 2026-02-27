@@ -9,7 +9,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Zombie Programs: The USDA Programs Nobody Uses',
   description: '43 USDA farm programs have fewer than 100 payments each. These "zombie programs" persist through bureaucratic inertia, consuming administrative resources while serving almost nobody.',
-  alternates: { canonical: 'https://www.opensubsidies.us/analysis/zombie-programs' },
+  alternates: { canonical: 'https://www.opensubsidies.org/analysis/zombie-programs' },
 }
 
 export default function ZombieProgramsPage() {
@@ -28,7 +28,7 @@ export default function ZombieProgramsPage() {
         '@context': 'https://schema.org', '@type': 'Article',
         headline: 'Zombie Programs: The USDA Programs Nobody Uses',
         author: { '@type': 'Organization', name: 'TheDataProject.ai' },
-        publisher: { '@type': 'Organization', name: 'OpenSubsidies', url: 'https://www.opensubsidies.us' },
+        publisher: { '@type': 'Organization', name: 'OpenSubsidies', url: 'https://www.opensubsidies.org' },
         datePublished: '2026-02-27', dateModified: '2026-02-27',
       })}} />
 

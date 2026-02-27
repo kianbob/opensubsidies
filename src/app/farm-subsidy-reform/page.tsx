@@ -8,7 +8,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Farm Subsidy Reform: What the Data Shows About Fixing American Agriculture',
   description: 'Data-driven analysis of farm subsidy reform: payment concentration, emergency spending growth, zombie programs, and 5 reform ideas backed by $147B in USDA data.',
-  alternates: { canonical: 'https://www.opensubsidies.us/farm-subsidy-reform' },
+  alternates: { canonical: 'https://www.opensubsidies.org/farm-subsidy-reform' },
 }
 
 export default function FarmSubsidyReformPage() {
@@ -22,7 +22,7 @@ export default function FarmSubsidyReformPage() {
         '@context': 'https://schema.org', '@type': 'Article',
         headline: 'Farm Subsidy Reform: What the Data Shows About Fixing American Agriculture',
         author: { '@type': 'Organization', name: 'TheDataProject.ai' },
-        publisher: { '@type': 'Organization', name: 'OpenSubsidies', url: 'https://www.opensubsidies.us' },
+        publisher: { '@type': 'Organization', name: 'OpenSubsidies', url: 'https://www.opensubsidies.org' },
         datePublished: '2026-02-27', dateModified: '2026-02-27',
       })}} />
 

@@ -6,7 +6,7 @@ import ProgramCompareClient from '@/components/ProgramCompareClient'
 export const metadata: Metadata = {
   title: 'Compare Programs — Side-by-Side Farm Subsidy Program Comparison',
   description: 'Compare up to 4 USDA farm subsidy programs side-by-side on total spending, payment counts, and yearly trends.',
-  alternates: { canonical: 'https://www.opensubsidies.us/tools/compare-programs' },
+  alternates: { canonical: 'https://www.opensubsidies.org/tools/compare-programs' },
 }
 
 export default function CompareProgramsPage() {

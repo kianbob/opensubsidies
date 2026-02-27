@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Farm Subsidies Explained: What They Are, Who Gets Them, and How Much',
   description: 'A comprehensive guide to USDA farm subsidies: what they are, who gets them, how much the government spends, the biggest programs, and why they\'re controversial. Backed by real data.',
-  alternates: { canonical: 'https://www.opensubsidies.us/farm-subsidies-explained' },
+  alternates: { canonical: 'https://www.opensubsidies.org/farm-subsidies-explained' },
 }
 
 export default function FarmSubsidiesExplainedPage() {

@@ -8,7 +8,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Farm Subsidy Dependency: Which States Rely Most on Federal Payments?',
   description: 'North Dakota gets 69% of farm income from subsidies. California gets 2%. See which states are most dependent on federal farm payments and what it means for policy.',
-  alternates: { canonical: 'https://www.opensubsidies.us/state-dependency' },
+  alternates: { canonical: 'https://www.opensubsidies.org/state-dependency' },
 }
 
 export default function StateDependencyPage() {

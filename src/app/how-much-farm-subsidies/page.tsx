@@ -8,7 +8,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'How Much Does the US Spend on Farm Subsidies? $147B and Counting',
   description: 'The US spent $147B on farm subsidies from 2017-2025, averaging ~$16B/year and peaking at $38.7B in 2020. Year-by-year breakdown with per-taxpayer cost.',
-  alternates: { canonical: 'https://www.opensubsidies.us/how-much-farm-subsidies' },
+  alternates: { canonical: 'https://www.opensubsidies.org/how-much-farm-subsidies' },
 }
 
 interface YearData {

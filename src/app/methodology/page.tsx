@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Methodology — How We Process Farm Subsidy Data',
   description: 'How OpenSubsidies processes USDA Farm Service Agency payment files into searchable, structured data.',
-  alternates: { canonical: 'https://www.opensubsidies.us/methodology' },
+  alternates: { canonical: 'https://www.opensubsidies.org/methodology' },
 }
 
 export default function MethodologyPage() {

@@ -6,7 +6,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'State Subsidy Profile — Interactive State Deep-Dive',
   description: 'Select any U.S. state to see a rich profile: total subsidies, national rank, top programs, top counties, top recipients, and year-over-year spending chart.',
-  alternates: { canonical: 'https://www.opensubsidies.us/tools/state-profile' },
+  alternates: { canonical: 'https://www.opensubsidies.org/tools/state-profile' },
 }
 
 export default function StateProfilePage() {

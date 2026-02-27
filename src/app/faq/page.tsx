@@ -5,7 +5,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 export const metadata: Metadata = {
   title: 'Frequently Asked Questions',
   description: 'Frequently asked questions about US farm subsidies, USDA programs, and how OpenSubsidies works.',
-  alternates: { canonical: 'https://www.opensubsidies.us/faq' },
+  alternates: { canonical: 'https://www.opensubsidies.org/faq' },
 }
 
 const faqs: { q: string; a: string; href?: string }[] = [

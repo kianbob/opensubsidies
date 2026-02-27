@@ -8,7 +8,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'The Power Law of Farm Subsidies: Most Get Little, Few Get Millions',
   description: 'Farm subsidy payment distribution analysis: the median payment is $1,847 while the average is $4,623. Most recipients get small payments while a few collect millions.',
-  alternates: { canonical: 'https://www.opensubsidies.us/payment-distribution' },
+  alternates: { canonical: 'https://www.opensubsidies.org/payment-distribution' },
 }
 
 export default function PaymentDistributionPage() {

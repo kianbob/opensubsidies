@@ -9,7 +9,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'The 2025 Farm Crisis: Bankruptcies Up 46% While Subsidies Flow to the Top',
   description: 'Farm bankruptcies hit 315 in 2025, up 46%. Meanwhile, farm subsidies continue flowing primarily to the largest operations. The disconnect between who gets help and who needs it.',
-  alternates: { canonical: 'https://www.opensubsidies.us/analysis/farm-crisis-2025' },
+  alternates: { canonical: 'https://www.opensubsidies.org/analysis/farm-crisis-2025' },
 }
 
 export default function FarmCrisis2025Page() {
@@ -24,7 +24,7 @@ export default function FarmCrisis2025Page() {
         '@context': 'https://schema.org', '@type': 'Article',
         headline: 'The 2025 Farm Crisis: Bankruptcies Up 46% While Subsidies Flow to the Top',
         author: { '@type': 'Organization', name: 'TheDataProject.ai' },
-        publisher: { '@type': 'Organization', name: 'OpenSubsidies', url: 'https://www.opensubsidies.us' },
+        publisher: { '@type': 'Organization', name: 'OpenSubsidies', url: 'https://www.opensubsidies.org' },
         datePublished: '2026-02-27', dateModified: '2026-02-27',
       })}} />
 

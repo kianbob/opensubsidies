@@ -3,7 +3,7 @@ import { usePathname } from 'next/navigation'
 
 export default function ShareButtons({ title }: { title: string }) {
   const path = usePathname()
-  const url = `https://www.opensubsidies.us${path}`
+  const url = `https://www.opensubsidies.org${path}`
   const text = encodeURIComponent(title)
   const u = encodeURIComponent(url)
 

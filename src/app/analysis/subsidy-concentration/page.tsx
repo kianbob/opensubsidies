@@ -27,7 +27,7 @@ export default function SubsidyConcentration() {
         '@context': 'https://schema.org', '@type': 'Article',
         headline: 'The 10% Problem: How Most Farm Subsidies Go to the Biggest Operations',
         author: { '@type': 'Organization', name: 'TheDataProject.ai' },
-        publisher: { '@type': 'Organization', name: 'OpenSubsidies', url: 'https://www.opensubsidies.us' },
+        publisher: { '@type': 'Organization', name: 'OpenSubsidies', url: 'https://www.opensubsidies.org' },
         datePublished: '2026-02-27', dateModified: '2026-02-27',
       })}} />
 

@@ -6,7 +6,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Timeline Explorer — Farm Subsidy Spending Over Time',
   description: 'Interactive timeline of U.S. farm subsidy spending from 2017-2025 with annotated events: Trade War, MFP, COVID CFAP, and ERP.',
-  alternates: { canonical: 'https://www.opensubsidies.us/tools/timeline-explorer' },
+  alternates: { canonical: 'https://www.opensubsidies.org/tools/timeline-explorer' },
 }
 
 export default function TimelineExplorerPage() {

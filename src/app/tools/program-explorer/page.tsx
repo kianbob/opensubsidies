@@ -6,7 +6,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Program Explorer — Browse All 157 USDA Farm Subsidy Programs',
   description: 'Filter, sort, and explore all 157 USDA farm subsidy programs by category, amount, and payment count.',
-  alternates: { canonical: 'https://www.opensubsidies.us/tools/program-explorer' },
+  alternates: { canonical: 'https://www.opensubsidies.org/tools/program-explorer' },
 }
 
 export default function ProgramExplorerPage() {

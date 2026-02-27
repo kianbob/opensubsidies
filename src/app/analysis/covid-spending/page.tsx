@@ -26,7 +26,7 @@ export default function CovidSpending() {
         '@context': 'https://schema.org', '@type': 'Article',
         headline: 'COVID Changed Farm Subsidies Forever: The $38.7 Billion Story',
         author: { '@type': 'Organization', name: 'TheDataProject.ai' },
-        publisher: { '@type': 'Organization', name: 'OpenSubsidies', url: 'https://www.opensubsidies.us' },
+        publisher: { '@type': 'Organization', name: 'OpenSubsidies', url: 'https://www.opensubsidies.org' },
         datePublished: '2026-02-27', dateModified: '2026-02-27',
       })}} />
 
