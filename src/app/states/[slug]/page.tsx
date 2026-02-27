@@ -36,12 +36,28 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 }
 
+const STATE_POPULATIONS: Record<string, number> = {
+  TX:30503301, CA:38965193, FL:22610726, NY:19571216, PA:12961683, IL:12549689, OH:11780017, GA:11029227, NC:10835491, MI:10037261,
+  NJ:9290841, VA:8631393, WA:7812880, AZ:7303398, MA:7001399, TN:7051339, IN:6862199, MO:6178664, MD:6180253, WI:5910955,
+  CO:5877610, MN:5737915, SC:5373555, AL:5108468, LA:4590241, KY:4526154, OR:4233358, OK:4019800, CT:3617176, IA:3207004,
+  MS:2939690, AR:3067732, KS:2940865, UT:3417734, NV:3194176, NE:1978379, NM:2114371, WV:1770071, ID:1964726, HI:1435138,
+  NH:1402054, ME:1395722, MT:1132812, RI:1095610, DE:1018396, SD:919318, ND:783926, AK:733536, VT:647464, WY:584057,
+}
+
 export default async function StateDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
   const state = loadStateDetail(slug)
   if (!state) notFound()
 
   const stats = loadData('stats.json') as { totalPayments: number; totalAmount: number }
+  const allStates = loadData('states.json') as State[]
+  const sortedByAmount = [...allStates].sort((a, b) => b.amount - a.amount)
+  const stateRank = sortedByAmount.findIndex(s => s.abbr === state.abbr) + 1
+  const population = STATE_POPULATIONS[state.abbr]
+  const perCapita = population ? state.amount / population : null
+  const top20Dependent = sortedByAmount.slice(0, 20).map(s => s.abbr)
+  const isTop20 = top20Dependent.includes(state.abbr)
+
   const { counties, yearly, topRecipients, topPrograms } = state
   const nationalAvg = stats.totalAmount / stats.totalPayments
   const stateAvg = state.amount / state.payments
@@ -61,6 +77,32 @@ export default async function StateDetailPage({ params }: { params: Promise<{ sl
         <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">Payments</p><p className="text-xl font-bold text-green-800">{fmt(state.payments)}</p></div>
         <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">Counties</p><p className="text-xl font-bold text-green-800">{fmt(counties.length)}</p></div>
         <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">Avg Payment</p><p className="text-xl font-bold text-green-800">{fmtMoney(stateAvg)}</p><p className="text-xs text-gray-500 mt-0.5">{avgRatio > 1.1 ? `${((avgRatio - 1) * 100).toFixed(0)}% above` : avgRatio < 0.9 ? `${((1 - avgRatio) * 100).toFixed(0)}% below` : 'Near'} national avg</p></div>
+      </div>
+
+      {/* How This State Compares */}
+      <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 mb-10">
+        <h2 className="text-xl font-semibold font-[family-name:var(--font-heading)] mb-4">How {state.name} Compares</h2>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div>
+            <p className="text-sm text-gray-500">National Rank</p>
+            <p className="text-2xl font-bold text-[#15803d]">#{stateRank} <span className="text-sm font-normal text-gray-500">of {allStates.length} states</span></p>
+          </div>
+          {perCapita !== null && (
+            <div>
+              <p className="text-sm text-gray-500">Subsidy Per Capita</p>
+              <p className="text-2xl font-bold text-[#15803d]">{fmtMoney(perCapita)}</p>
+            </div>
+          )}
+          <div>
+            <p className="text-sm text-gray-500">Share of National Total</p>
+            <p className="text-2xl font-bold text-[#15803d]">{((state.amount / stats.totalAmount) * 100).toFixed(1)}%</p>
+          </div>
+        </div>
+        <div className="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-100">
+          {isTop20 && <Link href="/analysis/state-dependency" className="text-sm text-[#15803d] hover:underline">📊 State Dependency Rankings →</Link>}
+          <Link href="/analysis/per-capita" className="text-sm text-[#15803d] hover:underline">💰 Per Capita Analysis →</Link>
+          <Link href="/analysis/state-disparities" className="text-sm text-[#15803d] hover:underline">📈 State Disparities →</Link>
+        </div>
       </div>
 
       {yearly.length > 1 && (() => {

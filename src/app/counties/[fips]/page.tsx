@@ -51,6 +51,11 @@ export default async function CountyDetailPage({ params }: { params: Promise<{ f
   if (!county) notFound()
 
   const stats = loadData('stats.json') as { totalPayments: number; totalAmount: number }
+  const countyIndex = loadData('county-index.json') as { fips: string; county: string; state: string; amount: number }[]
+  const sortedCounties = [...countyIndex].sort((a, b) => b.amount - a.amount)
+  const nationalRank = sortedCounties.findIndex(c => c.fips === fips) + 1
+  const stateCounties = sortedCounties.filter(c => c.state === county.state)
+  const stateRank = stateCounties.findIndex(c => c.fips === fips) + 1
   const { yearly } = county
   const peakYear = yearly.reduce((a, b) => a.amount > b.amount ? a : b)
   const avgPayment = county.totalPayments > 0 ? county.totalAmount / county.totalPayments : 0
@@ -70,6 +75,25 @@ export default async function CountyDetailPage({ params }: { params: Promise<{ f
       <p className="text-gray-600 mb-8">
         {county.county} County in {county.stateName} received <strong>{fmtMoney(county.totalAmount)}</strong> in USDA Farm Service Agency payments across {fmt(county.totalPayments)} individual payments from 2017 to 2025.
       </p>
+
+      {/* County Rank */}
+      <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-5 mb-8">
+        <h2 className="font-semibold text-gray-900 mb-3">📊 County Rank</h2>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div>
+            <p className="text-sm text-gray-500">National Rank</p>
+            <p className="text-2xl font-bold text-[#15803d]">#{nationalRank || '—'} <span className="text-sm font-normal text-gray-500">of {sortedCounties.length}</span></p>
+          </div>
+          <div>
+            <p className="text-sm text-gray-500">Rank in {county.stateName}</p>
+            <p className="text-2xl font-bold text-[#15803d]">#{stateRank || '—'} <span className="text-sm font-normal text-gray-500">of {stateCounties.length}</span></p>
+          </div>
+          <div className="flex items-end gap-3">
+            <Link href="/counties" className="text-sm text-[#15803d] hover:underline">🏘️ All Counties →</Link>
+            <Link href={`/states/${stateSlug}`} className="text-sm text-[#15803d] hover:underline">📍 {county.stateName} →</Link>
+          </div>
+        </div>
+      </div>
 
       {/* Stat cards */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">

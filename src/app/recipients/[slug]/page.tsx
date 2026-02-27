@@ -54,6 +54,17 @@ export default async function RecipientDetailPage({ params }: { params: Promise<
 
   const stats = loadData('stats.json') as { totalPayments: number; totalAmount: number }
   const name = titleCase(r.name)
+  const rawName = r.name.toUpperCase()
+  const entityType = rawName.includes(' LLC') || rawName.includes(' L L C') ? 'LLC'
+    : rawName.includes(' INC') || rawName.includes(' INCORPORATED') ? 'Corporation'
+    : rawName.includes(' LTD') || rawName.includes(' LIMITED') ? 'Corporation'
+    : rawName.includes(' LP') || rawName.includes(' PARTNERSHIP') ? 'Partnership'
+    : rawName.includes(' TRUST') ? 'Trust'
+    : rawName.includes(' ESTATE') ? 'Estate'
+    : rawName.includes(' FARM') || rawName.includes(' RANCH') || rawName.includes(' DAIRY') ? 'Farm/Ranch'
+    : rawName.includes(' CO-OP') || rawName.includes(' COOPERATIVE') ? 'Cooperative'
+    : 'Individual'
+  const isMultiProgram = r.topPrograms.length >= 3
   const city = titleCase(r.city)
   const avgPayment = r.totalPayments > 0 ? r.totalAmount / r.totalPayments : 0
   const nationalAvg = stats.totalAmount / stats.totalPayments
@@ -67,8 +78,12 @@ export default async function RecipientDetailPage({ params }: { params: Promise<
       <Breadcrumbs items={[{ label: 'Recipients', href: '/recipients' }, { label: name }]} />
       <div className="flex items-start justify-between mb-2">
         <div>
-          <h1 className="text-2xl md:text-3xl font-bold font-[family-name:var(--font-heading)]">{name}</h1>
-          <p className="text-gray-500 mt-1">📍 {city}, <Link href={`/states/${stateSlug}`} className="text-green-700 hover:underline">{r.state}</Link></p>
+          <div className="flex items-center gap-3 flex-wrap">
+            <h1 className="text-2xl md:text-3xl font-bold font-[family-name:var(--font-heading)]">{name}</h1>
+            <span className="inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold bg-gray-100 text-gray-700">{entityType}</span>
+            {isMultiProgram && <span className="inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold bg-purple-100 text-purple-800">Multi-Program ({r.topPrograms.length})</span>}
+          </div>
+          <p className="text-gray-500 mt-1">📍 {city}, <Link href={`/states/${stateSlug}`} className="text-green-700 hover:underline">{r.state}</Link> · <Link href="/entity-types" className="text-[#15803d] hover:underline">Entity Types</Link></p>
         </div>
         <ShareButtons title={`${name} received ${fmtMoney(r.totalAmount)} in farm subsidies`} />
       </div>

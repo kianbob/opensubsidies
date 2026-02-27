@@ -28,6 +28,17 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 }
 
+function getProgramCategory(name: string): { label: string; color: string } {
+  const n = name.toUpperCase()
+  if (n.includes('CRP') || n.includes('CONSERVATION') || n.includes('EQIP') || n.includes('CSP') || n.includes('ACEP') || n.includes('RCPP')) return { label: 'Conservation', color: 'bg-emerald-100 text-emerald-800' }
+  if (n.includes('MFP') || n.includes('MARKET FACILITATION') || n.includes('TRADE')) return { label: 'Trade War', color: 'bg-red-100 text-red-800' }
+  if (n.includes('CFAP') || n.includes('CORONAVIRUS') || n.includes('EMERGENCY') || n.includes('ERP') || n.includes('ELAP') || n.includes('LFP') || n.includes('LIP') || n.includes('TAP') || n.includes('NAP') || n.includes('WHIP')) return { label: 'Emergency', color: 'bg-orange-100 text-orange-800' }
+  if (n.includes('DAIRY') || n.includes('DMC') || n.includes('MPP-DAIRY')) return { label: 'Dairy', color: 'bg-blue-100 text-blue-800' }
+  if (n.includes('LIVESTOCK') || n.includes('LFP') || n.includes('LIP')) return { label: 'Livestock', color: 'bg-amber-100 text-amber-800' }
+  if (n.includes('PLC') || n.includes('ARC') || n.includes('PRICE LOSS') || n.includes('AGRICULTURE RISK') || n.includes('COMMODITY') || n.includes('LOAN')) return { label: 'Commodity', color: 'bg-yellow-100 text-yellow-800' }
+  return { label: 'Other', color: 'bg-gray-100 text-gray-800' }
+}
+
 export default async function ProgramDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
   const programs = loadData('programs.json') as Program[]
@@ -37,12 +48,7 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
 
   const rank = programs.indexOf(program) + 1
   const pctOfTotal = ((program.amount / programs.reduce((s, p) => s + p.amount, 0)) * 100).toFixed(1)
-
-  // Load yearly trend for this program
-  const programYearly = loadData('program-yearly.json') as ProgramYearly[]
-  const thisYearly = programYearly.find(p => p.program === program.program)
-  const yearly = thisYearly?.yearly || []
-  const peakYear = yearly.length > 0 ? yearly.reduce((a, b) => a.amount > b.amount ? a : b) : null
+  const category = getProgramCategory(program.program)
 
   // Find states with this program
   const statesWithProgram = states
@@ -54,6 +60,12 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
     .sort((a, b) => b!.amount - a!.amount)
     .slice(0, 20) as { abbr: string; name: string; amount: number }[]
 
+  // Load yearly trend for this program
+  const programYearly = loadData('program-yearly.json') as ProgramYearly[]
+  const thisYearly = programYearly.find(p => p.program === program.program)
+  const yearly = thisYearly?.yearly || []
+  const peakYear = yearly.length > 0 ? yearly.reduce((a, b) => a.amount > b.amount ? a : b) : null
+
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
       <Breadcrumbs items={[{ label: 'Programs', href: '/programs' }, { label: formatProgram(program.program) }]} />
@@ -61,7 +73,25 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
         <h1 className="text-2xl md:text-3xl font-bold font-[family-name:var(--font-heading)]">{formatProgram(program.program)}</h1>
         <ShareButtons title={`${program.program}: ${fmtMoney(program.amount)} in farm subsidies`} />
       </div>
-      <p className="text-gray-600 mb-8">USDA Program Code: {program.code} · Ranked #{rank} of {programs.length} programs</p>
+      <div className="flex items-center gap-3 mb-2">
+        <p className="text-gray-600">USDA Program Code: {program.code} · Ranked #{rank} of {programs.length} programs</p>
+        <span className={`inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold ${category.color}`}>{category.label}</span>
+      </div>
+      <div className="flex flex-wrap gap-3 text-sm mb-8">
+        <Link href="/program-decoder" className="text-[#15803d] hover:underline">🔍 Program Decoder →</Link>
+        <Link href="/categories" className="text-[#15803d] hover:underline">📂 All Categories →</Link>
+      </div>
+
+      {/* Quick Facts */}
+      <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-5 mb-10">
+        <h3 className="font-semibold text-gray-900 mb-3">⚡ Quick Facts</h3>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div><p className="text-sm text-gray-500">Total Amount</p><p className="text-xl font-bold text-[#15803d]">{fmtMoney(program.amount)}</p></div>
+          <div><p className="text-sm text-gray-500">Total Payments</p><p className="text-xl font-bold text-[#15803d]">{fmt(program.payments)}</p></div>
+          <div><p className="text-sm text-gray-500">States Served</p><p className="text-xl font-bold text-[#15803d]">{statesWithProgram.length}</p></div>
+          <div><p className="text-sm text-gray-500">Program Rank</p><p className="text-xl font-bold text-[#15803d]">#{rank} <span className="text-sm font-normal text-gray-500">of {programs.length}</span></p></div>
+        </div>
+      </div>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
         <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">Total Distributed</p><p className="text-xl font-bold text-green-800">{fmtMoney(program.amount)}</p></div>
