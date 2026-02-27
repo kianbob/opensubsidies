@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
-import { loadData, fmt, fmtMoney } from '@/lib/utils'
+import Link from 'next/link'
+import { loadData, fmt, fmtMoney, slugify } from '@/lib/utils'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ProgramsChart from '@/components/ProgramsChart'
 
@@ -41,7 +42,7 @@ export default function ProgramsPage() {
               {sorted.map((p, i) => (
                 <tr key={p.code} className="border-b border-gray-200 hover:bg-green-50">
                   <td className="py-2 pr-4 text-gray-500">{i + 1}</td>
-                  <td className="py-2 pr-4">{p.program}</td>
+                  <td className="py-2 pr-4"><Link href={`/programs/${slugify(p.program)}`} className="text-primary hover:underline">{p.program}</Link></td>
                   <td className="py-2 pr-4 text-gray-500">{p.code}</td>
                   <td className="py-2 pr-4 text-right tabular-nums">{fmt(p.payments)}</td>
                   <td className="py-2 text-right tabular-nums font-medium">{fmtMoney(p.amount)}</td>
