@@ -13,7 +13,7 @@ const articles = [
   { slug: 'small-vs-large', title: 'Small Farms vs. Large Operations: Who Really Benefits?', desc: '69% of farms get nothing. The distribution tells the real story.' },
   { slug: 'county-hotspots', title: 'County Hotspots: Where Farm Subsidies Concentrate', desc: 'Some individual counties receive more than entire states.' },
   { slug: 'negative-payments', title: 'Clawbacks and Corrections: When the USDA Takes Money Back', desc: 'Not all farm payments are positive. What negative payments mean.' },
-  { slug: 'program-proliferation', title: '107 Programs and Counting: The Complexity of Farm Subsidies', desc: 'Why are there so many programs and how do they overlap?' },
+  { slug: 'program-proliferation', title: '157 Programs and Counting: The Complexity of Farm Subsidies', desc: 'Why are there so many programs and how do they overlap?' },
   { slug: 'covid-spending', title: 'COVID Changed Farm Subsidies Forever: The $38.7 Billion Story', desc: 'In 2020, pandemic relief shattered every spending record in USDA history.' },
   { slug: 'trade-war', title: 'Trade War Fallout: $39 Billion in Tariff Bailout Payments', desc: 'US-China tariffs triggered the Market Facilitation Program.' },
   { slug: 'decade-of-disaster', title: 'A Decade of Disaster: How Emergency Programs Took Over Farm Subsidies', desc: 'Emergency programs went from supplemental to dominant in less than a decade.' },

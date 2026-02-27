@@ -283,19 +283,28 @@ export default function HomePage() {
       </section>
 
       {/* Why This Matters */}
-      <section className="max-w-3xl mx-auto px-4 pb-16 text-center">
-        <h2 className="text-2xl font-bold font-[family-name:var(--font-heading)] mb-4">Why This Data Matters</h2>
-        <div className="space-y-4 text-gray-600">
-          <p>
-            The federal government spends billions of dollars every year on farm subsidies — payments to agricultural producers
-            for crop insurance, conservation, disaster relief, and commodity support. But <strong>69% of farms receive zero subsidy payments</strong>.
-            The vast majority of money flows to the largest operations.
-          </p>
-          <p>
-            OpenSubsidies makes this data accessible and searchable so taxpayers can see exactly where their money goes —
-            by state, county, program, and individual recipient. All data comes directly from the USDA Farm Service Agency.
-          </p>
+      <section className="max-w-5xl mx-auto px-4 pb-16">
+        <h2 className="text-2xl font-bold font-[family-name:var(--font-heading)] mb-6 text-center">Why This Data Matters</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="text-center">
+            <div className="w-12 h-12 bg-red-100 text-red-600 rounded-full flex items-center justify-center mx-auto mb-3 text-xl">💰</div>
+            <h3 className="font-semibold text-gray-900 mb-2">Taxpayer Accountability</h3>
+            <p className="text-sm text-gray-600">$147 billion in public money — yet 69% of farms receive nothing. Who gets the rest? Now you can see every dollar.</p>
+          </div>
+          <div className="text-center">
+            <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-3 text-xl">📊</div>
+            <h3 className="font-semibold text-gray-900 mb-2">Data Transparency</h3>
+            <p className="text-sm text-gray-600">USDA data is public but buried in Excel files. We process 31.8M records so you don&apos;t have to.</p>
+          </div>
+          <div className="text-center">
+            <div className="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-3 text-xl">🔍</div>
+            <h3 className="font-semibold text-gray-900 mb-2">Policy Insight</h3>
+            <p className="text-sm text-gray-600">Emergency spending now dwarfs traditional programs. Trade wars and pandemics reshaped farm policy permanently.</p>
+          </div>
         </div>
+        <p className="text-center mt-6 text-sm text-gray-500">
+          All data from USDA Farm Service Agency · <Link href="/about" className="text-primary hover:underline">Learn more about our mission</Link>
+        </p>
       </section>
     </>
   )

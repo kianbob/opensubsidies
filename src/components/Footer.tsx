@@ -34,6 +34,9 @@ export default function Footer() {
               <li><Link href="/search" className="hover:text-white transition-colors">Search</Link></li>
               <li><Link href="/facts" className="hover:text-white transition-colors">Farm Subsidy Facts</Link></li>
               <li><Link href="/farm-subsidies-explained" className="hover:text-white transition-colors">Subsidies Explained</Link></li>
+              <li><Link href="/conservation" className="hover:text-white transition-colors">Conservation Programs</Link></li>
+              <li><Link href="/emergency-spending" className="hover:text-white transition-colors">Emergency Spending</Link></li>
+              <li><Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
             </ul>
           </div>
           <div>
