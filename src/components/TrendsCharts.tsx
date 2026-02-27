@@ -11,8 +11,8 @@ function fmtMoney(n: number): string {
 }
 
 export default function TrendsCharts({ yearly }: { yearly: YearData[] }) {
-  // Filter to years with meaningful data
-  const data = yearly.filter(y => y.amount > 100000).map(y => ({
+  // Filter to complete years with meaningful data (exclude 2025 partial)
+  const data = yearly.filter(y => y.year >= 2017 && y.year <= 2024 && y.amount > 100000).map(y => ({
     ...y,
     amountB: y.amount / 1e9,
   }))

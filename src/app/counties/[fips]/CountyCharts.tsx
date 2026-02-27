@@ -11,11 +11,12 @@ function fmtMoney(n: number) {
 }
 
 export default function CountyYearlyChart({ data }: { data: { year: number; amount: number; payments: number }[] }) {
+  const filtered = data.filter(d => d.year <= 2024)
   return (
     <div className="bg-white rounded-xl border p-4">
       <h3 className="font-semibold mb-3">Yearly Subsidy Trend</h3>
       <ResponsiveContainer width="100%" height={300}>
-        <BarChart data={data}>
+        <BarChart data={filtered}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="year" />
           <YAxis tickFormatter={fmtMoney} width={70} />

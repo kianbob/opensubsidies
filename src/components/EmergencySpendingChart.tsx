@@ -11,7 +11,6 @@ const data = [
   { year: '2022', normal: 2.95, emergency: 4.21 },
   { year: '2023', normal: 4.01, emergency: 5.08 },
   { year: '2024', normal: 5.33, emergency: 11.66 },
-  { year: '2025', normal: 1.1, emergency: 1.32 },
 ]
 
 function fmt(v: number) {

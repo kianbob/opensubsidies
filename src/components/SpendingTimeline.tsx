@@ -18,16 +18,16 @@ const events = [
 
 export default function SpendingTimeline({ yearly }: { yearly: YearData[] }) {
   const data = yearly
-    .filter(y => y.year >= 2017 && y.year <= 2025)
+    .filter(y => y.year >= 2017 && y.year <= 2024)
     .map(y => ({ ...y, amountB: y.amount / 1e9 }))
 
   return (
     <div className="bg-white rounded-xl shadow-sm p-6">
       <h3 className="text-lg font-bold mb-1">Farm Subsidy Spending Timeline</h3>
-      <p className="text-sm text-gray-500 mb-4">2017–2025 · Key policy events marked</p>
+      <p className="text-sm text-gray-500 mb-4">2017–2024 · Key policy events marked · 2025 excluded (partial year)</p>
       <div className="h-80">
         <ResponsiveContainer width="100%" height="100%">
-          <AreaChart data={data} margin={{ top: 10, right: 10, left: 0, bottom: 0 }}>
+          <AreaChart data={data} margin={{ top: 30, right: 10, left: 0, bottom: 0 }}>
             <defs>
               <linearGradient id="colorAmount" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="5%" stopColor="#16a34a" stopOpacity={0.3} />
@@ -42,7 +42,7 @@ export default function SpendingTimeline({ yearly }: { yearly: YearData[] }) {
               labelFormatter={(l: number) => `Year: ${l}`}
             />
             {events.map(e => (
-              <ReferenceLine key={e.year} x={e.year} stroke={e.color} strokeDasharray="3 3" label={{ value: e.label, position: 'top', fontSize: 12 }} />
+              <ReferenceLine key={e.year} x={e.year} stroke={e.color} strokeDasharray="3 3" label={{ value: e.label, position: 'top', fontSize: 12, offset: 5 }} />
             ))}
             <Area type="monotone" dataKey="amountB" stroke="#16a34a" fillOpacity={1} fill="url(#colorAmount)" strokeWidth={2} />
           </AreaChart>
