@@ -1,4 +1,4 @@
-import { fmtMoney, fmt, slugify } from '@/lib/utils'
+import { fmtMoney, fmt, slugify , formatProgram } from '@/lib/utils'
 import { loadData } from '@/lib/server-utils'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ShareButtons from '@/components/ShareButtons'
@@ -86,7 +86,7 @@ export default function ProgramProliferationPage() {
               <tr key={i} className="hover:bg-gray-50">
                 <td className="px-4 py-3 text-gray-500">{i + 1}</td>
                 <td className="px-4 py-3">
-                  <Link href={`/programs/${slugify(p.program)}`} className="text-primary hover:underline font-medium">{p.program}</Link>
+                  <Link href={`/programs/${slugify(p.program)}`} className="text-primary hover:underline font-medium">{formatProgram(p.program)}</Link>
                 </td>
                 <td className="px-4 py-3 text-right font-mono">{fmtMoney(p.amount)}</td>
                 <td className="px-4 py-3 text-right hidden sm:table-cell">{(p.amount / total * 100).toFixed(1)}%</td>
@@ -124,7 +124,7 @@ export default function ProgramProliferationPage() {
             {sorted.slice(-10).reverse().map((p, i) => (
               <tr key={i} className="hover:bg-gray-50">
                 <td className="px-4 py-3">
-                  <Link href={`/programs/${slugify(p.program)}`} className="text-primary hover:underline">{p.program}</Link>
+                  <Link href={`/programs/${slugify(p.program)}`} className="text-primary hover:underline">{formatProgram(p.program)}</Link>
                 </td>
                 <td className="px-4 py-3 text-right font-mono">{fmtMoney(p.amount)}</td>
                 <td className="px-4 py-3 text-right hidden sm:table-cell">{fmt(p.payments)}</td>

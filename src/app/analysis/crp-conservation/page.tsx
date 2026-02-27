@@ -1,5 +1,5 @@
 import Breadcrumbs from '@/components/Breadcrumbs'
-import { fmtMoney, fmt } from '@/lib/utils'
+import { fmtMoney, fmt , formatProgram } from '@/lib/utils'
 import { loadData } from '@/lib/server-utils'
 import Link from 'next/link'
 import type { Metadata } from 'next'
@@ -80,7 +80,7 @@ export default function CRPConservation() {
               <tbody className="divide-y">
                 {crpPrograms.map((p, i) => (
                   <tr key={i} className="hover:bg-gray-50">
-                    <td className="px-4 py-2">{p.program}</td>
+                    <td className="px-4 py-2">{formatProgram(p.program)}</td>
                     <td className="px-4 py-2 text-right font-mono text-primary">{fmtMoney(p.amount)}</td>
                     <td className="px-4 py-2 text-right text-gray-600">{fmt(p.payments)}</td>
                   </tr>

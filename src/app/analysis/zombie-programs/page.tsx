@@ -1,7 +1,7 @@
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ShareButtons from '@/components/ShareButtons'
 import Link from 'next/link'
-import { fmt, fmtMoney } from '@/lib/utils'
+import { fmt, fmtMoney , formatProgram } from '@/lib/utils'
 import { loadData } from '@/lib/server-utils'
 import RelatedArticles from '@/components/RelatedArticles'
 import type { Metadata } from 'next'
@@ -74,7 +74,7 @@ export default function ZombieProgramsPage() {
             <tbody>
               {data.programs.map(p => (
                 <tr key={p.program} className="border-b border-gray-100 hover:bg-gray-50">
-                  <td className="py-2 px-2">{p.program}</td>
+                  <td className="py-2 px-2">{formatProgram(p.program)}</td>
                   <td className="text-right py-2 px-2 font-medium">{p.payments}</td>
                   <td className="text-right py-2 px-2">{fmtMoney(p.amount)}</td>
                   <td className="text-right py-2 px-2">{fmtMoney(Math.round(p.amount / p.payments))}</td>

@@ -130,7 +130,7 @@ export default function ProgramExplorerClient({ programs }: { programs: Program[
             <div className="flex flex-col sm:flex-row sm:items-center gap-2">
               <div className="flex-1 min-w-0">
                 <h3 className="font-semibold text-gray-900 text-sm truncate">{formatProgram(p.program)}</h3>
-                <p className="text-xs text-gray-400 truncate">{p.program}</p>
+                <p className="text-xs text-gray-400 truncate">{formatProgram(p.program)}</p>
               </div>
               <span className={`px-2 py-0.5 rounded-full text-xs font-medium whitespace-nowrap ${BADGE_COLORS[p.category]}`}>
                 {p.category}

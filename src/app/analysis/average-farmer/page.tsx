@@ -1,7 +1,7 @@
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ShareButtons from '@/components/ShareButtons'
 import Link from 'next/link'
-import { fmtMoney, fmt } from '@/lib/utils'
+import { fmtMoney, fmt , formatProgram } from '@/lib/utils'
 import { loadData } from '@/lib/server-utils'
 import type { Metadata } from 'next'
 import RelatedArticles from '@/components/RelatedArticles'
@@ -84,7 +84,7 @@ export default function AverageFarmerPage() {
               <tbody className="divide-y divide-gray-100">
                 {topProgramAvgs.map(p => (
                   <tr key={p.program} className="hover:bg-gray-50">
-                    <td className="px-4 py-2 text-xs">{p.program}</td>
+                    <td className="px-4 py-2 text-xs">{formatProgram(p.program)}</td>
                     <td className="px-4 py-2 text-right font-mono">{fmtMoney(p.amount)}</td>
                     <td className="px-4 py-2 text-right font-mono">{fmt(p.payments)}</td>
                     <td className="px-4 py-2 text-right font-mono font-semibold">{fmtMoney(p.avg)}</td>

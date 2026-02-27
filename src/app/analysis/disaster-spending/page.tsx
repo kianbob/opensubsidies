@@ -1,5 +1,5 @@
 import Breadcrumbs from '@/components/Breadcrumbs'
-import { fmtMoney, fmt } from '@/lib/utils'
+import { fmtMoney, fmt , formatProgram } from '@/lib/utils'
 import { loadData } from '@/lib/server-utils'
 import type { Metadata } from 'next'
 import RelatedArticles from '@/components/RelatedArticles'
@@ -77,7 +77,7 @@ export default function DisasterSpending() {
               <tbody className="divide-y">
                 {disasterProgs.slice(0, 15).map((p: { program: string; amount: number; payments: number }, i: number) => (
                   <tr key={i} className="hover:bg-gray-50">
-                    <td className="px-4 py-2">{p.program}</td>
+                    <td className="px-4 py-2">{formatProgram(p.program)}</td>
                     <td className="px-4 py-2 text-right font-mono">{fmtMoney(p.amount)}</td>
                     <td className="px-4 py-2 text-right text-gray-600">{fmt(p.payments)}</td>
                   </tr>

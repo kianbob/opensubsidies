@@ -1,4 +1,4 @@
-import { fmtMoney, fmt, slugify } from '@/lib/utils'
+import { fmtMoney, fmt, slugify , formatProgram } from '@/lib/utils'
 import { loadData } from '@/lib/server-utils'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ShareButtons from '@/components/ShareButtons'
@@ -88,7 +88,7 @@ export default function NegativePaymentsPage() {
               {negativePrograms.map((p, i) => (
                 <tr key={i} className="hover:bg-gray-50">
                   <td className="px-4 py-3">
-                    <Link href={`/programs/${slugify(p.program)}`} className="text-primary hover:underline">{p.program}</Link>
+                    <Link href={`/programs/${slugify(p.program)}`} className="text-primary hover:underline">{formatProgram(p.program)}</Link>
                   </td>
                   <td className="px-4 py-3 text-right font-mono text-red-600">{fmtMoney(p.amount)}</td>
                   <td className="px-4 py-3 text-right hidden sm:table-cell">{fmt(p.payments)}</td>
