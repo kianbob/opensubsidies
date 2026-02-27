@@ -58,6 +58,20 @@ export default function StateProgramsPage() {
         </div>
       </section>
 
+      {/* AI Overview */}
+      <div className="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-xl p-6 mb-10">
+        <h2 className="text-lg font-bold text-gray-900 mb-3">📊 Why This Pattern Matters</h2>
+        <p className="text-sm text-gray-700 mb-3">
+          The #1 program in each state tells you what that state&apos;s agriculture looks like — and how exposed it is to policy changes. States where <strong>CRP dominates</strong> have economies built around conservation payments; cutting CRP would devastate those rural communities. States where <strong>emergency programs</strong> (CFAP, MFP, disaster relief) lead are the ones most affected by trade wars, pandemics, and climate events.
+        </p>
+        <p className="text-sm text-gray-700 mb-3">
+          Notice how few programs actually dominate: just 3-4 programs are #1 in the vast majority of states. This concentration means changes to a single program can reshape subsidy flows across dozens of states simultaneously. When Congress debates the Farm Bill, they&apos;re essentially deciding the economic fate of entire regions.
+        </p>
+        <p className="text-sm text-gray-700">
+          <strong>The bigger picture:</strong> The shift from traditional programs (CRP, PLC) to emergency programs (CFAP, MFP) as top programs in many states reflects a fundamental change in farm policy — from predictable, structured support to reactive, crisis-driven spending. This makes farm income less predictable and more dependent on political decisions.
+        </p>
+      </div>
+
       {/* Full table */}
       <section>
         <h2 className="text-xl font-semibold font-[family-name:var(--font-heading)] mb-4">Every State&apos;s Top Program</h2>

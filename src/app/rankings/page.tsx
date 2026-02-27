@@ -17,6 +17,20 @@ export default function RankingsPage() {
       <Breadcrumbs items={[{ label: 'Rankings' }]} />
       <h1 className="text-3xl font-bold font-[family-name:var(--font-heading)] mb-2">State Rankings</h1>
       <p className="text-gray-600 mb-8">Compare states by total subsidies, per-capita spending, payment counts, and average payment size.</p>
+      {/* AI Overview */}
+      <div className="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-xl p-6 mb-8">
+        <h2 className="text-lg font-bold text-gray-900 mb-3">📊 Why State Rankings Matter</h2>
+        <p className="text-sm text-gray-700 mb-3">
+          Farm subsidies are often discussed as a single national number — $147 billion over 9 years. But <strong>the story changes completely depending on how you rank states</strong>. Texas leads in raw dollars ($12.6B), but tiny North Dakota leads per capita. The difference reveals who farm policy is really designed to help.
+        </p>
+        <p className="text-sm text-gray-700 mb-3">
+          Switch between the tabs above to see how rankings shift. States that rank high by total spending often drop when measured per capita, because large-population states like Texas and California have so many non-farming taxpayers that the per-person figure shrinks. Meanwhile, sparsely populated agricultural states like South Dakota and Montana surge to the top.
+        </p>
+        <p className="text-sm text-gray-700">
+          <strong>The policy implication:</strong> Every U.S. Senator has equal voting power on farm bills, regardless of state population. States with high per-capita subsidies — often with just 1-2 million residents — have outsized influence over $16+ billion in annual federal spending. Understanding these rankings is essential to understanding farm policy politics.
+        </p>
+      </div>
+
       <RankingsClient states={states} />
 
       <div className="mt-12 pt-8 border-t border-gray-200">

@@ -136,6 +136,36 @@ export default async function YearPage({ params }: Props) {
         </div>
       </section>
 
+      {/* AI Overview */}
+      <section className="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-xl p-6 mb-10">
+        <h2 className="text-lg font-bold text-gray-900 mb-3">📊 Why {yearStr} Data Matters</h2>
+        {yearNum === 2020 ? (
+          <p className="text-sm text-gray-700">
+            2020 was the <strong>single largest year for farm subsidies in American history</strong>. The COVID-19 pandemic triggered the Coronavirus Food Assistance Program (CFAP), which alone distributed over $23 billion. Combined with ongoing trade war payments and traditional programs, total spending hit {fmtMoney(thisYear.amount)} — more than the previous three years combined. This year permanently changed the baseline expectation for farm spending: once farmers received emergency payments at this scale, political pressure to maintain elevated support levels became enormous. Understanding 2020 is essential to understanding everything that followed.
+          </p>
+        ) : yearNum === 2018 || yearNum === 2019 ? (
+          <p className="text-sm text-gray-700">
+            {yearNum === 2018 ? 'The US-China trade war began in 2018' : '2019 saw expanded trade war payments'}, triggering the Market Facilitation Program (MFP) — a direct payment program to farmers affected by retaliatory tariffs. <strong>MFP represented a new model of farm subsidies</strong>: ad-hoc emergency payments decided by the executive branch rather than through the traditional Farm Bill legislative process. This year marked the beginning of a structural shift in how farm subsidies work, with emergency spending increasingly dwarfing the traditional programs that were designed to provide stable, predictable support.
+          </p>
+        ) : yearNum <= 2017 ? (
+          <p className="text-sm text-gray-700">
+            {yearStr} represents the <strong>pre-crisis baseline</strong> for farm subsidies — before trade war tariffs, before COVID, before the era of massive emergency spending. At {fmtMoney(thisYear.amount)}, spending was driven primarily by traditional programs: CRP conservation payments, ARC/PLC commodity support, and routine disaster assistance. Comparing any post-2017 year to this baseline reveals just how dramatically the farm subsidy landscape has changed. The programs that dominated in {yearStr} — CRP, PLC, ARC — still exist, but they&apos;ve been overshadowed by emergency spending that didn&apos;t exist yet.
+          </p>
+        ) : yearNum >= 2021 && yearNum <= 2023 ? (
+          <p className="text-sm text-gray-700">
+            {yearStr} shows the <strong>aftermath of crisis-era spending</strong>. After the record $38.7B in 2020, spending declined but didn&apos;t return to pre-2018 levels. Emergency programs continued — disaster relief for drought, wildfires, and hurricanes kept spending elevated. The question this year&apos;s data raises is whether the elevated spending baseline established during the trade war and pandemic has become the &quot;new normal&quot; for farm subsidies, or whether it will eventually return to pre-crisis levels.
+          </p>
+        ) : yearNum === 2024 ? (
+          <p className="text-sm text-gray-700">
+            {yearStr} data shows farm subsidies <strong>climbing back toward elevated levels</strong> after a brief post-COVID decline. Emergency Relief Program (ERP) payments for ongoing drought and extreme weather, combined with traditional commodity support, pushed spending above {fmtMoney(thisYear.amount)}. With the 2018 Farm Bill still operating on extension and no new legislation in sight, spending patterns in {yearStr} reflect political inertia as much as agricultural need.
+          </p>
+        ) : (
+          <p className="text-sm text-gray-700">
+            {yearStr} is a <strong>partial year</strong> — only payments with a {yearStr} program year are included so far. As the USDA continues processing payments throughout the fiscal year, this total will grow. Compare against previous complete years to understand the trajectory of farm subsidy spending. Watch this page for updates as new payment files are released.
+          </p>
+        )}
+      </section>
+
       {/* Year navigation */}
       <div className="text-center text-sm text-gray-500">
         Explore by Year:{' '}
