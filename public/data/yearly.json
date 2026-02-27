@@ -1,0 +1,132 @@
+[
+  {
+    "year": 2000,
+    "payments": 1,
+    "amount": 469.77
+  },
+  {
+    "year": 2001,
+    "payments": 10,
+    "amount": 3549
+  },
+  {
+    "year": 2002,
+    "payments": 6,
+    "amount": 2831.56
+  },
+  {
+    "year": 2003,
+    "payments": 215,
+    "amount": 330436
+  },
+  {
+    "year": 2004,
+    "payments": 436,
+    "amount": 1412845.14
+  },
+  {
+    "year": 2005,
+    "payments": 542,
+    "amount": 1052984
+  },
+  {
+    "year": 2006,
+    "payments": 173,
+    "amount": 663772
+  },
+  {
+    "year": 2007,
+    "payments": 330,
+    "amount": 1094607.47
+  },
+  {
+    "year": 2008,
+    "payments": 1231,
+    "amount": 5422639.52
+  },
+  {
+    "year": 2009,
+    "payments": 11562,
+    "amount": 25149776.23
+  },
+  {
+    "year": 2010,
+    "payments": 20582,
+    "amount": 43099683.53
+  },
+  {
+    "year": 2011,
+    "payments": 46559,
+    "amount": 108372298.29
+  },
+  {
+    "year": 2012,
+    "payments": 35499,
+    "amount": 81598532.66
+  },
+  {
+    "year": 2013,
+    "payments": 47742,
+    "amount": 105784149.11
+  },
+  {
+    "year": 2014,
+    "payments": 88949,
+    "amount": 231917629.55
+  },
+  {
+    "year": 2015,
+    "payments": 104875,
+    "amount": 264530188.39
+  },
+  {
+    "year": 2016,
+    "payments": 214412,
+    "amount": 631209715.67
+  },
+  {
+    "year": 2017,
+    "payments": 186515,
+    "amount": 527004985.17
+  },
+  {
+    "year": 2018,
+    "payments": 197237,
+    "amount": 562781262.51
+  },
+  {
+    "year": 2019,
+    "payments": 68870,
+    "amount": 123628199.39
+  },
+  {
+    "year": 2020,
+    "payments": 497282,
+    "amount": 1247517768.88
+  },
+  {
+    "year": 2021,
+    "payments": 562973,
+    "amount": 1558570002.57
+  },
+  {
+    "year": 2022,
+    "payments": 1260238,
+    "amount": 5159694916.47
+  },
+  {
+    "year": 2023,
+    "payments": 1539179,
+    "amount": 9086838321.11
+  },
+  {
+    "year": 2024,
+    "payments": 3015607,
+    "amount": 16986188303.84
+  },
+  {
+    "year": 2025,
+    "payments": 182680,
+    "amount": 2423225918.27
+  }
+]

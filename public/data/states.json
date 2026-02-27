@@ -1,0 +1,2754 @@
+[
+  {
+    "abbr": "TX",
+    "name": "Texas",
+    "payments": 777626,
+    "amount": 3807550413.42,
+    "topPrograms": [
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 834796825.53
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 569107487.73
+      },
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 468462143.36
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 297854525.72
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 240562587.17
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 228620410.09
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 2-NONSPCLTY CRPS",
+        "amount": 177699008.39
+      },
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 171755481.11
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PRGM-2023-24",
+        "amount": 154803800.95
+      },
+      {
+        "program": "NON-INSURED ASSISTANCE PROGRAM",
+        "amount": 96246200.84
+      }
+    ]
+  },
+  {
+    "abbr": "IA",
+    "name": "Iowa",
+    "payments": 687060,
+    "amount": 2969165225.91,
+    "topPrograms": [
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 1081990461.22
+      },
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 828980788.99
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 541261770.31
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 173913336.69
+      },
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 55515544.7
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 54107079.19
+      },
+      {
+        "program": "DAIRY MARGIN COVERAGE",
+        "amount": 44273171.81
+      },
+      {
+        "program": "EMERGENCY RELIEF PRGM 2",
+        "amount": 27162984.8
+      },
+      {
+        "program": "EMGNCY RELIEF PRGM-NONSPECIALITY CROPS",
+        "amount": 22185208.69
+      },
+      {
+        "program": "CFAPCCA2",
+        "amount": 18473566.19
+      }
+    ]
+  },
+  {
+    "abbr": "KS",
+    "name": "Kansas",
+    "payments": 673142,
+    "amount": 2806457596.9,
+    "topPrograms": [
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 714704607.3
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 631268175.71
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 437779978.96
+      },
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 318061668.08
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 208514514.36
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 192999391.82
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PRGM-2023-24",
+        "amount": 104333100.21
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PROGRAM - CAA",
+        "amount": 36472814.91
+      },
+      {
+        "program": "EMGNCY RELIEF PRGM-NONSPECIALITY CROPS",
+        "amount": 21031070.27
+      },
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 19017279.72
+      }
+    ]
+  },
+  {
+    "abbr": "MN",
+    "name": "Minnesota",
+    "payments": 511914,
+    "amount": 2609152512.31,
+    "topPrograms": [
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 659422952.77
+      },
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 613527468.62
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 472672334.01
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 469341142.03
+      },
+      {
+        "program": "DAIRY MARGIN COVERAGE",
+        "amount": 98030977.84
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 46487647.1
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 38145489.27
+      },
+      {
+        "program": "EMERGENCY RELIEF PRGM 2",
+        "amount": 33322185.22
+      },
+      {
+        "program": "EMGNCY RELIEF PRGM-NONSPECIALITY CROPS",
+        "amount": 23339171.81
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 2-NONSPCLTY CRPS",
+        "amount": 23334547.59
+      }
+    ]
+  },
+  {
+    "abbr": "NE",
+    "name": "Nebraska",
+    "payments": 443434,
+    "amount": 2342990442.51,
+    "topPrograms": [
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 616497294
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 432251392.63
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 261713095.62
+      },
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 224186339.4
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 195934795.73
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 157018669.2
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 2-NONSPCLTY CRPS",
+        "amount": 105442748.31
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PRGM-2023-24",
+        "amount": 70249395.82
+      },
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 41233747.41
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PROGRAM - CAA",
+        "amount": 39733975.75
+      }
+    ]
+  },
+  {
+    "abbr": "CA",
+    "name": "California",
+    "payments": 111265,
+    "amount": 2052542476.6,
+    "topPrograms": [
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 501936915.74
+      },
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 439844867
+      },
+      {
+        "program": "EMERGENCY RELIEF PRGM 2",
+        "amount": 235282047.45
+      },
+      {
+        "program": "DAIRY MARGIN COVERAGE",
+        "amount": 135425285.74
+      },
+      {
+        "program": "SUPP DISASTER RELIEF SPEC CROPS 1",
+        "amount": 112194625.55
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRACK 2-SPECLTY CRPS",
+        "amount": 99338506.97
+      },
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 72572332.74
+      },
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 62767718.75
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRACK 1-SPECLTY CRPS",
+        "amount": 47288339.92
+      },
+      {
+        "program": "EMGNCY RELIEF PROGRAM-SPECIALITY CROPS",
+        "amount": 44518056.3
+      }
+    ]
+  },
+  {
+    "abbr": "SD",
+    "name": "South Dakota",
+    "payments": 338981,
+    "amount": 1811922869.65,
+    "topPrograms": [
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 482311228.6
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 369142301.95
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 292778951.48
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 107486249.41
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 93010380.26
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 2-NONSPCLTY CRPS",
+        "amount": 80048509.08
+      },
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 71490841.66
+      },
+      {
+        "program": "EMERGENCY RELIEF PRGM 2",
+        "amount": 45791561.48
+      },
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 29551662.15
+      },
+      {
+        "program": "EMGNCY RELIEF PRGM-NONSPECIALITY CROPS",
+        "amount": 26430331.88
+      }
+    ]
+  },
+  {
+    "abbr": "OK",
+    "name": "Oklahoma",
+    "payments": 376627,
+    "amount": 1786349408.48,
+    "topPrograms": [
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 576615999.06
+      },
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 205905555.99
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PRGM-2023-24",
+        "amount": 190935360.13
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 108081780.75
+      },
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 106329008.23
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 94716090.47
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PROGRAM - CAA",
+        "amount": 94539205.68
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 2-NONSPCLTY CRPS",
+        "amount": 72011178.96
+      },
+      {
+        "program": "NON-INSURED ASSISTANCE PROGRAM",
+        "amount": 62095408.88
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 57566926.16
+      }
+    ]
+  },
+  {
+    "abbr": "IL",
+    "name": "Illinois",
+    "payments": 548086,
+    "amount": 1693771378.21,
+    "topPrograms": [
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 762079192.84
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 496626135.73
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 232730711.95
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 57241689.02
+      },
+      {
+        "program": "DAIRY MARGIN COVERAGE",
+        "amount": 22927670.35
+      },
+      {
+        "program": "PANDEMIC ASSISTANCE REVENUE PROGRAM",
+        "amount": 21006210.27
+      },
+      {
+        "program": "EMERGENCY RELIEF PRGM 2",
+        "amount": 16022876.29
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 12792802.94
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 10382393.48
+      },
+      {
+        "program": "CFAPCCA2",
+        "amount": 9478124.98
+      }
+    ]
+  },
+  {
+    "abbr": "ND",
+    "name": "North Dakota",
+    "payments": 216587,
+    "amount": 1595003524.59,
+    "topPrograms": [
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 665985476.16
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 256372498.84
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 183823490.53
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 76378838.02
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 63313127.73
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 2-NONSPCLTY CRPS",
+        "amount": 56822472.44
+      },
+      {
+        "program": "EMGNCY RELIEF PRGM-NONSPECIALITY CROPS",
+        "amount": 47981349.22
+      },
+      {
+        "program": "SUPP DISASTER RELIEF SPEC CROPS 1",
+        "amount": 34818091.74
+      },
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 34125797.46
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 29946942.2
+      }
+    ]
+  },
+  {
+    "abbr": "MO",
+    "name": "Missouri",
+    "payments": 406154,
+    "amount": 1557524333.29,
+    "topPrograms": [
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 380871533.43
+      },
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 312879435.27
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 287759865.44
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 166301922.59
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PRGM-2023-24",
+        "amount": 105901315.91
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 59342380.4
+      },
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 44863543.13
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PROGRAM - CAA",
+        "amount": 38515453.9
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 34822968.24
+      },
+      {
+        "program": "RICE PRODUCTION PROGRAM",
+        "amount": 16015575.2
+      }
+    ]
+  },
+  {
+    "abbr": "GA",
+    "name": "Georgia",
+    "payments": 113244,
+    "amount": 984860224.35,
+    "topPrograms": [
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 177744281.39
+      },
+      {
+        "program": "ERFMCFSOF",
+        "amount": 149457647.83
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 85601792.39
+      },
+      {
+        "program": "ECP FINANCIAL ASSISTANCE COF",
+        "amount": 83685136.38
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 79926498.2
+      },
+      {
+        "program": "ECPCOF",
+        "amount": 59545078.56
+      },
+      {
+        "program": "EMERGENCY RELIEF PRGM 2",
+        "amount": 42114032.44
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 35648832.71
+      },
+      {
+        "program": "PRICE LOSS COVERAGE",
+        "amount": 31636060.71
+      },
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 26407798.75
+      }
+    ]
+  },
+  {
+    "abbr": "WI",
+    "name": "Wisconsin",
+    "payments": 270645,
+    "amount": 965146732.71,
+    "topPrograms": [
+      {
+        "program": "DAIRY MARGIN COVERAGE",
+        "amount": 258036673.51
+      },
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 237094392.29
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 127997614.12
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 111870630.45
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 93089995.3
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 40027641.32
+      },
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 21899581.47
+      },
+      {
+        "program": "DMC PRGM-SUPPLEMENTAL",
+        "amount": 13676928.19
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PRGM-2023-24",
+        "amount": 8139964.91
+      },
+      {
+        "program": "SUPP DISASTER RELIEF SPEC CROPS 1",
+        "amount": 8021326.63
+      }
+    ]
+  },
+  {
+    "abbr": "OH",
+    "name": "Ohio",
+    "payments": 324393,
+    "amount": 915142897,
+    "topPrograms": [
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 302889146.62
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 151242694.95
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 138328498.67
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 119221294.15
+      },
+      {
+        "program": "DAIRY MARGIN COVERAGE",
+        "amount": 47180714.51
+      },
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 30796597.04
+      },
+      {
+        "program": "CRP COST-SHARE WEB-BASED - COF",
+        "amount": 24828574.47
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 20685525.44
+      },
+      {
+        "program": "CRP - CONTINUOUS PIP",
+        "amount": 18745457.79
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 11943271.18
+      }
+    ]
+  },
+  {
+    "abbr": "MT",
+    "name": "Montana",
+    "payments": 122311,
+    "amount": 890865442.09,
+    "topPrograms": [
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 211657638.76
+      },
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 136139248.75
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 95236582.5
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 62458962.57
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 41698815.25
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 40170834.07
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PRGM-2023-24",
+        "amount": 38556989.5
+      },
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 35946983.39
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 33551149.64
+      },
+      {
+        "program": "SUPP DISASTER RELIEF SPEC CROPS 1",
+        "amount": 28009868.29
+      }
+    ]
+  },
+  {
+    "abbr": "WA",
+    "name": "Washington",
+    "payments": 114650,
+    "amount": 824939230.63,
+    "topPrograms": [
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 183196755.98
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 169389201.63
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 109261630.17
+      },
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 84957884.56
+      },
+      {
+        "program": "SUPP DISASTER RELIEF SPEC CROPS 1",
+        "amount": 54746151.61
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 43994817.14
+      },
+      {
+        "program": "EMERGENCY RELIEF PRGM 2",
+        "amount": 30987251.1
+      },
+      {
+        "program": "DAIRY MARGIN COVERAGE",
+        "amount": 25877478.2
+      },
+      {
+        "program": "EMGNCY RELIEF PRGM-NONSPECIALITY CROPS",
+        "amount": 15038147.81
+      },
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 13275328.07
+      }
+    ]
+  },
+  {
+    "abbr": "AR",
+    "name": "Arkansas",
+    "payments": 161259,
+    "amount": 816182654.18,
+    "topPrograms": [
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 272043236.25
+      },
+      {
+        "program": "RICE PRODUCTION PROGRAM",
+        "amount": 117510045.26
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 59322019.42
+      },
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 53948825.63
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 46742786.05
+      },
+      {
+        "program": "NON-INSURED ASSISTANCE PROGRAM",
+        "amount": 34256377.98
+      },
+      {
+        "program": "WEB-BASED NAP",
+        "amount": 26904465.34
+      },
+      {
+        "program": "PRICE LOSS COVERAGE",
+        "amount": 26001536.64
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 25031796.25
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PROGRAM - CAA",
+        "amount": 23852332.98
+      }
+    ]
+  },
+  {
+    "abbr": "CO",
+    "name": "Colorado",
+    "payments": 142114,
+    "amount": 739788808.78,
+    "topPrograms": [
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 195104025.68
+      },
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 139703154.1
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 92965968.45
+      },
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 54540197.73
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 40609839
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 35348481.69
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 21006007.84
+      },
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 18781473.21
+      },
+      {
+        "program": "EMERGENCY RELIEF PRGM 2",
+        "amount": 18140239.77
+      },
+      {
+        "program": "NAP REGULAR WEB-BASED",
+        "amount": 13971931.04
+      }
+    ]
+  },
+  {
+    "abbr": "IN",
+    "name": "Indiana",
+    "payments": 240065,
+    "amount": 726542927.81,
+    "topPrograms": [
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 393185037.31
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 121626439.9
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 82985280.7
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 35353671.63
+      },
+      {
+        "program": "DAIRY MARGIN COVERAGE",
+        "amount": 18280534.24
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 14834574.53
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 8967958.33
+      },
+      {
+        "program": "CFAPCCA2",
+        "amount": 8659356.71
+      },
+      {
+        "program": "CRP COST-SHARE WEB-BASED - COF",
+        "amount": 5351782.35
+      },
+      {
+        "program": "CFAP3 - TUP",
+        "amount": 5015031.9
+      }
+    ]
+  },
+  {
+    "abbr": "LA",
+    "name": "Louisiana",
+    "payments": 105084,
+    "amount": 689997565.15,
+    "topPrograms": [
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 212132570.47
+      },
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 104693230.95
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 71310883.26
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 65885992.67
+      },
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 61994748.27
+      },
+      {
+        "program": "RICE PRODUCTION PROGRAM",
+        "amount": 37176423.25
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PRGM-2023-24",
+        "amount": 22280592.73
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 21416712.06
+      },
+      {
+        "program": "PRICE LOSS COVERAGE",
+        "amount": 19679461.87
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 16926085.82
+      }
+    ]
+  },
+  {
+    "abbr": "FL",
+    "name": "Florida",
+    "payments": 53945,
+    "amount": 683096352.81,
+    "topPrograms": [
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 143419366.66
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 134381360.6
+      },
+      {
+        "program": "WECPCSCOF",
+        "amount": 39089545.4
+      },
+      {
+        "program": "SUPP DISASTER RELIEF SPEC CROPS 1",
+        "amount": 35974539.67
+      },
+      {
+        "program": "EMERGENCY RELIEF PRGM 2",
+        "amount": 35079492.81
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 32663510.59
+      },
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 27311136.49
+      },
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 27069241.01
+      },
+      {
+        "program": "ERFMCFSOF",
+        "amount": 25607649.91
+      },
+      {
+        "program": "ECPCOF",
+        "amount": 25211918.84
+      }
+    ]
+  },
+  {
+    "abbr": "MS",
+    "name": "Mississippi",
+    "payments": 116063,
+    "amount": 619570016.27,
+    "topPrograms": [
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 145152429.78
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 106044318.67
+      },
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 82925432.1
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 60985729.31
+      },
+      {
+        "program": "PRICE LOSS COVERAGE",
+        "amount": 33161316
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 32356734.15
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PRGM-2023-24",
+        "amount": 29883498.91
+      },
+      {
+        "program": "EMERGENCY RELIEF PRGM 2",
+        "amount": 25124212.55
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 13342848.98
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 2-NONSPCLTY CRPS",
+        "amount": 11220731.43
+      }
+    ]
+  },
+  {
+    "abbr": "NC",
+    "name": "North Carolina",
+    "payments": 137939,
+    "amount": 615500491.16,
+    "topPrograms": [
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 141094347.82
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 90745168.96
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 64847963.67
+      },
+      {
+        "program": "SUPP DISASTER RELIEF SPEC CROPS 1",
+        "amount": 47108673.09
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 37848651.57
+      },
+      {
+        "program": "NAP REGULAR WEB-BASED",
+        "amount": 33554787.88
+      },
+      {
+        "program": "EMERGENCY RELIEF PRGM 2",
+        "amount": 29840637.64
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 2-NONSPCLTY CRPS",
+        "amount": 27721602.2
+      },
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 19783856.93
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 19349438.97
+      }
+    ]
+  },
+  {
+    "abbr": "TN",
+    "name": "Tennessee",
+    "payments": 167521,
+    "amount": 521493992.84,
+    "topPrograms": [
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 121118372.16
+      },
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 88495453.48
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 55159921.2
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 45552307
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 45333459.43
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PRGM-2023-24",
+        "amount": 32788850.41
+      },
+      {
+        "program": "PRICE LOSS COVERAGE",
+        "amount": 21091797.31
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 18730826.7
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 16766844.94
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 2-NONSPCLTY CRPS",
+        "amount": 12106482.96
+      }
+    ]
+  },
+  {
+    "abbr": "MI",
+    "name": "Michigan",
+    "payments": 102655,
+    "amount": 521443182.12,
+    "topPrograms": [
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 168604515.13
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 96512078.33
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 64175129.64
+      },
+      {
+        "program": "DAIRY MARGIN COVERAGE",
+        "amount": 53612991.46
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 49250883.17
+      },
+      {
+        "program": "SUPP DISASTER RELIEF SPEC CROPS 1",
+        "amount": 21016824.94
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 9627039.97
+      },
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 9067406.24
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 7681919.16
+      },
+      {
+        "program": "EMERGENCY RELIEF PRGM 2",
+        "amount": 5639309.17
+      }
+    ]
+  },
+  {
+    "abbr": "OR",
+    "name": "Oregon",
+    "payments": 56952,
+    "amount": 476369601.43,
+    "topPrograms": [
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 95456938.23
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 89372288.66
+      },
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 55438974.14
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 26586926.73
+      },
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 26501734.75
+      },
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 23373416.43
+      },
+      {
+        "program": "EMERGENCY RELIEF PRGM 2",
+        "amount": 21513816.34
+      },
+      {
+        "program": "WECPCSCOF",
+        "amount": 15072884.09
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PROGRAM - CAA",
+        "amount": 12657928.98
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PRGM-2023-24",
+        "amount": 12351231.12
+      }
+    ]
+  },
+  {
+    "abbr": "KY",
+    "name": "Kentucky",
+    "payments": 129564,
+    "amount": 475129688.28,
+    "topPrograms": [
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 129541996.87
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 66616643.04
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 66405168.05
+      },
+      {
+        "program": "EMERGENCY GRAIN STORAGE FACILITY ASSTNCE",
+        "amount": 60715931
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 43255855
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 18475860.05
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 2-NONSPCLTY CRPS",
+        "amount": 9468873.08
+      },
+      {
+        "program": "DAIRY MARGIN COVERAGE",
+        "amount": 9212355.93
+      },
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 7483474
+      },
+      {
+        "program": "EMERGENCY RELIEF PRGM 2",
+        "amount": 6292737.57
+      }
+    ]
+  },
+  {
+    "abbr": "ID",
+    "name": "Idaho",
+    "payments": 46408,
+    "amount": 376880867.08,
+    "topPrograms": [
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 78681943.51
+      },
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 64975721.57
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 54188870.37
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 49145136.47
+      },
+      {
+        "program": "DAIRY MARGIN COVERAGE",
+        "amount": 31219423.27
+      },
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 16641631.62
+      },
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 12396108.56
+      },
+      {
+        "program": "SUPP DISASTER RELIEF SPEC CROPS 1",
+        "amount": 9172302.74
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 8993977.25
+      },
+      {
+        "program": "LIVESTOCK INDEMINITY PAYMENTS PROGRAM",
+        "amount": 7500020
+      }
+    ]
+  },
+  {
+    "abbr": "NM",
+    "name": "New Mexico",
+    "payments": 50236,
+    "amount": 366715932.4,
+    "topPrograms": [
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 81213474.84
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 53773072.66
+      },
+      {
+        "program": "NAP REGULAR WEB-BASED",
+        "amount": 37031960.19
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PRGM-2023-24",
+        "amount": 28162293.44
+      },
+      {
+        "program": "NON-INSURED ASSISTANCE PROGRAM",
+        "amount": 23379723.01
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 19622162.9
+      },
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 19422683.36
+      },
+      {
+        "program": "DAIRY MARGIN COVERAGE",
+        "amount": 12716097.65
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 12252699.56
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PROGRAM - CAA",
+        "amount": 10937149.42
+      }
+    ]
+  },
+  {
+    "abbr": "AL",
+    "name": "Alabama",
+    "payments": 78730,
+    "amount": 345773654.09,
+    "topPrograms": [
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 76451406.48
+      },
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 63543572.23
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 52806920.97
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PRGM-2023-24",
+        "amount": 23831345
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 19421702.15
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 18566796.77
+      },
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 13446844.56
+      },
+      {
+        "program": "PRICE LOSS COVERAGE",
+        "amount": 11713067.5
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 10879409.7
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 8893857.47
+      }
+    ]
+  },
+  {
+    "abbr": "PA",
+    "name": "Pennsylvania",
+    "payments": 81334,
+    "amount": 318276828.21,
+    "topPrograms": [
+      {
+        "program": "DAIRY MARGIN COVERAGE",
+        "amount": 91833440.96
+      },
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 65425462.76
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 39936827.46
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 33881182.14
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 22710074.46
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 18262692.33
+      },
+      {
+        "program": "SUPP DISASTER RELIEF SPEC CROPS 1",
+        "amount": 9641291.83
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 6907442.98
+      },
+      {
+        "program": "EMGNCY RELIEF PROGRAM-SPECIALITY CROPS",
+        "amount": 5032543.05
+      },
+      {
+        "program": "DMC PRGM-SUPPLEMENTAL",
+        "amount": 3344111.23
+      }
+    ]
+  },
+  {
+    "abbr": "NY",
+    "name": "New York",
+    "payments": 52009,
+    "amount": 308512485.89,
+    "topPrograms": [
+      {
+        "program": "DAIRY MARGIN COVERAGE",
+        "amount": 109439925.41
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 61487151.2
+      },
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 56869549.52
+      },
+      {
+        "program": "SUPP DISASTER RELIEF SPEC CROPS 1",
+        "amount": 19216550.53
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 7553527.09
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 7147484.12
+      },
+      {
+        "program": "NAP REGULAR WEB-BASED",
+        "amount": 6379821
+      },
+      {
+        "program": "ORGANIC DAIRY MARKETING ASSISTANCE PRGM",
+        "amount": 5569251.81
+      },
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 4074844.11
+      },
+      {
+        "program": "CFAPCCA2",
+        "amount": 3766446.15
+      }
+    ]
+  },
+  {
+    "abbr": "WY",
+    "name": "Wyoming",
+    "payments": 32738,
+    "amount": 271330298.44,
+    "topPrograms": [
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 90286391.72
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PRGM-2023-24",
+        "amount": 27566618.54
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 26165843.78
+      },
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 23473969.18
+      },
+      {
+        "program": "LIVESTOCK FORAGE DISASTER PROGRAM (COF)",
+        "amount": 15806341.16
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PROGRAM - CAA",
+        "amount": 14046771.86
+      },
+      {
+        "program": "LIVESTOCK INDEMINITY PAYMENTS PROGRAM",
+        "amount": 11438752.35
+      },
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 11312573.06
+      },
+      {
+        "program": "NON-INSURED ASSISTANCE PROGRAM",
+        "amount": 9470581.2
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PROGRAM",
+        "amount": 7696533.71
+      }
+    ]
+  },
+  {
+    "abbr": "VA",
+    "name": "Virginia",
+    "payments": 69804,
+    "amount": 254473881.94,
+    "topPrograms": [
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 50008812.72
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 35608986.27
+      },
+      {
+        "program": "NAP REGULAR WEB-BASED",
+        "amount": 30155122.32
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 18272028.45
+      },
+      {
+        "program": "DAIRY MARGIN COVERAGE",
+        "amount": 16678487.67
+      },
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 15784944.96
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 14589804.46
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 11676185.82
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 9417960.42
+      },
+      {
+        "program": "SUPP DISASTER RELIEF SPEC CROPS 1",
+        "amount": 9251265.21
+      }
+    ]
+  },
+  {
+    "abbr": "SC",
+    "name": "South Carolina",
+    "payments": 51464,
+    "amount": 196001628.68,
+    "topPrograms": [
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 52198439.86
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 29709478.23
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 18461990.72
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 17569258
+      },
+      {
+        "program": "SUPP DISASTER RELIEF SPEC CROPS 1",
+        "amount": 12184028.51
+      },
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 10461791
+      },
+      {
+        "program": "PRICE LOSS COVERAGE",
+        "amount": 7230675
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 6969121.07
+      },
+      {
+        "program": "NON-INSURED ASSISTANCE PROGRAM",
+        "amount": 6107934
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 4418558.5
+      }
+    ]
+  },
+  {
+    "abbr": "AZ",
+    "name": "Arizona",
+    "payments": 35966,
+    "amount": 183522904.99,
+    "topPrograms": [
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 25458431.2
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 24318401.74
+      },
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 21478202.96
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 17624004.79
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 13561884.95
+      },
+      {
+        "program": "PRICE LOSS COVERAGE",
+        "amount": 13320193
+      },
+      {
+        "program": "LIVESTOCK FORAGE DISASTER PROGRAM (COF)",
+        "amount": 10345299.91
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PRGM-2023-24",
+        "amount": 9341665.82
+      },
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 8609487.06
+      },
+      {
+        "program": "DAIRY MARGIN COVERAGE",
+        "amount": 7319166.72
+      }
+    ]
+  },
+  {
+    "abbr": "UT",
+    "name": "Utah",
+    "payments": 24629,
+    "amount": 149503116.83,
+    "topPrograms": [
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 30882144.31
+      },
+      {
+        "program": "LIVESTOCK FORAGE DISASTER PROGRAM (COF)",
+        "amount": 16270751.66
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 16015488.06
+      },
+      {
+        "program": "LIVESTOCK INDEMINITY PAYMENTS PROGRAM",
+        "amount": 12540669
+      },
+      {
+        "program": "DAIRY MARGIN COVERAGE",
+        "amount": 11044259.86
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PROGRAM - CAA",
+        "amount": 9718424.66
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PRGM-2023-24",
+        "amount": 9645058.94
+      },
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 9317362.41
+      },
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 8697818.36
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 4808736.31
+      }
+    ]
+  },
+  {
+    "abbr": "PR",
+    "name": "Puerto Rico",
+    "payments": 18892,
+    "amount": 137578728.24,
+    "topPrograms": [
+      {
+        "program": "EMERGENCY RELIEF PRGM 2",
+        "amount": 55246458.1
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRACK 2-SPECLTY CRPS",
+        "amount": 12259073.19
+      },
+      {
+        "program": "WECPCSCOF",
+        "amount": 11597418.63
+      },
+      {
+        "program": "DAIRY MARGIN COVERAGE",
+        "amount": 10413368.28
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 10139127.4
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRACK 1-SPECLTY CRPS",
+        "amount": 8312203
+      },
+      {
+        "program": "WEB-BASED NAP",
+        "amount": 6805279.33
+      },
+      {
+        "program": "TREE ASSISTANCE PROGRAM",
+        "amount": 4267327.89
+      },
+      {
+        "program": "NON-INSURED ASSISTANCE PROGRAM",
+        "amount": 4261103.44
+      },
+      {
+        "program": "CFAPCCA2",
+        "amount": 3920200.25
+      }
+    ]
+  },
+  {
+    "abbr": "MD",
+    "name": "Maryland",
+    "payments": 35777,
+    "amount": 133735668.13,
+    "topPrograms": [
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 36132189.43
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 31251016.56
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 19745015.5
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 17509198.81
+      },
+      {
+        "program": "DAIRY MARGIN COVERAGE",
+        "amount": 10698221.22
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 9867060.44
+      },
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 1499464.37
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 1279978.71
+      },
+      {
+        "program": "CRP COST-SHARE WEB-BASED - COF",
+        "amount": 776887.25
+      },
+      {
+        "program": "CFAPCCA2",
+        "amount": 747638.33
+      }
+    ]
+  },
+  {
+    "abbr": "NV",
+    "name": "Nevada",
+    "payments": 8102,
+    "amount": 80502630.89,
+    "topPrograms": [
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 14499480
+      },
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 11988546.89
+      },
+      {
+        "program": "LIVESTOCK INDEMINITY PAYMENTS PROGRAM",
+        "amount": 6800093
+      },
+      {
+        "program": "ECPCOF",
+        "amount": 5346427.04
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 5013572.21
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PRGM-2023-24",
+        "amount": 4988697.31
+      },
+      {
+        "program": "LIVESTOCK FORAGE DISASTER PROGRAM (COF)",
+        "amount": 4667641.71
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PROGRAM - CAA",
+        "amount": 4249794.17
+      },
+      {
+        "program": "DAIRY MARGIN COVERAGE",
+        "amount": 2630748.75
+      },
+      {
+        "program": "ERFMCFSOF",
+        "amount": 2561964
+      }
+    ]
+  },
+  {
+    "abbr": "NJ",
+    "name": "New Jersey",
+    "payments": 8308,
+    "amount": 70289097.83,
+    "topPrograms": [
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 34406220.3
+      },
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 6876822
+      },
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 4364724.65
+      },
+      {
+        "program": "EMERGENCY RELIEF PRGM 2",
+        "amount": 4054020.41
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 3071630.59
+      },
+      {
+        "program": "SUPP DISASTER RELIEF SPEC CROPS 1",
+        "amount": 2456208.94
+      },
+      {
+        "program": "NAP REGULAR WEB-BASED",
+        "amount": 2400928
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 2060483
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 1911184.78
+      },
+      {
+        "program": "DAIRY MARGIN COVERAGE",
+        "amount": 1648698.78
+      }
+    ]
+  },
+  {
+    "abbr": "WV",
+    "name": "West Virginia",
+    "payments": 21216,
+    "amount": 65214379.87,
+    "topPrograms": [
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 29756862.81
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PRGM-2023-24",
+        "amount": 11329550.79
+      },
+      {
+        "program": "LIVESTOCK FORAGE DISASTER PROGRAM (COF)",
+        "amount": 3315823.73
+      },
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 2869938.48
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 2779261
+      },
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 2684805.93
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 1827696.8
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 1821864.35
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 1450713.53
+      },
+      {
+        "program": "NAP REGULAR WEB-BASED",
+        "amount": 1064887.55
+      }
+    ]
+  },
+  {
+    "abbr": "VT",
+    "name": "Vermont",
+    "payments": 11720,
+    "amount": 57175806.19,
+    "topPrograms": [
+      {
+        "program": "DAIRY MARGIN COVERAGE",
+        "amount": 27223883.83
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 5517230.09
+      },
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 3945935.24
+      },
+      {
+        "program": "ORGANIC DAIRY MARKETING ASSISTANCE PRGM",
+        "amount": 3599204.62
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 2380403.97
+      },
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 1980511.21
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 1569938.55
+      },
+      {
+        "program": "WECPCSCOF",
+        "amount": 1506749.73
+      },
+      {
+        "program": "SUPP DISASTER RELIEF SPEC CROPS 1",
+        "amount": 1371131.96
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 1227984.16
+      }
+    ]
+  },
+  {
+    "abbr": "HI",
+    "name": "Hawaii",
+    "payments": 6709,
+    "amount": 46629376.61,
+    "topPrograms": [
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 11744856
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 9818004.99
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PRGM-2023-24",
+        "amount": 4916688.27
+      },
+      {
+        "program": "FARM RANCHERS PROGRAM",
+        "amount": 4146331.25
+      },
+      {
+        "program": "LIVESTOCK FORAGE DISASTER PROGRAM (COF)",
+        "amount": 3467132.96
+      },
+      {
+        "program": "EMERGENCY RELIEF PRGM 2",
+        "amount": 2625079.78
+      },
+      {
+        "program": "CFAPCCA2",
+        "amount": 2330536.17
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PROGRAM - CAA",
+        "amount": 1692547.83
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 1279607.86
+      },
+      {
+        "program": "NAP REGULAR WEB-BASED",
+        "amount": 1054405
+      }
+    ]
+  },
+  {
+    "abbr": "ME",
+    "name": "Maine",
+    "payments": 6041,
+    "amount": 37229641.5,
+    "topPrograms": [
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 17795173.82
+      },
+      {
+        "program": "DAIRY MARGIN COVERAGE",
+        "amount": 7118697.08
+      },
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 3037146.85
+      },
+      {
+        "program": "ECPCOF",
+        "amount": 1168508.52
+      },
+      {
+        "program": "EFRP COST SHARE STFRD DISTR-OBLIG FRMWRK",
+        "amount": 1004789.01
+      },
+      {
+        "program": "ORGANIC DAIRY MARKETING ASSISTANCE PRGM",
+        "amount": 972093.49
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 959023.03
+      },
+      {
+        "program": "EMGNCY RELIEF PROGRAM-SPECIALITY CROPS",
+        "amount": 920169.56
+      },
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 700546.72
+      },
+      {
+        "program": "CFAPCCA2",
+        "amount": 597049.12
+      }
+    ]
+  },
+  {
+    "abbr": "MA",
+    "name": "Massachusetts",
+    "payments": 6438,
+    "amount": 34615956.9,
+    "topPrograms": [
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 12137595.78
+      },
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 5758130.05
+      },
+      {
+        "program": "DAIRY MARGIN COVERAGE",
+        "amount": 4101252.26
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 1681310
+      },
+      {
+        "program": "NON-INSURED ASSISTANCE PROGRAM",
+        "amount": 1530578
+      },
+      {
+        "program": "EMERGENCY RELIEF PRGM 2",
+        "amount": 1264724.22
+      },
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 1118436.97
+      },
+      {
+        "program": "ECPCOF",
+        "amount": 1097551.01
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRACK 1-SPECLTY CRPS",
+        "amount": 826827.85
+      },
+      {
+        "program": "CFAPCCA2",
+        "amount": 578916.64
+      }
+    ]
+  },
+  {
+    "abbr": "DE",
+    "name": "Delaware",
+    "payments": 7086,
+    "amount": 29911655.9,
+    "topPrograms": [
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 12278282.65
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 5962597.84
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 4537811
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 2605914.54
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 2442825.46
+      },
+      {
+        "program": "DAIRY MARGIN COVERAGE",
+        "amount": 644011.75
+      },
+      {
+        "program": "SUPP DISASTER RELIEF SPEC CROPS 1",
+        "amount": 198977.83
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRACK 1-SPECLTY CRPS",
+        "amount": 159827.08
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 146719.81
+      },
+      {
+        "program": "EMGNCY RELIEF PROGRAM-SPECIALITY CROPS",
+        "amount": 140672.56
+      }
+    ]
+  },
+  {
+    "abbr": "CT",
+    "name": "Connecticut",
+    "payments": 2899,
+    "amount": 21809177.24,
+    "topPrograms": [
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 10269276.48
+      },
+      {
+        "program": "DAIRY MARGIN COVERAGE",
+        "amount": 4056777.31
+      },
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 1248231.4
+      },
+      {
+        "program": "EMERGENCY RELIEF PRGM 2",
+        "amount": 1241826.73
+      },
+      {
+        "program": "NAP REGULAR WEB-BASED",
+        "amount": 958370
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 800261
+      },
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 626314.99
+      },
+      {
+        "program": "EMGNCY RELIEF PRGM-NONSPECIALITY CROPS",
+        "amount": 624679.69
+      },
+      {
+        "program": "ECPCOF",
+        "amount": 262131.5
+      },
+      {
+        "program": "EMGNCY RELIEF PROGRAM-SPECIALITY CROPS",
+        "amount": 207697.45
+      }
+    ]
+  },
+  {
+    "abbr": "RI",
+    "name": "Rhode Island",
+    "payments": 973,
+    "amount": 12629527.94,
+    "topPrograms": [
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 7804919.28
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 1015143.23
+      },
+      {
+        "program": "WECPCSCOF",
+        "amount": 837533.01
+      },
+      {
+        "program": "NON-INSURED ASSISTANCE PROGRAM",
+        "amount": 837282.21
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 449541
+      },
+      {
+        "program": "WEB-BASED NAP",
+        "amount": 293832
+      },
+      {
+        "program": "DAIRY MARGIN COVERAGE",
+        "amount": 234354.83
+      },
+      {
+        "program": "CFAPCCA2",
+        "amount": 229451.31
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRACK 1-SPECLTY CRPS",
+        "amount": 219171.39
+      },
+      {
+        "program": "EMGNCY RELIEF PROGRAM-SPECIALITY CROPS",
+        "amount": 216051.63
+      }
+    ]
+  },
+  {
+    "abbr": "NH",
+    "name": "New Hampshire",
+    "payments": 2340,
+    "amount": 10019677.05,
+    "topPrograms": [
+      {
+        "program": "DAIRY MARGIN COVERAGE",
+        "amount": 3391861.7
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 1723562.32
+      },
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 756518.23
+      },
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 689703.01
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 593691
+      },
+      {
+        "program": "NAP REGULAR WEB-BASED",
+        "amount": 565508
+      },
+      {
+        "program": "CFAPCCA2",
+        "amount": 480062.39
+      },
+      {
+        "program": "SUPP DISASTER RELIEF SPEC CROPS 1",
+        "amount": 365764.09
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 241747.15
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 153687.99
+      }
+    ]
+  },
+  {
+    "abbr": "AK",
+    "name": "Alaska",
+    "payments": 2735,
+    "amount": 9284333.3,
+    "topPrograms": [
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 5174660.52
+      },
+      {
+        "program": "FARM RANCHERS PROGRAM",
+        "amount": 1932268.91
+      },
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 507858.31
+      },
+      {
+        "program": "CRP COST-SHARE WEB-BASED - COF",
+        "amount": 375397
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 255529.82
+      },
+      {
+        "program": "MARKET ACCESS PROGRAM",
+        "amount": 133752.24
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 130068.44
+      },
+      {
+        "program": "CRP TRANSITION INCENTIVES PRGM",
+        "amount": 120725
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 113433.91
+      },
+      {
+        "program": "CRP - CONTINUOUS PIP",
+        "amount": 83430
+      }
+    ]
+  },
+  {
+    "abbr": "DC",
+    "name": "District of Columbia",
+    "payments": 652,
+    "amount": 3157748.11,
+    "topPrograms": [
+      {
+        "program": "MARKET ACCESS PROGRAM",
+        "amount": 2088653.51
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 788004.94
+      },
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 140281.31
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 26669
+      },
+      {
+        "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+        "amount": 23079.7
+      },
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 22778
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 19208.69
+      },
+      {
+        "program": "CRP COST-SHARE WEB-BASED - COF",
+        "amount": 9677
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PRGM-2023-24",
+        "amount": 8454.25
+      },
+      {
+        "program": "CRP - CONTINUOUS PIP",
+        "amount": 7922
+      }
+    ]
+  },
+  {
+    "abbr": "GU",
+    "name": "Guam",
+    "payments": 310,
+    "amount": 2500256.39,
+    "topPrograms": [
+      {
+        "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+        "amount": 1190373
+      },
+      {
+        "program": "NON-INSURED ASSISTANCE PROGRAM",
+        "amount": 353235
+      },
+      {
+        "program": "SUPP DISASTER RELIEF SPEC CROPS 1",
+        "amount": 235799.55
+      },
+      {
+        "program": "EMERGENCY RELIEF PRGM 2",
+        "amount": 214854.43
+      },
+      {
+        "program": "ECPSFCOF",
+        "amount": 172368
+      },
+      {
+        "program": "FARM RANCHERS PROGRAM",
+        "amount": 147209.13
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 64262.64
+      },
+      {
+        "program": "CFAPCCA2",
+        "amount": 36023.84
+      },
+      {
+        "program": "NAP REGULAR WEB-BASED",
+        "amount": 21309
+      },
+      {
+        "program": "WEB-BASED NAP",
+        "amount": 15054
+      }
+    ]
+  },
+  {
+    "abbr": "VI",
+    "name": "Virgin Islands",
+    "payments": 776,
+    "amount": 1149714.08,
+    "topPrograms": [
+      {
+        "program": "LIVESTOCK INDEMINITY PAYMENTS PROGRAM",
+        "amount": 209663
+      },
+      {
+        "program": "FARM RANCHERS PROGRAM",
+        "amount": 191947.02
+      },
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 113508.29
+      },
+      {
+        "program": "WECPCSCOF",
+        "amount": 93908
+      },
+      {
+        "program": "NON-INSURED ASSISTANCE PROGRAM",
+        "amount": 86648
+      },
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 76575
+      },
+      {
+        "program": "EMERGENCY RELIEF PRGM 2",
+        "amount": 71090.15
+      },
+      {
+        "program": "SUPP DISASTER RELIEF SPEC CROPS 1",
+        "amount": 67519.56
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 55044.13
+      },
+      {
+        "program": "EMERGENCY LIVESTOCK RELIEF PRGM-2023-24",
+        "amount": 41491.13
+      }
+    ]
+  },
+  {
+    "abbr": "AS",
+    "name": "American Samoa",
+    "payments": 337,
+    "amount": 347925.25,
+    "topPrograms": [
+      {
+        "program": "CFAPCCA2",
+        "amount": 137050.81
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 114664.24
+      },
+      {
+        "program": "FARM RANCHERS PROGRAM",
+        "amount": 77262.39
+      },
+      {
+        "program": "PANDEMIC ASSISTANCE REVENUE PROGRAM",
+        "amount": 18947.81
+      }
+    ]
+  },
+  {
+    "abbr": "MP",
+    "name": "Northern Mariana Islands",
+    "payments": 233,
+    "amount": 316598.33,
+    "topPrograms": [
+      {
+        "program": "FARM RANCHERS PROGRAM",
+        "amount": 61549.51
+      },
+      {
+        "program": "NAP REGULAR WEB-BASED",
+        "amount": 50051
+      },
+      {
+        "program": "NON-INSURED ASSISTANCE PROGRAM",
+        "amount": 42326
+      },
+      {
+        "program": "LIVESTOCK FORAGE DISASTER PROGRAM (COF)",
+        "amount": 35020.63
+      },
+      {
+        "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+        "amount": 24951.11
+      },
+      {
+        "program": "ECPSFCOF",
+        "amount": 18947
+      },
+      {
+        "program": "SUPP DISASTER RELIEF SPEC CROPS 1",
+        "amount": 18079.6
+      },
+      {
+        "program": "CFAPCCA2",
+        "amount": 17909.31
+      },
+      {
+        "program": "PANDEMIC ASSISTANCE REVENUE PROGRAM",
+        "amount": 16340.99
+      },
+      {
+        "program": "LIVESTOCK FORAGE PROGRAM",
+        "amount": 15960
+      }
+    ]
+  },
+  {
+    "abbr": "AP",
+    "name": "Indiana",
+    "payments": 38,
+    "amount": 170564.7,
+    "topPrograms": [
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 166024
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 1944
+      },
+      {
+        "program": "NAP REGULAR WEB-BASED",
+        "amount": 1070
+      },
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 815.7
+      },
+      {
+        "program": "CRP - CONTINUOUS PIP",
+        "amount": 648
+      },
+      {
+        "program": "CRP COST-SHARE WEB-BASED - COF",
+        "amount": 63
+      }
+    ]
+  },
+  {
+    "abbr": "AE",
+    "name": "Illinois",
+    "payments": 51,
+    "amount": 90051.47,
+    "topPrograms": [
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 77552
+      },
+      {
+        "program": "CRP COST-SHARE WEB-BASED - COF",
+        "amount": 3900
+      },
+      {
+        "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+        "amount": 3887.58
+      },
+      {
+        "program": "CRP - CONTINUOUS PIP",
+        "amount": 3119
+      },
+      {
+        "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+        "amount": 1394.26
+      },
+      {
+        "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+        "amount": 117
+      },
+      {
+        "program": "EMGNCY RELIEF PRGM-NONSPECIALITY CROPS",
+        "amount": 81.63
+      }
+    ]
+  },
+  {
+    "abbr": "AA",
+    "name": "Iowa",
+    "payments": 9,
+    "amount": 60926,
+    "topPrograms": [
+      {
+        "program": "CRP PAYMENT - ANNUAL RENTAL",
+        "amount": 53408
+      },
+      {
+        "program": "CRP COST-SHARE WEB-BASED - COF",
+        "amount": 4177
+      },
+      {
+        "program": "CRP - CONTINUOUS PIP",
+        "amount": 3341
+      }
+    ]
+  }
+]

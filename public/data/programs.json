@@ -1,0 +1,644 @@
+[
+  {
+    "program": "EMERGENCY COMMODITY ASSISTANCE PROGRAM",
+    "code": "2945",
+    "payments": 1144399,
+    "amount": 9359526442.73
+  },
+  {
+    "program": "SUPP DISASTER RELIEF NON-SPEC CROPS 1",
+    "code": "2450",
+    "payments": 401315,
+    "amount": 5398152295.5
+  },
+  {
+    "program": "CRP PAYMENT - ANNUAL RENTAL",
+    "code": "3132",
+    "payments": 1996827,
+    "amount": 5357103488.82
+  },
+  {
+    "program": "LIVESTOCK FORAGE PROGRAM",
+    "code": "2835",
+    "payments": 436236,
+    "amount": 3190183909.31
+  },
+  {
+    "program": "AGRICULTURAL RISK COVERAGE PROG - COUNTY",
+    "code": "2838",
+    "payments": 1461687,
+    "amount": 2578206765.33
+  },
+  {
+    "program": "MARKETING ASSISTANCE FOR SPECIALTY CROPS",
+    "code": "2944",
+    "payments": 98911,
+    "amount": 1892759408.43
+  },
+  {
+    "program": "EMERG ASSIST LIVESTOCK BEES FISH (ELAP)",
+    "code": "2833",
+    "payments": 60207,
+    "amount": 1548806227.09
+  },
+  {
+    "program": "EMRGNCY RELIEF PRGM TRK 1-NONSPCLTY CRPS",
+    "code": "2446",
+    "payments": 183058,
+    "amount": 1379831819.73
+  },
+  {
+    "program": "DAIRY MARGIN COVERAGE",
+    "code": "8053",
+    "payments": 198239,
+    "amount": 1209704562.34
+  },
+  {
+    "program": "EMERGENCY LIVESTOCK RELIEF PRGM-2023-24",
+    "code": "2943",
+    "payments": 347755,
+    "amount": 1040704816.38
+  },
+  {
+    "program": "EMERGENCY RELIEF PRGM 2",
+    "code": "2439",
+    "payments": 20069,
+    "amount": 886847936.43
+  },
+  {
+    "program": "EMRGNCY RELIEF PRGM TRK 2-NONSPCLTY CRPS",
+    "code": "2448",
+    "payments": 32523,
+    "amount": 651982757.07
+  },
+  {
+    "program": "SUPP DISASTER RELIEF SPEC CROPS 1",
+    "code": "2451",
+    "payments": 22134,
+    "amount": 521365686.33
+  },
+  {
+    "program": "EMERGENCY LIVESTOCK RELIEF PROGRAM - CAA",
+    "code": "2933",
+    "payments": 413289,
+    "amount": 471710994.84
+  },
+  {
+    "program": "EMGNCY RELIEF PRGM-NONSPECIALITY CROPS",
+    "code": "2437",
+    "payments": 293780,
+    "amount": 359319466.3
+  },
+  {
+    "program": "NON-INSURED ASSISTANCE PROGRAM",
+    "code": "2775",
+    "payments": 72172,
+    "amount": 322636859.42
+  },
+  {
+    "program": "ECPCOF",
+    "code": "4060",
+    "payments": 10365,
+    "amount": 261573974.38
+  },
+  {
+    "program": "PRICE LOSS COVERAGE",
+    "code": "2837",
+    "payments": 173538,
+    "amount": 255065576.54
+  },
+  {
+    "program": "CFAPCCA2",
+    "code": "4926",
+    "payments": 128804,
+    "amount": 253619343.12
+  },
+  {
+    "program": "RICE PRODUCTION PROGRAM",
+    "code": "2939",
+    "payments": 24280,
+    "amount": 243876949.23
+  },
+  {
+    "program": "NAP REGULAR WEB-BASED",
+    "code": "2920",
+    "payments": 9872,
+    "amount": 220347212.51
+  },
+  {
+    "program": "LIVESTOCK FORAGE DISASTER PROGRAM (COF)",
+    "code": "2940",
+    "payments": 34539,
+    "amount": 219643793.76
+  },
+  {
+    "program": "WEB-BASED NAP",
+    "code": "2775",
+    "payments": 40565,
+    "amount": 207960560.42
+  },
+  {
+    "program": "ERFMCFSOF",
+    "code": "3365",
+    "payments": 3850,
+    "amount": 202299386.85
+  },
+  {
+    "program": "PANDEMIC ASSISTANCE REVENUE PROGRAM",
+    "code": "8290",
+    "payments": 36305,
+    "amount": 195911823.92
+  },
+  {
+    "program": "LIVESTOCK INDEMINITY PAYMENTS PROGRAM",
+    "code": "2832",
+    "payments": 13779,
+    "amount": 182137513.1
+  },
+  {
+    "program": "EMRGNCY RELIEF PRGM TRACK 2-SPECLTY CRPS",
+    "code": "2447",
+    "payments": 6824,
+    "amount": 180984701.48
+  },
+  {
+    "program": "WECPCSCOF",
+    "code": "4064",
+    "payments": 9400,
+    "amount": 151320455.3
+  },
+  {
+    "program": "CRP COST-SHARE WEB-BASED - COF",
+    "code": "3307",
+    "payments": 63953,
+    "amount": 136695114.61
+  },
+  {
+    "program": "EMRGNCY RELIEF PRGM TRACK 1-SPECLTY CRPS",
+    "code": "2445",
+    "payments": 9734,
+    "amount": 133287083.58
+  },
+  {
+    "program": "EMERGENCY LIVESTOCK RELIEF PROGRAM",
+    "code": "2911",
+    "payments": 102512,
+    "amount": 120304863.11
+  },
+  {
+    "program": "EMGNCY RELIEF PROGRAM-SPECIALITY CROPS",
+    "code": "2436",
+    "payments": 23467,
+    "amount": 106199550.83
+  },
+  {
+    "program": "ECP FINANCIAL ASSISTANCE COF",
+    "code": "4065",
+    "payments": 2572,
+    "amount": 104458962.51
+  },
+  {
+    "program": "CFAP3 - TUP",
+    "code": "4924",
+    "payments": 77035,
+    "amount": 102557680.8
+  },
+  {
+    "program": "CRP - CONTINUOUS PIP",
+    "code": "3361",
+    "payments": 64184,
+    "amount": 79797844.96
+  },
+  {
+    "program": "EMERGENCY GRAIN STORAGE FACILITY ASSTNCE",
+    "code": "2443",
+    "payments": 1034,
+    "amount": 72973999
+  },
+  {
+    "program": "TREE ASSISTANCE PROGRAM",
+    "code": "2872",
+    "payments": 1757,
+    "amount": 60312755.72
+  },
+  {
+    "program": "ORGANIC DAIRY MARKETING ASSISTANCE PRGM",
+    "code": "2938",
+    "payments": 4361,
+    "amount": 53215821.2
+  },
+  {
+    "program": "ECPSFCOF",
+    "code": "4063",
+    "payments": 1541,
+    "amount": 48141549.52
+  },
+  {
+    "program": "WECPCOF",
+    "code": "4061",
+    "payments": 1698,
+    "amount": 46120038.53
+  },
+  {
+    "program": "DMC PRGM-SUPPLEMENTAL",
+    "code": "8055",
+    "payments": 40403,
+    "amount": 40257325.28
+  },
+  {
+    "program": "AGRICULTURAL RISK COVERAGE - INDIVIDUAL",
+    "code": "2840",
+    "payments": 10788,
+    "amount": 39370860.57
+  },
+  {
+    "program": "CRP TRANSITION INCENTIVES PRGM",
+    "code": "3338",
+    "payments": 2841,
+    "amount": 19577419.67
+  },
+  {
+    "program": "WECP17OF",
+    "code": "4062",
+    "payments": 653,
+    "amount": 13276004.23
+  },
+  {
+    "program": "MARKET ACCESS PROGRAM",
+    "code": "7610",
+    "payments": 113,
+    "amount": 12444687.79
+  },
+  {
+    "program": "GRASSLANDS RESERVE PROGRAM",
+    "code": "3070",
+    "payments": 3185,
+    "amount": 11716774.26
+  },
+  {
+    "program": "EFRP COST SHARE-AMERICAN RELIEF ACT 2025",
+    "code": "3363",
+    "payments": 86,
+    "amount": 11174607
+  },
+  {
+    "program": "FARM RANCHERS PROGRAM",
+    "code": "2922",
+    "payments": 3414,
+    "amount": 10140861.17
+  },
+  {
+    "program": "CRP FOREST MANAGEMENT INCENTIVE",
+    "code": "3358",
+    "payments": 1559,
+    "amount": 10057647.9
+  },
+  {
+    "program": "CFAPCARES",
+    "code": "4920",
+    "payments": 254,
+    "amount": 8591709.43
+  },
+  {
+    "program": "CFAPCCCCA",
+    "code": "4925",
+    "payments": 237,
+    "amount": 4902924.92
+  },
+  {
+    "program": "CCC ORGANIC COST SHARE - CROPS",
+    "code": "6150",
+    "payments": 7169,
+    "amount": 4737232.39
+  },
+  {
+    "program": "EFRP COST SHARE STFRD DISTR-OBLIG FRMWRK",
+    "code": "3364",
+    "payments": 126,
+    "amount": 3299845
+  },
+  {
+    "program": "MILK LOSS PROGRAM",
+    "code": "2435",
+    "payments": 116,
+    "amount": 2265009.61
+  },
+  {
+    "program": "",
+    "code": "7902",
+    "payments": 18,
+    "amount": 1735154.64
+  },
+  {
+    "program": "ARC PROGRAM-COUNTY COVERAGE",
+    "code": "2838",
+    "payments": 1799,
+    "amount": 1625754.59
+  },
+  {
+    "program": "CFAPCARES2",
+    "code": "4921",
+    "payments": 455,
+    "amount": 1610064.48
+  },
+  {
+    "program": "EFRPCSOF",
+    "code": "3362",
+    "payments": 17,
+    "amount": 1598793
+  },
+  {
+    "program": "EFPSTACSOF",
+    "code": "3364",
+    "payments": 51,
+    "amount": 1429804.01
+  },
+  {
+    "program": "DAIRY MARGIN COVERAGE-SUPP",
+    "code": "8055",
+    "payments": 4214,
+    "amount": 1378607.34
+  },
+  {
+    "program": "CCC ORGANIC COST SHARE FEES - HANDLING",
+    "code": "6152",
+    "payments": 2135,
+    "amount": 1370667.68
+  },
+  {
+    "program": "CRP CLEAR30 MAINT PRGM",
+    "code": "3360",
+    "payments": 578,
+    "amount": 1355999.35
+  },
+  {
+    "program": "CCC ORGANIC COST SHARE - LIVESTOCK",
+    "code": "6150",
+    "payments": 2313,
+    "amount": 1335613.23
+  },
+  {
+    "program": "FOOD SAFETY CERTFCTN-SPECIALITY CROPS",
+    "code": "8293",
+    "payments": 651,
+    "amount": 994839.13
+  },
+  {
+    "program": "ERP/HMC COST SHARE FY19",
+    "code": "3357",
+    "payments": 52,
+    "amount": 895692
+  },
+  {
+    "program": "TMP/MFP 2019 NON SPECIALTY CROPS",
+    "code": "2877",
+    "payments": 7,
+    "amount": 868450.12
+  },
+  {
+    "program": "CFAP3 - LTU",
+    "code": "4923",
+    "payments": 164,
+    "amount": 768789.63
+  },
+  {
+    "program": "CORONAVIRUS AID, CCC CHARTER ACT (OLP)",
+    "code": "4929",
+    "payments": 15,
+    "amount": 729433.26
+  },
+  {
+    "program": "WHIP 3",
+    "code": "2888",
+    "payments": 19,
+    "amount": 726507.51
+  },
+  {
+    "program": "DIPP WEB-BASED",
+    "code": "7902",
+    "payments": 9,
+    "amount": 558394.59
+  },
+  {
+    "program": "ARC PROGRAM INDIVIDUAL COVERAGE",
+    "code": "2840",
+    "payments": 177,
+    "amount": 548895.76
+  },
+  {
+    "program": "CHESAPEAKE BAY INCENTIVE",
+    "code": "3353",
+    "payments": 157,
+    "amount": 516595
+  },
+  {
+    "program": "WILDFIRES AND HURRICANES INDEMNITY PROG",
+    "code": "2864",
+    "payments": 10,
+    "amount": 464134.17
+  },
+  {
+    "program": "ECP/HMC COST SHARE FY19",
+    "code": "4058",
+    "payments": 51,
+    "amount": 438942
+  },
+  {
+    "program": "WHIP PLUS 3 ASSISTANCE",
+    "code": "2888",
+    "payments": 33,
+    "amount": 427785.09
+  },
+  {
+    "program": "ECP HURICNS HARVEY/IRMA/MARIA-CSTSHRFY18",
+    "code": "4056",
+    "payments": 16,
+    "amount": 332455
+  },
+  {
+    "program": "QUALITY LOSS ADJUSTMENT PROGRAM",
+    "code": "2908",
+    "payments": 25,
+    "amount": 325711.8
+  },
+  {
+    "program": "MARKET FACILITATION PROGRAM - CROPS",
+    "code": "2867",
+    "payments": 8,
+    "amount": 321772
+  },
+  {
+    "program": "TASCP",
+    "code": "2677",
+    "payments": 5,
+    "amount": 277089.48
+  },
+  {
+    "program": "SPOT MARKET HOG PANDEMIC PROGRAM",
+    "code": "8292",
+    "payments": 17,
+    "amount": 243534.03
+  },
+  {
+    "program": "CFAPCARES2.1",
+    "code": "4922",
+    "payments": 8,
+    "amount": 236253.74
+  },
+  {
+    "program": "EMERGENCY CONSERVATION PROGRAM FY17",
+    "code": "4042",
+    "payments": 1,
+    "amount": 200000
+  },
+  {
+    "program": "ECP PRIVATE SECTOR TECHNICAL ASSTNCE COF",
+    "code": "4068",
+    "payments": 42,
+    "amount": 182659.52
+  },
+  {
+    "program": "CARES ACT (OLP)",
+    "code": "4927",
+    "payments": 5,
+    "amount": 168681.27
+  },
+  {
+    "program": "TMP/MFP 2019 SPECIALITY CROPS",
+    "code": "2878",
+    "payments": 3,
+    "amount": 133886.09
+  },
+  {
+    "program": "ORGANIC & TRANSITIONAL EDU & CERT PRGM",
+    "code": "8291",
+    "payments": 405,
+    "amount": 114331.21
+  },
+  {
+    "program": "DCP - DIRECT",
+    "code": "6752",
+    "payments": 60,
+    "amount": 102949.67
+  },
+  {
+    "program": "DAIRY MARGIN COVERAGE PROGRAM",
+    "code": "8053",
+    "payments": 8,
+    "amount": 88085.78
+  },
+  {
+    "program": "CRP PRACTICE INCENTIVES PAYMENT",
+    "code": "3359",
+    "payments": 948,
+    "amount": 82265
+  },
+  {
+    "program": "ORGANIC COST SHARE FEES- ST ORG PGM FEES",
+    "code": "6152",
+    "payments": 123,
+    "amount": 58285.92
+  },
+  {
+    "program": "EMERGENCY FOREST RESTORATION STAFFORD",
+    "code": "3344",
+    "payments": 3,
+    "amount": 56500
+  },
+  {
+    "program": "CCC ORGANIC COST SHARE - WILD CROPS",
+    "code": "6150",
+    "payments": 85,
+    "amount": 47201.81
+  },
+  {
+    "program": "PANDEMIC ASST-TIMBER HARVESTERS/HAULERS",
+    "code": "8286",
+    "payments": 1,
+    "amount": 26091.2
+  },
+  {
+    "program": "DMC PRGM-SUPPLEMENTAL OLP",
+    "code": "8058",
+    "payments": 1,
+    "amount": 24252.18
+  },
+  {
+    "program": "AGRICULTURE RISK COVERAGE-CO-MANUAL",
+    "code": "2931",
+    "payments": 8,
+    "amount": 9883
+  },
+  {
+    "program": "COTTON TRANSITION ASSISTANCE PROGRAM",
+    "code": "2442",
+    "payments": 1,
+    "amount": 9378
+  },
+  {
+    "program": "AVERAGE CROP REVENUE ELECTION - DIRECT",
+    "code": "6754",
+    "payments": 10,
+    "amount": 8805
+  },
+  {
+    "program": "EMERGENCY CONSERVATION PROGRAM",
+    "code": "4040",
+    "payments": 6,
+    "amount": 8680
+  },
+  {
+    "program": "ECP PRIVATE SECTOR TECHNICAL ASSISTANCE",
+    "code": "4041",
+    "payments": 2,
+    "amount": 2930
+  },
+  {
+    "program": "BCAP ANNUAL RENTAL WEB BASED",
+    "code": "2767",
+    "payments": 1,
+    "amount": 2364
+  },
+  {
+    "program": "LIVESTOCK FORAGE DISASTER PROGRAM",
+    "code": "2571",
+    "payments": 1,
+    "amount": 2250
+  },
+  {
+    "program": "GEOGRAPHIC DISADVANTAGED PROGRAM",
+    "code": "2865",
+    "payments": 2,
+    "amount": 1175.89
+  },
+  {
+    "program": "EMERGENCY CONSERVATION PROGRAM STAFFORD",
+    "code": "4050",
+    "payments": 2,
+    "amount": 729
+  },
+  {
+    "program": "PRICE LOSS COVERAGE-MANUAL",
+    "code": "2932",
+    "payments": 1,
+    "amount": 464
+  },
+  {
+    "program": "MARGIN PROTECTION PROGRAM - DAIRY",
+    "code": "8025",
+    "payments": 1,
+    "amount": 278.12
+  },
+  {
+    "program": "ARC PROGRAM-COUNTY PILOT COVERAGE",
+    "code": "2862",
+    "payments": 1,
+    "amount": 246
+  },
+  {
+    "program": "SEAFOOD TRADE RELIEF PROGRAM",
+    "code": "2907",
+    "payments": 1,
+    "amount": 24.41
+  }
+]

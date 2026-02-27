@@ -1,0 +1,6668 @@
+[
+  {
+    "state": "AA",
+    "year": 2018,
+    "payments": 3,
+    "amount": 46197
+  },
+  {
+    "state": "AA",
+    "year": 2024,
+    "payments": 6,
+    "amount": 14729
+  },
+  {
+    "state": "AE",
+    "year": 2011,
+    "payments": 2,
+    "amount": 805
+  },
+  {
+    "state": "AE",
+    "year": 2013,
+    "payments": 7,
+    "amount": 1627
+  },
+  {
+    "state": "AE",
+    "year": 2014,
+    "payments": 2,
+    "amount": 984
+  },
+  {
+    "state": "AE",
+    "year": 2016,
+    "payments": 6,
+    "amount": 25337
+  },
+  {
+    "state": "AE",
+    "year": 2017,
+    "payments": 4,
+    "amount": 7411
+  },
+  {
+    "state": "AE",
+    "year": 2018,
+    "payments": 4,
+    "amount": 11273
+  },
+  {
+    "state": "AE",
+    "year": 2019,
+    "payments": 1,
+    "amount": 7293
+  },
+  {
+    "state": "AE",
+    "year": 2020,
+    "payments": 3,
+    "amount": 175.63
+  },
+  {
+    "state": "AE",
+    "year": 2022,
+    "payments": 2,
+    "amount": 1511.26
+  },
+  {
+    "state": "AE",
+    "year": 2023,
+    "payments": 9,
+    "amount": 12623
+  },
+  {
+    "state": "AE",
+    "year": 2024,
+    "payments": 10,
+    "amount": 18340.58
+  },
+  {
+    "state": "AE",
+    "year": 2025,
+    "payments": 1,
+    "amount": 2671
+  },
+  {
+    "state": "AK",
+    "year": 2004,
+    "payments": 1,
+    "amount": 6508
+  },
+  {
+    "state": "AK",
+    "year": 2005,
+    "payments": 3,
+    "amount": 5388
+  },
+  {
+    "state": "AK",
+    "year": 2008,
+    "payments": 3,
+    "amount": 6705.52
+  },
+  {
+    "state": "AK",
+    "year": 2009,
+    "payments": 3,
+    "amount": 14850
+  },
+  {
+    "state": "AK",
+    "year": 2010,
+    "payments": 6,
+    "amount": 12739
+  },
+  {
+    "state": "AK",
+    "year": 2011,
+    "payments": 15,
+    "amount": 23146
+  },
+  {
+    "state": "AK",
+    "year": 2012,
+    "payments": 21,
+    "amount": 94797
+  },
+  {
+    "state": "AK",
+    "year": 2013,
+    "payments": 32,
+    "amount": 133628
+  },
+  {
+    "state": "AK",
+    "year": 2014,
+    "payments": 55,
+    "amount": 187476
+  },
+  {
+    "state": "AK",
+    "year": 2015,
+    "payments": 68,
+    "amount": 193679
+  },
+  {
+    "state": "AK",
+    "year": 2016,
+    "payments": 77,
+    "amount": 396759
+  },
+  {
+    "state": "AK",
+    "year": 2017,
+    "payments": 61,
+    "amount": 240620
+  },
+  {
+    "state": "AK",
+    "year": 2018,
+    "payments": 100,
+    "amount": 270002
+  },
+  {
+    "state": "AK",
+    "year": 2019,
+    "payments": 36,
+    "amount": 90073
+  },
+  {
+    "state": "AK",
+    "year": 2020,
+    "payments": 176,
+    "amount": 320492.78
+  },
+  {
+    "state": "AK",
+    "year": 2021,
+    "payments": 211,
+    "amount": 1345695.77
+  },
+  {
+    "state": "AK",
+    "year": 2022,
+    "payments": 464,
+    "amount": 1854217.13
+  },
+  {
+    "state": "AK",
+    "year": 2023,
+    "payments": 493,
+    "amount": 1926018.02
+  },
+  {
+    "state": "AK",
+    "year": 2024,
+    "payments": 787,
+    "amount": 1785145.26
+  },
+  {
+    "state": "AK",
+    "year": 2025,
+    "payments": 119,
+    "amount": 327354.82
+  },
+  {
+    "state": "AL",
+    "year": 2004,
+    "payments": 2,
+    "amount": 4880
+  },
+  {
+    "state": "AL",
+    "year": 2005,
+    "payments": 9,
+    "amount": 5436
+  },
+  {
+    "state": "AL",
+    "year": 2007,
+    "payments": 2,
+    "amount": 657
+  },
+  {
+    "state": "AL",
+    "year": 2008,
+    "payments": 13,
+    "amount": 54383
+  },
+  {
+    "state": "AL",
+    "year": 2009,
+    "payments": 83,
+    "amount": 128354
+  },
+  {
+    "state": "AL",
+    "year": 2010,
+    "payments": 159,
+    "amount": 306772
+  },
+  {
+    "state": "AL",
+    "year": 2011,
+    "payments": 264,
+    "amount": 505656.25
+  },
+  {
+    "state": "AL",
+    "year": 2012,
+    "payments": 192,
+    "amount": 393013
+  },
+  {
+    "state": "AL",
+    "year": 2013,
+    "payments": 238,
+    "amount": 537139
+  },
+  {
+    "state": "AL",
+    "year": 2014,
+    "payments": 906,
+    "amount": 1580219.55
+  },
+  {
+    "state": "AL",
+    "year": 2015,
+    "payments": 352,
+    "amount": 1062453.5
+  },
+  {
+    "state": "AL",
+    "year": 2016,
+    "payments": 765,
+    "amount": 1346657.65
+  },
+  {
+    "state": "AL",
+    "year": 2017,
+    "payments": 939,
+    "amount": 1833086.5
+  },
+  {
+    "state": "AL",
+    "year": 2018,
+    "payments": 509,
+    "amount": 1116437
+  },
+  {
+    "state": "AL",
+    "year": 2019,
+    "payments": 410,
+    "amount": 533200
+  },
+  {
+    "state": "AL",
+    "year": 2020,
+    "payments": 4508,
+    "amount": 10219358.39
+  },
+  {
+    "state": "AL",
+    "year": 2021,
+    "payments": 2634,
+    "amount": 7194814.48
+  },
+  {
+    "state": "AL",
+    "year": 2022,
+    "payments": 3398,
+    "amount": 17868049.22
+  },
+  {
+    "state": "AL",
+    "year": 2023,
+    "payments": 20911,
+    "amount": 90158281.82
+  },
+  {
+    "state": "AL",
+    "year": 2024,
+    "payments": 40082,
+    "amount": 184723871.65
+  },
+  {
+    "state": "AL",
+    "year": 2025,
+    "payments": 1994,
+    "amount": 20274086.65
+  },
+  {
+    "state": "AP",
+    "year": 2014,
+    "payments": 1,
+    "amount": 15592
+  },
+  {
+    "state": "AP",
+    "year": 2015,
+    "payments": 2,
+    "amount": 10483
+  },
+  {
+    "state": "AP",
+    "year": 2016,
+    "payments": 5,
+    "amount": 6397
+  },
+  {
+    "state": "AP",
+    "year": 2017,
+    "payments": 3,
+    "amount": 816
+  },
+  {
+    "state": "AP",
+    "year": 2018,
+    "payments": 2,
+    "amount": 3372
+  },
+  {
+    "state": "AP",
+    "year": 2019,
+    "payments": 2,
+    "amount": 2238
+  },
+  {
+    "state": "AP",
+    "year": 2021,
+    "payments": 7,
+    "amount": 21255
+  },
+  {
+    "state": "AP",
+    "year": 2022,
+    "payments": 6,
+    "amount": 40096
+  },
+  {
+    "state": "AP",
+    "year": 2023,
+    "payments": 3,
+    "amount": 4140
+  },
+  {
+    "state": "AP",
+    "year": 2024,
+    "payments": 7,
+    "amount": 66175.7
+  },
+  {
+    "state": "AR",
+    "year": 2003,
+    "payments": 10,
+    "amount": 13145
+  },
+  {
+    "state": "AR",
+    "year": 2004,
+    "payments": 15,
+    "amount": 22097
+  },
+  {
+    "state": "AR",
+    "year": 2008,
+    "payments": 6,
+    "amount": 4416
+  },
+  {
+    "state": "AR",
+    "year": 2009,
+    "payments": 305,
+    "amount": 778215
+  },
+  {
+    "state": "AR",
+    "year": 2010,
+    "payments": 439,
+    "amount": 1495403
+  },
+  {
+    "state": "AR",
+    "year": 2011,
+    "payments": 759,
+    "amount": 2451193
+  },
+  {
+    "state": "AR",
+    "year": 2012,
+    "payments": 701,
+    "amount": 1914104.39
+  },
+  {
+    "state": "AR",
+    "year": 2013,
+    "payments": 645,
+    "amount": 1871963
+  },
+  {
+    "state": "AR",
+    "year": 2014,
+    "payments": 687,
+    "amount": 2231602.63
+  },
+  {
+    "state": "AR",
+    "year": 2015,
+    "payments": 640,
+    "amount": 2551636
+  },
+  {
+    "state": "AR",
+    "year": 2016,
+    "payments": 1362,
+    "amount": 4061372.04
+  },
+  {
+    "state": "AR",
+    "year": 2017,
+    "payments": 1483,
+    "amount": 4216610.38
+  },
+  {
+    "state": "AR",
+    "year": 2018,
+    "payments": 1721,
+    "amount": 4977048.25
+  },
+  {
+    "state": "AR",
+    "year": 2019,
+    "payments": 1321,
+    "amount": 2530004.51
+  },
+  {
+    "state": "AR",
+    "year": 2020,
+    "payments": 15964,
+    "amount": 32709524.6
+  },
+  {
+    "state": "AR",
+    "year": 2021,
+    "payments": 5907,
+    "amount": 14503722.01
+  },
+  {
+    "state": "AR",
+    "year": 2022,
+    "payments": 53447,
+    "amount": 235371638.45
+  },
+  {
+    "state": "AR",
+    "year": 2023,
+    "payments": 9091,
+    "amount": 46104551.22
+  },
+  {
+    "state": "AR",
+    "year": 2024,
+    "payments": 64102,
+    "amount": 430069276.34
+  },
+  {
+    "state": "AR",
+    "year": 2025,
+    "payments": 1893,
+    "amount": 12884926.9
+  },
+  {
+    "state": "AS",
+    "year": 2020,
+    "payments": 219,
+    "amount": 155998.62
+  },
+  {
+    "state": "AS",
+    "year": 2022,
+    "payments": 5,
+    "amount": 8520.37
+  },
+  {
+    "state": "AS",
+    "year": 2023,
+    "payments": 22,
+    "amount": 42433.75
+  },
+  {
+    "state": "AS",
+    "year": 2024,
+    "payments": 25,
+    "amount": 26308.27
+  },
+  {
+    "state": "AS",
+    "year": 2025,
+    "payments": 66,
+    "amount": 114664.24
+  },
+  {
+    "state": "AZ",
+    "year": 2004,
+    "payments": 1,
+    "amount": 417
+  },
+  {
+    "state": "AZ",
+    "year": 2007,
+    "payments": 4,
+    "amount": 24328
+  },
+  {
+    "state": "AZ",
+    "year": 2008,
+    "payments": 4,
+    "amount": 5294
+  },
+  {
+    "state": "AZ",
+    "year": 2009,
+    "payments": 27,
+    "amount": 81619
+  },
+  {
+    "state": "AZ",
+    "year": 2010,
+    "payments": 79,
+    "amount": 263504
+  },
+  {
+    "state": "AZ",
+    "year": 2011,
+    "payments": 162,
+    "amount": 679221
+  },
+  {
+    "state": "AZ",
+    "year": 2012,
+    "payments": 150,
+    "amount": 411391
+  },
+  {
+    "state": "AZ",
+    "year": 2013,
+    "payments": 202,
+    "amount": 573453
+  },
+  {
+    "state": "AZ",
+    "year": 2014,
+    "payments": 386,
+    "amount": 1070026
+  },
+  {
+    "state": "AZ",
+    "year": 2015,
+    "payments": 454,
+    "amount": 1107831
+  },
+  {
+    "state": "AZ",
+    "year": 2016,
+    "payments": 734,
+    "amount": 2443810
+  },
+  {
+    "state": "AZ",
+    "year": 2017,
+    "payments": 694,
+    "amount": 2219048
+  },
+  {
+    "state": "AZ",
+    "year": 2018,
+    "payments": 840,
+    "amount": 3057030
+  },
+  {
+    "state": "AZ",
+    "year": 2019,
+    "payments": 237,
+    "amount": 849944
+  },
+  {
+    "state": "AZ",
+    "year": 2020,
+    "payments": 3022,
+    "amount": 6542818.78
+  },
+  {
+    "state": "AZ",
+    "year": 2021,
+    "payments": 3655,
+    "amount": 9212284.57
+  },
+  {
+    "state": "AZ",
+    "year": 2022,
+    "payments": 6481,
+    "amount": 18098493.74
+  },
+  {
+    "state": "AZ",
+    "year": 2023,
+    "payments": 6475,
+    "amount": 37483058.37
+  },
+  {
+    "state": "AZ",
+    "year": 2024,
+    "payments": 10411,
+    "amount": 67176812.68
+  },
+  {
+    "state": "AZ",
+    "year": 2025,
+    "payments": 1912,
+    "amount": 29469026.12
+  },
+  {
+    "state": "CA",
+    "year": 2004,
+    "payments": 1,
+    "amount": 1753
+  },
+  {
+    "state": "CA",
+    "year": 2005,
+    "payments": 2,
+    "amount": 65980
+  },
+  {
+    "state": "CA",
+    "year": 2007,
+    "payments": 4,
+    "amount": 13551
+  },
+  {
+    "state": "CA",
+    "year": 2008,
+    "payments": 10,
+    "amount": 36385
+  },
+  {
+    "state": "CA",
+    "year": 2009,
+    "payments": 70,
+    "amount": 176452
+  },
+  {
+    "state": "CA",
+    "year": 2010,
+    "payments": 104,
+    "amount": 273620
+  },
+  {
+    "state": "CA",
+    "year": 2011,
+    "payments": 208,
+    "amount": 475166.5
+  },
+  {
+    "state": "CA",
+    "year": 2012,
+    "payments": 150,
+    "amount": 459316
+  },
+  {
+    "state": "CA",
+    "year": 2013,
+    "payments": 327,
+    "amount": 744309.63
+  },
+  {
+    "state": "CA",
+    "year": 2014,
+    "payments": 529,
+    "amount": 1492048.48
+  },
+  {
+    "state": "CA",
+    "year": 2015,
+    "payments": 506,
+    "amount": 1428375
+  },
+  {
+    "state": "CA",
+    "year": 2016,
+    "payments": 820,
+    "amount": 2310721
+  },
+  {
+    "state": "CA",
+    "year": 2017,
+    "payments": 761,
+    "amount": 2575940.65
+  },
+  {
+    "state": "CA",
+    "year": 2018,
+    "payments": 924,
+    "amount": 2765692.25
+  },
+  {
+    "state": "CA",
+    "year": 2019,
+    "payments": 365,
+    "amount": 1004746.1
+  },
+  {
+    "state": "CA",
+    "year": 2020,
+    "payments": 10114,
+    "amount": 149432594.61
+  },
+  {
+    "state": "CA",
+    "year": 2021,
+    "payments": 11474,
+    "amount": 174924850.26
+  },
+  {
+    "state": "CA",
+    "year": 2022,
+    "payments": 22667,
+    "amount": 281573790.34
+  },
+  {
+    "state": "CA",
+    "year": 2023,
+    "payments": 21610,
+    "amount": 298372928.75
+  },
+  {
+    "state": "CA",
+    "year": 2024,
+    "payments": 20485,
+    "amount": 505981496.69
+  },
+  {
+    "state": "CA",
+    "year": 2025,
+    "payments": 18821,
+    "amount": 573383790.55
+  },
+  {
+    "state": "CO",
+    "year": 2004,
+    "payments": 3,
+    "amount": 24999
+  },
+  {
+    "state": "CO",
+    "year": 2005,
+    "payments": 8,
+    "amount": 39862
+  },
+  {
+    "state": "CO",
+    "year": 2006,
+    "payments": 10,
+    "amount": 74916
+  },
+  {
+    "state": "CO",
+    "year": 2007,
+    "payments": 25,
+    "amount": 279896
+  },
+  {
+    "state": "CO",
+    "year": 2008,
+    "payments": 6,
+    "amount": 31024
+  },
+  {
+    "state": "CO",
+    "year": 2009,
+    "payments": 106,
+    "amount": 301651
+  },
+  {
+    "state": "CO",
+    "year": 2010,
+    "payments": 199,
+    "amount": 928997
+  },
+  {
+    "state": "CO",
+    "year": 2011,
+    "payments": 563,
+    "amount": 1219596.87
+  },
+  {
+    "state": "CO",
+    "year": 2012,
+    "payments": 355,
+    "amount": 746337
+  },
+  {
+    "state": "CO",
+    "year": 2013,
+    "payments": 573,
+    "amount": 1708379.18
+  },
+  {
+    "state": "CO",
+    "year": 2014,
+    "payments": 1779,
+    "amount": 7182920.25
+  },
+  {
+    "state": "CO",
+    "year": 2015,
+    "payments": 792,
+    "amount": 2300707
+  },
+  {
+    "state": "CO",
+    "year": 2016,
+    "payments": 1383,
+    "amount": 5021830.25
+  },
+  {
+    "state": "CO",
+    "year": 2017,
+    "payments": 2866,
+    "amount": 9887650.45
+  },
+  {
+    "state": "CO",
+    "year": 2018,
+    "payments": 2292,
+    "amount": 8987649.77
+  },
+  {
+    "state": "CO",
+    "year": 2019,
+    "payments": 452,
+    "amount": 1290713.81
+  },
+  {
+    "state": "CO",
+    "year": 2020,
+    "payments": 9930,
+    "amount": 28372417.92
+  },
+  {
+    "state": "CO",
+    "year": 2021,
+    "payments": 17147,
+    "amount": 48469950.17
+  },
+  {
+    "state": "CO",
+    "year": 2022,
+    "payments": 37536,
+    "amount": 155364210.56
+  },
+  {
+    "state": "CO",
+    "year": 2023,
+    "payments": 25888,
+    "amount": 174472694.83
+  },
+  {
+    "state": "CO",
+    "year": 2024,
+    "payments": 36930,
+    "amount": 257796749.57
+  },
+  {
+    "state": "CO",
+    "year": 2025,
+    "payments": 3208,
+    "amount": 33881369.86
+  },
+  {
+    "state": "CT",
+    "year": 2009,
+    "payments": 5,
+    "amount": 6856
+  },
+  {
+    "state": "CT",
+    "year": 2010,
+    "payments": 12,
+    "amount": 4987
+  },
+  {
+    "state": "CT",
+    "year": 2011,
+    "payments": 21,
+    "amount": 13608
+  },
+  {
+    "state": "CT",
+    "year": 2012,
+    "payments": 3,
+    "amount": 4824
+  },
+  {
+    "state": "CT",
+    "year": 2013,
+    "payments": 13,
+    "amount": 23782
+  },
+  {
+    "state": "CT",
+    "year": 2014,
+    "payments": 16,
+    "amount": 39358
+  },
+  {
+    "state": "CT",
+    "year": 2015,
+    "payments": 22,
+    "amount": 50321
+  },
+  {
+    "state": "CT",
+    "year": 2016,
+    "payments": 29,
+    "amount": 65117
+  },
+  {
+    "state": "CT",
+    "year": 2017,
+    "payments": 30,
+    "amount": 28114
+  },
+  {
+    "state": "CT",
+    "year": 2018,
+    "payments": 75,
+    "amount": 59079
+  },
+  {
+    "state": "CT",
+    "year": 2019,
+    "payments": 10,
+    "amount": 4287
+  },
+  {
+    "state": "CT",
+    "year": 2020,
+    "payments": 233,
+    "amount": 1005241.88
+  },
+  {
+    "state": "CT",
+    "year": 2021,
+    "payments": 163,
+    "amount": 1629900.96
+  },
+  {
+    "state": "CT",
+    "year": 2022,
+    "payments": 273,
+    "amount": 624903.63
+  },
+  {
+    "state": "CT",
+    "year": 2023,
+    "payments": 898,
+    "amount": 5100395.98
+  },
+  {
+    "state": "CT",
+    "year": 2024,
+    "payments": 613,
+    "amount": 2526845.86
+  },
+  {
+    "state": "CT",
+    "year": 2025,
+    "payments": 474,
+    "amount": 10284118.48
+  },
+  {
+    "state": "DC",
+    "year": 2009,
+    "payments": 4,
+    "amount": 1450
+  },
+  {
+    "state": "DC",
+    "year": 2010,
+    "payments": 4,
+    "amount": 3446
+  },
+  {
+    "state": "DC",
+    "year": 2011,
+    "payments": 3,
+    "amount": 1770
+  },
+  {
+    "state": "DC",
+    "year": 2012,
+    "payments": 65,
+    "amount": 62910
+  },
+  {
+    "state": "DC",
+    "year": 2013,
+    "payments": 3,
+    "amount": 5319
+  },
+  {
+    "state": "DC",
+    "year": 2014,
+    "payments": 15,
+    "amount": 18078
+  },
+  {
+    "state": "DC",
+    "year": 2015,
+    "payments": 13,
+    "amount": 110716
+  },
+  {
+    "state": "DC",
+    "year": 2016,
+    "payments": 36,
+    "amount": 93633
+  },
+  {
+    "state": "DC",
+    "year": 2017,
+    "payments": 32,
+    "amount": 44681.54
+  },
+  {
+    "state": "DC",
+    "year": 2018,
+    "payments": 41,
+    "amount": 185821
+  },
+  {
+    "state": "DC",
+    "year": 2019,
+    "payments": 9,
+    "amount": 18706
+  },
+  {
+    "state": "DC",
+    "year": 2020,
+    "payments": 35,
+    "amount": 10319.79
+  },
+  {
+    "state": "DC",
+    "year": 2021,
+    "payments": 30,
+    "amount": 73375.68
+  },
+  {
+    "state": "DC",
+    "year": 2022,
+    "payments": 73,
+    "amount": 312004.48
+  },
+  {
+    "state": "DC",
+    "year": 2023,
+    "payments": 101,
+    "amount": 1981705.22
+  },
+  {
+    "state": "DC",
+    "year": 2024,
+    "payments": 172,
+    "amount": 212064.76
+  },
+  {
+    "state": "DC",
+    "year": 2025,
+    "payments": 16,
+    "amount": 21747.64
+  },
+  {
+    "state": "DE",
+    "year": 2006,
+    "payments": 5,
+    "amount": 6869
+  },
+  {
+    "state": "DE",
+    "year": 2008,
+    "payments": 3,
+    "amount": 2634
+  },
+  {
+    "state": "DE",
+    "year": 2009,
+    "payments": 12,
+    "amount": 12129
+  },
+  {
+    "state": "DE",
+    "year": 2010,
+    "payments": 26,
+    "amount": 27958
+  },
+  {
+    "state": "DE",
+    "year": 2011,
+    "payments": 12,
+    "amount": 22084
+  },
+  {
+    "state": "DE",
+    "year": 2012,
+    "payments": 14,
+    "amount": 15572
+  },
+  {
+    "state": "DE",
+    "year": 2013,
+    "payments": 22,
+    "amount": 24399
+  },
+  {
+    "state": "DE",
+    "year": 2014,
+    "payments": 44,
+    "amount": 91287
+  },
+  {
+    "state": "DE",
+    "year": 2015,
+    "payments": 73,
+    "amount": 159343
+  },
+  {
+    "state": "DE",
+    "year": 2016,
+    "payments": 127,
+    "amount": 210173
+  },
+  {
+    "state": "DE",
+    "year": 2017,
+    "payments": 244,
+    "amount": 835207.46
+  },
+  {
+    "state": "DE",
+    "year": 2018,
+    "payments": 132,
+    "amount": 230154
+  },
+  {
+    "state": "DE",
+    "year": 2019,
+    "payments": 100,
+    "amount": 156373
+  },
+  {
+    "state": "DE",
+    "year": 2020,
+    "payments": 450,
+    "amount": 689576.55
+  },
+  {
+    "state": "DE",
+    "year": 2021,
+    "payments": 209,
+    "amount": 240967.87
+  },
+  {
+    "state": "DE",
+    "year": 2022,
+    "payments": 153,
+    "amount": 603374.89
+  },
+  {
+    "state": "DE",
+    "year": 2023,
+    "payments": 299,
+    "amount": 1416531.9
+  },
+  {
+    "state": "DE",
+    "year": 2024,
+    "payments": 4897,
+    "amount": 19161409.87
+  },
+  {
+    "state": "DE",
+    "year": 2025,
+    "payments": 264,
+    "amount": 6005612.36
+  },
+  {
+    "state": "FL",
+    "year": 2004,
+    "payments": 2,
+    "amount": 113854
+  },
+  {
+    "state": "FL",
+    "year": 2005,
+    "payments": 3,
+    "amount": 1122
+  },
+  {
+    "state": "FL",
+    "year": 2007,
+    "payments": 1,
+    "amount": 4378
+  },
+  {
+    "state": "FL",
+    "year": 2008,
+    "payments": 13,
+    "amount": 58195
+  },
+  {
+    "state": "FL",
+    "year": 2009,
+    "payments": 73,
+    "amount": 205931
+  },
+  {
+    "state": "FL",
+    "year": 2010,
+    "payments": 157,
+    "amount": 300075
+  },
+  {
+    "state": "FL",
+    "year": 2011,
+    "payments": 354,
+    "amount": 709787
+  },
+  {
+    "state": "FL",
+    "year": 2012,
+    "payments": 318,
+    "amount": 553547
+  },
+  {
+    "state": "FL",
+    "year": 2013,
+    "payments": 354,
+    "amount": 813769.39
+  },
+  {
+    "state": "FL",
+    "year": 2014,
+    "payments": 771,
+    "amount": 1782071
+  },
+  {
+    "state": "FL",
+    "year": 2015,
+    "payments": 909,
+    "amount": 2481642
+  },
+  {
+    "state": "FL",
+    "year": 2016,
+    "payments": 1492,
+    "amount": 4143028.42
+  },
+  {
+    "state": "FL",
+    "year": 2017,
+    "payments": 1134,
+    "amount": 3979438.95
+  },
+  {
+    "state": "FL",
+    "year": 2018,
+    "payments": 1296,
+    "amount": 3747428.5
+  },
+  {
+    "state": "FL",
+    "year": 2019,
+    "payments": 411,
+    "amount": 1032924.27
+  },
+  {
+    "state": "FL",
+    "year": 2020,
+    "payments": 4559,
+    "amount": 26227585.98
+  },
+  {
+    "state": "FL",
+    "year": 2021,
+    "payments": 3694,
+    "amount": 31641671.32
+  },
+  {
+    "state": "FL",
+    "year": 2022,
+    "payments": 5430,
+    "amount": 97847529.75
+  },
+  {
+    "state": "FL",
+    "year": 2023,
+    "payments": 9076,
+    "amount": 112249092.52
+  },
+  {
+    "state": "FL",
+    "year": 2024,
+    "payments": 15809,
+    "amount": 125220189.3
+  },
+  {
+    "state": "FL",
+    "year": 2025,
+    "payments": 5388,
+    "amount": 168258405.87
+  },
+  {
+    "state": "GA",
+    "year": 2003,
+    "payments": 29,
+    "amount": 13688
+  },
+  {
+    "state": "GA",
+    "year": 2005,
+    "payments": 2,
+    "amount": 2172
+  },
+  {
+    "state": "GA",
+    "year": 2006,
+    "payments": 7,
+    "amount": 9135
+  },
+  {
+    "state": "GA",
+    "year": 2007,
+    "payments": 13,
+    "amount": 15319
+  },
+  {
+    "state": "GA",
+    "year": 2008,
+    "payments": 19,
+    "amount": 12548
+  },
+  {
+    "state": "GA",
+    "year": 2009,
+    "payments": 220,
+    "amount": 453969.31
+  },
+  {
+    "state": "GA",
+    "year": 2010,
+    "payments": 573,
+    "amount": 1027413.99
+  },
+  {
+    "state": "GA",
+    "year": 2011,
+    "payments": 1147,
+    "amount": 2265527.25
+  },
+  {
+    "state": "GA",
+    "year": 2012,
+    "payments": 515,
+    "amount": 961187.62
+  },
+  {
+    "state": "GA",
+    "year": 2013,
+    "payments": 277,
+    "amount": 468180.13
+  },
+  {
+    "state": "GA",
+    "year": 2014,
+    "payments": 779,
+    "amount": 1681301.3
+  },
+  {
+    "state": "GA",
+    "year": 2015,
+    "payments": 1960,
+    "amount": 3504459.9
+  },
+  {
+    "state": "GA",
+    "year": 2016,
+    "payments": 2018,
+    "amount": 4767546
+  },
+  {
+    "state": "GA",
+    "year": 2017,
+    "payments": 1121,
+    "amount": 2353771.74
+  },
+  {
+    "state": "GA",
+    "year": 2018,
+    "payments": 1114,
+    "amount": 2805810.61
+  },
+  {
+    "state": "GA",
+    "year": 2019,
+    "payments": 174,
+    "amount": 694545.23
+  },
+  {
+    "state": "GA",
+    "year": 2020,
+    "payments": 7637,
+    "amount": 36515998.43
+  },
+  {
+    "state": "GA",
+    "year": 2021,
+    "payments": 4926,
+    "amount": 31328428.62
+  },
+  {
+    "state": "GA",
+    "year": 2022,
+    "payments": 10133,
+    "amount": 52309450.99
+  },
+  {
+    "state": "GA",
+    "year": 2023,
+    "payments": 14077,
+    "amount": 89597933.72
+  },
+  {
+    "state": "GA",
+    "year": 2024,
+    "payments": 54828,
+    "amount": 321952632.58
+  },
+  {
+    "state": "GA",
+    "year": 2025,
+    "payments": 4435,
+    "amount": 89888676.29
+  },
+  {
+    "state": "GU",
+    "year": 2013,
+    "payments": 1,
+    "amount": 5
+  },
+  {
+    "state": "GU",
+    "year": 2014,
+    "payments": 1,
+    "amount": 404
+  },
+  {
+    "state": "GU",
+    "year": 2020,
+    "payments": 33,
+    "amount": 202848.75
+  },
+  {
+    "state": "GU",
+    "year": 2021,
+    "payments": 11,
+    "amount": 84332.69
+  },
+  {
+    "state": "GU",
+    "year": 2022,
+    "payments": 49,
+    "amount": 63937.14
+  },
+  {
+    "state": "GU",
+    "year": 2023,
+    "payments": 92,
+    "amount": 1839590.44
+  },
+  {
+    "state": "GU",
+    "year": 2024,
+    "payments": 43,
+    "amount": 60789.52
+  },
+  {
+    "state": "GU",
+    "year": 2025,
+    "payments": 35,
+    "amount": 75980.85
+  },
+  {
+    "state": "HI",
+    "year": 2004,
+    "payments": 4,
+    "amount": 57382
+  },
+  {
+    "state": "HI",
+    "year": 2009,
+    "payments": 10,
+    "amount": 46326
+  },
+  {
+    "state": "HI",
+    "year": 2010,
+    "payments": 14,
+    "amount": 27466
+  },
+  {
+    "state": "HI",
+    "year": 2011,
+    "payments": 8,
+    "amount": 4044
+  },
+  {
+    "state": "HI",
+    "year": 2012,
+    "payments": 15,
+    "amount": 52880
+  },
+  {
+    "state": "HI",
+    "year": 2013,
+    "payments": 23,
+    "amount": 46036.36
+  },
+  {
+    "state": "HI",
+    "year": 2014,
+    "payments": 28,
+    "amount": 72424
+  },
+  {
+    "state": "HI",
+    "year": 2015,
+    "payments": 23,
+    "amount": 87108
+  },
+  {
+    "state": "HI",
+    "year": 2016,
+    "payments": 46,
+    "amount": 242174
+  },
+  {
+    "state": "HI",
+    "year": 2017,
+    "payments": 32,
+    "amount": 73653
+  },
+  {
+    "state": "HI",
+    "year": 2018,
+    "payments": 36,
+    "amount": 84527.89
+  },
+  {
+    "state": "HI",
+    "year": 2019,
+    "payments": 18,
+    "amount": 29617
+  },
+  {
+    "state": "HI",
+    "year": 2020,
+    "payments": 960,
+    "amount": 3699489.95
+  },
+  {
+    "state": "HI",
+    "year": 2021,
+    "payments": 376,
+    "amount": 2540473.69
+  },
+  {
+    "state": "HI",
+    "year": 2022,
+    "payments": 1213,
+    "amount": 6013782.43
+  },
+  {
+    "state": "HI",
+    "year": 2023,
+    "payments": 1253,
+    "amount": 10836284.5
+  },
+  {
+    "state": "HI",
+    "year": 2024,
+    "payments": 1496,
+    "amount": 9025449.24
+  },
+  {
+    "state": "HI",
+    "year": 2025,
+    "payments": 1122,
+    "amount": 13393961.45
+  },
+  {
+    "state": "IA",
+    "year": 2003,
+    "payments": 45,
+    "amount": 73293
+  },
+  {
+    "state": "IA",
+    "year": 2004,
+    "payments": 58,
+    "amount": 100478
+  },
+  {
+    "state": "IA",
+    "year": 2005,
+    "payments": 61,
+    "amount": 87768
+  },
+  {
+    "state": "IA",
+    "year": 2006,
+    "payments": 1,
+    "amount": 962
+  },
+  {
+    "state": "IA",
+    "year": 2007,
+    "payments": 8,
+    "amount": 16308
+  },
+  {
+    "state": "IA",
+    "year": 2008,
+    "payments": 21,
+    "amount": 81628
+  },
+  {
+    "state": "IA",
+    "year": 2009,
+    "payments": 955,
+    "amount": 2340451
+  },
+  {
+    "state": "IA",
+    "year": 2010,
+    "payments": 2282,
+    "amount": 5843099.39
+  },
+  {
+    "state": "IA",
+    "year": 2011,
+    "payments": 4889,
+    "amount": 14902972
+  },
+  {
+    "state": "IA",
+    "year": 2012,
+    "payments": 2766,
+    "amount": 5772754.13
+  },
+  {
+    "state": "IA",
+    "year": 2013,
+    "payments": 4964,
+    "amount": 10496204.82
+  },
+  {
+    "state": "IA",
+    "year": 2014,
+    "payments": 13099,
+    "amount": 35675295.53
+  },
+  {
+    "state": "IA",
+    "year": 2015,
+    "payments": 23459,
+    "amount": 77695533.57
+  },
+  {
+    "state": "IA",
+    "year": 2016,
+    "payments": 51364,
+    "amount": 228843727.18
+  },
+  {
+    "state": "IA",
+    "year": 2017,
+    "payments": 36999,
+    "amount": 149458079.17
+  },
+  {
+    "state": "IA",
+    "year": 2018,
+    "payments": 36781,
+    "amount": 148300567.12
+  },
+  {
+    "state": "IA",
+    "year": 2019,
+    "payments": 10256,
+    "amount": 17389852.93
+  },
+  {
+    "state": "IA",
+    "year": 2020,
+    "payments": 57081,
+    "amount": 97577308
+  },
+  {
+    "state": "IA",
+    "year": 2021,
+    "payments": 62031,
+    "amount": 149481927.82
+  },
+  {
+    "state": "IA",
+    "year": 2022,
+    "payments": 59733,
+    "amount": 170479652.57
+  },
+  {
+    "state": "IA",
+    "year": 2023,
+    "payments": 95570,
+    "amount": 587774891.46
+  },
+  {
+    "state": "IA",
+    "year": 2024,
+    "payments": 216929,
+    "amount": 1234964418.46
+  },
+  {
+    "state": "IA",
+    "year": 2025,
+    "payments": 6980,
+    "amount": 22715951.04
+  },
+  {
+    "state": "ID",
+    "year": 2004,
+    "payments": 1,
+    "amount": 417
+  },
+  {
+    "state": "ID",
+    "year": 2008,
+    "payments": 11,
+    "amount": 69494
+  },
+  {
+    "state": "ID",
+    "year": 2009,
+    "payments": 20,
+    "amount": 33592
+  },
+  {
+    "state": "ID",
+    "year": 2010,
+    "payments": 20,
+    "amount": 37740
+  },
+  {
+    "state": "ID",
+    "year": 2011,
+    "payments": 51,
+    "amount": 134421
+  },
+  {
+    "state": "ID",
+    "year": 2012,
+    "payments": 74,
+    "amount": 277187
+  },
+  {
+    "state": "ID",
+    "year": 2013,
+    "payments": 151,
+    "amount": 592383
+  },
+  {
+    "state": "ID",
+    "year": 2014,
+    "payments": 561,
+    "amount": 2826637.38
+  },
+  {
+    "state": "ID",
+    "year": 2015,
+    "payments": 286,
+    "amount": 2284164
+  },
+  {
+    "state": "ID",
+    "year": 2016,
+    "payments": 563,
+    "amount": 2152903
+  },
+  {
+    "state": "ID",
+    "year": 2017,
+    "payments": 817,
+    "amount": 3429128
+  },
+  {
+    "state": "ID",
+    "year": 2018,
+    "payments": 735,
+    "amount": 5090047.27
+  },
+  {
+    "state": "ID",
+    "year": 2019,
+    "payments": 80,
+    "amount": 300871
+  },
+  {
+    "state": "ID",
+    "year": 2020,
+    "payments": 2269,
+    "amount": 6618604.33
+  },
+  {
+    "state": "ID",
+    "year": 2021,
+    "payments": 5402,
+    "amount": 14171872.89
+  },
+  {
+    "state": "ID",
+    "year": 2022,
+    "payments": 8907,
+    "amount": 41801219.21
+  },
+  {
+    "state": "ID",
+    "year": 2023,
+    "payments": 8833,
+    "amount": 89502315.04
+  },
+  {
+    "state": "ID",
+    "year": 2024,
+    "payments": 15306,
+    "amount": 124280824.13
+  },
+  {
+    "state": "ID",
+    "year": 2025,
+    "payments": 2295,
+    "amount": 82447473.22
+  },
+  {
+    "state": "IL",
+    "year": 2003,
+    "payments": 38,
+    "amount": 48163
+  },
+  {
+    "state": "IL",
+    "year": 2005,
+    "payments": 1,
+    "amount": 54
+  },
+  {
+    "state": "IL",
+    "year": 2007,
+    "payments": 18,
+    "amount": 50028
+  },
+  {
+    "state": "IL",
+    "year": 2008,
+    "payments": 30,
+    "amount": 9080
+  },
+  {
+    "state": "IL",
+    "year": 2009,
+    "payments": 516,
+    "amount": 664149
+  },
+  {
+    "state": "IL",
+    "year": 2010,
+    "payments": 1117,
+    "amount": 2204967
+  },
+  {
+    "state": "IL",
+    "year": 2011,
+    "payments": 2553,
+    "amount": 6043161
+  },
+  {
+    "state": "IL",
+    "year": 2012,
+    "payments": 4796,
+    "amount": 11964031
+  },
+  {
+    "state": "IL",
+    "year": 2013,
+    "payments": 6328,
+    "amount": 11071552.25
+  },
+  {
+    "state": "IL",
+    "year": 2014,
+    "payments": 14188,
+    "amount": 32706475.69
+  },
+  {
+    "state": "IL",
+    "year": 2015,
+    "payments": 19297,
+    "amount": 40517844.69
+  },
+  {
+    "state": "IL",
+    "year": 2016,
+    "payments": 35950,
+    "amount": 76832843
+  },
+  {
+    "state": "IL",
+    "year": 2017,
+    "payments": 26179,
+    "amount": 67186445.17
+  },
+  {
+    "state": "IL",
+    "year": 2018,
+    "payments": 27513,
+    "amount": 52971403.7
+  },
+  {
+    "state": "IL",
+    "year": 2019,
+    "payments": 9071,
+    "amount": 8687497.7
+  },
+  {
+    "state": "IL",
+    "year": 2020,
+    "payments": 39544,
+    "amount": 58498293.05
+  },
+  {
+    "state": "IL",
+    "year": 2021,
+    "payments": 47069,
+    "amount": 68534238.9
+  },
+  {
+    "state": "IL",
+    "year": 2022,
+    "payments": 37513,
+    "amount": 65086434.43
+  },
+  {
+    "state": "IL",
+    "year": 2023,
+    "payments": 51250,
+    "amount": 234937082.96
+  },
+  {
+    "state": "IL",
+    "year": 2024,
+    "payments": 219643,
+    "amount": 935933001.23
+  },
+  {
+    "state": "IL",
+    "year": 2025,
+    "payments": 5438,
+    "amount": 19592458.93
+  },
+  {
+    "state": "IN",
+    "year": 2003,
+    "payments": 1,
+    "amount": 908
+  },
+  {
+    "state": "IN",
+    "year": 2004,
+    "payments": 2,
+    "amount": 446
+  },
+  {
+    "state": "IN",
+    "year": 2005,
+    "payments": 3,
+    "amount": 2750
+  },
+  {
+    "state": "IN",
+    "year": 2006,
+    "payments": 7,
+    "amount": 21017
+  },
+  {
+    "state": "IN",
+    "year": 2007,
+    "payments": 5,
+    "amount": 2358.55
+  },
+  {
+    "state": "IN",
+    "year": 2008,
+    "payments": 21,
+    "amount": 21884
+  },
+  {
+    "state": "IN",
+    "year": 2009,
+    "payments": 602,
+    "amount": 885772.32
+  },
+  {
+    "state": "IN",
+    "year": 2010,
+    "payments": 662,
+    "amount": 1081721
+  },
+  {
+    "state": "IN",
+    "year": 2011,
+    "payments": 906,
+    "amount": 1423975.67
+  },
+  {
+    "state": "IN",
+    "year": 2012,
+    "payments": 1223,
+    "amount": 2175841
+  },
+  {
+    "state": "IN",
+    "year": 2013,
+    "payments": 1585,
+    "amount": 2137665
+  },
+  {
+    "state": "IN",
+    "year": 2014,
+    "payments": 4015,
+    "amount": 5711872.85
+  },
+  {
+    "state": "IN",
+    "year": 2015,
+    "payments": 6122,
+    "amount": 6311623.85
+  },
+  {
+    "state": "IN",
+    "year": 2016,
+    "payments": 12942,
+    "amount": 19783798.97
+  },
+  {
+    "state": "IN",
+    "year": 2017,
+    "payments": 8659,
+    "amount": 13618518.69
+  },
+  {
+    "state": "IN",
+    "year": 2018,
+    "payments": 9589,
+    "amount": 15875755.03
+  },
+  {
+    "state": "IN",
+    "year": 2019,
+    "payments": 3934,
+    "amount": 3425250.37
+  },
+  {
+    "state": "IN",
+    "year": 2020,
+    "payments": 19198,
+    "amount": 26362388.08
+  },
+  {
+    "state": "IN",
+    "year": 2021,
+    "payments": 15239,
+    "amount": 16996252.77
+  },
+  {
+    "state": "IN",
+    "year": 2022,
+    "payments": 14095,
+    "amount": 28787724.75
+  },
+  {
+    "state": "IN",
+    "year": 2023,
+    "payments": 18036,
+    "amount": 62249440.08
+  },
+  {
+    "state": "IN",
+    "year": 2024,
+    "payments": 120413,
+    "amount": 499629134.69
+  },
+  {
+    "state": "IN",
+    "year": 2025,
+    "payments": 2732,
+    "amount": 17527374.08
+  },
+  {
+    "state": "KS",
+    "year": 2001,
+    "payments": 3,
+    "amount": 1485
+  },
+  {
+    "state": "KS",
+    "year": 2004,
+    "payments": 29,
+    "amount": 81330
+  },
+  {
+    "state": "KS",
+    "year": 2005,
+    "payments": 38,
+    "amount": 78465
+  },
+  {
+    "state": "KS",
+    "year": 2006,
+    "payments": 45,
+    "amount": 127627
+  },
+  {
+    "state": "KS",
+    "year": 2007,
+    "payments": 32,
+    "amount": 176522.92
+  },
+  {
+    "state": "KS",
+    "year": 2008,
+    "payments": 10,
+    "amount": 4232
+  },
+  {
+    "state": "KS",
+    "year": 2009,
+    "payments": 385,
+    "amount": 882288.11
+  },
+  {
+    "state": "KS",
+    "year": 2010,
+    "payments": 1092,
+    "amount": 892513
+  },
+  {
+    "state": "KS",
+    "year": 2011,
+    "payments": 7868,
+    "amount": 15649154.5
+  },
+  {
+    "state": "KS",
+    "year": 2012,
+    "payments": 3631,
+    "amount": 7491772.5
+  },
+  {
+    "state": "KS",
+    "year": 2013,
+    "payments": 3153,
+    "amount": 6826617.92
+  },
+  {
+    "state": "KS",
+    "year": 2014,
+    "payments": 4312,
+    "amount": 9709493.5
+  },
+  {
+    "state": "KS",
+    "year": 2015,
+    "payments": 2631,
+    "amount": 3668528.8
+  },
+  {
+    "state": "KS",
+    "year": 2016,
+    "payments": 6340,
+    "amount": 8646079.82
+  },
+  {
+    "state": "KS",
+    "year": 2017,
+    "payments": 7992,
+    "amount": 13709957.93
+  },
+  {
+    "state": "KS",
+    "year": 2018,
+    "payments": 5838,
+    "amount": 12085437.46
+  },
+  {
+    "state": "KS",
+    "year": 2019,
+    "payments": 1601,
+    "amount": 4082840.78
+  },
+  {
+    "state": "KS",
+    "year": 2020,
+    "payments": 22076,
+    "amount": 36052026.81
+  },
+  {
+    "state": "KS",
+    "year": 2021,
+    "payments": 30862,
+    "amount": 50629611.25
+  },
+  {
+    "state": "KS",
+    "year": 2022,
+    "payments": 151934,
+    "amount": 428002033.06
+  },
+  {
+    "state": "KS",
+    "year": 2023,
+    "payments": 188302,
+    "amount": 992654394.03
+  },
+  {
+    "state": "KS",
+    "year": 2024,
+    "payments": 230216,
+    "amount": 1178901336.94
+  },
+  {
+    "state": "KS",
+    "year": 2025,
+    "payments": 2970,
+    "amount": 9160245.71
+  },
+  {
+    "state": "KY",
+    "year": 2004,
+    "payments": 2,
+    "amount": 2430
+  },
+  {
+    "state": "KY",
+    "year": 2005,
+    "payments": 21,
+    "amount": 23649
+  },
+  {
+    "state": "KY",
+    "year": 2007,
+    "payments": 11,
+    "amount": 104566
+  },
+  {
+    "state": "KY",
+    "year": 2008,
+    "payments": 586,
+    "amount": 3866570
+  },
+  {
+    "state": "KY",
+    "year": 2009,
+    "payments": 678,
+    "amount": 3879297
+  },
+  {
+    "state": "KY",
+    "year": 2010,
+    "payments": 333,
+    "amount": 1474716
+  },
+  {
+    "state": "KY",
+    "year": 2011,
+    "payments": 584,
+    "amount": 1680280.39
+  },
+  {
+    "state": "KY",
+    "year": 2012,
+    "payments": 256,
+    "amount": 688750.96
+  },
+  {
+    "state": "KY",
+    "year": 2013,
+    "payments": 554,
+    "amount": 1697490
+  },
+  {
+    "state": "KY",
+    "year": 2014,
+    "payments": 1350,
+    "amount": 3110302.8
+  },
+  {
+    "state": "KY",
+    "year": 2015,
+    "payments": 1696,
+    "amount": 2185244
+  },
+  {
+    "state": "KY",
+    "year": 2016,
+    "payments": 4084,
+    "amount": 7805022.54
+  },
+  {
+    "state": "KY",
+    "year": 2017,
+    "payments": 4109,
+    "amount": 8911217.53
+  },
+  {
+    "state": "KY",
+    "year": 2018,
+    "payments": 3195,
+    "amount": 7453860.02
+  },
+  {
+    "state": "KY",
+    "year": 2019,
+    "payments": 1339,
+    "amount": 751749.4
+  },
+  {
+    "state": "KY",
+    "year": 2020,
+    "payments": 10709,
+    "amount": 15363140.29
+  },
+  {
+    "state": "KY",
+    "year": 2021,
+    "payments": 6703,
+    "amount": 12656278.97
+  },
+  {
+    "state": "KY",
+    "year": 2022,
+    "payments": 9525,
+    "amount": 40363551.08
+  },
+  {
+    "state": "KY",
+    "year": 2023,
+    "payments": 10728,
+    "amount": 104575381.22
+  },
+  {
+    "state": "KY",
+    "year": 2024,
+    "payments": 69440,
+    "amount": 238512855.09
+  },
+  {
+    "state": "KY",
+    "year": 2025,
+    "payments": 2654,
+    "amount": 8835798.69
+  },
+  {
+    "state": "LA",
+    "year": 2003,
+    "payments": 12,
+    "amount": 15126
+  },
+  {
+    "state": "LA",
+    "year": 2004,
+    "payments": 12,
+    "amount": 14090
+  },
+  {
+    "state": "LA",
+    "year": 2009,
+    "payments": 88,
+    "amount": 305915.57
+  },
+  {
+    "state": "LA",
+    "year": 2010,
+    "payments": 722,
+    "amount": 3161404
+  },
+  {
+    "state": "LA",
+    "year": 2011,
+    "payments": 1344,
+    "amount": 6487379
+  },
+  {
+    "state": "LA",
+    "year": 2012,
+    "payments": 531,
+    "amount": 2191436
+  },
+  {
+    "state": "LA",
+    "year": 2013,
+    "payments": 1017,
+    "amount": 4914556
+  },
+  {
+    "state": "LA",
+    "year": 2014,
+    "payments": 1033,
+    "amount": 4063552
+  },
+  {
+    "state": "LA",
+    "year": 2015,
+    "payments": 1687,
+    "amount": 10103700.52
+  },
+  {
+    "state": "LA",
+    "year": 2016,
+    "payments": 1916,
+    "amount": 6688083.64
+  },
+  {
+    "state": "LA",
+    "year": 2017,
+    "payments": 686,
+    "amount": 1918200
+  },
+  {
+    "state": "LA",
+    "year": 2018,
+    "payments": 590,
+    "amount": 1361916.99
+  },
+  {
+    "state": "LA",
+    "year": 2019,
+    "payments": 1768,
+    "amount": 5609328.07
+  },
+  {
+    "state": "LA",
+    "year": 2020,
+    "payments": 5454,
+    "amount": 14780047.17
+  },
+  {
+    "state": "LA",
+    "year": 2021,
+    "payments": 4316,
+    "amount": 13678999.68
+  },
+  {
+    "state": "LA",
+    "year": 2022,
+    "payments": 18448,
+    "amount": 81772494.35
+  },
+  {
+    "state": "LA",
+    "year": 2023,
+    "payments": 25953,
+    "amount": 132426837.11
+  },
+  {
+    "state": "LA",
+    "year": 2024,
+    "payments": 37891,
+    "amount": 379331502.6
+  },
+  {
+    "state": "LA",
+    "year": 2025,
+    "payments": 1030,
+    "amount": 12540449.05
+  },
+  {
+    "state": "MA",
+    "year": 2004,
+    "payments": 4,
+    "amount": 754
+  },
+  {
+    "state": "MA",
+    "year": 2005,
+    "payments": 9,
+    "amount": 9687
+  },
+  {
+    "state": "MA",
+    "year": 2009,
+    "payments": 6,
+    "amount": 6299
+  },
+  {
+    "state": "MA",
+    "year": 2010,
+    "payments": 2,
+    "amount": 3896
+  },
+  {
+    "state": "MA",
+    "year": 2011,
+    "payments": 19,
+    "amount": 46497
+  },
+  {
+    "state": "MA",
+    "year": 2012,
+    "payments": 6,
+    "amount": 19396
+  },
+  {
+    "state": "MA",
+    "year": 2013,
+    "payments": 28,
+    "amount": 173219
+  },
+  {
+    "state": "MA",
+    "year": 2014,
+    "payments": 22,
+    "amount": 69764
+  },
+  {
+    "state": "MA",
+    "year": 2015,
+    "payments": 34,
+    "amount": 23643
+  },
+  {
+    "state": "MA",
+    "year": 2016,
+    "payments": 47,
+    "amount": 130419
+  },
+  {
+    "state": "MA",
+    "year": 2017,
+    "payments": 53,
+    "amount": 56406
+  },
+  {
+    "state": "MA",
+    "year": 2018,
+    "payments": 113,
+    "amount": 404080
+  },
+  {
+    "state": "MA",
+    "year": 2019,
+    "payments": 46,
+    "amount": 73888
+  },
+  {
+    "state": "MA",
+    "year": 2020,
+    "payments": 632,
+    "amount": 1412434.69
+  },
+  {
+    "state": "MA",
+    "year": 2021,
+    "payments": 337,
+    "amount": 2025638.08
+  },
+  {
+    "state": "MA",
+    "year": 2022,
+    "payments": 1153,
+    "amount": 4582927.59
+  },
+  {
+    "state": "MA",
+    "year": 2023,
+    "payments": 1566,
+    "amount": 8531534.49
+  },
+  {
+    "state": "MA",
+    "year": 2024,
+    "payments": 1089,
+    "amount": 3288924.24
+  },
+  {
+    "state": "MA",
+    "year": 2025,
+    "payments": 1212,
+    "amount": 12643916.8
+  },
+  {
+    "state": "MD",
+    "year": 2004,
+    "payments": 4,
+    "amount": 2274
+  },
+  {
+    "state": "MD",
+    "year": 2005,
+    "payments": 2,
+    "amount": 1362
+  },
+  {
+    "state": "MD",
+    "year": 2009,
+    "payments": 55,
+    "amount": 82081
+  },
+  {
+    "state": "MD",
+    "year": 2010,
+    "payments": 149,
+    "amount": 342082
+  },
+  {
+    "state": "MD",
+    "year": 2011,
+    "payments": 256,
+    "amount": 447683
+  },
+  {
+    "state": "MD",
+    "year": 2012,
+    "payments": 249,
+    "amount": 366110
+  },
+  {
+    "state": "MD",
+    "year": 2013,
+    "payments": 266,
+    "amount": 631974
+  },
+  {
+    "state": "MD",
+    "year": 2014,
+    "payments": 730,
+    "amount": 1836454
+  },
+  {
+    "state": "MD",
+    "year": 2015,
+    "payments": 892,
+    "amount": 2061430
+  },
+  {
+    "state": "MD",
+    "year": 2016,
+    "payments": 1430,
+    "amount": 3464938
+  },
+  {
+    "state": "MD",
+    "year": 2017,
+    "payments": 1580,
+    "amount": 3442428.51
+  },
+  {
+    "state": "MD",
+    "year": 2018,
+    "payments": 1642,
+    "amount": 5150103
+  },
+  {
+    "state": "MD",
+    "year": 2019,
+    "payments": 864,
+    "amount": 1819749
+  },
+  {
+    "state": "MD",
+    "year": 2020,
+    "payments": 2016,
+    "amount": 3130083.55
+  },
+  {
+    "state": "MD",
+    "year": 2021,
+    "payments": 1294,
+    "amount": 2588653.34
+  },
+  {
+    "state": "MD",
+    "year": 2022,
+    "payments": 1507,
+    "amount": 4051345.73
+  },
+  {
+    "state": "MD",
+    "year": 2023,
+    "payments": 5262,
+    "amount": 21877730.19
+  },
+  {
+    "state": "MD",
+    "year": 2024,
+    "payments": 16657,
+    "amount": 71729480.49
+  },
+  {
+    "state": "MD",
+    "year": 2025,
+    "payments": 919,
+    "amount": 10691611.32
+  },
+  {
+    "state": "ME",
+    "year": 2003,
+    "payments": 1,
+    "amount": 322
+  },
+  {
+    "state": "ME",
+    "year": 2004,
+    "payments": 1,
+    "amount": 99
+  },
+  {
+    "state": "ME",
+    "year": 2005,
+    "payments": 3,
+    "amount": 6240
+  },
+  {
+    "state": "ME",
+    "year": 2009,
+    "payments": 41,
+    "amount": 126719
+  },
+  {
+    "state": "ME",
+    "year": 2010,
+    "payments": 7,
+    "amount": 22636
+  },
+  {
+    "state": "ME",
+    "year": 2011,
+    "payments": 6,
+    "amount": 8753
+  },
+  {
+    "state": "ME",
+    "year": 2012,
+    "payments": 16,
+    "amount": 19592
+  },
+  {
+    "state": "ME",
+    "year": 2013,
+    "payments": 1,
+    "amount": 62
+  },
+  {
+    "state": "ME",
+    "year": 2014,
+    "payments": 21,
+    "amount": 17564
+  },
+  {
+    "state": "ME",
+    "year": 2015,
+    "payments": 15,
+    "amount": 10093
+  },
+  {
+    "state": "ME",
+    "year": 2016,
+    "payments": 21,
+    "amount": 43401
+  },
+  {
+    "state": "ME",
+    "year": 2017,
+    "payments": 43,
+    "amount": 156685.06
+  },
+  {
+    "state": "ME",
+    "year": 2018,
+    "payments": 43,
+    "amount": 51057
+  },
+  {
+    "state": "ME",
+    "year": 2019,
+    "payments": 5,
+    "amount": 1510
+  },
+  {
+    "state": "ME",
+    "year": 2020,
+    "payments": 566,
+    "amount": 1008427.45
+  },
+  {
+    "state": "ME",
+    "year": 2021,
+    "payments": 271,
+    "amount": 1309211.3
+  },
+  {
+    "state": "ME",
+    "year": 2022,
+    "payments": 348,
+    "amount": 1220096.96
+  },
+  {
+    "state": "ME",
+    "year": 2023,
+    "payments": 2235,
+    "amount": 8400362
+  },
+  {
+    "state": "ME",
+    "year": 2024,
+    "payments": 1047,
+    "amount": 4530592.61
+  },
+  {
+    "state": "ME",
+    "year": 2025,
+    "payments": 1199,
+    "amount": 17918353.58
+  },
+  {
+    "state": "MI",
+    "year": 2001,
+    "payments": 7,
+    "amount": 2064
+  },
+  {
+    "state": "MI",
+    "year": 2002,
+    "payments": 1,
+    "amount": 1404.65
+  },
+  {
+    "state": "MI",
+    "year": 2003,
+    "payments": 7,
+    "amount": 4205
+  },
+  {
+    "state": "MI",
+    "year": 2004,
+    "payments": 9,
+    "amount": 4148
+  },
+  {
+    "state": "MI",
+    "year": 2005,
+    "payments": 6,
+    "amount": 3852
+  },
+  {
+    "state": "MI",
+    "year": 2006,
+    "payments": 1,
+    "amount": 473
+  },
+  {
+    "state": "MI",
+    "year": 2008,
+    "payments": 15,
+    "amount": 9602
+  },
+  {
+    "state": "MI",
+    "year": 2009,
+    "payments": 292,
+    "amount": 421555
+  },
+  {
+    "state": "MI",
+    "year": 2010,
+    "payments": 695,
+    "amount": 982183.5
+  },
+  {
+    "state": "MI",
+    "year": 2011,
+    "payments": 884,
+    "amount": 1379160.49
+  },
+  {
+    "state": "MI",
+    "year": 2012,
+    "payments": 404,
+    "amount": 980476.24
+  },
+  {
+    "state": "MI",
+    "year": 2013,
+    "payments": 374,
+    "amount": 1106267
+  },
+  {
+    "state": "MI",
+    "year": 2014,
+    "payments": 944,
+    "amount": 2365500
+  },
+  {
+    "state": "MI",
+    "year": 2015,
+    "payments": 854,
+    "amount": 1464957
+  },
+  {
+    "state": "MI",
+    "year": 2016,
+    "payments": 3166,
+    "amount": 6343204.01
+  },
+  {
+    "state": "MI",
+    "year": 2017,
+    "payments": 4309,
+    "amount": 9118506.61
+  },
+  {
+    "state": "MI",
+    "year": 2018,
+    "payments": 2392,
+    "amount": 4932874.81
+  },
+  {
+    "state": "MI",
+    "year": 2019,
+    "payments": 2284,
+    "amount": 4561624.27
+  },
+  {
+    "state": "MI",
+    "year": 2020,
+    "payments": 6693,
+    "amount": 17609051.77
+  },
+  {
+    "state": "MI",
+    "year": 2021,
+    "payments": 5456,
+    "amount": 11773254.7
+  },
+  {
+    "state": "MI",
+    "year": 2022,
+    "payments": 6165,
+    "amount": 20172245.26
+  },
+  {
+    "state": "MI",
+    "year": 2023,
+    "payments": 14872,
+    "amount": 114528595.87
+  },
+  {
+    "state": "MI",
+    "year": 2024,
+    "payments": 46773,
+    "amount": 224451071.04
+  },
+  {
+    "state": "MI",
+    "year": 2025,
+    "payments": 5998,
+    "amount": 98006502.29
+  },
+  {
+    "state": "MN",
+    "year": 2003,
+    "payments": 19,
+    "amount": 36407
+  },
+  {
+    "state": "MN",
+    "year": 2004,
+    "payments": 37,
+    "amount": 53819
+  },
+  {
+    "state": "MN",
+    "year": 2005,
+    "payments": 22,
+    "amount": 26032
+  },
+  {
+    "state": "MN",
+    "year": 2006,
+    "payments": 25,
+    "amount": 8486
+  },
+  {
+    "state": "MN",
+    "year": 2007,
+    "payments": 24,
+    "amount": 52505
+  },
+  {
+    "state": "MN",
+    "year": 2008,
+    "payments": 90,
+    "amount": 154550
+  },
+  {
+    "state": "MN",
+    "year": 2009,
+    "payments": 1653,
+    "amount": 2817792
+  },
+  {
+    "state": "MN",
+    "year": 2010,
+    "payments": 2132,
+    "amount": 3648425.96
+  },
+  {
+    "state": "MN",
+    "year": 2011,
+    "payments": 4018,
+    "amount": 7631616.21
+  },
+  {
+    "state": "MN",
+    "year": 2012,
+    "payments": 3526,
+    "amount": 6932684.1
+  },
+  {
+    "state": "MN",
+    "year": 2013,
+    "payments": 7803,
+    "amount": 15232909.14
+  },
+  {
+    "state": "MN",
+    "year": 2014,
+    "payments": 7227,
+    "amount": 16318959.37
+  },
+  {
+    "state": "MN",
+    "year": 2015,
+    "payments": 10391,
+    "amount": 25875117.3
+  },
+  {
+    "state": "MN",
+    "year": 2016,
+    "payments": 20697,
+    "amount": 61147223.54
+  },
+  {
+    "state": "MN",
+    "year": 2017,
+    "payments": 19296,
+    "amount": 46741793.66
+  },
+  {
+    "state": "MN",
+    "year": 2018,
+    "payments": 26804,
+    "amount": 65402881.91
+  },
+  {
+    "state": "MN",
+    "year": 2019,
+    "payments": 10049,
+    "amount": 23039923.98
+  },
+  {
+    "state": "MN",
+    "year": 2020,
+    "payments": 27227,
+    "amount": 72145002.92
+  },
+  {
+    "state": "MN",
+    "year": 2021,
+    "payments": 44568,
+    "amount": 90121665.9
+  },
+  {
+    "state": "MN",
+    "year": 2022,
+    "payments": 32911,
+    "amount": 122551905.94
+  },
+  {
+    "state": "MN",
+    "year": 2023,
+    "payments": 87908,
+    "amount": 546163129.79
+  },
+  {
+    "state": "MN",
+    "year": 2024,
+    "payments": 198977,
+    "amount": 1451221398.38
+  },
+  {
+    "state": "MN",
+    "year": 2025,
+    "payments": 6460,
+    "amount": 50363538.04
+  },
+  {
+    "state": "MO",
+    "year": 2002,
+    "payments": 3,
+    "amount": 1269.91
+  },
+  {
+    "state": "MO",
+    "year": 2003,
+    "payments": 10,
+    "amount": 8958
+  },
+  {
+    "state": "MO",
+    "year": 2004,
+    "payments": 21,
+    "amount": 27148
+  },
+  {
+    "state": "MO",
+    "year": 2005,
+    "payments": 70,
+    "amount": 56421
+  },
+  {
+    "state": "MO",
+    "year": 2006,
+    "payments": 5,
+    "amount": 5285
+  },
+  {
+    "state": "MO",
+    "year": 2007,
+    "payments": 6,
+    "amount": 15298
+  },
+  {
+    "state": "MO",
+    "year": 2008,
+    "payments": 34,
+    "amount": 150641
+  },
+  {
+    "state": "MO",
+    "year": 2009,
+    "payments": 654,
+    "amount": 1856938.64
+  },
+  {
+    "state": "MO",
+    "year": 2010,
+    "payments": 637,
+    "amount": 1180654
+  },
+  {
+    "state": "MO",
+    "year": 2011,
+    "payments": 1032,
+    "amount": 2370567
+  },
+  {
+    "state": "MO",
+    "year": 2012,
+    "payments": 808,
+    "amount": 1677474.19
+  },
+  {
+    "state": "MO",
+    "year": 2013,
+    "payments": 1347,
+    "amount": 3027823
+  },
+  {
+    "state": "MO",
+    "year": 2014,
+    "payments": 4309,
+    "amount": 14057289.47
+  },
+  {
+    "state": "MO",
+    "year": 2015,
+    "payments": 3458,
+    "amount": 9982841
+  },
+  {
+    "state": "MO",
+    "year": 2016,
+    "payments": 7627,
+    "amount": 22730413.44
+  },
+  {
+    "state": "MO",
+    "year": 2017,
+    "payments": 9054,
+    "amount": 28624134.12
+  },
+  {
+    "state": "MO",
+    "year": 2018,
+    "payments": 6099,
+    "amount": 20990086
+  },
+  {
+    "state": "MO",
+    "year": 2019,
+    "payments": 1387,
+    "amount": 1521704
+  },
+  {
+    "state": "MO",
+    "year": 2020,
+    "payments": 20148,
+    "amount": 26881949.77
+  },
+  {
+    "state": "MO",
+    "year": 2021,
+    "payments": 18968,
+    "amount": 40924099.47
+  },
+  {
+    "state": "MO",
+    "year": 2022,
+    "payments": 78089,
+    "amount": 190006786.28
+  },
+  {
+    "state": "MO",
+    "year": 2023,
+    "payments": 94623,
+    "amount": 486521868.61
+  },
+  {
+    "state": "MO",
+    "year": 2024,
+    "payments": 152576,
+    "amount": 677665128.83
+  },
+  {
+    "state": "MO",
+    "year": 2025,
+    "payments": 4468,
+    "amount": 20562395.85
+  },
+  {
+    "state": "MP",
+    "year": 2020,
+    "payments": 42,
+    "amount": 34374.2
+  },
+  {
+    "state": "MP",
+    "year": 2022,
+    "payments": 28,
+    "amount": 25877.9
+  },
+  {
+    "state": "MP",
+    "year": 2023,
+    "payments": 32,
+    "amount": 131291.62
+  },
+  {
+    "state": "MP",
+    "year": 2024,
+    "payments": 49,
+    "amount": 46135.87
+  },
+  {
+    "state": "MP",
+    "year": 2025,
+    "payments": 77,
+    "amount": 59971.74
+  },
+  {
+    "state": "MS",
+    "year": 2002,
+    "payments": 2,
+    "amount": 157
+  },
+  {
+    "state": "MS",
+    "year": 2003,
+    "payments": 2,
+    "amount": 1864
+  },
+  {
+    "state": "MS",
+    "year": 2004,
+    "payments": 8,
+    "amount": 3376.12
+  },
+  {
+    "state": "MS",
+    "year": 2005,
+    "payments": 1,
+    "amount": 603
+  },
+  {
+    "state": "MS",
+    "year": 2006,
+    "payments": 3,
+    "amount": 241
+  },
+  {
+    "state": "MS",
+    "year": 2007,
+    "payments": 4,
+    "amount": 1165
+  },
+  {
+    "state": "MS",
+    "year": 2008,
+    "payments": 3,
+    "amount": 810
+  },
+  {
+    "state": "MS",
+    "year": 2009,
+    "payments": 175,
+    "amount": 534601
+  },
+  {
+    "state": "MS",
+    "year": 2010,
+    "payments": 571,
+    "amount": 1932228.98
+  },
+  {
+    "state": "MS",
+    "year": 2011,
+    "payments": 999,
+    "amount": 3882584.2
+  },
+  {
+    "state": "MS",
+    "year": 2012,
+    "payments": 904,
+    "amount": 4385245.64
+  },
+  {
+    "state": "MS",
+    "year": 2013,
+    "payments": 1677,
+    "amount": 5200958.15
+  },
+  {
+    "state": "MS",
+    "year": 2014,
+    "payments": 1964,
+    "amount": 5131829.91
+  },
+  {
+    "state": "MS",
+    "year": 2015,
+    "payments": 1676,
+    "amount": 6875926.76
+  },
+  {
+    "state": "MS",
+    "year": 2016,
+    "payments": 4340,
+    "amount": 10574202
+  },
+  {
+    "state": "MS",
+    "year": 2017,
+    "payments": 3775,
+    "amount": 9181296.16
+  },
+  {
+    "state": "MS",
+    "year": 2018,
+    "payments": 2836,
+    "amount": 9584763.34
+  },
+  {
+    "state": "MS",
+    "year": 2019,
+    "payments": 2823,
+    "amount": 7955387
+  },
+  {
+    "state": "MS",
+    "year": 2020,
+    "payments": 8559,
+    "amount": 31774414.2
+  },
+  {
+    "state": "MS",
+    "year": 2021,
+    "payments": 5510,
+    "amount": 28082346.28
+  },
+  {
+    "state": "MS",
+    "year": 2022,
+    "payments": 9362,
+    "amount": 54150228.54
+  },
+  {
+    "state": "MS",
+    "year": 2023,
+    "payments": 28876,
+    "amount": 145815671.78
+  },
+  {
+    "state": "MS",
+    "year": 2024,
+    "payments": 40474,
+    "amount": 274984753.24
+  },
+  {
+    "state": "MS",
+    "year": 2025,
+    "payments": 1096,
+    "amount": 14867272.4
+  },
+  {
+    "state": "MT",
+    "year": 2004,
+    "payments": 3,
+    "amount": 39927
+  },
+  {
+    "state": "MT",
+    "year": 2005,
+    "payments": 6,
+    "amount": 34000
+  },
+  {
+    "state": "MT",
+    "year": 2006,
+    "payments": 18,
+    "amount": 194664
+  },
+  {
+    "state": "MT",
+    "year": 2008,
+    "payments": 1,
+    "amount": 63
+  },
+  {
+    "state": "MT",
+    "year": 2009,
+    "payments": 24,
+    "amount": 344461
+  },
+  {
+    "state": "MT",
+    "year": 2010,
+    "payments": 86,
+    "amount": 581626
+  },
+  {
+    "state": "MT",
+    "year": 2011,
+    "payments": 185,
+    "amount": 588687
+  },
+  {
+    "state": "MT",
+    "year": 2012,
+    "payments": 147,
+    "amount": 696025
+  },
+  {
+    "state": "MT",
+    "year": 2013,
+    "payments": 380,
+    "amount": 1128637.93
+  },
+  {
+    "state": "MT",
+    "year": 2014,
+    "payments": 1205,
+    "amount": 5658106.16
+  },
+  {
+    "state": "MT",
+    "year": 2015,
+    "payments": 291,
+    "amount": 995156
+  },
+  {
+    "state": "MT",
+    "year": 2016,
+    "payments": 703,
+    "amount": 2728445.92
+  },
+  {
+    "state": "MT",
+    "year": 2017,
+    "payments": 875,
+    "amount": 2950128.43
+  },
+  {
+    "state": "MT",
+    "year": 2018,
+    "payments": 3258,
+    "amount": 11948299.06
+  },
+  {
+    "state": "MT",
+    "year": 2019,
+    "payments": 248,
+    "amount": 1374003.6
+  },
+  {
+    "state": "MT",
+    "year": 2020,
+    "payments": 5671,
+    "amount": 18326342.37
+  },
+  {
+    "state": "MT",
+    "year": 2021,
+    "payments": 16611,
+    "amount": 45407682.97
+  },
+  {
+    "state": "MT",
+    "year": 2022,
+    "payments": 31506,
+    "amount": 162470291.29
+  },
+  {
+    "state": "MT",
+    "year": 2023,
+    "payments": 15265,
+    "amount": 131038465.74
+  },
+  {
+    "state": "MT",
+    "year": 2024,
+    "payments": 38348,
+    "amount": 433439664.31
+  },
+  {
+    "state": "MT",
+    "year": 2025,
+    "payments": 6917,
+    "amount": 56020349.23
+  },
+  {
+    "state": "NC",
+    "year": 2005,
+    "payments": 6,
+    "amount": 1089
+  },
+  {
+    "state": "NC",
+    "year": 2007,
+    "payments": 9,
+    "amount": 2874
+  },
+  {
+    "state": "NC",
+    "year": 2008,
+    "payments": 6,
+    "amount": 3326
+  },
+  {
+    "state": "NC",
+    "year": 2009,
+    "payments": 91,
+    "amount": 110494
+  },
+  {
+    "state": "NC",
+    "year": 2010,
+    "payments": 179,
+    "amount": 203592.5
+  },
+  {
+    "state": "NC",
+    "year": 2011,
+    "payments": 419,
+    "amount": 734645.43
+  },
+  {
+    "state": "NC",
+    "year": 2012,
+    "payments": 306,
+    "amount": 333935
+  },
+  {
+    "state": "NC",
+    "year": 2013,
+    "payments": 232,
+    "amount": 342934
+  },
+  {
+    "state": "NC",
+    "year": 2014,
+    "payments": 497,
+    "amount": 778581
+  },
+  {
+    "state": "NC",
+    "year": 2015,
+    "payments": 440,
+    "amount": 495266.93
+  },
+  {
+    "state": "NC",
+    "year": 2016,
+    "payments": 759,
+    "amount": 1364358.61
+  },
+  {
+    "state": "NC",
+    "year": 2017,
+    "payments": 1151,
+    "amount": 1241135
+  },
+  {
+    "state": "NC",
+    "year": 2018,
+    "payments": 875,
+    "amount": 930962
+  },
+  {
+    "state": "NC",
+    "year": 2019,
+    "payments": 300,
+    "amount": 307719
+  },
+  {
+    "state": "NC",
+    "year": 2020,
+    "payments": 8175,
+    "amount": 26656929.74
+  },
+  {
+    "state": "NC",
+    "year": 2021,
+    "payments": 4645,
+    "amount": 24626721.68
+  },
+  {
+    "state": "NC",
+    "year": 2022,
+    "payments": 9737,
+    "amount": 65158752.88
+  },
+  {
+    "state": "NC",
+    "year": 2023,
+    "payments": 8703,
+    "amount": 80293393.68
+  },
+  {
+    "state": "NC",
+    "year": 2024,
+    "payments": 96857,
+    "amount": 317434002.25
+  },
+  {
+    "state": "NC",
+    "year": 2025,
+    "payments": 3630,
+    "amount": 77543321.68
+  },
+  {
+    "state": "ND",
+    "year": 2005,
+    "payments": 10,
+    "amount": 26226
+  },
+  {
+    "state": "ND",
+    "year": 2006,
+    "payments": 7,
+    "amount": 82827
+  },
+  {
+    "state": "ND",
+    "year": 2007,
+    "payments": 7,
+    "amount": 18974
+  },
+  {
+    "state": "ND",
+    "year": 2008,
+    "payments": 163,
+    "amount": 592610
+  },
+  {
+    "state": "ND",
+    "year": 2009,
+    "payments": 500,
+    "amount": 991892
+  },
+  {
+    "state": "ND",
+    "year": 2010,
+    "payments": 1264,
+    "amount": 3151051
+  },
+  {
+    "state": "ND",
+    "year": 2011,
+    "payments": 1831,
+    "amount": 4110518.59
+  },
+  {
+    "state": "ND",
+    "year": 2012,
+    "payments": 1395,
+    "amount": 2698296
+  },
+  {
+    "state": "ND",
+    "year": 2013,
+    "payments": 2378,
+    "amount": 7971128
+  },
+  {
+    "state": "ND",
+    "year": 2014,
+    "payments": 3188,
+    "amount": 8304509.8
+  },
+  {
+    "state": "ND",
+    "year": 2015,
+    "payments": 3620,
+    "amount": 9658821.63
+  },
+  {
+    "state": "ND",
+    "year": 2016,
+    "payments": 5829,
+    "amount": 19485702.37
+  },
+  {
+    "state": "ND",
+    "year": 2017,
+    "payments": 2674,
+    "amount": 6916133.96
+  },
+  {
+    "state": "ND",
+    "year": 2018,
+    "payments": 5099,
+    "amount": 15136118.74
+  },
+  {
+    "state": "ND",
+    "year": 2019,
+    "payments": 768,
+    "amount": 1258043.51
+  },
+  {
+    "state": "ND",
+    "year": 2020,
+    "payments": 20915,
+    "amount": 58906572.79
+  },
+  {
+    "state": "ND",
+    "year": 2021,
+    "payments": 34059,
+    "amount": 83273531.36
+  },
+  {
+    "state": "ND",
+    "year": 2022,
+    "payments": 27106,
+    "amount": 187887491.45
+  },
+  {
+    "state": "ND",
+    "year": 2023,
+    "payments": 28969,
+    "amount": 242626645.76
+  },
+  {
+    "state": "ND",
+    "year": 2024,
+    "payments": 68779,
+    "amount": 863846920.66
+  },
+  {
+    "state": "ND",
+    "year": 2025,
+    "payments": 7991,
+    "amount": 77200293.68
+  },
+  {
+    "state": "NE",
+    "year": 2003,
+    "payments": 7,
+    "amount": 24171
+  },
+  {
+    "state": "NE",
+    "year": 2004,
+    "payments": 11,
+    "amount": 11401.02
+  },
+  {
+    "state": "NE",
+    "year": 2005,
+    "payments": 11,
+    "amount": 15108
+  },
+  {
+    "state": "NE",
+    "year": 2007,
+    "payments": 3,
+    "amount": 54718
+  },
+  {
+    "state": "NE",
+    "year": 2008,
+    "payments": 5,
+    "amount": 2386
+  },
+  {
+    "state": "NE",
+    "year": 2009,
+    "payments": 502,
+    "amount": 900120.26
+  },
+  {
+    "state": "NE",
+    "year": 2010,
+    "payments": 766,
+    "amount": 1038511
+  },
+  {
+    "state": "NE",
+    "year": 2011,
+    "payments": 1856,
+    "amount": 3570184.6
+  },
+  {
+    "state": "NE",
+    "year": 2012,
+    "payments": 993,
+    "amount": 2082722
+  },
+  {
+    "state": "NE",
+    "year": 2013,
+    "payments": 1099,
+    "amount": 2725697.03
+  },
+  {
+    "state": "NE",
+    "year": 2014,
+    "payments": 2557,
+    "amount": 6972730.67
+  },
+  {
+    "state": "NE",
+    "year": 2015,
+    "payments": 2885,
+    "amount": 9001761.75
+  },
+  {
+    "state": "NE",
+    "year": 2016,
+    "payments": 8088,
+    "amount": 31087650.89
+  },
+  {
+    "state": "NE",
+    "year": 2017,
+    "payments": 6902,
+    "amount": 20551268.44
+  },
+  {
+    "state": "NE",
+    "year": 2018,
+    "payments": 8892,
+    "amount": 33465191.8
+  },
+  {
+    "state": "NE",
+    "year": 2019,
+    "payments": 2701,
+    "amount": 7731283.43
+  },
+  {
+    "state": "NE",
+    "year": 2020,
+    "payments": 24626,
+    "amount": 64378720.75
+  },
+  {
+    "state": "NE",
+    "year": 2021,
+    "payments": 23993,
+    "amount": 69839075.74
+  },
+  {
+    "state": "NE",
+    "year": 2022,
+    "payments": 90900,
+    "amount": 413268432.12
+  },
+  {
+    "state": "NE",
+    "year": 2023,
+    "payments": 105045,
+    "amount": 709328071.59
+  },
+  {
+    "state": "NE",
+    "year": 2024,
+    "payments": 152200,
+    "amount": 903145112.39
+  },
+  {
+    "state": "NE",
+    "year": 2025,
+    "payments": 8878,
+    "amount": 48238841.11
+  },
+  {
+    "state": "NH",
+    "year": 2011,
+    "payments": 12,
+    "amount": 19896
+  },
+  {
+    "state": "NH",
+    "year": 2012,
+    "payments": 11,
+    "amount": 31516
+  },
+  {
+    "state": "NH",
+    "year": 2013,
+    "payments": 10,
+    "amount": 13812
+  },
+  {
+    "state": "NH",
+    "year": 2014,
+    "payments": 17,
+    "amount": 37896
+  },
+  {
+    "state": "NH",
+    "year": 2015,
+    "payments": 20,
+    "amount": 78827
+  },
+  {
+    "state": "NH",
+    "year": 2016,
+    "payments": 37,
+    "amount": 53880
+  },
+  {
+    "state": "NH",
+    "year": 2017,
+    "payments": 23,
+    "amount": 47627
+  },
+  {
+    "state": "NH",
+    "year": 2018,
+    "payments": 25,
+    "amount": 20177
+  },
+  {
+    "state": "NH",
+    "year": 2019,
+    "payments": 7,
+    "amount": 11424
+  },
+  {
+    "state": "NH",
+    "year": 2020,
+    "payments": 190,
+    "amount": 550609.82
+  },
+  {
+    "state": "NH",
+    "year": 2021,
+    "payments": 66,
+    "amount": 92100.26
+  },
+  {
+    "state": "NH",
+    "year": 2022,
+    "payments": 175,
+    "amount": 342177.65
+  },
+  {
+    "state": "NH",
+    "year": 2023,
+    "payments": 940,
+    "amount": 4604723.92
+  },
+  {
+    "state": "NH",
+    "year": 2024,
+    "payments": 449,
+    "amount": 1541286.62
+  },
+  {
+    "state": "NH",
+    "year": 2025,
+    "payments": 336,
+    "amount": 2250930.14
+  },
+  {
+    "state": "NJ",
+    "year": 2009,
+    "payments": 11,
+    "amount": 10577
+  },
+  {
+    "state": "NJ",
+    "year": 2010,
+    "payments": 25,
+    "amount": 25792
+  },
+  {
+    "state": "NJ",
+    "year": 2011,
+    "payments": 66,
+    "amount": 72856
+  },
+  {
+    "state": "NJ",
+    "year": 2012,
+    "payments": 59,
+    "amount": 82467
+  },
+  {
+    "state": "NJ",
+    "year": 2013,
+    "payments": 31,
+    "amount": 69399
+  },
+  {
+    "state": "NJ",
+    "year": 2014,
+    "payments": 59,
+    "amount": 68064
+  },
+  {
+    "state": "NJ",
+    "year": 2015,
+    "payments": 95,
+    "amount": 59420
+  },
+  {
+    "state": "NJ",
+    "year": 2016,
+    "payments": 161,
+    "amount": 252984
+  },
+  {
+    "state": "NJ",
+    "year": 2017,
+    "payments": 94,
+    "amount": 92780
+  },
+  {
+    "state": "NJ",
+    "year": 2018,
+    "payments": 128,
+    "amount": 280767
+  },
+  {
+    "state": "NJ",
+    "year": 2019,
+    "payments": 110,
+    "amount": 54789
+  },
+  {
+    "state": "NJ",
+    "year": 2020,
+    "payments": 697,
+    "amount": 4042113.76
+  },
+  {
+    "state": "NJ",
+    "year": 2021,
+    "payments": 350,
+    "amount": 2401997.57
+  },
+  {
+    "state": "NJ",
+    "year": 2022,
+    "payments": 1014,
+    "amount": 7032844.98
+  },
+  {
+    "state": "NJ",
+    "year": 2023,
+    "payments": 979,
+    "amount": 5799807.83
+  },
+  {
+    "state": "NJ",
+    "year": 2024,
+    "payments": 3257,
+    "amount": 13178820.67
+  },
+  {
+    "state": "NJ",
+    "year": 2025,
+    "payments": 1133,
+    "amount": 35977528.46
+  },
+  {
+    "state": "NM",
+    "year": 2004,
+    "payments": 5,
+    "amount": 141178
+  },
+  {
+    "state": "NM",
+    "year": 2005,
+    "payments": 3,
+    "amount": 25791
+  },
+  {
+    "state": "NM",
+    "year": 2008,
+    "payments": 4,
+    "amount": 2376
+  },
+  {
+    "state": "NM",
+    "year": 2009,
+    "payments": 11,
+    "amount": 68868
+  },
+  {
+    "state": "NM",
+    "year": 2010,
+    "payments": 13,
+    "amount": 299040
+  },
+  {
+    "state": "NM",
+    "year": 2011,
+    "payments": 54,
+    "amount": 393669
+  },
+  {
+    "state": "NM",
+    "year": 2012,
+    "payments": 125,
+    "amount": 712537.59
+  },
+  {
+    "state": "NM",
+    "year": 2013,
+    "payments": 73,
+    "amount": 625288.43
+  },
+  {
+    "state": "NM",
+    "year": 2014,
+    "payments": 195,
+    "amount": 933404.73
+  },
+  {
+    "state": "NM",
+    "year": 2015,
+    "payments": 127,
+    "amount": 748038
+  },
+  {
+    "state": "NM",
+    "year": 2016,
+    "payments": 186,
+    "amount": 731091
+  },
+  {
+    "state": "NM",
+    "year": 2017,
+    "payments": 230,
+    "amount": 857952
+  },
+  {
+    "state": "NM",
+    "year": 2018,
+    "payments": 769,
+    "amount": 4707826.92
+  },
+  {
+    "state": "NM",
+    "year": 2019,
+    "payments": 99,
+    "amount": 408484
+  },
+  {
+    "state": "NM",
+    "year": 2020,
+    "payments": 2789,
+    "amount": 5236048.73
+  },
+  {
+    "state": "NM",
+    "year": 2021,
+    "payments": 4480,
+    "amount": 10229218.3
+  },
+  {
+    "state": "NM",
+    "year": 2022,
+    "payments": 12352,
+    "amount": 65880386.87
+  },
+  {
+    "state": "NM",
+    "year": 2023,
+    "payments": 14194,
+    "amount": 132546137.69
+  },
+  {
+    "state": "NM",
+    "year": 2024,
+    "payments": 12648,
+    "amount": 114653719.78
+  },
+  {
+    "state": "NM",
+    "year": 2025,
+    "payments": 1844,
+    "amount": 26830459.36
+  },
+  {
+    "state": "NV",
+    "year": 2007,
+    "payments": 3,
+    "amount": 480
+  },
+  {
+    "state": "NV",
+    "year": 2009,
+    "payments": 3,
+    "amount": 10021
+  },
+  {
+    "state": "NV",
+    "year": 2010,
+    "payments": 21,
+    "amount": 48734
+  },
+  {
+    "state": "NV",
+    "year": 2011,
+    "payments": 24,
+    "amount": 80524
+  },
+  {
+    "state": "NV",
+    "year": 2012,
+    "payments": 16,
+    "amount": 91025
+  },
+  {
+    "state": "NV",
+    "year": 2013,
+    "payments": 22,
+    "amount": 67675.46
+  },
+  {
+    "state": "NV",
+    "year": 2014,
+    "payments": 67,
+    "amount": 171897
+  },
+  {
+    "state": "NV",
+    "year": 2015,
+    "payments": 73,
+    "amount": 137245
+  },
+  {
+    "state": "NV",
+    "year": 2016,
+    "payments": 136,
+    "amount": 277241.75
+  },
+  {
+    "state": "NV",
+    "year": 2017,
+    "payments": 143,
+    "amount": 514481
+  },
+  {
+    "state": "NV",
+    "year": 2018,
+    "payments": 162,
+    "amount": 517312
+  },
+  {
+    "state": "NV",
+    "year": 2019,
+    "payments": 38,
+    "amount": 51420
+  },
+  {
+    "state": "NV",
+    "year": 2020,
+    "payments": 577,
+    "amount": 811582.59
+  },
+  {
+    "state": "NV",
+    "year": 2021,
+    "payments": 889,
+    "amount": 3009149.95
+  },
+  {
+    "state": "NV",
+    "year": 2022,
+    "payments": 2017,
+    "amount": 14096318.4
+  },
+  {
+    "state": "NV",
+    "year": 2023,
+    "payments": 1933,
+    "amount": 32533133.3
+  },
+  {
+    "state": "NV",
+    "year": 2024,
+    "payments": 1481,
+    "amount": 8388617.12
+  },
+  {
+    "state": "NV",
+    "year": 2025,
+    "payments": 356,
+    "amount": 9005648.27
+  },
+  {
+    "state": "NY",
+    "year": 2004,
+    "payments": 7,
+    "amount": 8074
+  },
+  {
+    "state": "NY",
+    "year": 2005,
+    "payments": 24,
+    "amount": 22609
+  },
+  {
+    "state": "NY",
+    "year": 2007,
+    "payments": 1,
+    "amount": 1926
+  },
+  {
+    "state": "NY",
+    "year": 2008,
+    "payments": 3,
+    "amount": 4719
+  },
+  {
+    "state": "NY",
+    "year": 2009,
+    "payments": 58,
+    "amount": 79546
+  },
+  {
+    "state": "NY",
+    "year": 2010,
+    "payments": 85,
+    "amount": 206700.02
+  },
+  {
+    "state": "NY",
+    "year": 2011,
+    "payments": 128,
+    "amount": 314650
+  },
+  {
+    "state": "NY",
+    "year": 2012,
+    "payments": 140,
+    "amount": 220795
+  },
+  {
+    "state": "NY",
+    "year": 2013,
+    "payments": 120,
+    "amount": 102672
+  },
+  {
+    "state": "NY",
+    "year": 2014,
+    "payments": 164,
+    "amount": 309178
+  },
+  {
+    "state": "NY",
+    "year": 2015,
+    "payments": 166,
+    "amount": 308638
+  },
+  {
+    "state": "NY",
+    "year": 2016,
+    "payments": 400,
+    "amount": 771208.85
+  },
+  {
+    "state": "NY",
+    "year": 2017,
+    "payments": 434,
+    "amount": 553861.21
+  },
+  {
+    "state": "NY",
+    "year": 2018,
+    "payments": 621,
+    "amount": 1056119.51
+  },
+  {
+    "state": "NY",
+    "year": 2019,
+    "payments": 322,
+    "amount": 421425.6
+  },
+  {
+    "state": "NY",
+    "year": 2020,
+    "payments": 3245,
+    "amount": 9570660.57
+  },
+  {
+    "state": "NY",
+    "year": 2021,
+    "payments": 1248,
+    "amount": 4913734.86
+  },
+  {
+    "state": "NY",
+    "year": 2022,
+    "payments": 1776,
+    "amount": 11595316
+  },
+  {
+    "state": "NY",
+    "year": 2023,
+    "payments": 27123,
+    "amount": 137749357.71
+  },
+  {
+    "state": "NY",
+    "year": 2024,
+    "payments": 12273,
+    "amount": 76245241.66
+  },
+  {
+    "state": "NY",
+    "year": 2025,
+    "payments": 3625,
+    "amount": 63392787.56
+  },
+  {
+    "state": "OH",
+    "year": 2003,
+    "payments": 8,
+    "amount": 27167
+  },
+  {
+    "state": "OH",
+    "year": 2004,
+    "payments": 12,
+    "amount": 8711
+  },
+  {
+    "state": "OH",
+    "year": 2005,
+    "payments": 6,
+    "amount": 13440
+  },
+  {
+    "state": "OH",
+    "year": 2006,
+    "payments": 1,
+    "amount": 6703
+  },
+  {
+    "state": "OH",
+    "year": 2007,
+    "payments": 10,
+    "amount": 37026
+  },
+  {
+    "state": "OH",
+    "year": 2008,
+    "payments": 32,
+    "amount": 50458
+  },
+  {
+    "state": "OH",
+    "year": 2009,
+    "payments": 1157,
+    "amount": 1535695.87
+  },
+  {
+    "state": "OH",
+    "year": 2010,
+    "payments": 1887,
+    "amount": 2460937.38
+  },
+  {
+    "state": "OH",
+    "year": 2011,
+    "payments": 3200,
+    "amount": 4257061
+  },
+  {
+    "state": "OH",
+    "year": 2012,
+    "payments": 2697,
+    "amount": 2431469
+  },
+  {
+    "state": "OH",
+    "year": 2013,
+    "payments": 2813,
+    "amount": 2391221.5
+  },
+  {
+    "state": "OH",
+    "year": 2014,
+    "payments": 4022,
+    "amount": 5157527.22
+  },
+  {
+    "state": "OH",
+    "year": 2015,
+    "payments": 5504,
+    "amount": 4396182.49
+  },
+  {
+    "state": "OH",
+    "year": 2016,
+    "payments": 13082,
+    "amount": 14785616.19
+  },
+  {
+    "state": "OH",
+    "year": 2017,
+    "payments": 10712,
+    "amount": 10973035.99
+  },
+  {
+    "state": "OH",
+    "year": 2018,
+    "payments": 12883,
+    "amount": 13400397.27
+  },
+  {
+    "state": "OH",
+    "year": 2019,
+    "payments": 5134,
+    "amount": 2900835.31
+  },
+  {
+    "state": "OH",
+    "year": 2020,
+    "payments": 18190,
+    "amount": 19985334.88
+  },
+  {
+    "state": "OH",
+    "year": 2021,
+    "payments": 15891,
+    "amount": 30093367.61
+  },
+  {
+    "state": "OH",
+    "year": 2022,
+    "payments": 17440,
+    "amount": 48796188.18
+  },
+  {
+    "state": "OH",
+    "year": 2023,
+    "payments": 27557,
+    "amount": 106279908.26
+  },
+  {
+    "state": "OH",
+    "year": 2024,
+    "payments": 177957,
+    "amount": 616727918.28
+  },
+  {
+    "state": "OH",
+    "year": 2025,
+    "payments": 4022,
+    "amount": 26909521.3
+  },
+  {
+    "state": "OK",
+    "year": 2003,
+    "payments": 3,
+    "amount": 30300
+  },
+  {
+    "state": "OK",
+    "year": 2004,
+    "payments": 75,
+    "amount": 235366
+  },
+  {
+    "state": "OK",
+    "year": 2005,
+    "payments": 6,
+    "amount": 17208
+  },
+  {
+    "state": "OK",
+    "year": 2006,
+    "payments": 9,
+    "amount": 57819
+  },
+  {
+    "state": "OK",
+    "year": 2007,
+    "payments": 82,
+    "amount": 164446
+  },
+  {
+    "state": "OK",
+    "year": 2009,
+    "payments": 37,
+    "amount": 271896
+  },
+  {
+    "state": "OK",
+    "year": 2010,
+    "payments": 65,
+    "amount": 190245
+  },
+  {
+    "state": "OK",
+    "year": 2011,
+    "payments": 306,
+    "amount": 823301.99
+  },
+  {
+    "state": "OK",
+    "year": 2012,
+    "payments": 323,
+    "amount": 863170
+  },
+  {
+    "state": "OK",
+    "year": 2013,
+    "payments": 204,
+    "amount": 854427.78
+  },
+  {
+    "state": "OK",
+    "year": 2014,
+    "payments": 748,
+    "amount": 2079654.63
+  },
+  {
+    "state": "OK",
+    "year": 2015,
+    "payments": 122,
+    "amount": 167422
+  },
+  {
+    "state": "OK",
+    "year": 2016,
+    "payments": 201,
+    "amount": 483582
+  },
+  {
+    "state": "OK",
+    "year": 2017,
+    "payments": 669,
+    "amount": 1649541.51
+  },
+  {
+    "state": "OK",
+    "year": 2018,
+    "payments": 669,
+    "amount": 1706468.07
+  },
+  {
+    "state": "OK",
+    "year": 2019,
+    "payments": 191,
+    "amount": 272196.07
+  },
+  {
+    "state": "OK",
+    "year": 2020,
+    "payments": 16730,
+    "amount": 35629242.96
+  },
+  {
+    "state": "OK",
+    "year": 2021,
+    "payments": 15830,
+    "amount": 36927782.35
+  },
+  {
+    "state": "OK",
+    "year": 2022,
+    "payments": 128994,
+    "amount": 430250964.77
+  },
+  {
+    "state": "OK",
+    "year": 2023,
+    "payments": 98001,
+    "amount": 615565193.28
+  },
+  {
+    "state": "OK",
+    "year": 2024,
+    "payments": 106605,
+    "amount": 613111837.63
+  },
+  {
+    "state": "OK",
+    "year": 2025,
+    "payments": 6017,
+    "amount": 24904483.38
+  },
+  {
+    "state": "OR",
+    "year": 2003,
+    "payments": 6,
+    "amount": 17912
+  },
+  {
+    "state": "OR",
+    "year": 2004,
+    "payments": 12,
+    "amount": 30509
+  },
+  {
+    "state": "OR",
+    "year": 2005,
+    "payments": 58,
+    "amount": 90153
+  },
+  {
+    "state": "OR",
+    "year": 2007,
+    "payments": 1,
+    "amount": 5743
+  },
+  {
+    "state": "OR",
+    "year": 2008,
+    "payments": 12,
+    "amount": 9171
+  },
+  {
+    "state": "OR",
+    "year": 2009,
+    "payments": 66,
+    "amount": 232864
+  },
+  {
+    "state": "OR",
+    "year": 2010,
+    "payments": 140,
+    "amount": 307051
+  },
+  {
+    "state": "OR",
+    "year": 2011,
+    "payments": 320,
+    "amount": 675378
+  },
+  {
+    "state": "OR",
+    "year": 2012,
+    "payments": 475,
+    "amount": 3079064.3
+  },
+  {
+    "state": "OR",
+    "year": 2013,
+    "payments": 516,
+    "amount": 2175579.84
+  },
+  {
+    "state": "OR",
+    "year": 2014,
+    "payments": 983,
+    "amount": 5069736.2
+  },
+  {
+    "state": "OR",
+    "year": 2015,
+    "payments": 339,
+    "amount": 519949.41
+  },
+  {
+    "state": "OR",
+    "year": 2016,
+    "payments": 440,
+    "amount": 1372660
+  },
+  {
+    "state": "OR",
+    "year": 2017,
+    "payments": 1432,
+    "amount": 6640557.9
+  },
+  {
+    "state": "OR",
+    "year": 2018,
+    "payments": 901,
+    "amount": 5221477.25
+  },
+  {
+    "state": "OR",
+    "year": 2019,
+    "payments": 733,
+    "amount": 1816584
+  },
+  {
+    "state": "OR",
+    "year": 2020,
+    "payments": 2950,
+    "amount": 17599335.42
+  },
+  {
+    "state": "OR",
+    "year": 2021,
+    "payments": 8824,
+    "amount": 40778402.99
+  },
+  {
+    "state": "OR",
+    "year": 2022,
+    "payments": 10737,
+    "amount": 76364553.75
+  },
+  {
+    "state": "OR",
+    "year": 2023,
+    "payments": 12339,
+    "amount": 108007836.05
+  },
+  {
+    "state": "OR",
+    "year": 2024,
+    "payments": 10909,
+    "amount": 71403565.54
+  },
+  {
+    "state": "OR",
+    "year": 2025,
+    "payments": 3968,
+    "amount": 98484066.98
+  },
+  {
+    "state": "PA",
+    "year": 2003,
+    "payments": 12,
+    "amount": 8907
+  },
+  {
+    "state": "PA",
+    "year": 2004,
+    "payments": 28,
+    "amount": 15461
+  },
+  {
+    "state": "PA",
+    "year": 2005,
+    "payments": 15,
+    "amount": 10629
+  },
+  {
+    "state": "PA",
+    "year": 2007,
+    "payments": 3,
+    "amount": 8157
+  },
+  {
+    "state": "PA",
+    "year": 2008,
+    "payments": 11,
+    "amount": 6344
+  },
+  {
+    "state": "PA",
+    "year": 2009,
+    "payments": 270,
+    "amount": 371118
+  },
+  {
+    "state": "PA",
+    "year": 2010,
+    "payments": 348,
+    "amount": 578601
+  },
+  {
+    "state": "PA",
+    "year": 2011,
+    "payments": 399,
+    "amount": 565195
+  },
+  {
+    "state": "PA",
+    "year": 2012,
+    "payments": 534,
+    "amount": 765423
+  },
+  {
+    "state": "PA",
+    "year": 2013,
+    "payments": 515,
+    "amount": 1039324.33
+  },
+  {
+    "state": "PA",
+    "year": 2014,
+    "payments": 648,
+    "amount": 1415200.63
+  },
+  {
+    "state": "PA",
+    "year": 2015,
+    "payments": 769,
+    "amount": 1980946
+  },
+  {
+    "state": "PA",
+    "year": 2016,
+    "payments": 1441,
+    "amount": 3843544
+  },
+  {
+    "state": "PA",
+    "year": 2017,
+    "payments": 1731,
+    "amount": 3657041.65
+  },
+  {
+    "state": "PA",
+    "year": 2018,
+    "payments": 1807,
+    "amount": 4342579
+  },
+  {
+    "state": "PA",
+    "year": 2019,
+    "payments": 1654,
+    "amount": 3376321.16
+  },
+  {
+    "state": "PA",
+    "year": 2020,
+    "payments": 5822,
+    "amount": 9476969.82
+  },
+  {
+    "state": "PA",
+    "year": 2021,
+    "payments": 2460,
+    "amount": 8778111.46
+  },
+  {
+    "state": "PA",
+    "year": 2022,
+    "payments": 3353,
+    "amount": 14015290.75
+  },
+  {
+    "state": "PA",
+    "year": 2023,
+    "payments": 26592,
+    "amount": 115296275.63
+  },
+  {
+    "state": "PA",
+    "year": 2024,
+    "payments": 30942,
+    "amount": 113220873.42
+  },
+  {
+    "state": "PA",
+    "year": 2025,
+    "payments": 1972,
+    "amount": 35386274.43
+  },
+  {
+    "state": "PR",
+    "year": 2004,
+    "payments": 1,
+    "amount": 714
+  },
+  {
+    "state": "PR",
+    "year": 2014,
+    "payments": 3,
+    "amount": 1757
+  },
+  {
+    "state": "PR",
+    "year": 2015,
+    "payments": 4,
+    "amount": 43500
+  },
+  {
+    "state": "PR",
+    "year": 2016,
+    "payments": 9,
+    "amount": 31299
+  },
+  {
+    "state": "PR",
+    "year": 2017,
+    "payments": 481,
+    "amount": 3389274.26
+  },
+  {
+    "state": "PR",
+    "year": 2020,
+    "payments": 4074,
+    "amount": 38689293.32
+  },
+  {
+    "state": "PR",
+    "year": 2021,
+    "payments": 549,
+    "amount": 23836956.92
+  },
+  {
+    "state": "PR",
+    "year": 2022,
+    "payments": 3619,
+    "amount": 30660471.26
+  },
+  {
+    "state": "PR",
+    "year": 2023,
+    "payments": 2603,
+    "amount": 12373464.43
+  },
+  {
+    "state": "PR",
+    "year": 2024,
+    "payments": 1584,
+    "amount": 6699476.02
+  },
+  {
+    "state": "PR",
+    "year": 2025,
+    "payments": 3452,
+    "amount": 10139127.4
+  },
+  {
+    "state": "RI",
+    "year": 2004,
+    "payments": 2,
+    "amount": 372
+  },
+  {
+    "state": "RI",
+    "year": 2005,
+    "payments": 2,
+    "amount": 900
+  },
+  {
+    "state": "RI",
+    "year": 2009,
+    "payments": 1,
+    "amount": 4289
+  },
+  {
+    "state": "RI",
+    "year": 2010,
+    "payments": 5,
+    "amount": 16470
+  },
+  {
+    "state": "RI",
+    "year": 2011,
+    "payments": 3,
+    "amount": 1331
+  },
+  {
+    "state": "RI",
+    "year": 2013,
+    "payments": 8,
+    "amount": 14002
+  },
+  {
+    "state": "RI",
+    "year": 2014,
+    "payments": 3,
+    "amount": 9043
+  },
+  {
+    "state": "RI",
+    "year": 2015,
+    "payments": 10,
+    "amount": 18814
+  },
+  {
+    "state": "RI",
+    "year": 2016,
+    "payments": 19,
+    "amount": 54478
+  },
+  {
+    "state": "RI",
+    "year": 2017,
+    "payments": 12,
+    "amount": 9156
+  },
+  {
+    "state": "RI",
+    "year": 2018,
+    "payments": 21,
+    "amount": 116424
+  },
+  {
+    "state": "RI",
+    "year": 2020,
+    "payments": 164,
+    "amount": 374426.35
+  },
+  {
+    "state": "RI",
+    "year": 2021,
+    "payments": 48,
+    "amount": 282420.47
+  },
+  {
+    "state": "RI",
+    "year": 2022,
+    "payments": 168,
+    "amount": 3849601.52
+  },
+  {
+    "state": "RI",
+    "year": 2023,
+    "payments": 156,
+    "amount": 2602902.47
+  },
+  {
+    "state": "RI",
+    "year": 2024,
+    "payments": 165,
+    "amount": 2977169.58
+  },
+  {
+    "state": "RI",
+    "year": 2025,
+    "payments": 135,
+    "amount": 1460195.54
+  },
+  {
+    "state": "SC",
+    "year": 2005,
+    "payments": 4,
+    "amount": 2480
+  },
+  {
+    "state": "SC",
+    "year": 2007,
+    "payments": 1,
+    "amount": 542
+  },
+  {
+    "state": "SC",
+    "year": 2008,
+    "payments": 1,
+    "amount": 8360
+  },
+  {
+    "state": "SC",
+    "year": 2009,
+    "payments": 36,
+    "amount": 36023
+  },
+  {
+    "state": "SC",
+    "year": 2010,
+    "payments": 129,
+    "amount": 103462
+  },
+  {
+    "state": "SC",
+    "year": 2011,
+    "payments": 205,
+    "amount": 246019
+  },
+  {
+    "state": "SC",
+    "year": 2012,
+    "payments": 144,
+    "amount": 212035
+  },
+  {
+    "state": "SC",
+    "year": 2013,
+    "payments": 384,
+    "amount": 378453
+  },
+  {
+    "state": "SC",
+    "year": 2014,
+    "payments": 811,
+    "amount": 654285
+  },
+  {
+    "state": "SC",
+    "year": 2015,
+    "payments": 575,
+    "amount": 369896
+  },
+  {
+    "state": "SC",
+    "year": 2016,
+    "payments": 1065,
+    "amount": 1287315
+  },
+  {
+    "state": "SC",
+    "year": 2017,
+    "payments": 393,
+    "amount": 575450
+  },
+  {
+    "state": "SC",
+    "year": 2018,
+    "payments": 365,
+    "amount": 548198.53
+  },
+  {
+    "state": "SC",
+    "year": 2019,
+    "payments": 100,
+    "amount": 75262
+  },
+  {
+    "state": "SC",
+    "year": 2020,
+    "payments": 2854,
+    "amount": 5997683.08
+  },
+  {
+    "state": "SC",
+    "year": 2021,
+    "payments": 1332,
+    "amount": 4865615.16
+  },
+  {
+    "state": "SC",
+    "year": 2022,
+    "payments": 2924,
+    "amount": 12426519.68
+  },
+  {
+    "state": "SC",
+    "year": 2023,
+    "payments": 3243,
+    "amount": 24591920.12
+  },
+  {
+    "state": "SC",
+    "year": 2024,
+    "payments": 35654,
+    "amount": 120699660.62
+  },
+  {
+    "state": "SC",
+    "year": 2025,
+    "payments": 934,
+    "amount": 19170684.24
+  },
+  {
+    "state": "SD",
+    "year": 2003,
+    "payments": 3,
+    "amount": 4896
+  },
+  {
+    "state": "SD",
+    "year": 2004,
+    "payments": 15,
+    "amount": 289558
+  },
+  {
+    "state": "SD",
+    "year": 2005,
+    "payments": 34,
+    "amount": 291334
+  },
+  {
+    "state": "SD",
+    "year": 2006,
+    "payments": 4,
+    "amount": 102
+  },
+  {
+    "state": "SD",
+    "year": 2007,
+    "payments": 7,
+    "amount": 6572
+  },
+  {
+    "state": "SD",
+    "year": 2008,
+    "payments": 30,
+    "amount": 41640
+  },
+  {
+    "state": "SD",
+    "year": 2009,
+    "payments": 930,
+    "amount": 1416455
+  },
+  {
+    "state": "SD",
+    "year": 2010,
+    "payments": 1557,
+    "amount": 2549902
+  },
+  {
+    "state": "SD",
+    "year": 2011,
+    "payments": 2927,
+    "amount": 6398178.93
+  },
+  {
+    "state": "SD",
+    "year": 2012,
+    "payments": 1991,
+    "amount": 3174535
+  },
+  {
+    "state": "SD",
+    "year": 2013,
+    "payments": 1804,
+    "amount": 4526770
+  },
+  {
+    "state": "SD",
+    "year": 2014,
+    "payments": 2825,
+    "amount": 9615677.57
+  },
+  {
+    "state": "SD",
+    "year": 2015,
+    "payments": 5840,
+    "amount": 18989390.61
+  },
+  {
+    "state": "SD",
+    "year": 2016,
+    "payments": 8973,
+    "amount": 35856519.33
+  },
+  {
+    "state": "SD",
+    "year": 2017,
+    "payments": 7049,
+    "amount": 23057147.11
+  },
+  {
+    "state": "SD",
+    "year": 2018,
+    "payments": 11752,
+    "amount": 45956784.86
+  },
+  {
+    "state": "SD",
+    "year": 2019,
+    "payments": 2817,
+    "amount": 8105667.45
+  },
+  {
+    "state": "SD",
+    "year": 2020,
+    "payments": 24758,
+    "amount": 70380527.35
+  },
+  {
+    "state": "SD",
+    "year": 2021,
+    "payments": 41547,
+    "amount": 102930154.33
+  },
+  {
+    "state": "SD",
+    "year": 2022,
+    "payments": 63353,
+    "amount": 338193887.1
+  },
+  {
+    "state": "SD",
+    "year": 2023,
+    "payments": 53747,
+    "amount": 314500282.75
+  },
+  {
+    "state": "SD",
+    "year": 2024,
+    "payments": 99963,
+    "amount": 768821508.04
+  },
+  {
+    "state": "SD",
+    "year": 2025,
+    "payments": 4901,
+    "amount": 26071299.52
+  },
+  {
+    "state": "TN",
+    "year": 2003,
+    "payments": 2,
+    "amount": 1004
+  },
+  {
+    "state": "TN",
+    "year": 2004,
+    "payments": 23,
+    "amount": 17804
+  },
+  {
+    "state": "TN",
+    "year": 2005,
+    "payments": 27,
+    "amount": 15306
+  },
+  {
+    "state": "TN",
+    "year": 2007,
+    "payments": 21,
+    "amount": 11541
+  },
+  {
+    "state": "TN",
+    "year": 2008,
+    "payments": 33,
+    "amount": 85119
+  },
+  {
+    "state": "TN",
+    "year": 2009,
+    "payments": 95,
+    "amount": 193973
+  },
+  {
+    "state": "TN",
+    "year": 2010,
+    "payments": 255,
+    "amount": 432420
+  },
+  {
+    "state": "TN",
+    "year": 2011,
+    "payments": 318,
+    "amount": 1006579
+  },
+  {
+    "state": "TN",
+    "year": 2012,
+    "payments": 257,
+    "amount": 588860
+  },
+  {
+    "state": "TN",
+    "year": 2013,
+    "payments": 327,
+    "amount": 1029951
+  },
+  {
+    "state": "TN",
+    "year": 2014,
+    "payments": 1258,
+    "amount": 3476552
+  },
+  {
+    "state": "TN",
+    "year": 2015,
+    "payments": 696,
+    "amount": 2034638.88
+  },
+  {
+    "state": "TN",
+    "year": 2016,
+    "payments": 2100,
+    "amount": 4313333
+  },
+  {
+    "state": "TN",
+    "year": 2017,
+    "payments": 2389,
+    "amount": 5351623.52
+  },
+  {
+    "state": "TN",
+    "year": 2018,
+    "payments": 1765,
+    "amount": 3476110
+  },
+  {
+    "state": "TN",
+    "year": 2019,
+    "payments": 695,
+    "amount": 1362216.76
+  },
+  {
+    "state": "TN",
+    "year": 2020,
+    "payments": 9402,
+    "amount": 13208007.65
+  },
+  {
+    "state": "TN",
+    "year": 2021,
+    "payments": 4236,
+    "amount": 7806872.85
+  },
+  {
+    "state": "TN",
+    "year": 2022,
+    "payments": 9531,
+    "amount": 40654759.23
+  },
+  {
+    "state": "TN",
+    "year": 2023,
+    "payments": 31623,
+    "amount": 106303852.02
+  },
+  {
+    "state": "TN",
+    "year": 2024,
+    "payments": 98935,
+    "amount": 293475380.35
+  },
+  {
+    "state": "TN",
+    "year": 2025,
+    "payments": 2738,
+    "amount": 23025376.1
+  },
+  {
+    "state": "TX",
+    "year": 2000,
+    "payments": 1,
+    "amount": 469.77
+  },
+  {
+    "state": "TX",
+    "year": 2004,
+    "payments": 5,
+    "amount": 23554
+  },
+  {
+    "state": "TX",
+    "year": 2005,
+    "payments": 26,
+    "amount": 27225
+  },
+  {
+    "state": "TX",
+    "year": 2006,
+    "payments": 3,
+    "amount": 20820
+  },
+  {
+    "state": "TX",
+    "year": 2007,
+    "payments": 13,
+    "amount": 11275
+  },
+  {
+    "state": "TX",
+    "year": 2008,
+    "payments": 10,
+    "amount": 21772
+  },
+  {
+    "state": "TX",
+    "year": 2009,
+    "payments": 173,
+    "amount": 651915
+  },
+  {
+    "state": "TX",
+    "year": 2010,
+    "payments": 383,
+    "amount": 1472666.95
+  },
+  {
+    "state": "TX",
+    "year": 2011,
+    "payments": 1378,
+    "amount": 6652407.47
+  },
+  {
+    "state": "TX",
+    "year": 2012,
+    "payments": 977,
+    "amount": 5075309
+  },
+  {
+    "state": "TX",
+    "year": 2013,
+    "payments": 601,
+    "amount": 2207987.72
+  },
+  {
+    "state": "TX",
+    "year": 2014,
+    "payments": 3416,
+    "amount": 10516114.88
+  },
+  {
+    "state": "TX",
+    "year": 2015,
+    "payments": 1423,
+    "amount": 3634219.21
+  },
+  {
+    "state": "TX",
+    "year": 2016,
+    "payments": 3193,
+    "amount": 9348223.89
+  },
+  {
+    "state": "TX",
+    "year": 2017,
+    "payments": 3516,
+    "amount": 10897013.99
+  },
+  {
+    "state": "TX",
+    "year": 2018,
+    "payments": 4263,
+    "amount": 11677816.5
+  },
+  {
+    "state": "TX",
+    "year": 2019,
+    "payments": 827,
+    "amount": 1836027.43
+  },
+  {
+    "state": "TX",
+    "year": 2020,
+    "payments": 40395,
+    "amount": 82640975.09
+  },
+  {
+    "state": "TX",
+    "year": 2021,
+    "payments": 53608,
+    "amount": 118501198.52
+  },
+  {
+    "state": "TX",
+    "year": 2022,
+    "payments": 230851,
+    "amount": 910923390.99
+  },
+  {
+    "state": "TX",
+    "year": 2023,
+    "payments": 200175,
+    "amount": 1033873882.49
+  },
+  {
+    "state": "TX",
+    "year": 2024,
+    "payments": 215178,
+    "amount": 1461566815.79
+  },
+  {
+    "state": "TX",
+    "year": 2025,
+    "payments": 16276,
+    "amount": 102711373.09
+  },
+  {
+    "state": "UT",
+    "year": 2009,
+    "payments": 13,
+    "amount": 75708
+  },
+  {
+    "state": "UT",
+    "year": 2010,
+    "payments": 22,
+    "amount": 197209
+  },
+  {
+    "state": "UT",
+    "year": 2011,
+    "payments": 24,
+    "amount": 307877
+  },
+  {
+    "state": "UT",
+    "year": 2012,
+    "payments": 19,
+    "amount": 168453
+  },
+  {
+    "state": "UT",
+    "year": 2013,
+    "payments": 17,
+    "amount": 13771
+  },
+  {
+    "state": "UT",
+    "year": 2014,
+    "payments": 104,
+    "amount": 564896
+  },
+  {
+    "state": "UT",
+    "year": 2015,
+    "payments": 45,
+    "amount": 160289
+  },
+  {
+    "state": "UT",
+    "year": 2016,
+    "payments": 94,
+    "amount": 309452
+  },
+  {
+    "state": "UT",
+    "year": 2017,
+    "payments": 143,
+    "amount": 452066
+  },
+  {
+    "state": "UT",
+    "year": 2018,
+    "payments": 146,
+    "amount": 835515
+  },
+  {
+    "state": "UT",
+    "year": 2019,
+    "payments": 33,
+    "amount": 123500
+  },
+  {
+    "state": "UT",
+    "year": 2020,
+    "payments": 696,
+    "amount": 1429219.21
+  },
+  {
+    "state": "UT",
+    "year": 2021,
+    "payments": 3500,
+    "amount": 8322627.87
+  },
+  {
+    "state": "UT",
+    "year": 2022,
+    "payments": 7514,
+    "amount": 31597802.55
+  },
+  {
+    "state": "UT",
+    "year": 2023,
+    "payments": 6617,
+    "amount": 63583059.63
+  },
+  {
+    "state": "UT",
+    "year": 2024,
+    "payments": 3703,
+    "amount": 17691232.66
+  },
+  {
+    "state": "UT",
+    "year": 2025,
+    "payments": 1929,
+    "amount": 22572787.21
+  },
+  {
+    "state": "VA",
+    "year": 2004,
+    "payments": 2,
+    "amount": 1266
+  },
+  {
+    "state": "VA",
+    "year": 2005,
+    "payments": 20,
+    "amount": 16022
+  },
+  {
+    "state": "VA",
+    "year": 2007,
+    "payments": 1,
+    "amount": 15
+  },
+  {
+    "state": "VA",
+    "year": 2008,
+    "payments": 3,
+    "amount": 1428
+  },
+  {
+    "state": "VA",
+    "year": 2009,
+    "payments": 104,
+    "amount": 51514
+  },
+  {
+    "state": "VA",
+    "year": 2010,
+    "payments": 173,
+    "amount": 172731
+  },
+  {
+    "state": "VA",
+    "year": 2011,
+    "payments": 322,
+    "amount": 239192
+  },
+  {
+    "state": "VA",
+    "year": 2012,
+    "payments": 329,
+    "amount": 264874
+  },
+  {
+    "state": "VA",
+    "year": 2013,
+    "payments": 195,
+    "amount": 121105
+  },
+  {
+    "state": "VA",
+    "year": 2014,
+    "payments": 439,
+    "amount": 534556
+  },
+  {
+    "state": "VA",
+    "year": 2015,
+    "payments": 412,
+    "amount": 616862
+  },
+  {
+    "state": "VA",
+    "year": 2016,
+    "payments": 1445,
+    "amount": 1273649
+  },
+  {
+    "state": "VA",
+    "year": 2017,
+    "payments": 1267,
+    "amount": 1233763
+  },
+  {
+    "state": "VA",
+    "year": 2018,
+    "payments": 1122,
+    "amount": 938715
+  },
+  {
+    "state": "VA",
+    "year": 2019,
+    "payments": 671,
+    "amount": 494083
+  },
+  {
+    "state": "VA",
+    "year": 2020,
+    "payments": 4803,
+    "amount": 6335947.79
+  },
+  {
+    "state": "VA",
+    "year": 2021,
+    "payments": 2130,
+    "amount": 3390895.16
+  },
+  {
+    "state": "VA",
+    "year": 2022,
+    "payments": 4184,
+    "amount": 19561117.15
+  },
+  {
+    "state": "VA",
+    "year": 2023,
+    "payments": 12532,
+    "amount": 57957170.45
+  },
+  {
+    "state": "VA",
+    "year": 2024,
+    "payments": 36989,
+    "amount": 132750793.82
+  },
+  {
+    "state": "VA",
+    "year": 2025,
+    "payments": 1961,
+    "amount": 19705216.43
+  },
+  {
+    "state": "VI",
+    "year": 2011,
+    "payments": 2,
+    "amount": 136
+  },
+  {
+    "state": "VI",
+    "year": 2013,
+    "payments": 3,
+    "amount": 11547
+  },
+  {
+    "state": "VI",
+    "year": 2015,
+    "payments": 2,
+    "amount": 1150
+  },
+  {
+    "state": "VI",
+    "year": 2016,
+    "payments": 4,
+    "amount": 8860
+  },
+  {
+    "state": "VI",
+    "year": 2017,
+    "payments": 6,
+    "amount": 28371
+  },
+  {
+    "state": "VI",
+    "year": 2018,
+    "payments": 3,
+    "amount": 24201
+  },
+  {
+    "state": "VI",
+    "year": 2020,
+    "payments": 51,
+    "amount": 56921.86
+  },
+  {
+    "state": "VI",
+    "year": 2021,
+    "payments": 48,
+    "amount": 55766.76
+  },
+  {
+    "state": "VI",
+    "year": 2022,
+    "payments": 192,
+    "amount": 128250.32
+  },
+  {
+    "state": "VI",
+    "year": 2023,
+    "payments": 264,
+    "amount": 509636.39
+  },
+  {
+    "state": "VI",
+    "year": 2024,
+    "payments": 157,
+    "amount": 175258.62
+  },
+  {
+    "state": "VI",
+    "year": 2025,
+    "payments": 43,
+    "amount": 55707.13
+  },
+  {
+    "state": "VT",
+    "year": 2008,
+    "payments": 2,
+    "amount": 1645
+  },
+  {
+    "state": "VT",
+    "year": 2009,
+    "payments": 31,
+    "amount": 23860
+  },
+  {
+    "state": "VT",
+    "year": 2010,
+    "payments": 71,
+    "amount": 49899
+  },
+  {
+    "state": "VT",
+    "year": 2011,
+    "payments": 74,
+    "amount": 46036
+  },
+  {
+    "state": "VT",
+    "year": 2012,
+    "payments": 67,
+    "amount": 36112
+  },
+  {
+    "state": "VT",
+    "year": 2013,
+    "payments": 64,
+    "amount": 93840
+  },
+  {
+    "state": "VT",
+    "year": 2014,
+    "payments": 50,
+    "amount": 47850
+  },
+  {
+    "state": "VT",
+    "year": 2015,
+    "payments": 45,
+    "amount": 33313.98
+  },
+  {
+    "state": "VT",
+    "year": 2016,
+    "payments": 65,
+    "amount": 62986
+  },
+  {
+    "state": "VT",
+    "year": 2017,
+    "payments": 123,
+    "amount": 145403
+  },
+  {
+    "state": "VT",
+    "year": 2018,
+    "payments": 73,
+    "amount": 78059
+  },
+  {
+    "state": "VT",
+    "year": 2019,
+    "payments": 11,
+    "amount": 6846
+  },
+  {
+    "state": "VT",
+    "year": 2020,
+    "payments": 614,
+    "amount": 1285312.23
+  },
+  {
+    "state": "VT",
+    "year": 2021,
+    "payments": 110,
+    "amount": 849446.7
+  },
+  {
+    "state": "VT",
+    "year": 2022,
+    "payments": 206,
+    "amount": 2201752.59
+  },
+  {
+    "state": "VT",
+    "year": 2023,
+    "payments": 6306,
+    "amount": 33940524.04
+  },
+  {
+    "state": "VT",
+    "year": 2024,
+    "payments": 2165,
+    "amount": 10330391.36
+  },
+  {
+    "state": "VT",
+    "year": 2025,
+    "payments": 1434,
+    "amount": 5645191.36
+  },
+  {
+    "state": "WA",
+    "year": 2004,
+    "payments": 4,
+    "amount": 33257
+  },
+  {
+    "state": "WA",
+    "year": 2005,
+    "payments": 3,
+    "amount": 6249
+  },
+  {
+    "state": "WA",
+    "year": 2006,
+    "payments": 14,
+    "amount": 8326
+  },
+  {
+    "state": "WA",
+    "year": 2007,
+    "payments": 9,
+    "amount": 12110
+  },
+  {
+    "state": "WA",
+    "year": 2008,
+    "payments": 7,
+    "amount": 2759
+  },
+  {
+    "state": "WA",
+    "year": 2009,
+    "payments": 110,
+    "amount": 171292.7
+  },
+  {
+    "state": "WA",
+    "year": 2010,
+    "payments": 385,
+    "amount": 642465.86
+  },
+  {
+    "state": "WA",
+    "year": 2011,
+    "payments": 2197,
+    "amount": 4301533
+  },
+  {
+    "state": "WA",
+    "year": 2012,
+    "payments": 1849,
+    "amount": 4903342
+  },
+  {
+    "state": "WA",
+    "year": 2013,
+    "payments": 2266,
+    "amount": 5333246.15
+  },
+  {
+    "state": "WA",
+    "year": 2014,
+    "payments": 3415,
+    "amount": 13329663.82
+  },
+  {
+    "state": "WA",
+    "year": 2015,
+    "payments": 1195,
+    "amount": 1862991
+  },
+  {
+    "state": "WA",
+    "year": 2016,
+    "payments": 1910,
+    "amount": 5262033.76
+  },
+  {
+    "state": "WA",
+    "year": 2017,
+    "payments": 6494,
+    "amount": 29525502.66
+  },
+  {
+    "state": "WA",
+    "year": 2018,
+    "payments": 1812,
+    "amount": 6433278.28
+  },
+  {
+    "state": "WA",
+    "year": 2019,
+    "payments": 500,
+    "amount": 927391.58
+  },
+  {
+    "state": "WA",
+    "year": 2020,
+    "payments": 5197,
+    "amount": 27640792.21
+  },
+  {
+    "state": "WA",
+    "year": 2021,
+    "payments": 13767,
+    "amount": 70171113.87
+  },
+  {
+    "state": "WA",
+    "year": 2022,
+    "payments": 11737,
+    "amount": 70720914.45
+  },
+  {
+    "state": "WA",
+    "year": 2023,
+    "payments": 19933,
+    "amount": 175014447.64
+  },
+  {
+    "state": "WA",
+    "year": 2024,
+    "payments": 35108,
+    "amount": 213727219.76
+  },
+  {
+    "state": "WA",
+    "year": 2025,
+    "payments": 6551,
+    "amount": 186761628.42
+  },
+  {
+    "state": "WI",
+    "year": 2004,
+    "payments": 14,
+    "amount": 32994
+  },
+  {
+    "state": "WI",
+    "year": 2005,
+    "payments": 15,
+    "amount": 17112
+  },
+  {
+    "state": "WI",
+    "year": 2006,
+    "payments": 3,
+    "amount": 390
+  },
+  {
+    "state": "WI",
+    "year": 2008,
+    "payments": 10,
+    "amount": 8388
+  },
+  {
+    "state": "WI",
+    "year": 2009,
+    "payments": 268,
+    "amount": 439012.45
+  },
+  {
+    "state": "WI",
+    "year": 2010,
+    "payments": 435,
+    "amount": 625495
+  },
+  {
+    "state": "WI",
+    "year": 2011,
+    "payments": 1143,
+    "amount": 1801247
+  },
+  {
+    "state": "WI",
+    "year": 2012,
+    "payments": 744,
+    "amount": 1367755
+  },
+  {
+    "state": "WI",
+    "year": 2013,
+    "payments": 1562,
+    "amount": 2149431.89
+  },
+  {
+    "state": "WI",
+    "year": 2014,
+    "payments": 2237,
+    "amount": 4510155.53
+  },
+  {
+    "state": "WI",
+    "year": 2015,
+    "payments": 1719,
+    "amount": 3886499.61
+  },
+  {
+    "state": "WI",
+    "year": 2016,
+    "payments": 4518,
+    "amount": 15631444.61
+  },
+  {
+    "state": "WI",
+    "year": 2017,
+    "payments": 4303,
+    "amount": 10855875.12
+  },
+  {
+    "state": "WI",
+    "year": 2018,
+    "payments": 6143,
+    "amount": 20705964.3
+  },
+  {
+    "state": "WI",
+    "year": 2019,
+    "payments": 1569,
+    "amount": 2803865.07
+  },
+  {
+    "state": "WI",
+    "year": 2020,
+    "payments": 10309,
+    "amount": 17621162.32
+  },
+  {
+    "state": "WI",
+    "year": 2021,
+    "payments": 9903,
+    "amount": 16912859.62
+  },
+  {
+    "state": "WI",
+    "year": 2022,
+    "payments": 8079,
+    "amount": 24181570.66
+  },
+  {
+    "state": "WI",
+    "year": 2023,
+    "payments": 85424,
+    "amount": 383523671.18
+  },
+  {
+    "state": "WI",
+    "year": 2024,
+    "payments": 128560,
+    "amount": 415707643.74
+  },
+  {
+    "state": "WI",
+    "year": 2025,
+    "payments": 3679,
+    "amount": 42113087.14
+  },
+  {
+    "state": "WV",
+    "year": 2005,
+    "payments": 2,
+    "amount": 3260
+  },
+  {
+    "state": "WV",
+    "year": 2006,
+    "payments": 3,
+    "amount": 2958
+  },
+  {
+    "state": "WV",
+    "year": 2007,
+    "payments": 2,
+    "amount": 1328
+  },
+  {
+    "state": "WV",
+    "year": 2009,
+    "payments": 16,
+    "amount": 19278
+  },
+  {
+    "state": "WV",
+    "year": 2010,
+    "payments": 69,
+    "amount": 75619
+  },
+  {
+    "state": "WV",
+    "year": 2011,
+    "payments": 92,
+    "amount": 99327
+  },
+  {
+    "state": "WV",
+    "year": 2012,
+    "payments": 93,
+    "amount": 156476
+  },
+  {
+    "state": "WV",
+    "year": 2013,
+    "payments": 67,
+    "amount": 79169.81
+  },
+  {
+    "state": "WV",
+    "year": 2014,
+    "payments": 62,
+    "amount": 80847
+  },
+  {
+    "state": "WV",
+    "year": 2015,
+    "payments": 85,
+    "amount": 72097
+  },
+  {
+    "state": "WV",
+    "year": 2016,
+    "payments": 88,
+    "amount": 61728
+  },
+  {
+    "state": "WV",
+    "year": 2017,
+    "payments": 81,
+    "amount": 141955
+  },
+  {
+    "state": "WV",
+    "year": 2018,
+    "payments": 147,
+    "amount": 118949
+  },
+  {
+    "state": "WV",
+    "year": 2019,
+    "payments": 154,
+    "amount": 88765
+  },
+  {
+    "state": "WV",
+    "year": 2020,
+    "payments": 1494,
+    "amount": 1295656.1
+  },
+  {
+    "state": "WV",
+    "year": 2021,
+    "payments": 181,
+    "amount": 253268.93
+  },
+  {
+    "state": "WV",
+    "year": 2022,
+    "payments": 317,
+    "amount": 708931.03
+  },
+  {
+    "state": "WV",
+    "year": 2023,
+    "payments": 1037,
+    "amount": 2600452.6
+  },
+  {
+    "state": "WV",
+    "year": 2024,
+    "payments": 15828,
+    "amount": 52295445.91
+  },
+  {
+    "state": "WV",
+    "year": 2025,
+    "payments": 1294,
+    "amount": 5708941.13
+  },
+  {
+    "state": "WY",
+    "year": 2006,
+    "payments": 2,
+    "amount": 34152
+  },
+  {
+    "state": "WY",
+    "year": 2009,
+    "payments": 17,
+    "amount": 93650
+  },
+  {
+    "state": "WY",
+    "year": 2010,
+    "payments": 26,
+    "amount": 188815
+  },
+  {
+    "state": "WY",
+    "year": 2011,
+    "payments": 147,
+    "amount": 606058.95
+  },
+  {
+    "state": "WY",
+    "year": 2012,
+    "payments": 119,
+    "amount": 949707
+  },
+  {
+    "state": "WY",
+    "year": 2013,
+    "payments": 86,
+    "amount": 255406.27
+  },
+  {
+    "state": "WY",
+    "year": 2014,
+    "payments": 202,
+    "amount": 572963
+  },
+  {
+    "state": "WY",
+    "year": 2015,
+    "payments": 61,
+    "amount": 149451
+  },
+  {
+    "state": "WY",
+    "year": 2016,
+    "payments": 79,
+    "amount": 149614
+  },
+  {
+    "state": "WY",
+    "year": 2017,
+    "payments": 233,
+    "amount": 847994.14
+  },
+  {
+    "state": "WY",
+    "year": 2018,
+    "payments": 277,
+    "amount": 1135195.5
+  },
+  {
+    "state": "WY",
+    "year": 2019,
+    "payments": 135,
+    "amount": 354205
+  },
+  {
+    "state": "WY",
+    "year": 2020,
+    "payments": 1837,
+    "amount": 4039391.18
+  },
+  {
+    "state": "WY",
+    "year": 2021,
+    "payments": 4198,
+    "amount": 13834153.87
+  },
+  {
+    "state": "WY",
+    "year": 2022,
+    "payments": 9408,
+    "amount": 55716904.82
+  },
+  {
+    "state": "WY",
+    "year": 2023,
+    "payments": 3535,
+    "amount": 46105314.17
+  },
+  {
+    "state": "WY",
+    "year": 2024,
+    "payments": 10730,
+    "amount": 117643882.53
+  },
+  {
+    "state": "WY",
+    "year": 2025,
+    "payments": 1388,
+    "amount": 19741092.16
+  }
+]

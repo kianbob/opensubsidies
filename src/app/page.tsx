@@ -1,65 +1,157 @@
-import Image from "next/image";
+import Link from 'next/link'
+import { loadData, fmtMoney, fmt } from '@/lib/utils'
 
-export default function Home() {
+export default function HomePage() {
+  const stats = loadData('stats.json')
+  const states = loadData('states.json').slice(0, 10)
+  const programs = loadData('programs.json').slice(0, 10)
+  const recipients = loadData('top-recipients.json').slice(0, 5)
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <>
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-primary-dark via-primary to-primary-light text-white py-20 px-4">
+        <div className="max-w-5xl mx-auto text-center">
+          <h1 className="font-[family-name:var(--font-heading)] text-4xl md:text-6xl font-bold mb-4">
+            {fmtMoney(stats.totalAmount)} in Farm Subsidies.<br className="hidden md:block" /> Every Dollar. Every Recipient.
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="text-lg text-green-200 mb-2 max-w-2xl mx-auto">
+            The most comprehensive open database of U.S. farm subsidy payments — {fmt(stats.totalPayments)} payments across {fmt(stats.totalPrograms)} programs, every state and county.
+          </p>
+          <p className="text-sm text-green-200 mb-8">
+            Data from USDA Farm Service Agency · 2023–2025 · Open data, no paywalls
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            <Link href="/states" className="px-6 py-3 bg-white text-primary font-semibold rounded-lg hover:bg-green-50 transition-colors">
+              Explore by State
+            </Link>
+            <Link href="/programs" className="px-6 py-3 border border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors">
+              Browse Programs
+            </Link>
+            <Link href="/recipients" className="px-6 py-3 border border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors">
+              Top Recipients
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Key Stats */}
+      <section className="max-w-7xl mx-auto px-4 -mt-8 relative z-10">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {[
+            { label: 'Total Subsidies', value: fmtMoney(stats.totalAmount), href: '/dashboard' },
+            { label: 'Payment Records', value: fmt(stats.totalPayments), href: '/dashboard' },
+            { label: 'Programs', value: fmt(stats.totalPrograms), href: '/programs' },
+            { label: 'Counties', value: fmt(stats.totalCounties), href: '/counties' },
+          ].map(s => (
+            <Link key={s.label} href={s.href} className="bg-white rounded-xl shadow-md p-5 text-center hover:shadow-lg transition-shadow">
+              <div className="text-2xl md:text-3xl font-bold text-primary">{s.value}</div>
+              <div className="text-sm text-gray-600 mt-1">{s.label}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* Top States */}
+      <section className="max-w-7xl mx-auto px-4 py-16">
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-2xl font-bold font-[family-name:var(--font-heading)]">Top 10 States by Subsidies</h2>
+          <Link href="/states" className="text-primary text-sm font-medium hover:underline">View all →</Link>
+        </div>
+        <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50 text-left">
+              <tr>
+                <th className="px-4 py-3 font-semibold">#</th>
+                <th className="px-4 py-3 font-semibold">State</th>
+                <th className="px-4 py-3 font-semibold text-right">Total Subsidies</th>
+                <th className="px-4 py-3 font-semibold text-right hidden md:table-cell">Payments</th>
+                <th className="px-4 py-3 font-semibold hidden lg:table-cell">Top Program</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-100">
+              {states.map((s: { abbr: string; name: string; amount: number; payments: number; topPrograms: { program: string; amount: number }[] }, i: number) => (
+                <tr key={s.abbr} className="hover:bg-gray-50">
+                  <td className="px-4 py-3 text-gray-500">{i + 1}</td>
+                  <td className="px-4 py-3">
+                    <Link href={`/states/${s.abbr.toLowerCase()}`} className="font-medium text-primary hover:underline">{s.name}</Link>
+                  </td>
+                  <td className="px-4 py-3 text-right font-mono">{fmtMoney(s.amount)}</td>
+                  <td className="px-4 py-3 text-right text-gray-600 hidden md:table-cell">{fmt(s.payments)}</td>
+                  <td className="px-4 py-3 text-gray-600 text-xs hidden lg:table-cell">{s.topPrograms?.[0]?.program || ''}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      {/* Top Programs */}
+      <section className="max-w-7xl mx-auto px-4 pb-16">
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-2xl font-bold font-[family-name:var(--font-heading)]">Largest Subsidy Programs</h2>
+          <Link href="/programs" className="text-primary text-sm font-medium hover:underline">View all →</Link>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {programs.map((p: { program: string; amount: number; payments: number }, i: number) => (
+            <div key={i} className="bg-white rounded-xl shadow-sm p-5 border-l-4 border-primary">
+              <div className="flex items-start justify-between">
+                <div className="flex-1">
+                  <h3 className="font-semibold text-gray-900 text-sm">{p.program}</h3>
+                  <p className="text-xs text-gray-500 mt-1">{fmt(p.payments)} payments</p>
+                </div>
+                <span className="text-lg font-bold text-primary">{fmtMoney(p.amount)}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Top Recipients */}
+      <section className="max-w-7xl mx-auto px-4 pb-16">
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-2xl font-bold font-[family-name:var(--font-heading)]">Top Subsidy Recipients</h2>
+          <Link href="/recipients" className="text-primary text-sm font-medium hover:underline">View all →</Link>
+        </div>
+        <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50 text-left">
+              <tr>
+                <th className="px-4 py-3 font-semibold">#</th>
+                <th className="px-4 py-3 font-semibold">Recipient</th>
+                <th className="px-4 py-3 font-semibold">Location</th>
+                <th className="px-4 py-3 font-semibold text-right">Total Received</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-100">
+              {recipients.map((r: { name: string; state: string; city: string; amount: number }, i: number) => (
+                <tr key={i} className="hover:bg-gray-50">
+                  <td className="px-4 py-3 text-gray-500">{i + 1}</td>
+                  <td className="px-4 py-3 font-medium">{r.name}</td>
+                  <td className="px-4 py-3 text-gray-600">{r.city}, {r.state}</td>
+                  <td className="px-4 py-3 text-right font-mono text-primary font-semibold">{fmtMoney(r.amount)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      {/* Why This Matters */}
+      <section className="max-w-3xl mx-auto px-4 pb-16 text-center">
+        <h2 className="text-2xl font-bold font-[family-name:var(--font-heading)] mb-4">Why This Data Matters</h2>
+        <div className="space-y-4 text-gray-600">
+          <p>
+            The federal government spends billions of dollars every year on farm subsidies — payments to agricultural producers
+            for crop insurance, conservation, disaster relief, and commodity support. But <strong>69% of farms receive zero subsidy payments</strong>.
+            The vast majority of money flows to the largest operations.
+          </p>
+          <p>
+            OpenSubsidies makes this data accessible and searchable so taxpayers can see exactly where their money goes —
+            by state, county, program, and individual recipient. All data comes directly from the USDA Farm Service Agency.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+      </section>
+    </>
+  )
 }
