@@ -1,22 +1,24 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { fmtMoney, fmt } from '@/lib/utils'
+import { loadData, fmt, fmtMoney } from '@/lib/utils'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ShareButtons from '@/components/ShareButtons'
-import StateYearlyChart from '@/components/StateYearlyChart'
+import CountyYearlyChart from './CountyCharts'
 import fs from 'fs'
 import path from 'path'
 
 type CountyDetail = {
-  state: string; stateName: string; county: string; fips: string
-  totalAmount: number; totalPayments: number
+  state: string
+  stateName: string
+  county: string
+  fips: string
+  totalAmount: number
+  totalPayments: number
   yearly: { year: number; amount: number; payments: number }[]
 }
 
-type CountyIndex = { state: string; stateName: string; county: string; fips: string; amount: number; payments: number }
-
-function loadCountyDetail(fips: string): CountyDetail | null {
+function loadCounty(fips: string): CountyDetail | null {
   try {
     const filePath = path.join(process.cwd(), 'public', 'data', 'counties', `${fips}.json`)
     return JSON.parse(fs.readFileSync(filePath, 'utf8'))
@@ -26,112 +28,157 @@ function loadCountyDetail(fips: string): CountyDetail | null {
 export const dynamicParams = true
 
 export function generateStaticParams() {
-  const index = JSON.parse(
-    fs.readFileSync(path.join(process.cwd(), 'public', 'data', 'county-index.json'), 'utf8')
-  ) as CountyIndex[]
-  return [...index].sort((a, b) => b.amount - a.amount).slice(0, 50).map(c => ({ fips: c.fips }))
+  try {
+    const index = loadData('county-index.json') as { fips: string }[]
+    return index.slice(0, 50).map(c => ({ fips: c.fips }))
+  } catch { return [] }
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ fips: string }> }): Promise<Metadata> {
   const { fips } = await params
-  const county = loadCountyDetail(fips)
+  const county = loadCounty(fips)
   if (!county) return { title: 'County Not Found' }
   return {
-    title: `${county.county}, ${county.stateName} Farm Subsidies — ${fmtMoney(county.totalAmount)}`,
-    description: `${county.county}, ${county.stateName} received ${fmtMoney(county.totalAmount)} in USDA farm subsidies across ${fmt(county.totalPayments)} payments from 2017–2025.`,
+    title: `${county.county} County, ${county.stateName} Farm Subsidies — ${fmtMoney(county.totalAmount)}`,
+    description: `${county.county} County, ${county.stateName} received ${fmtMoney(county.totalAmount)} in USDA farm subsidies across ${fmt(county.totalPayments)} payments from 2017 to 2025.`,
     alternates: { canonical: `https://www.opensubsidies.us/counties/${fips}` },
   }
 }
 
 export default async function CountyDetailPage({ params }: { params: Promise<{ fips: string }> }) {
   const { fips } = await params
-  const county = loadCountyDetail(fips)
+  const county = loadCounty(fips)
   if (!county) notFound()
 
+  const stats = loadData('stats.json') as { totalPayments: number; totalAmount: number }
   const { yearly } = county
+  const peakYear = yearly.reduce((a, b) => a.amount > b.amount ? a : b)
   const avgPayment = county.totalPayments > 0 ? county.totalAmount / county.totalPayments : 0
-  const peakYear = yearly.length > 0 ? yearly.reduce((a, b) => a.amount > b.amount ? a : b) : null
+  const nationalAvg = stats.totalAmount / stats.totalPayments
+  const avgRatio = avgPayment / nationalAvg
+  const covid = yearly.find(y => y.year === 2020)
+  const baseline = yearly.find(y => y.year === 2017)
+  const stateSlug = county.state.toLowerCase()
 
   return (
     <main className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumbs items={[
-        { label: 'Counties', href: '/counties' },
-        { label: county.stateName, href: `/states/${county.state.toLowerCase()}` },
-        { label: county.county },
-      ]} />
+      <Breadcrumbs items={[{ label: 'Counties', href: '/counties' }, { label: `${county.county}, ${county.state}` }]} />
       <div className="flex items-start justify-between mb-2">
-        <h1 className="text-3xl font-bold font-[family-name:var(--font-heading)]">{county.county}, {county.stateName} Farm Subsidies</h1>
-        <ShareButtons title={`${county.county}, ${county.stateName} received ${fmtMoney(county.totalAmount)} in farm subsidies`} />
+        <h1 className="text-3xl font-bold font-[family-name:var(--font-heading)]">{county.county} County, {county.stateName} Farm Subsidies</h1>
+        <ShareButtons title={`${county.county} County, ${county.stateName} received ${fmtMoney(county.totalAmount)} in farm subsidies`} />
       </div>
       <p className="text-gray-600 mb-8">
-        {county.county} County in {county.stateName} ({county.state}) received {fmtMoney(county.totalAmount)} across {fmt(county.totalPayments)} USDA Farm Service Agency payments from 2017 to 2025.
+        {county.county} County in {county.stateName} received <strong>{fmtMoney(county.totalAmount)}</strong> in USDA Farm Service Agency payments across {fmt(county.totalPayments)} individual payments from 2017 to 2025.
       </p>
 
+      {/* Stat cards */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
-        <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">Total Subsidies</p><p className="text-xl font-bold text-green-800">{fmtMoney(county.totalAmount)}</p></div>
-        <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">Payments</p><p className="text-xl font-bold text-green-800">{fmt(county.totalPayments)}</p></div>
-        <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">Avg Payment</p><p className="text-xl font-bold text-green-800">{fmtMoney(avgPayment)}</p></div>
-        <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">Years of Data</p><p className="text-xl font-bold text-green-800">{yearly.length}</p></div>
+        <div className="bg-green-50 rounded-xl p-4">
+          <p className="text-sm text-gray-500">Total Subsidies</p>
+          <p className="text-xl font-bold text-green-800">{fmtMoney(county.totalAmount)}</p>
+        </div>
+        <div className="bg-green-50 rounded-xl p-4">
+          <p className="text-sm text-gray-500">Payments</p>
+          <p className="text-xl font-bold text-green-800">{fmt(county.totalPayments)}</p>
+        </div>
+        <div className="bg-green-50 rounded-xl p-4">
+          <p className="text-sm text-gray-500">Peak Year</p>
+          <p className="text-xl font-bold text-green-800">{peakYear.year}</p>
+          <p className="text-xs text-gray-500">{fmtMoney(peakYear.amount)}</p>
+        </div>
+        <div className="bg-green-50 rounded-xl p-4">
+          <p className="text-sm text-gray-500">Avg Payment</p>
+          <p className="text-xl font-bold text-green-800">{fmtMoney(avgPayment)}</p>
+          <p className="text-xs text-gray-500 mt-0.5">{avgRatio > 1.1 ? `${((avgRatio - 1) * 100).toFixed(0)}% above` : avgRatio < 0.9 ? `${((1 - avgRatio) * 100).toFixed(0)}% below` : 'Near'} national avg</p>
+        </div>
       </div>
 
-      {peakYear && (
-        <div className="bg-amber-50 border-l-4 border-accent p-4 rounded-r-lg mb-6">
-          <p className="font-semibold text-gray-900">💡 Key Insight</p>
-          <p className="text-sm text-gray-700 mt-1">
-            {county.county}&apos;s peak subsidy year was <strong>{peakYear.year}</strong> at {fmtMoney(peakYear.amount)} across {fmt(peakYear.payments)} payments.
-            {yearly.length >= 2 && (() => {
-              const first = yearly[0]
-              const last = yearly[yearly.length - 1]
-              const change = last.amount / first.amount
-              return change > 2
-                ? ` Spending grew ${change.toFixed(1)}× from ${first.year} to ${last.year}.`
-                : change < 0.5
-                ? ` Spending fell ${((1 - change) * 100).toFixed(0)}% from ${first.year} to ${last.year}.`
-                : ''
-            })()}
-          </p>
+      {/* Key Insight */}
+      <div className="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-lg mb-8">
+        <p className="font-semibold text-gray-900">💡 Key Insight</p>
+        <p className="text-sm text-gray-700 mt-1">
+          {county.county} County&apos;s peak subsidy year was <strong>{peakYear.year}</strong> at {fmtMoney(peakYear.amount)}
+          {covid && baseline && covid.amount > baseline.amount * 2
+            ? `. COVID-era spending in 2020 (${fmtMoney(covid.amount)}) was ${(covid.amount / baseline.amount).toFixed(1)}× the 2017 baseline.`
+            : peakYear.year === 2020 ? ' — driven by COVID-era CFAP emergency payments.' : '.'}
+          {' '}The average payment of {fmtMoney(avgPayment)} is {avgRatio > 1.1 ? `${((avgRatio - 1) * 100).toFixed(0)}% above` : avgRatio < 0.9 ? `${((1 - avgRatio) * 100).toFixed(0)}% below` : 'near'} the national average.
+        </p>
+      </div>
+
+      {/* Chart */}
+      {yearly.length > 1 && (
+        <div className="mb-10">
+          <h2 className="text-2xl font-bold font-[family-name:var(--font-heading)] mb-4">Yearly Trend</h2>
+          <CountyYearlyChart data={yearly} />
         </div>
       )}
 
-      {yearly.length > 1 && (
-        <section className="mb-10">
-          <h2 className="text-xl font-semibold font-[family-name:var(--font-heading)] mb-4">Yearly Trends</h2>
-          <StateYearlyChart data={yearly} />
-        </section>
-      )}
-
-      {/* Yearly data table */}
-      <section className="mb-10">
-        <h2 className="text-xl font-semibold font-[family-name:var(--font-heading)] mb-4">Annual Breakdown</h2>
-        <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+      {/* Year-by-year table */}
+      <div className="mb-10">
+        <h2 className="text-2xl font-bold font-[family-name:var(--font-heading)] mb-4">Year-by-Year Breakdown</h2>
+        <div className="overflow-x-auto">
           <table className="w-full text-sm">
-            <thead className="bg-gray-50">
-              <tr><th className="px-4 py-3 text-left font-semibold">Year</th><th className="px-4 py-3 text-right font-semibold">Payments</th><th className="px-4 py-3 text-right font-semibold">Amount</th></tr>
+            <thead>
+              <tr className="border-b text-left">
+                <th className="py-2 px-3 font-semibold">Year</th>
+                <th className="py-2 px-3 font-semibold text-right">Subsidies</th>
+                <th className="py-2 px-3 font-semibold text-right">Payments</th>
+                <th className="py-2 px-3 font-semibold text-right">Avg Payment</th>
+              </tr>
             </thead>
-            <tbody className="divide-y divide-gray-100">
-              {yearly.map(y => (
-                <tr key={y.year} className="hover:bg-gray-50">
-                  <td className="px-4 py-3"><Link href={`/years/${y.year}`} className="text-primary hover:underline">{y.year}</Link></td>
-                  <td className="px-4 py-3 text-right font-mono">{fmt(y.payments)}</td>
-                  <td className="px-4 py-3 text-right font-mono">{fmtMoney(y.amount)}</td>
+            <tbody>
+              {[...yearly].sort((a, b) => b.year - a.year).map(y => (
+                <tr key={y.year} className="border-b hover:bg-gray-50">
+                  <td className="py-2 px-3">
+                    <Link href={`/years/${y.year}`} className="text-green-700 hover:underline font-medium">{y.year}</Link>
+                  </td>
+                  <td className="py-2 px-3 text-right">{fmtMoney(y.amount)}</td>
+                  <td className="py-2 px-3 text-right">{fmt(y.payments)}</td>
+                  <td className="py-2 px-3 text-right">{y.payments > 0 ? fmtMoney(y.amount / y.payments) : 'N/A'}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-      </section>
+      </div>
 
-      {/* SEO Content */}
-      <section className="mt-10 prose max-w-none text-gray-600">
-        <h2 className="font-[family-name:var(--font-heading)] text-gray-900">About {county.county} County Farm Subsidies</h2>
+      {/* Related links */}
+      <div className="mb-10">
+        <h2 className="text-2xl font-bold font-[family-name:var(--font-heading)] mb-4">Explore More</h2>
+        <div className="grid md:grid-cols-3 gap-4">
+          <Link href={`/states/${stateSlug}`} className="bg-green-50 rounded-xl p-4 hover:bg-green-100 transition">
+            <p className="font-semibold text-green-800">📍 {county.stateName}</p>
+            <p className="text-sm text-gray-600">View all {county.stateName} farm subsidies</p>
+          </Link>
+          <Link href="/counties" className="bg-green-50 rounded-xl p-4 hover:bg-green-100 transition">
+            <p className="font-semibold text-green-800">🏘️ All Counties</p>
+            <p className="text-sm text-gray-600">Compare counties nationwide</p>
+          </Link>
+          <Link href="/analysis/county-hotspots" className="bg-green-50 rounded-xl p-4 hover:bg-green-100 transition">
+            <p className="font-semibold text-green-800">📊 County Hotspots</p>
+            <p className="text-sm text-gray-600">Where subsidies concentrate</p>
+          </Link>
+        </div>
+      </div>
+
+      {/* SEO content */}
+      <section className="prose max-w-none mb-10">
+        <h2 className="text-2xl font-bold font-[family-name:var(--font-heading)]">About Farm Subsidies in {county.county} County</h2>
         <p>
-          From 2017 to 2025, the USDA Farm Service Agency distributed {fmtMoney(county.totalAmount)} in farm subsidy
-          payments to recipients in {county.county} County, {county.stateName}. The average payment was {fmtMoney(avgPayment)} across {fmt(county.totalPayments)} individual payments.
+          {county.county} County, {county.stateName} is one of the top 500 counties in the United States for USDA farm subsidy payments.
+          Over the nine-year period from 2017 to 2025, the county received {fmtMoney(county.totalAmount)} across {fmt(county.totalPayments)} individual payments
+          from Farm Service Agency programs including Conservation Reserve Program (CRP), Price Loss Coverage (PLC), Agriculture Risk Coverage (ARC), and emergency assistance programs.
         </p>
         <p>
-          Explore more subsidy data for <Link href={`/states/${county.state.toLowerCase()}`}>{county.stateName}</Link> or
-          browse all <Link href="/counties">counties</Link>. This data comes from publicly available USDA FSA payment files.
-          <Link href="/about"> Learn more about our data sources</Link>.
+          {peakYear.year === 2020
+            ? `Like many agricultural counties, ${county.county} County saw its peak subsidy payments in 2020 when the Coronavirus Food Assistance Program (CFAP) distributed emergency payments to offset pandemic-related losses.`
+            : peakYear.year >= 2018 && peakYear.year <= 2019
+            ? `${county.county} County's peak in ${peakYear.year} coincided with the Market Facilitation Program (MFP) payments designed to offset losses from trade tensions.`
+            : `${county.county} County's subsidy payments peaked in ${peakYear.year} at ${fmtMoney(peakYear.amount)}.`}
+        </p>
+        <p>
+          Data on this page comes from USDA Farm Service Agency payment files, which are public records available under the Freedom of Information Act.
+          All payment data is aggregated at the county level — individual recipient details are available on our <Link href="/recipients" className="text-green-700 hover:underline">top recipients</Link> page.
         </p>
       </section>
     </main>
