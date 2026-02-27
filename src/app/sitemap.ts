@@ -11,7 +11,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const staticRoutes = ['', '/states', '/counties', '/programs', '/recipients', '/dashboard', '/about', '/faq', '/search',
     '/analysis', '/analysis/subsidy-concentration', '/analysis/disaster-spending', '/analysis/state-disparities',
-    '/analysis/conservation-vs-commodity', '/analysis/corporate-farms', '/analysis/per-capita', '/downloads', '/methodology']
+    '/analysis/conservation-vs-commodity', '/analysis/corporate-farms', '/analysis/per-capita',
+    '/analysis/payment-limits', '/analysis/crp-conservation', '/analysis/small-vs-large', '/analysis/county-hotspots',
+    '/compare', '/downloads', '/methodology']
 
   return [
     ...staticRoutes.map(r => ({ url: `${base}${r}`, lastModified: new Date(), changeFrequency: 'weekly' as const, priority: r === '' ? 1 : 0.8 })),

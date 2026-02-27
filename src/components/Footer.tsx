@@ -12,6 +12,7 @@ export default function Footer() {
               <li><Link href="/counties" className="hover:text-white transition-colors">Counties</Link></li>
               <li><Link href="/programs" className="hover:text-white transition-colors">Programs</Link></li>
               <li><Link href="/recipients" className="hover:text-white transition-colors">Top Recipients</Link></li>
+              <li><Link href="/compare" className="hover:text-white transition-colors">Compare States</Link></li>
               <li><Link href="/dashboard" className="hover:text-white transition-colors">Dashboard</Link></li>
               <li><Link href="/analysis" className="hover:text-white transition-colors">Analysis</Link></li>
               <li><Link href="/downloads" className="hover:text-white transition-colors">Downloads</Link></li>

@@ -50,6 +50,34 @@ const articles = [
     date: 'February 2026',
     category: 'Geography',
   },
+  {
+    slug: 'payment-limits',
+    title: 'Are Farm Subsidy Payment Limits Working?',
+    desc: 'Top recipients receive far more than the $125K/yr cap through LLCs and partnerships. The limits are more aspiration than reality.',
+    date: 'February 2026',
+    category: 'Policy',
+  },
+  {
+    slug: 'crp-conservation',
+    title: 'The Conservation Reserve Program: Paying Farmers Not to Farm',
+    desc: 'A $5.36B program that pays landowners NOT to produce. How CRP works, why it\'s controversial, and its environmental impact.',
+    date: 'February 2026',
+    category: 'Conservation',
+  },
+  {
+    slug: 'small-vs-large',
+    title: 'Small Farms vs. Large Operations: Who Really Benefits?',
+    desc: 'The average vs. median payment gap tells the story. 69% of farms get nothing while the top 10% collect the vast majority.',
+    date: 'February 2026',
+    category: 'Concentration',
+  },
+  {
+    slug: 'county-hotspots',
+    title: 'County Hotspots: Where Farm Subsidies Concentrate',
+    desc: 'Some individual counties receive more than entire states. A deep dive into the top 20 county hotspots.',
+    date: 'February 2026',
+    category: 'Geography',
+  },
 ]
 
 export default function AnalysisPage() {

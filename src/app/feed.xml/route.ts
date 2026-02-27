@@ -1,13 +1,30 @@
 import fs from 'fs'
 import path from 'path'
 
+const articles = [
+  { slug: 'subsidy-concentration', title: 'The 10% Problem: How Most Farm Subsidies Go to the Biggest Operations', desc: '69% of farms get nothing. The top 10% collect nearly three-fourths of all payments.' },
+  { slug: 'disaster-spending', title: 'The Disaster Money Machine: Emergency Farm Payments', desc: 'Emergency and disaster programs now dwarf traditional farm subsidies.' },
+  { slug: 'state-disparities', title: 'The Geography of Farm Subsidies', desc: 'Texas gets $3.8B while Vermont gets $37M. The map tells the story.' },
+  { slug: 'conservation-vs-commodity', title: 'Conservation vs. Commodity: Two Philosophies of Farm Spending', desc: 'CRP pays farmers not to farm. Commodity programs pay them to produce.' },
+  { slug: 'corporate-farms', title: 'When Corporations Collect: The Biggest Non-Family Recipients', desc: 'LLCs, partnerships, and corporations collecting millions in farm subsidies.' },
+  { slug: 'per-capita', title: 'Farm Subsidies Per Capita by State', desc: 'North Dakota gets $6,000+ per person. California gets under $100.' },
+]
+
 export function GET() {
   const stats = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'public', 'data', 'stats.json'), 'utf8'))
   const states = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'public', 'data', 'states.json'), 'utf8')) as { abbr: string; name: string; amount: number }[]
   const topStates = [...states].sort((a, b) => b.amount - a.amount).slice(0, 20)
   const base = 'https://www.opensubsidies.us'
 
-  const items = topStates.map(s => `    <item>
+  const articleItems = articles.map(a => `    <item>
+      <title>${a.title}</title>
+      <link>${base}/analysis/${a.slug}</link>
+      <description>${a.desc}</description>
+      <guid>${base}/analysis/${a.slug}</guid>
+      <pubDate>${new Date('2026-02-27').toUTCString()}</pubDate>
+    </item>`).join('\n')
+
+  const stateItems = topStates.map(s => `    <item>
       <title>${s.name} Farm Subsidies</title>
       <link>${base}/states/${s.abbr.toLowerCase()}</link>
       <description>${s.name} received $${(s.amount / 1e6).toFixed(1)}M in USDA farm subsidies.</description>
@@ -15,14 +32,16 @@ export function GET() {
     </item>`).join('\n')
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>OpenSubsidies - US Farm Subsidy Data</title>
+    <title>OpenSubsidies — U.S. Farm Subsidy Data</title>
     <link>${base}</link>
-    <description>Tracking $${(stats.totalAmount / 1e9).toFixed(1)}B in US farm subsidies across ${stats.totalStates} states and ${stats.totalPrograms} programs.</description>
+    <description>Tracking $${(stats.totalAmount / 1e9).toFixed(1)}B in U.S. farm subsidies across ${stats.totalStates} states and ${stats.totalPrograms} programs.</description>
     <language>en-us</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
-${items}
+    <atom:link href="${base}/feed.xml" rel="self" type="application/rss+xml"/>
+${articleItems}
+${stateItems}
   </channel>
 </rss>`
 
