@@ -5,7 +5,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import ProgramsChart from '@/components/ProgramsChart'
 
 export const metadata: Metadata = {
-  title: 'Farm Subsidy Programs | OpenSubsidies',
+  title: 'All 157 USDA Farm Subsidy Programs Ranked',
   description: `All 157 USDA farm subsidy programs ranked by total payments from 2017-2025. See which programs distribute the most money.`,
   alternates: { canonical: 'https://www.opensubsidies.us/programs' },
 }
@@ -52,7 +52,6 @@ export default function ProgramsPage() {
               <tr className="border-b-2 border-green-700 text-left">
                 <th className="py-2 pr-4">#</th>
                 <th className="py-2 pr-4">Program</th>
-                <th className="py-2 pr-4">Code</th>
                 <th className="py-2 pr-4 text-right">Payments</th>
                 <th className="py-2 text-right">Amount</th>
               </tr>
@@ -62,7 +61,6 @@ export default function ProgramsPage() {
                 <tr key={p.code} className="border-b border-gray-200 hover:bg-green-50">
                   <td className="py-2 pr-4 text-gray-500">{i + 1}</td>
                   <td className="py-2 pr-4"><Link href={`/programs/${slugify(p.program)}`} className="text-primary hover:underline">{formatProgram(p.program)}</Link></td>
-                  <td className="py-2 pr-4 text-gray-500">{p.code}</td>
                   <td className="py-2 pr-4 text-right tabular-nums">{fmt(p.payments)}</td>
                   <td className="py-2 text-right tabular-nums font-medium">{fmtMoney(p.amount)}</td>
                 </tr>

@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'FAQ | OpenSubsidies',
+  title: 'Frequently Asked Questions',
   description: 'Frequently asked questions about US farm subsidies, USDA programs, and how OpenSubsidies works.',
   alternates: { canonical: 'https://www.opensubsidies.us/faq' },
 }

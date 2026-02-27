@@ -5,7 +5,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import StatesChart from '@/components/StatesChart'
 
 export const metadata: Metadata = {
-  title: 'Farm Subsidies by State | OpenSubsidies',
+  title: 'Farm Subsidies by State — All 59 States and Territories',
   description: 'Explore farm subsidy payments across all 50 US states. See which states receive the most in USDA farm subsidies.',
   alternates: { canonical: 'https://www.opensubsidies.us/states' },
 }
