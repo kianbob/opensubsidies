@@ -190,17 +190,28 @@ export default async function StateDetailPage({ params }: { params: Promise<{ sl
         </section>
       )}
 
-      {/* SEO Content */}
-      <section className="mt-10 prose max-w-none text-gray-600">
-        <h2 className="font-[family-name:var(--font-heading)] text-gray-900">About {state.name} Farm Subsidies</h2>
-        <p>
-          From 2017 to 2025, the USDA Farm Service Agency distributed {fmtMoney(state.amount)} in farm subsidy
-          payments to recipients in {state.name}. The state&apos;s largest program was {formatProgram(topPrograms[0]?.program || '')} at
-          {' '}{fmtMoney(topPrograms[0]?.amount)}. {counties.length > 0 ? `Payments went to recipients in ${counties.length} counties.` : ''}
+      {/* AI Overview */}
+      <section className="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-xl p-6 mt-10">
+        <h2 className="text-lg font-bold text-gray-900 mb-3">📊 Understanding {state.name}&apos;s Farm Subsidies</h2>
+        <p className="text-sm text-gray-700 mb-3">
+          From 2017 to 2025, {state.name} received <strong>{fmtMoney(state.amount)}</strong> in USDA farm subsidy payments — ranking
+          <strong> #{sortedByAmount.findIndex(s => s.abbr === state.abbr) + 1}</strong> out of {allStates.length} states and territories.
+          The state&apos;s largest program was {formatProgram(topPrograms[0]?.program || '')} at {fmtMoney(topPrograms[0]?.amount)},
+          {topPrograms[1] ? ` followed by ${formatProgram(topPrograms[1].program)} at ${fmtMoney(topPrograms[1].amount)}.` : '.'}
+          {counties.length > 0 && ` Payments flowed to recipients across ${counties.length} counties.`}
         </p>
-        <p>
-          This data comes from publicly available USDA FSA payment files. All payment amounts, recipient names,
-          and program details are public records. <Link href="/about">Learn more about our data sources</Link>.
+        <p className="text-sm text-gray-700 mb-3">
+          {avgRatio > 1.5
+            ? `The average payment in ${state.name} (${fmtMoney(stateAvg)}) is ${avgRatio.toFixed(1)}× the national average of ${fmtMoney(nationalAvg)} — suggesting larger farming operations or heavier emergency spending than typical states.`
+            : avgRatio < 0.7
+            ? `The average payment in ${state.name} (${fmtMoney(stateAvg)}) is below the national average of ${fmtMoney(nationalAvg)}, reflecting a pattern of smaller, more numerous payments typical of states with many small farms or diversified agriculture.`
+            : `The average payment in ${state.name} (${fmtMoney(stateAvg)}) is close to the national average of ${fmtMoney(nationalAvg)}.`}
+        </p>
+        <p className="text-sm text-gray-700">
+          This data comes from USDA FSA payment files covering 2017–2025.
+          Compare {state.name} with other states using our <Link href="/compare" className="text-primary hover:underline">comparison tool</Link>,
+          see <Link href="/rankings" className="text-primary hover:underline">state rankings</Link>, or
+          explore <Link href="/analysis/state-disparities" className="text-primary hover:underline">why some states get more</Link>.
         </p>
       </section>
     </main>

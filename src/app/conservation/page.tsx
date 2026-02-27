@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 export default function ConservationPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"What is the Conservation Reserve Program (CRP)?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"CRP is the largest farm subsidy program, paying farmers annual rental payments to voluntarily remove environmentally sensitive cropland from production for 10-15 year contracts. It has distributed $15.7 billion since 2017.\"}},{\"@type\":\"Question\",\"name\":\"How much does the US spend on conservation farm programs?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Conservation programs including CRP, EQIP, CSP, and ACEP totaled approximately $18.6 billion from 2017 to 2025, making conservation the third-largest category of farm subsidies behind disaster/emergency and commodity support.\"}}]}" }} />
       <Breadcrumbs items={[{ label: 'Conservation Programs' }]} />
       <h1 className="text-3xl font-bold font-[family-name:var(--font-heading)] mb-2">Conservation Programs: Where Farm Subsidies Meet Environmental Protection</h1>
       <p className="text-gray-600 mb-8">

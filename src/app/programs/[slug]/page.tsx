@@ -144,18 +144,47 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
         </div>
       </section>
 
-      <section className="prose max-w-none text-gray-600">
-        <h2 className="font-[family-name:var(--font-heading)] text-gray-900">About This Program</h2>
-        <p>
-          The {program.program} (code {program.code}) distributed {fmtMoney(program.amount)} in {fmt(program.payments)} payments
-          from 2017 to 2025, ranking #{rank} out of {programs.length} total USDA FSA programs.
-          {yearly.length > 1 && ` Spending ranged from ${fmtMoney(Math.min(...yearly.map(y => y.amount)))} to ${fmtMoney(Math.max(...yearly.map(y => y.amount)))} per year.`}
+      <section className="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-xl p-6 mb-8">
+        <h2 className="text-lg font-bold text-gray-900 mb-3">📊 Why This Data Matters</h2>
+        <p className="text-sm text-gray-700 mb-3">
+          {formatProgram(program.program)} is ranked <strong>#{rank} out of {programs.length}</strong> USDA farm subsidy programs,
+          accounting for {pctOfTotal}% of all farm subsidy spending from 2017 to 2025. With {fmt(program.payments)} individual payments
+          totaling {fmtMoney(program.amount)}, the average payment was {fmtMoney(program.amount / program.payments)}.
+          {yearly.length > 1 && ` Annual spending ranged from ${fmtMoney(Math.min(...yearly.map(y => y.amount)))} to ${fmtMoney(Math.max(...yearly.map(y => y.amount)))}.`}
         </p>
-        <p>
-          All data comes from publicly available USDA Farm Service Agency payment files.
-          Explore <Link href="/programs" className="text-primary hover:underline">all {programs.length} programs</Link>,
-          see <Link href="/trends" className="text-primary hover:underline">spending trends</Link>, or
-          check <Link href="/categories" className="text-primary hover:underline">program categories</Link>.
+        {category.label === 'Emergency' && (
+          <p className="text-sm text-gray-700 mb-3">
+            As an <strong>emergency program</strong>, this represents the kind of ad-hoc spending that has increasingly dominated 
+            farm subsidies since 2018. Unlike traditional programs authorized through the Farm Bill, emergency programs are 
+            created in response to specific crises — making farm spending less predictable and more politically driven.
+          </p>
+        )}
+        {category.label === 'Conservation' && (
+          <p className="text-sm text-gray-700 mb-3">
+            As a <strong>conservation program</strong>, this pays farmers to protect environmental resources rather than maximize 
+            production. Conservation spending is often debated as either a wise investment in long-term land stewardship or 
+            a payment for &quot;not farming&quot; — understanding the actual dollar amounts helps inform that debate.
+          </p>
+        )}
+        {category.label === 'Trade War' && (
+          <p className="text-sm text-gray-700 mb-3">
+            This <strong>trade war-era program</strong> was created to compensate farmers for lost export revenue due to 
+            retaliatory tariffs. These payments represented a new model: executive-branch emergency spending bypassing the 
+            traditional Farm Bill process, setting precedents that shaped subsequent COVID and disaster spending.
+          </p>
+        )}
+        {category.label === 'Commodity' && (
+          <p className="text-sm text-gray-700 mb-3">
+            As a <strong>commodity support program</strong>, this provides the backbone of traditional farm subsidies — 
+            stabilizing income for producers of major crops like corn, soybeans, wheat, rice, and cotton. These programs 
+            are authorized through the Farm Bill and represent the most politically entrenched category of farm spending.
+          </p>
+        )}
+        <p className="text-sm text-gray-700">
+          All data comes from USDA Farm Service Agency payment files (2017–2025).
+          Compare with <Link href="/programs" className="text-primary hover:underline">all {programs.length} programs</Link>,
+          explore <Link href="/trends" className="text-primary hover:underline">spending trends</Link>, or
+          see <Link href="/categories" className="text-primary hover:underline">programs by category</Link>.
         </p>
       </section>
     </main>

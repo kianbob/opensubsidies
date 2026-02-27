@@ -48,7 +48,7 @@ export default function StateProgramsPage() {
             <div key={program} className="bg-white rounded-xl shadow-sm p-4">
               <div className="flex items-start justify-between">
                 <div>
-                  <h3 className="font-semibold text-sm text-gray-900">{program}</h3>
+                  <h3 className="font-semibold text-sm text-gray-900">{formatProgram(program)}</h3>
                   <p className="text-xs text-gray-500 mt-1">{stateNames.join(', ')}</p>
                 </div>
                 <span className="text-lg font-bold text-primary">{stateNames.length} states</span>

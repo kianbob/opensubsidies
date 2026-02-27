@@ -16,6 +16,7 @@ export default function StateDependencyPage() {
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Which state is most dependent on farm subsidies?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"North Dakota, where farm subsidies account for approximately 69% of total farm income — meaning nearly seven out of every ten dollars in farm income come from the federal government rather than market sales.\"}},{\"@type\":\"Question\",\"name\":\"Which state is least dependent on farm subsidies?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"California, where farm subsidies account for just 2% of farm income. California's $308 billion farm economy is dominated by high-value fruits, vegetables, nuts, and dairy that receive relatively little subsidy support.\"}},{\"@type\":\"Question\",\"name\":\"Why are some states more dependent on farm subsidies than others?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"States growing commodity crops (wheat, corn, soybeans) in drought-prone regions receive more subsidies per dollar of farm income. States with diverse, high-value agriculture (fruits, vegetables, dairy) earn more from market sales and rely less on federal payments.\"}}]}" }} />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'State Dependency' }]} />
 
       <div className="mb-8">

@@ -16,6 +16,7 @@ export default function EntityTypesPage() {
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Do corporations really receive farm subsidies?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. Corporations and LLCs receive about 17.9% of all farm subsidy recipients but collect approximately 35.4% of total dollars — a disproportionate share compared to individual farmers.\"}},{\"@type\":\"Question\",\"name\":\"What types of entities receive USDA farm subsidies?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Farm subsidies go to individuals (64.5% of recipients), corporations/LLCs (17.9%), partnerships (8.4%), joint operations (4.7%), trusts/estates (2.5%), and government entities (1.1%).\"}},{\"@type\":\"Question\",\"name\":\"Why do government entities receive farm subsidies?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Government entities receiving subsidies typically include state conservation programs, tribal governments participating in USDA programs, and emergency disaster payments to public agricultural operations.\"}}]}" }} />
       <Breadcrumbs items={[{ label: 'Entity Types' }]} />
 
       <div className="mb-8">
