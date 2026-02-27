@@ -12,6 +12,8 @@ const articles = [
   { slug: 'crp-conservation', title: 'The Conservation Reserve Program: Paying Farmers Not to Farm', desc: '$5.36B to keep land out of production. Is it worth it?' },
   { slug: 'small-vs-large', title: 'Small Farms vs. Large Operations: Who Really Benefits?', desc: '69% of farms get nothing. The distribution tells the real story.' },
   { slug: 'county-hotspots', title: 'County Hotspots: Where Farm Subsidies Concentrate', desc: 'Some individual counties receive more than entire states.' },
+  { slug: 'negative-payments', title: 'Clawbacks and Corrections: When the USDA Takes Money Back', desc: 'Not all farm payments are positive. What negative payments mean.' },
+  { slug: 'program-proliferation', title: '107 Programs and Counting: The Complexity of Farm Subsidies', desc: 'Why are there so many programs and how do they overlap?' },
 ]
 
 export function GET() {

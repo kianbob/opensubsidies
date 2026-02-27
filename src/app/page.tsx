@@ -140,6 +140,30 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* The Disparity */}
+      <section className="max-w-5xl mx-auto px-4 py-12">
+        <div className="bg-gradient-to-r from-red-50 to-amber-50 rounded-2xl p-8 border border-red-100">
+          <h2 className="text-2xl font-bold font-[family-name:var(--font-heading)] mb-4 text-center">The Subsidy Gap</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div>
+              <div className="text-3xl font-bold text-red-700">{fmtMoney(recipients[0]?.amount)}</div>
+              <div className="text-sm text-gray-600 mt-1">Top recipient collected<br /><span className="font-medium">{recipients[0]?.name}</span></div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-amber-700">{fmtMoney(stats.totalAmount / stats.totalPayments)}</div>
+              <div className="text-sm text-gray-600 mt-1">Average payment<br />across all {fmt(stats.totalPayments)} payments</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-gray-700">69%</div>
+              <div className="text-sm text-gray-600 mt-1">of U.S. farms receive<br /><span className="font-medium">zero subsidy payments</span></div>
+            </div>
+          </div>
+          <p className="text-center text-sm text-gray-500 mt-4">
+            <Link href="/analysis/subsidy-concentration" className="text-primary hover:underline">Read our analysis →</Link>
+          </p>
+        </div>
+      </section>
+
       {/* Explore Grid */}
       <section className="max-w-7xl mx-auto px-4 pb-16">
         <h2 className="text-2xl font-bold font-[family-name:var(--font-heading)] mb-6 text-center">Explore the Data</h2>
@@ -151,8 +175,12 @@ export default function HomePage() {
             { label: 'Top Recipients', href: '/recipients', icon: '👤' },
             { label: 'Dashboard', href: '/dashboard', icon: '📊' },
             { label: 'Analysis', href: '/analysis', icon: '🔍' },
+            { label: 'Rankings', href: '/rankings', icon: '🏆' },
+            { label: 'Categories', href: '/categories', icon: '📂' },
+            { label: 'Trends', href: '/trends', icon: '📈' },
+            { label: 'Tools', href: '/tools', icon: '🛠️' },
+            { label: 'Glossary', href: '/glossary', icon: '📖' },
             { label: 'Downloads', href: '/downloads', icon: '📥' },
-            { label: 'FAQ', href: '/faq', icon: '❓' },
           ].map(item => (
             <Link key={item.href} href={item.href} className="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow text-center border border-gray-100">
               <span className="text-2xl">{item.icon}</span>

@@ -15,6 +15,10 @@ export default function Footer() {
               <li><Link href="/compare" className="hover:text-white transition-colors">Compare States</Link></li>
               <li><Link href="/dashboard" className="hover:text-white transition-colors">Dashboard</Link></li>
               <li><Link href="/analysis" className="hover:text-white transition-colors">Analysis</Link></li>
+              <li><Link href="/compare" className="hover:text-white transition-colors">Compare States</Link></li>
+              <li><Link href="/rankings" className="hover:text-white transition-colors">Rankings</Link></li>
+              <li><Link href="/categories" className="hover:text-white transition-colors">Categories</Link></li>
+              <li><Link href="/trends" className="hover:text-white transition-colors">Trends</Link></li>
               <li><Link href="/downloads" className="hover:text-white transition-colors">Downloads</Link></li>
             </ul>
           </div>
@@ -24,6 +28,8 @@ export default function Footer() {
               <li><Link href="/about" className="hover:text-white transition-colors">About OpenSubsidies</Link></li>
               <li><Link href="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
               <li><Link href="/methodology" className="hover:text-white transition-colors">Methodology</Link></li>
+              <li><Link href="/glossary" className="hover:text-white transition-colors">Glossary</Link></li>
+              <li><Link href="/tools" className="hover:text-white transition-colors">Tools</Link></li>
               <li><Link href="/search" className="hover:text-white transition-colors">Search</Link></li>
             </ul>
           </div>

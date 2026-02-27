@@ -10,6 +10,7 @@ const links = [
   { label: 'Top Recipients', href: '/recipients' },
   { label: 'Compare', href: '/compare' },
   { label: 'Analysis', href: '/analysis' },
+  { label: 'Tools', href: '/tools' },
   { label: 'About', href: '/about' },
 ]
 
