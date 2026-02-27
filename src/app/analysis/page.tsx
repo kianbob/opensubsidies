@@ -78,6 +78,20 @@ const articles = [
     date: 'February 2026',
     category: 'Geography',
   },
+  {
+    slug: 'negative-payments',
+    title: 'Clawbacks and Corrections: When the USDA Takes Money Back',
+    desc: 'Not all farm subsidy payments are positive. Explore programs and recipients where the USDA clawed back overpayments.',
+    date: 'February 2026',
+    category: 'Accountability',
+  },
+  {
+    slug: 'program-proliferation',
+    title: '107 Programs and Counting: The Complexity of Farm Subsidies',
+    desc: 'Why does the USDA have 107 different programs? An analysis of proliferation, overlap, and the gap between largest and smallest.',
+    date: 'February 2026',
+    category: 'Policy',
+  },
 ]
 
 export default function AnalysisPage() {
