@@ -19,7 +19,7 @@ export default function StatesPage() {
     <main className="max-w-6xl mx-auto px-4 py-8">
       <Breadcrumbs items={[{ label: 'States' }]} />
       <h1 className="text-3xl font-bold font-[family-name:var(--font-heading)] mb-2">Farm Subsidies by State</h1>
-      <p className="text-gray-600 mb-6">All {sorted.length} states and territories ranked by total subsidy payments from 2023 to 2025.</p>
+      <p className="text-gray-600 mb-6">All {sorted.length} states and territories ranked by total subsidy payments from 2017 to 2025.</p>
 
       {/* Key Insight */}
       <div className="bg-amber-50 border-l-4 border-accent p-4 rounded-r-lg mb-8">

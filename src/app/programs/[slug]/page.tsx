@@ -92,7 +92,7 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
         <h2 className="font-[family-name:var(--font-heading)] text-gray-900">About This Program</h2>
         <p>
           The {program.program} (code {program.code}) distributed {fmtMoney(program.amount)} in {fmt(program.payments)} payments
-          from 2023 to 2025. Data from the USDA Farm Service Agency public payment files.
+          from 2017 to 2025. Data from the USDA Farm Service Agency public payment files.
         </p>
       </section>
     </main>

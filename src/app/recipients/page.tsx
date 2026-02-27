@@ -23,7 +23,7 @@ export default function RecipientsPage() {
     <main className="max-w-6xl mx-auto px-4 py-8">
       <Breadcrumbs items={[{ label: 'Recipients' }]} />
       <h1 className="text-3xl font-bold font-[family-name:var(--font-heading)] mb-2">Top Farm Subsidy Recipients</h1>
-      <p className="text-gray-600 mb-6">The top {recipients.length.toLocaleString()} recipients of USDA farm subsidies from 2023 to 2025, ranked by total amount.</p>
+      <p className="text-gray-600 mb-6">The top {recipients.length.toLocaleString()} recipients of USDA farm subsidies from 2017 to 2025, ranked by total amount.</p>
 
       {/* Key Stats */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">

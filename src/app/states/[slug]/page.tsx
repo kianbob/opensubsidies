@@ -50,7 +50,7 @@ export default async function StateDetailPage({ params }: { params: Promise<{ sl
         <h1 className="text-3xl font-bold font-[family-name:var(--font-heading)]">{state.name} Farm Subsidies</h1>
         <ShareButtons title={`${state.name} received ${fmtMoney(state.amount)} in farm subsidies`} />
       </div>
-      <p className="text-gray-600 mb-8">{state.name} ({state.abbr}) received {fmtMoney(state.amount)} across {fmt(state.payments)} USDA Farm Service Agency payments from 2023 to 2025.</p>
+      <p className="text-gray-600 mb-8">{state.name} ({state.abbr}) received {fmtMoney(state.amount)} across {fmt(state.payments)} USDA Farm Service Agency payments from 2017 to 2025.</p>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
         <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">Total Subsidies</p><p className="text-xl font-bold text-green-800">{fmtMoney(state.amount)}</p></div>
@@ -130,7 +130,7 @@ export default async function StateDetailPage({ params }: { params: Promise<{ sl
       <section className="mt-10 prose max-w-none text-gray-600">
         <h2 className="font-[family-name:var(--font-heading)] text-gray-900">About {state.name} Farm Subsidies</h2>
         <p>
-          From 2023 to 2025, the USDA Farm Service Agency distributed {fmtMoney(state.amount)} in farm subsidy
+          From 2017 to 2025, the USDA Farm Service Agency distributed {fmtMoney(state.amount)} in farm subsidy
           payments to recipients in {state.name}. The state&apos;s largest program was {topPrograms[0]?.program} at
           {' '}{fmtMoney(topPrograms[0]?.amount)}. {counties.length > 0 ? `Payments went to recipients in ${counties.length} counties.` : ''}
         </p>

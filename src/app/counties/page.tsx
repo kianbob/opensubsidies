@@ -20,7 +20,7 @@ export default function CountiesPage() {
     <main className="max-w-6xl mx-auto px-4 py-8">
       <Breadcrumbs items={[{ label: 'Counties' }]} />
       <h1 className="text-3xl font-bold font-[family-name:var(--font-heading)] mb-2">Farm Subsidies by County</h1>
-      <p className="text-gray-600 mb-6">Top {fmt(sorted.length)} counties ranked by total farm subsidy payments from 2023 to 2025.</p>
+      <p className="text-gray-600 mb-6">Top {fmt(sorted.length)} counties ranked by total farm subsidy payments from 2017 to 2025.</p>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
         <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">Counties</p><p className="text-xl font-bold text-green-800">{fmt(sorted.length)}</p></div>

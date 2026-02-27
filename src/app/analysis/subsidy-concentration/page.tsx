@@ -34,7 +34,7 @@ export default function SubsidyConcentration() {
           The 10% Problem: How Most Farm Subsidies Go to the Biggest Operations
         </h1>
         <p className="text-lg text-gray-600">
-          The federal government distributed {fmtMoney(stats.totalAmount)} in farm subsidies from 2023 to 2025 —
+          The federal government distributed {fmtMoney(stats.totalAmount)} in farm subsidies from 2017 to 2025 —
           but the money is staggeringly concentrated. According to the USDA, 69% of American farms receive
           zero federal subsidy payments. The rest is dominated by the largest operations.
         </p>
@@ -86,7 +86,7 @@ export default function SubsidyConcentration() {
         <p>
           Payment limits exist in theory — the 2018 Farm Bill caps most commodity payments at $125,000
           per person per year. But through partnerships, LLCs, and family attribution rules, many operations
-          receive far more. Our data shows individual entities collecting millions across just three years.
+          receive far more. Our data shows individual entities collecting millions across nine years of payment data.
         </p>
 
         <h2 className="font-[family-name:var(--font-heading)]">What the Data Shows</h2>

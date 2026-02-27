@@ -134,7 +134,7 @@ export default function NegativePaymentsPage() {
         <h2 className="font-[family-name:var(--font-heading)]">Why This Matters</h2>
         <p>
           Negative payments are an important accountability mechanism. They show that the USDA does attempt to
-          recover overpayments and enforce program rules. However, the relatively small total compared to $40B+
+          recover overpayments and enforce program rules. However, the relatively small total compared to $147B+
           in positive payments raises questions about whether oversight is sufficient.
         </p>
         <p>

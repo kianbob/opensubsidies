@@ -29,7 +29,7 @@ export default function DashboardPage() {
     <main className="max-w-6xl mx-auto px-4 py-8">
       <Breadcrumbs items={[{ label: 'Dashboard' }]} />
       <h1 className="text-3xl font-bold font-[family-name:var(--font-heading)] mb-2">Farm Subsidy Dashboard</h1>
-      <p className="text-gray-600 mb-8">Interactive overview of {fmtMoney(stats.totalAmount)} in USDA farm subsidy payments from 2023 to 2025.</p>
+      <p className="text-gray-600 mb-8">Interactive overview of {fmtMoney(stats.totalAmount)} in USDA farm subsidy payments from 2017 to 2025.</p>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
         {cards.map(c => (
