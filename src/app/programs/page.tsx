@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { loadData, fmt, fmtMoney, slugify, formatProgram } from '@/lib/utils'
+import { fmt, fmtMoney, slugify, formatProgram } from '@/lib/utils'
+import { loadData } from '@/lib/server-utils'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ProgramsChart from '@/components/ProgramsChart'
 

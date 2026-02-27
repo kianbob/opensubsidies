@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
-import { loadData, fmt, fmtMoney, formatProgram } from '@/lib/utils'
+import { fmt, fmtMoney, formatProgram } from '@/lib/utils'
+import { loadData } from '@/lib/server-utils'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import { YearlyTrendChart, TopStatesBarChart, TopProgramsPieChart } from '@/components/DashboardCharts'
 

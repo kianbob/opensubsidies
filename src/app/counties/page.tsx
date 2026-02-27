@@ -1,7 +1,8 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { Suspense } from 'react'
-import { loadData, fmt, fmtMoney } from '@/lib/utils'
+import { fmt, fmtMoney } from '@/lib/utils'
+import { loadData } from '@/lib/server-utils'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import CountiesClient from '@/components/CountiesClient'
 

@@ -1,4 +1,5 @@
-import { loadData, fmtMoney, fmt, slugify, formatProgram } from '@/lib/utils'
+import { fmtMoney, fmt, slugify, formatProgram } from '@/lib/utils'
+import { loadData } from '@/lib/server-utils'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import Link from 'next/link'
 import type { Metadata } from 'next'

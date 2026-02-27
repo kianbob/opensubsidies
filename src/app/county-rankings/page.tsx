@@ -1,4 +1,4 @@
-import { loadData } from '@/lib/utils'
+import { loadData } from '@/lib/server-utils'
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import CountyRankingsClient from '@/components/CountyRankingsClient'

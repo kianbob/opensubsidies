@@ -1,4 +1,5 @@
-import { loadData, fmtMoney, fmt } from '@/lib/utils'
+import { fmtMoney, fmt } from '@/lib/utils'
+import { loadData } from '@/lib/server-utils'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import TrendsCharts from '@/components/TrendsCharts'
 import Link from 'next/link'

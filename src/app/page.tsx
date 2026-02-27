@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { loadData, fmtMoney, fmt, formatProgram, titleCase, slugify } from '@/lib/utils'
+import { fmtMoney, fmt, formatProgram, titleCase, slugify } from '@/lib/utils'
+import { loadData } from '@/lib/server-utils'
 import SpendingTimeline from '@/components/SpendingTimeline'
 
 export const metadata: Metadata = {

@@ -1,4 +1,5 @@
-import { loadData, fmtMoney, fmt, slugify } from '@/lib/utils'
+import { fmtMoney, fmt, slugify } from '@/lib/utils'
+import { loadData } from '@/lib/server-utils'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ShareButtons from '@/components/ShareButtons'
 import Link from 'next/link'

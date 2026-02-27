@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ShareButtons from '@/components/ShareButtons'
-import { loadData, fmt, fmtMoney, titleCase } from '@/lib/utils'
+import { fmt, fmtMoney, titleCase } from '@/lib/utils'
+import { loadData } from '@/lib/server-utils'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {

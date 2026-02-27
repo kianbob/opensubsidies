@@ -1,10 +1,3 @@
-import fs from 'fs'
-import path from 'path'
-
-export function loadData(filename: string) {
-  return JSON.parse(fs.readFileSync(path.join(process.cwd(), 'public', 'data', filename), 'utf8'))
-}
-
 export function fmt(n: number | null | undefined): string {
   return n != null ? n.toLocaleString() : 'N/A'
 }

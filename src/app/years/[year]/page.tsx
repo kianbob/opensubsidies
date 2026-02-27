@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
-import { loadData, fmtMoney, fmt } from '@/lib/utils'
+import { fmtMoney, fmt } from '@/lib/utils'
+import { loadData } from '@/lib/server-utils'
 import type { Metadata } from 'next'
 
 type YearEntry = { year: number; payments: number; amount: number }

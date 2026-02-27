@@ -1,6 +1,7 @@
 import Breadcrumbs from '@/components/Breadcrumbs'
 import Link from 'next/link'
-import { loadData, fmtMoney, fmt } from '@/lib/utils'
+import { fmtMoney, fmt } from '@/lib/utils'
+import { loadData } from '@/lib/server-utils'
 import type { Metadata } from 'next'
 import RelatedArticles from '@/components/RelatedArticles'
 import ShareButtons from '@/components/ShareButtons'

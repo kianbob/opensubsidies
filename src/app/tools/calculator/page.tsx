@@ -1,4 +1,4 @@
-import { loadData } from '@/lib/utils'
+import { loadData } from '@/lib/server-utils'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import CalculatorClient from '@/components/CalculatorClient'
 import type { Metadata } from 'next'

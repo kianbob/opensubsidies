@@ -1,6 +1,6 @@
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ShareButtons from '@/components/ShareButtons'
-import { loadData } from '@/lib/utils'
+import { loadData } from '@/lib/server-utils'
 import RelatedArticles from '@/components/RelatedArticles'
 import type { Metadata } from 'next'
 

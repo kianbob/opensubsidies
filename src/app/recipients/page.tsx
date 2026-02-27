@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { loadData, fmt, fmtMoney, formatProgram, titleCase, slugify } from '@/lib/utils'
+import { fmt, fmtMoney, formatProgram, titleCase, slugify } from '@/lib/utils'
+import { loadData } from '@/lib/server-utils'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {

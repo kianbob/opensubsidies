@@ -1,8 +1,8 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
-import { loadData, fmtMoney, fmt } from '@/lib/utils'
-
+import { fmtMoney, fmt } from '@/lib/utils'
+import { loadData } from '@/lib/server-utils'
 export const metadata: Metadata = {
   title: 'About OpenSubsidies — Free Farm Subsidy Transparency Platform',
   description: 'OpenSubsidies makes $147B in USDA farm subsidy data accessible and searchable. Learn about our mission, data sources, and methodology.',
