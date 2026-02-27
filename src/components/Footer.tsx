@@ -22,6 +22,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/about" className="hover:text-white transition-colors">About OpenSubsidies</Link></li>
               <li><Link href="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
+              <li><Link href="/methodology" className="hover:text-white transition-colors">Methodology</Link></li>
               <li><Link href="/search" className="hover:text-white transition-colors">Search</Link></li>
             </ul>
           </div>

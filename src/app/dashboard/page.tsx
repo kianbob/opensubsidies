@@ -4,8 +4,8 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import { YearlyTrendChart, TopStatesBarChart, TopProgramsPieChart } from '@/components/DashboardCharts'
 
 export const metadata: Metadata = {
-  title: 'Dashboard | OpenSubsidies',
-  description: 'Overview dashboard of US farm subsidy data with trends, top states, and top programs.',
+  title: 'Farm Subsidy Dashboard — Interactive Overview',
+  description: 'Interactive dashboard showing farm subsidy trends, top states, and biggest programs. $40B across 8M+ payments visualized.',
   alternates: { canonical: 'https://www.opensubsidies.us/dashboard' },
 }
 
@@ -28,7 +28,8 @@ export default function DashboardPage() {
   return (
     <main className="max-w-6xl mx-auto px-4 py-8">
       <Breadcrumbs items={[{ label: 'Dashboard' }]} />
-      <h1 className="text-3xl font-bold font-[family-name:var(--font-heading)] mb-8">Dashboard</h1>
+      <h1 className="text-3xl font-bold font-[family-name:var(--font-heading)] mb-2">Farm Subsidy Dashboard</h1>
+      <p className="text-gray-600 mb-8">Interactive overview of {fmtMoney(stats.totalAmount)} in USDA farm subsidy payments from 2023 to 2025.</p>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
         {cards.map(c => (
@@ -54,6 +55,19 @@ export default function DashboardPage() {
           <TopProgramsPieChart data={topPrograms} />
         </section>
       </div>
+
+      <section className="mt-10 prose max-w-none text-gray-600">
+        <h2 className="font-[family-name:var(--font-heading)] text-gray-900">Understanding the Dashboard</h2>
+        <p>
+          This dashboard provides a high-level view of U.S. farm subsidy spending based on {fmt(stats.totalPayments)} USDA
+          Farm Service Agency payment records. The yearly trends show how spending has shifted over time, with emergency
+          programs increasingly dominating the landscape. The state and program breakdowns reveal where money concentrates.
+        </p>
+        <p>
+          Drill into any state on the <a href="/states" className="text-primary hover:underline">States page</a>, or explore
+          individual <a href="/programs" className="text-primary hover:underline">programs</a> for detailed breakdowns.
+        </p>
+      </section>
     </main>
   )
 }

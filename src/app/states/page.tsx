@@ -19,7 +19,17 @@ export default function StatesPage() {
     <main className="max-w-6xl mx-auto px-4 py-8">
       <Breadcrumbs items={[{ label: 'States' }]} />
       <h1 className="text-3xl font-bold font-[family-name:var(--font-heading)] mb-2">Farm Subsidies by State</h1>
-      <p className="text-gray-600 mb-8">All {sorted.length} states and territories ranked by total subsidy payments.</p>
+      <p className="text-gray-600 mb-6">All {sorted.length} states and territories ranked by total subsidy payments from 2023 to 2025.</p>
+
+      {/* Key Insight */}
+      <div className="bg-amber-50 border-l-4 border-accent p-4 rounded-r-lg mb-8">
+        <p className="font-semibold text-gray-900">💡 Key Insight</p>
+        <p className="text-sm text-gray-700 mt-1">
+          The top 5 states ({sorted.slice(0, 5).map(s => s.name).join(', ')}) received {fmtMoney(sorted.slice(0, 5).reduce((s, x) => s + x.amount, 0))} — 
+          that&apos;s {((sorted.slice(0, 5).reduce((s, x) => s + x.amount, 0) / sorted.reduce((s, x) => s + x.amount, 0)) * 100).toFixed(0)}% of all farm subsidies
+          going to just 5 states.
+        </p>
+      </div>
 
       <section className="mb-10">
         <h2 className="text-xl font-semibold font-[family-name:var(--font-heading)] mb-4">Top 15 States</h2>
@@ -52,6 +62,21 @@ export default function StatesPage() {
             </tbody>
           </table>
         </div>
+      </section>
+
+      <section className="mt-10 prose max-w-none text-gray-600">
+        <h2 className="font-[family-name:var(--font-heading)] text-gray-900">Why State-Level Data Matters</h2>
+        <p>
+          Farm subsidies are a federal program, but their impact is profoundly local. States with large-scale commodity
+          agriculture — corn, soybeans, wheat, cotton — receive the vast majority of subsidy dollars. This geographic
+          concentration shapes agricultural policy: the states that receive the most subsidies also have the most
+          political influence over farm bill negotiations.
+        </p>
+        <p>
+          Click any state to see its county-level breakdown, top programs, and biggest individual recipients. Or see our{' '}
+          <Link href="/analysis/state-disparities" className="text-primary hover:underline">geographic analysis</Link> and{' '}
+          <Link href="/analysis/per-capita" className="text-primary hover:underline">per-capita breakdown</Link> for deeper context.
+        </p>
       </section>
     </main>
   )
