@@ -23,6 +23,11 @@ const tools = [
   { href: '/program-decoder', title: 'Program Decoder', desc: 'Plain-English guide to every USDA program acronym: CRP, PLC, ARC, CFAP, MFP, and more.', icon: '🔤' },
   { href: '/state-dependency', title: 'State Dependency', desc: 'Which states rely most on federal farm payments? North Dakota at 69% vs California at 2%.', icon: '📉' },
   { href: '/subsidy-map', title: 'Subsidy Map', desc: 'Rank all 50 states by total subsidies, per capita, or dependency percentage.', icon: '🗺️' },
+  { href: '/tools/program-explorer', title: 'Program Explorer', desc: 'Browse and filter all 157 USDA programs by category, amount, and payment count.', icon: '🧭' },
+  { href: '/tools/state-comparison', title: 'State Comparison', desc: 'Compare 2-4 states side-by-side with per-capita spending, emergency breakdowns, and charts.', icon: '📋' },
+  { href: '/tools/timeline-explorer', title: 'Timeline Explorer', desc: 'Interactive timeline of farm subsidy spending with annotated policy events.', icon: '⏳' },
+  { href: '/tools/subsidy-quiz', title: 'Farm Subsidy Quiz', desc: 'Test your knowledge with 10 data-driven questions about where $147 billion really goes.', icon: '🧠' },
+  { href: '/tools/county-finder', title: 'County Finder', desc: 'Search all U.S. counties to find farm subsidy totals and payment counts for your area.', icon: '📍' },
 ]
 
 export default function ToolsPage() {

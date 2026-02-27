@@ -29,10 +29,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/privacy', '/crop-insurance', '/county-rankings', '/tools/compare-programs',
     '/farm-bill', '/entity-types', '/payment-distribution',
     '/tools/taxpayer-calculator',
+    '/tools/program-explorer',
+    '/tools/state-comparison',
+    '/tools/timeline-explorer',
     '/subsidy-map', '/program-decoder', '/state-dependency',
     '/analysis/double-dippers', '/analysis/farm-crisis-2025',
     '/analysis/zombie-programs', '/analysis/what-147b-buys',
     '/farm-subsidy-lookup', '/doge-farm-subsidies', '/farm-subsidy-reform', '/usda-payments',
+    '/tools/subsidy-quiz', '/tools/county-finder',
     ...Array.from({ length: 9 }, (_, i) => `/years/${2017 + i}`)]
 
   return [

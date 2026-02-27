@@ -42,6 +42,7 @@ const navItems = [
       { label: 'Compare Programs', href: '/tools/compare-programs' },
       { label: 'State Profile', href: '/tools/state-profile' },
       { label: 'Recipient Search', href: '/tools/recipient-search' },
+      { label: 'Program Explorer', href: '/tools/program-explorer' },
       { label: 'Program Decoder', href: '/program-decoder' },
       { label: 'Farm Subsidy Lookup', href: '/farm-subsidy-lookup' },
       { label: 'USDA Payments', href: '/usda-payments' },
