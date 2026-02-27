@@ -84,7 +84,7 @@ export default function RankingsClient({ states }: { states: State[] }) {
               <th className="px-4 py-3 text-left font-semibold w-12">#</th>
               <th className="px-4 py-3 text-left font-semibold">State</th>
               <th className="px-4 py-3 text-right font-semibold">{getLabel()}</th>
-              <th className="px-4 py-3 text-right font-semibold hidden md:table-cell">Total</th>
+              {tab !== 'total' && <th className="px-4 py-3 text-right font-semibold hidden md:table-cell">Total</th>}
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-100">
@@ -95,7 +95,7 @@ export default function RankingsClient({ states }: { states: State[] }) {
                   <Link href={`/states/${s.abbr.toLowerCase()}`} className="text-primary hover:underline font-medium">{s.name}</Link>
                 </td>
                 <td className="px-4 py-3 text-right font-mono font-medium">{getValue(s)}</td>
-                <td className="px-4 py-3 text-right hidden md:table-cell text-gray-500">{fmtMoney(s.amount)}</td>
+                {tab !== 'total' && <td className="px-4 py-3 text-right hidden md:table-cell text-gray-500">{fmtMoney(s.amount)}</td>}
               </tr>
             ))}
           </tbody>

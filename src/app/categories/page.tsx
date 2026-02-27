@@ -29,7 +29,7 @@ function categorize(programs: Program[]) {
     else categories.other.programs.push(p)
   }
 
-  return Object.entries(categories).map(([key, cat]) => ({
+  return Object.entries(categories).filter(([, cat]) => cat.programs.length > 0).map(([key, cat]) => ({
     key,
     ...cat,
     totalAmount: cat.programs.reduce((s, p) => s + p.amount, 0),
@@ -80,7 +80,7 @@ export default function CategoriesPage() {
                   <tr key={i} className="hover:bg-gray-50">
                     <td className="px-4 py-3">
                       <Link href={`/programs/${slugify(p.program)}`} className="text-primary hover:underline font-medium">
-                        {p.program}
+                        {formatProgram(p.program)}
                       </Link>
                     </td>
                     <td className="px-4 py-3 text-right font-mono">{fmtMoney(p.amount)}</td>
