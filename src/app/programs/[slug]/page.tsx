@@ -1,10 +1,13 @@
 import { Metadata } from 'next'
+import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { loadData, fmt, fmtMoney, slugify } from '@/lib/utils'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ShareButtons from '@/components/ShareButtons'
+import StateYearlyChart from '@/components/StateYearlyChart'
 
 type Program = { program: string; code: string; amount: number; payments: number }
+type ProgramYearly = { program: string; yearly: { year: number; amount: number; payments: number }[] }
 
 export const dynamicParams = true
 
@@ -35,6 +38,12 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
   const rank = programs.indexOf(program) + 1
   const pctOfTotal = ((program.amount / programs.reduce((s, p) => s + p.amount, 0)) * 100).toFixed(1)
 
+  // Load yearly trend for this program
+  const programYearly = loadData('program-yearly.json') as ProgramYearly[]
+  const thisYearly = programYearly.find(p => p.program === program.program)
+  const yearly = thisYearly?.yearly || []
+  const peakYear = yearly.length > 0 ? yearly.reduce((a, b) => a.amount > b.amount ? a : b) : null
+
   // Find states with this program
   const statesWithProgram = states
     .map(s => {
@@ -64,9 +73,17 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
         <p className="font-semibold text-gray-900">💡 Key Insight</p>
         <p className="text-sm text-gray-700 mt-1">
           This program accounts for {pctOfTotal}% of all farm subsidies, averaging {fmtMoney(program.amount / program.payments)} per payment.
-          {statesWithProgram.length > 0 && ` The top state for this program is ${statesWithProgram[0].name} (${fmtMoney(statesWithProgram[0].amount)}).`}
+          {peakYear && ` Peak year: ${peakYear.year} (${fmtMoney(peakYear.amount)}).`}
+          {statesWithProgram.length > 0 && ` Top state: ${statesWithProgram[0].name} (${fmtMoney(statesWithProgram[0].amount)}).`}
         </p>
       </div>
+
+      {yearly.length > 1 && (
+        <section className="mb-10">
+          <h2 className="text-xl font-semibold font-[family-name:var(--font-heading)] mb-4">Spending by Year</h2>
+          <StateYearlyChart data={yearly} />
+        </section>
+      )}
 
       {statesWithProgram.length > 0 && (
         <section className="mb-10">
@@ -88,11 +105,32 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
         </section>
       )}
 
+      {/* Related Programs */}
+      <section className="mb-10">
+        <h2 className="text-xl font-semibold font-[family-name:var(--font-heading)] mb-4">Related Programs</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+          {programs.filter(p => p.program !== program.program).slice(Math.max(0, rank - 2), Math.max(0, rank - 2) + 3).map(p => (
+            <Link key={p.code} href={`/programs/${slugify(p.program)}`} className="bg-white rounded-xl shadow-sm p-4 hover:shadow-md transition-shadow border border-gray-100">
+              <p className="font-medium text-sm text-gray-900 line-clamp-2">{p.program}</p>
+              <p className="text-primary font-bold mt-1">{fmtMoney(p.amount)}</p>
+              <p className="text-xs text-gray-500">{fmt(p.payments)} payments</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       <section className="prose max-w-none text-gray-600">
         <h2 className="font-[family-name:var(--font-heading)] text-gray-900">About This Program</h2>
         <p>
           The {program.program} (code {program.code}) distributed {fmtMoney(program.amount)} in {fmt(program.payments)} payments
-          from 2017 to 2025. Data from the USDA Farm Service Agency public payment files.
+          from 2017 to 2025, ranking #{rank} out of {programs.length} total USDA FSA programs.
+          {yearly.length > 1 && ` Spending ranged from ${fmtMoney(Math.min(...yearly.map(y => y.amount)))} to ${fmtMoney(Math.max(...yearly.map(y => y.amount)))} per year.`}
+        </p>
+        <p>
+          All data comes from publicly available USDA Farm Service Agency payment files.
+          Explore <Link href="/programs" className="text-primary hover:underline">all {programs.length} programs</Link>,
+          see <Link href="/trends" className="text-primary hover:underline">spending trends</Link>, or
+          check <Link href="/categories" className="text-primary hover:underline">program categories</Link>.
         </p>
       </section>
     </main>

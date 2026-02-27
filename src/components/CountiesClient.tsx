@@ -44,7 +44,7 @@ export default function CountiesClient({ counties }: { counties: County[] }) {
             {filtered.slice(0, 200).map((c, i) => (
               <tr key={c.fips} className="border-b border-gray-200 hover:bg-green-50">
                 <td className="py-2 pr-4 text-gray-500">{i + 1}</td>
-                <td className="py-2 pr-4 font-medium">{c.county}</td>
+                <td className="py-2 pr-4 font-medium"><Link href={`/counties/${c.fips}`} className="text-green-700 hover:underline">{c.county}</Link></td>
                 <td className="py-2 pr-4">
                   <Link href={`/states/${c.state.toLowerCase()}`} className="text-green-700 hover:underline">{c.stateName}</Link>
                 </td>

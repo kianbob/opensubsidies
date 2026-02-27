@@ -31,7 +31,7 @@ export default function DashboardPage() {
       <h1 className="text-3xl font-bold font-[family-name:var(--font-heading)] mb-2">Farm Subsidy Dashboard</h1>
       <p className="text-gray-600 mb-8">Interactive overview of {fmtMoney(stats.totalAmount)} in USDA farm subsidy payments from 2017 to 2025.</p>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
         {cards.map(c => (
           <div key={c.label} className="bg-green-50 rounded-lg p-4 text-center">
             <p className="text-sm text-gray-500">{c.label}</p>
@@ -39,6 +39,22 @@ export default function DashboardPage() {
           </div>
         ))}
       </div>
+
+      {/* Key Insight */}
+      {(() => {
+        const peakYear = yearly.filter(y => y.year >= 2017).reduce((a, b) => a.amount > b.amount ? a : b);
+        const baseYear = yearly.find(y => y.year === 2017);
+        return (
+          <div className="bg-amber-50 border-l-4 border-accent p-4 rounded-r-lg mb-10">
+            <p className="font-semibold text-gray-900">💡 9-Year Overview</p>
+            <p className="text-sm text-gray-700 mt-1">
+              Farm subsidy spending peaked in {peakYear.year} at {fmtMoney(peakYear.amount)} — 
+              {baseYear ? ` ${(peakYear.amount / baseYear.amount).toFixed(1)}× the 2017 baseline of ${fmtMoney(baseYear.amount)}` : ''}.
+              Emergency programs (CFAP, MFP, disaster relief) now regularly exceed traditional commodity support.
+            </p>
+          </div>
+        );
+      })()}
 
       <section className="mb-10">
         <h2 className="text-xl font-semibold font-[family-name:var(--font-heading)] mb-4">Yearly Trends</h2>

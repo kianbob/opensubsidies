@@ -8,12 +8,14 @@ export const metadata: Metadata = {
 
 const datasets = [
   { name: 'stats.json', desc: 'Summary statistics: total payments, amounts, counts', size: '1 KB' },
-  { name: 'states.json', desc: 'All 59 states/territories with subsidy totals and top programs', size: '63 KB' },
-  { name: 'counties.json', desc: 'Top 3,000 counties by subsidy amount', size: '439 KB' },
-  { name: 'programs.json', desc: 'All 107 USDA farm subsidy programs with totals', size: '13 KB' },
+  { name: 'states.json', desc: 'All 59 states/territories with subsidy totals and top programs', size: '40 KB' },
+  { name: 'counties.json', desc: 'Top 5,000 counties by subsidy amount with FIPS codes', size: '527 KB' },
+  { name: 'county-index.json', desc: 'Top 500 counties index for detailed county pages', size: '45 KB' },
+  { name: 'programs.json', desc: 'All 157 USDA farm subsidy programs with totals', size: '14 KB' },
+  { name: 'program-yearly.json', desc: 'Top 50 programs with yearly spending trends', size: '18 KB' },
   { name: 'yearly.json', desc: 'Yearly payment totals (program years 2000-2025)', size: '2 KB' },
-  { name: 'state-yearly.json', desc: 'State-by-year payment totals for trend analysis', size: '98 KB' },
-  { name: 'top-recipients.json', desc: 'Top 1,000 subsidy recipients with amounts and programs', size: '579 KB' },
+  { name: 'state-yearly.json', desc: 'State-by-year payment totals for trend analysis', size: '82 KB' },
+  { name: 'top-recipients.json', desc: 'Top 2,000 subsidy recipients with amounts and programs', size: '771 KB' },
 ]
 
 export default function DownloadsPage() {
