@@ -5,6 +5,7 @@ import { fmtMoney, fmt } from '@/lib/utils'
 import { loadData } from '@/lib/server-utils'
 import type { Metadata } from 'next'
 import RelatedArticles from '@/components/RelatedArticles'
+import ArticleSchema from '@/components/ArticleSchema'
 
 export const metadata: Metadata = {
   title: 'State Winners & Losers: Who Gained Most from Emergency Spending?',
@@ -45,6 +46,7 @@ export default function StateWinnersLosersPage() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
+      <ArticleSchema title="State Winners & Losers: Who Gained Most from Emergency Spending?" description="Which states saw the biggest surge from emergency farm programs? Comparing 2017 baseline to 2020 peak ratios reveals clear winners and losers." slug="state-winners-losers" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'State Winners & Losers' }]} />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

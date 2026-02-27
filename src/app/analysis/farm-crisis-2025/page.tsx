@@ -5,6 +5,7 @@ import { fmtMoney } from '@/lib/utils'
 import { loadData } from '@/lib/server-utils'
 import RelatedArticles from '@/components/RelatedArticles'
 import type { Metadata } from 'next'
+import ArticleSchema from '@/components/ArticleSchema'
 
 export const metadata: Metadata = {
   title: 'The 2025 Farm Crisis: Bankruptcies Up 46% While Subsidies Flow to the Top',
@@ -18,6 +19,7 @@ export default function FarmCrisis2025Page() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
+      <ArticleSchema title="The 2025 Farm Crisis: Bankruptcies Up 46% While Subsidies Flow to the Top" description="Farm bankruptcies hit 315 in 2025, up 46%. Meanwhile, farm subsidies continue flowing primarily to the largest operations. The disconnect between who gets help " slug="farm-crisis-2025" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: '2025 Farm Crisis' }]} />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

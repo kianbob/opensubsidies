@@ -8,6 +8,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Program Trends — Farm Subsidy Spending Over Time',
   description: 'Track how U.S. farm subsidy spending has changed year by year. See which programs and emergency spending drove the biggest shifts.',
+  alternates: { canonical: 'https://www.opensubsidies.org/trends' },
 }
 
 type YearData = { year: number; payments: number; amount: number }

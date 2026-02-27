@@ -7,6 +7,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Program Categories — Farm Subsidy Programs by Type',
   description: 'Browse 157 USDA farm subsidy programs organized by category: Conservation, Disaster/Emergency, Commodity, Loans, and more.',
+  alternates: { canonical: 'https://www.opensubsidies.org/categories' },
 }
 
 type Program = { program: string; code: string; payments: number; amount: number }

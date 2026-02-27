@@ -5,6 +5,7 @@ import { fmtMoney, fmt } from '@/lib/utils'
 import { loadData } from '@/lib/server-utils'
 import type { Metadata } from 'next'
 import RelatedArticles from '@/components/RelatedArticles'
+import ArticleSchema from '@/components/ArticleSchema'
 
 export const metadata: Metadata = {
   title: 'A Decade of Disaster: How Emergency Programs Took Over Farm Subsidies',
@@ -30,6 +31,7 @@ export default function DecadeOfDisasterPage() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
+      <ArticleSchema title="A Decade of Disaster: How Emergency Programs Took Over Farm Subsidies" description="Emergency and disaster programs went from supplemental to dominant in US farm spending. Pre-2018 vs post-2018 data tells the story." slug="decade-of-disaster" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'A Decade of Disaster' }]} />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

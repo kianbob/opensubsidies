@@ -5,10 +5,12 @@ import ShareButtons from '@/components/ShareButtons'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import RelatedArticles from '@/components/RelatedArticles'
+import ArticleSchema from '@/components/ArticleSchema'
 
 export const metadata: Metadata = {
   title: '157 Programs and Counting: The Complexity of Farm Subsidies',
   description: 'Why does the USDA have 157 different farm subsidy programs? An analysis of program proliferation, overlap, and the gap between largest and smallest.',
+  alternates: { canonical: 'https://www.opensubsidies.org/analysis/program-proliferation' },
 }
 
 type Program = { program: string; code: string; payments: number; amount: number }
@@ -27,6 +29,7 @@ export default function ProgramProliferationPage() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
+      <ArticleSchema title="157 Programs and Counting: The Complexity of Farm Subsidies" description="Why does the USDA have 157 different farm subsidy programs? An analysis of program proliferation, overlap, and the gap between largest and smallest." slug="program-proliferation" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'Program Proliferation' }]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'Article',

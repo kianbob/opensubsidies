@@ -4,10 +4,12 @@ import { loadData } from '@/lib/server-utils'
 import type { Metadata } from 'next'
 import RelatedArticles from '@/components/RelatedArticles'
 import ShareButtons from '@/components/ShareButtons'
+import ArticleSchema from '@/components/ArticleSchema'
 
 export const metadata: Metadata = {
   title: 'Conservation vs. Commodity: Two Philosophies of Farm Spending',
   description: 'CRP pays farmers not to farm. Commodity programs pay them to produce. How do these two approaches compare in federal farm spending?',
+  alternates: { canonical: 'https://www.opensubsidies.org/analysis/conservation-vs-commodity' },
 }
 
 export default function ConservationVsCommodity() {
@@ -20,6 +22,7 @@ export default function ConservationVsCommodity() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
+      <ArticleSchema title="Conservation vs. Commodity: Two Philosophies of Farm Spending" description="CRP pays farmers not to farm. Commodity programs pay them to produce. How do these two approaches compare in federal farm spending?" slug="conservation-vs-commodity" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'Conservation vs. Commodity' }]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'Article',

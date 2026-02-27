@@ -5,10 +5,12 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import RelatedArticles from '@/components/RelatedArticles'
 import ShareButtons from '@/components/ShareButtons'
+import ArticleSchema from '@/components/ArticleSchema'
 
 export const metadata: Metadata = {
   title: 'Are Farm Subsidy Payment Limits Working?',
   description: 'Top recipients receive far more than the $125K/yr cap through LLCs and partnerships. An analysis of USDA payment data.',
+  alternates: { canonical: 'https://www.opensubsidies.org/analysis/payment-limits' },
 }
 
 export default function PaymentLimits() {
@@ -22,6 +24,7 @@ export default function PaymentLimits() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
+      <ArticleSchema title="Are Farm Subsidy Payment Limits Working?" description="Top recipients receive far more than the $125K/yr cap through LLCs and partnerships." slug="payment-limits" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'Payment Limits' }]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'Article',

@@ -5,6 +5,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Download Farm Subsidy Data — Free JSON Datasets',
   description: 'Download free JSON datasets of U.S. farm subsidy payments by state, county, program, and recipient.',
+  alternates: { canonical: 'https://www.opensubsidies.org/downloads' },
 }
 
 const datasets = [

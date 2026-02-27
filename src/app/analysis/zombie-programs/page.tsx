@@ -5,6 +5,7 @@ import { fmt, fmtMoney } from '@/lib/utils'
 import { loadData } from '@/lib/server-utils'
 import RelatedArticles from '@/components/RelatedArticles'
 import type { Metadata } from 'next'
+import ArticleSchema from '@/components/ArticleSchema'
 
 export const metadata: Metadata = {
   title: 'Zombie Programs: The USDA Programs Nobody Uses',
@@ -22,6 +23,7 @@ export default function ZombieProgramsPage() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
+      <ArticleSchema title="Zombie Programs: The USDA Programs Nobody Uses" description="43 USDA farm programs have fewer than 100 payments each. These " slug="zombie-programs" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'Zombie Programs' }]} />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

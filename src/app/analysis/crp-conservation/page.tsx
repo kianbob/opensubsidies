@@ -5,10 +5,12 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import RelatedArticles from '@/components/RelatedArticles'
 import ShareButtons from '@/components/ShareButtons'
+import ArticleSchema from '@/components/ArticleSchema'
 
 export const metadata: Metadata = {
   title: 'The Conservation Reserve Program: Paying Farmers Not to Farm',
   description: 'A deep dive into the $5.36B CRP program — how it works, why it\'s controversial, and its environmental benefits.',
+  alternates: { canonical: 'https://www.opensubsidies.org/analysis/crp-conservation' },
 }
 
 export default function CRPConservation() {
@@ -21,6 +23,7 @@ export default function CRPConservation() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
+      <ArticleSchema title="The Conservation Reserve Program: Paying Farmers Not to Farm" description="A deep dive into the $5.36B CRP program — how it works, why it\" slug="crp-conservation" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'CRP Conservation' }]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'Article',

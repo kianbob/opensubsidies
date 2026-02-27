@@ -4,10 +4,12 @@ import { fmtMoney, fmt } from '@/lib/utils'
 import { loadData } from '@/lib/server-utils'
 import type { Metadata } from 'next'
 import RelatedArticles from '@/components/RelatedArticles'
+import ArticleSchema from '@/components/ArticleSchema'
 
 export const metadata: Metadata = {
   title: 'Trade War Fallout: $39 Billion in Tariff Bailout Payments (2018-2019)',
   description: 'The US-China trade war triggered $39B in farm subsidy payments through the Market Facilitation Program. How tariffs reshaped agricultural spending.',
+  alternates: { canonical: 'https://www.opensubsidies.org/analysis/trade-war' },
 }
 
 export default function TradeWar() {
@@ -19,6 +21,7 @@ export default function TradeWar() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
+      <ArticleSchema title="Trade War Fallout: $39 Billion in Tariff Bailout Payments (2018-2019)" description="The US-China trade war triggered $39B in farm subsidy payments through the Market Facilitation Program. How tariffs reshaped agricultural spending." slug="trade-war" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'Trade War Impact' }]} />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

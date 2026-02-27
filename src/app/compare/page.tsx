@@ -7,6 +7,7 @@ import CompareClient from '@/components/CompareClient'
 export const metadata: Metadata = {
   title: 'Compare States — Side-by-Side Farm Subsidy Comparison',
   description: 'Compare up to 4 states side-by-side on farm subsidy totals, payments, and top programs.',
+  alternates: { canonical: 'https://www.opensubsidies.org/compare' },
 }
 
 export default function ComparePage() {

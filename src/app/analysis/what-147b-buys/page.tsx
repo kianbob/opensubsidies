@@ -3,6 +3,7 @@ import ShareButtons from '@/components/ShareButtons'
 import { loadData } from '@/lib/server-utils'
 import RelatedArticles from '@/components/RelatedArticles'
 import type { Metadata } from 'next'
+import ArticleSchema from '@/components/ArticleSchema'
 
 export const metadata: Metadata = {
   title: 'What $147 Billion in Farm Subsidies Could Buy Instead',
@@ -27,6 +28,7 @@ export default function What147BBuysPage() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
+      <ArticleSchema title="What $147 Billion in Farm Subsidies Could Buy Instead" description="$147 billion in farm subsidies could fund 2.2 million teachers, 5.8 million Pell Grants, or 6 years of NASA. Here\" slug="what-147b-buys" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'What $147B Buys' }]} />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

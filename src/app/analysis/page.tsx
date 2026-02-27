@@ -5,6 +5,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Analysis — Farm Subsidy Deep Dives',
   description: 'Data-driven analysis of U.S. farm subsidies: concentration, disaster spending, conservation, and the biggest recipients.',
+  alternates: { canonical: 'https://www.opensubsidies.org/analysis' },
 }
 
 const articles = [

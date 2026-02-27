@@ -5,6 +5,7 @@ import { fmtMoney, fmt } from '@/lib/utils'
 import { loadData } from '@/lib/server-utils'
 import type { Metadata } from 'next'
 import RelatedArticles from '@/components/RelatedArticles'
+import ArticleSchema from '@/components/ArticleSchema'
 
 export const metadata: Metadata = {
   title: 'CRP Under Threat: Is Conservation Keeping Up with Emergency Spending?',
@@ -32,6 +33,7 @@ export default function CrpUnderThreatPage() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
+      <ArticleSchema title="CRP Under Threat: Is Conservation Keeping Up with Emergency Spending?" description="The Conservation Reserve Program at $15.7B is the largest traditional program. But emergency spending now dwarfs it. What are the policy implications?" slug="crp-under-threat" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'CRP Under Threat' }]} />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

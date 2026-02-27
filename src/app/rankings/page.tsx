@@ -7,6 +7,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'State Rankings — Farm Subsidies by State',
   description: 'Rank all 50 states by total farm subsidies, per-capita spending, number of payments, and average payment size.',
+  alternates: { canonical: 'https://www.opensubsidies.org/rankings' },
 }
 
 export default function RankingsPage() {

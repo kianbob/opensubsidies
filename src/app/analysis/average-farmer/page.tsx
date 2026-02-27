@@ -5,6 +5,7 @@ import { fmtMoney, fmt } from '@/lib/utils'
 import { loadData } from '@/lib/server-utils'
 import type { Metadata } from 'next'
 import RelatedArticles from '@/components/RelatedArticles'
+import ArticleSchema from '@/components/ArticleSchema'
 
 export const metadata: Metadata = {
   title: 'What Does the Average Farmer Actually Get? The $4,600 Reality',
@@ -22,6 +23,7 @@ export default function AverageFarmerPage() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
+      <ArticleSchema title="What Does the Average Farmer Actually Get? The $4,600 Reality" description="31.8M payments divided by $147B = ~$4,600 average. But the median is far lower. The inequality of farm subsidies explained." slug="average-farmer" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'The Average Farmer' }]} />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

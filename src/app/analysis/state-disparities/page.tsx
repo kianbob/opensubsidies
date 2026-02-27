@@ -5,10 +5,12 @@ import { loadData } from '@/lib/server-utils'
 import type { Metadata } from 'next'
 import RelatedArticles from '@/components/RelatedArticles'
 import ShareButtons from '@/components/ShareButtons'
+import ArticleSchema from '@/components/ArticleSchema'
 
 export const metadata: Metadata = {
   title: 'Texas Gets $3.8B, Vermont Gets $37M: The Geography of Farm Subsidies',
   description: 'Farm subsidy payments vary enormously by state. Texas receives 100x more than Vermont. Explore the geographic distribution.',
+  alternates: { canonical: 'https://www.opensubsidies.org/analysis/state-disparities' },
 }
 
 export default function StateDisparities() {
@@ -19,6 +21,7 @@ export default function StateDisparities() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
+      <ArticleSchema title="Texas Gets $3.8B, Vermont Gets $37M: The Geography of Farm Subsidies" description="Farm subsidy payments vary enormously by state. Texas receives 100x more than Vermont. Explore the geographic distribution." slug="state-disparities" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'State Disparities' }]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'Article',

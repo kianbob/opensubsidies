@@ -6,6 +6,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Subsidy Calculator — Put Farm Subsidies in Context',
   description: 'Enter any dollar amount and see how it compares to farm subsidies: recipient rankings, percentage of total spending, and real-world comparisons.',
+  alternates: { canonical: 'https://www.opensubsidies.org/tools/calculator' },
 }
 
 export default function CalculatorPage() {
