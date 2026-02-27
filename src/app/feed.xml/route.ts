@@ -16,6 +16,10 @@ const articles = [
   { slug: 'program-proliferation', title: '107 Programs and Counting: The Complexity of Farm Subsidies', desc: 'Why are there so many programs and how do they overlap?' },
   { slug: 'covid-spending', title: 'COVID Changed Farm Subsidies Forever: The $38.7 Billion Story', desc: 'In 2020, pandemic relief shattered every spending record in USDA history.' },
   { slug: 'trade-war', title: 'Trade War Fallout: $39 Billion in Tariff Bailout Payments', desc: 'US-China tariffs triggered the Market Facilitation Program.' },
+  { slug: 'decade-of-disaster', title: 'A Decade of Disaster: How Emergency Programs Took Over Farm Subsidies', desc: 'Emergency programs went from supplemental to dominant in less than a decade.' },
+  { slug: 'crp-under-threat', title: 'CRP Under Threat: Is Conservation Keeping Up with Emergency Spending?', desc: 'The $15.7B Conservation Reserve Program faces pressure as emergency spending dwarfs it.' },
+  { slug: 'average-farmer', title: 'What Does the Average Farmer Actually Get? The $4,600 Reality', desc: '31.8M payments / $147B = $4,600 average. But most farmers get far less.' },
+  { slug: 'state-winners-losers', title: 'State Winners & Losers: Who Gained Most from Emergency Spending?', desc: 'Comparing 2017 baseline to 2020 peak reveals which states benefited most.' },
 ]
 
 export function GET() {

@@ -18,6 +18,7 @@ export default function Footer() {
               <li><Link href="/analysis" className="hover:text-white transition-colors">Analysis</Link></li>
               <li><Link href="/compare" className="hover:text-white transition-colors">Compare States</Link></li>
               <li><Link href="/rankings" className="hover:text-white transition-colors">Rankings</Link></li>
+              <li><Link href="/county-rankings" className="hover:text-white transition-colors">County Rankings</Link></li>
               <li><Link href="/categories" className="hover:text-white transition-colors">Categories</Link></li>
               <li><Link href="/trends" className="hover:text-white transition-colors">Trends</Link></li>
               <li><Link href="/downloads" className="hover:text-white transition-colors">Downloads</Link></li>

@@ -9,6 +9,7 @@ const links = [
   { label: 'Programs', href: '/programs' },
   { label: 'Top Recipients', href: '/recipients' },
   { label: 'Compare', href: '/compare' },
+  { label: 'Rankings', href: '/rankings' },
   { label: 'Analysis', href: '/analysis' },
   { label: 'Tools', href: '/tools' },
   { label: 'About', href: '/about' },
