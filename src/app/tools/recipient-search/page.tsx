@@ -89,7 +89,7 @@ export default function RecipientSearchPage() {
           Frequently Asked Questions
         </h3>
         <p><strong>Can I search for farm subsidy recipients?</strong><br />
-          Yes — type any name, farm name, or city above. We index the top 2,000 recipients by total
+          Yes — type any name, farm name, or city above. We index the top 5,000 recipients by total
           payment amount across all USDA programs from 2017–2025.
         </p>
         <p><strong>How do I look up USDA payment recipients?</strong><br />

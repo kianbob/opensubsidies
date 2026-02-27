@@ -32,7 +32,7 @@ export const dynamicParams = true
 export function generateStaticParams() {
   try {
     const index = loadData('recipient-index.json') as { slug: string }[]
-    return index.slice(0, 50).map(r => ({ slug: r.slug }))
+    return index.slice(0, 100).map(r => ({ slug: r.slug }))
   } catch { return [] }
 }
 
@@ -215,7 +215,7 @@ export default async function RecipientDetailPage({ params }: { params: Promise<
       <section className="prose max-w-none mb-10">
         <h2 className="text-2xl font-bold font-[family-name:var(--font-heading)]">About {name}</h2>
         <p>
-          {name}, based in {city}, {r.state}, is one of the top 2,000 recipients of USDA farm subsidy payments in the United States.
+          {name}, based in {city}, {r.state}, is one of the top 5,000 recipients of USDA farm subsidy payments in the United States.
           Over the nine-year period from 2017 to 2025, they received {fmtMoney(r.totalAmount)} across {fmt(r.totalPayments)} payments
           from {r.topPrograms.length} different Farm Service Agency programs.
         </p>

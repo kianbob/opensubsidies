@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
-import { fmtMoney, fmt } from '@/lib/utils'
+import { fmtMoney, fmt, slugify } from '@/lib/utils'
+import { formatProgram } from '@/lib/format-program'
 import { loadData } from '@/lib/server-utils'
 import type { Metadata } from 'next'
 
 type YearEntry = { year: number; payments: number; amount: number }
 type StateYearEntry = { state: string; year: number; payments: number; amount: number }
+type YearDetail = { year: number; totalAmount: number; totalPayments: number; stateCount: number; states: { abbr: string; name: string; amount: number; payments: number }[]; topPrograms?: { program: string; amount: number; payments: number }[] }
 
 type Props = { params: Promise<{ year: string }> }
 
@@ -30,6 +32,11 @@ export default async function YearPage({ params }: Props) {
 
   const thisYear = yearly.find(y => y.year === yearNum)
   if (!thisYear) return <div className="max-w-4xl mx-auto px-4 py-10">Year not found.</div>
+
+  // Load enriched year detail with top programs
+  let yearDetail: YearDetail | null = null
+  try { yearDetail = loadData(`years/${yearNum}.json`) as YearDetail } catch {}
+  const topPrograms = yearDetail?.topPrograms || []
 
   const statesThisYear = stateYearly
     .filter(s => s.year === yearNum && s.amount > 0)
@@ -108,6 +115,41 @@ export default async function YearPage({ params }: Props) {
           </table>
         </div>
       </section>
+
+      {/* Top programs */}
+      {topPrograms.length > 0 && (
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold font-[family-name:var(--font-heading)] mb-4">Top Programs in {yearStr}</h2>
+          <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+            <table className="w-full text-sm">
+              <thead className="bg-gray-50 text-left">
+                <tr>
+                  <th className="px-4 py-3 font-semibold">#</th>
+                  <th className="px-4 py-3 font-semibold">Program</th>
+                  <th className="px-4 py-3 font-semibold text-right">Amount</th>
+                  <th className="px-4 py-3 font-semibold text-right hidden md:table-cell">Payments</th>
+                  <th className="px-4 py-3 font-semibold text-right hidden md:table-cell">% of Year</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100">
+                {topPrograms.slice(0, 15).map((p, i) => (
+                  <tr key={p.program} className="hover:bg-gray-50">
+                    <td className="px-4 py-2 text-gray-500">{i + 1}</td>
+                    <td className="px-4 py-2">
+                      <Link href={`/programs/${slugify(p.program)}`} className="font-medium text-primary hover:underline">
+                        {formatProgram(p.program)}
+                      </Link>
+                    </td>
+                    <td className="px-4 py-2 text-right font-mono">{fmtMoney(p.amount)}</td>
+                    <td className="px-4 py-2 text-right text-gray-600 hidden md:table-cell">{fmt(p.payments)}</td>
+                    <td className="px-4 py-2 text-right text-gray-600 hidden md:table-cell">{((p.amount / thisYear.amount) * 100).toFixed(1)}%</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      )}
 
       {/* All years comparison */}
       <section className="mb-10">

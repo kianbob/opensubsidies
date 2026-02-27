@@ -31,7 +31,7 @@ export const dynamicParams = true
 export function generateStaticParams() {
   try {
     const index = loadData('county-index.json') as { fips: string }[]
-    return index.slice(0, 50).map(c => ({ fips: c.fips }))
+    return index.slice(0, 100).map(c => ({ fips: c.fips }))
   } catch { return [] }
 }
 
@@ -167,6 +167,22 @@ export default async function CountyDetailPage({ params }: { params: Promise<{ f
         </div>
       </div>
 
+      {/* Other counties in this state */}
+      {stateCounties.length > 1 && (
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold font-[family-name:var(--font-heading)] mb-4">Other {county.stateName} Counties</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {stateCounties.filter(c => c.fips !== fips).slice(0, 8).map((c, i) => (
+              <Link key={c.fips} href={`/counties/${c.fips}`} className="bg-white rounded-lg border border-gray-200 p-3 hover:border-green-300 hover:shadow-sm transition">
+                <p className="font-medium text-sm text-gray-900">{c.county}</p>
+                <p className="text-xs text-gray-500">{fmtMoney(c.amount)}</p>
+                <p className="text-xs text-gray-400">#{i + (stateCounties[0]?.fips === fips ? 1 : 0) + 1} in {county.state}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
       {/* Related links */}
       <div className="mb-10">
         <h2 className="text-2xl font-bold font-[family-name:var(--font-heading)] mb-4">Explore More</h2>
@@ -190,7 +206,7 @@ export default async function CountyDetailPage({ params }: { params: Promise<{ f
       <section className="prose max-w-none mb-10">
         <h2 className="text-2xl font-bold font-[family-name:var(--font-heading)]">About Farm Subsidies in {county.county} County</h2>
         <p>
-          {county.county} County, {county.stateName} is one of the top 500 counties in the United States for USDA farm subsidy payments.
+          {county.county} County, {county.stateName} is one of {fmt(sortedCounties.length)} U.S. counties receiving USDA farm subsidy payments.
           Over the nine-year period from 2017 to 2025, the county received {fmtMoney(county.totalAmount)} across {fmt(county.totalPayments)} individual payments
           from Farm Service Agency programs including Conservation Reserve Program (CRP), Price Loss Coverage (PLC), Agriculture Risk Coverage (ARC), and emergency assistance programs.
         </p>

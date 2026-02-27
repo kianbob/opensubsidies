@@ -278,7 +278,7 @@ export default function HomePage() {
                 { label: 'States', href: '/states', sub: '59 states & territories' },
                 { label: 'Counties', href: '/counties', sub: '28,875 counties' },
                 { label: 'Programs', href: '/programs', sub: '157 USDA programs' },
-                { label: 'Top Recipients', href: '/recipients', sub: '2,000 largest' },
+                { label: 'Top Recipients', href: '/recipients', sub: '5,000 largest' },
                 { label: 'Dashboard', href: '/dashboard', sub: 'Interactive overview' },
                 { label: 'Entity Types', href: '/entity-types', sub: 'Who gets paid' },
               ].map(item => (

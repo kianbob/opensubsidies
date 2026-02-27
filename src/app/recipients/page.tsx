@@ -5,8 +5,8 @@ import { loadData } from '@/lib/server-utils'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Top 2,000 Farm Subsidy Recipients — Who Gets the Most?',
-  description: 'The top 2,000 recipients of USDA farm subsidies collected billions in taxpayer dollars from 2017-2025. See every name, location, and amount.',
+  title: 'Top 5,000 Farm Subsidy Recipients — Who Gets the Most?',
+  description: 'The top 5,000 recipients of USDA farm subsidies collected billions in taxpayer dollars from 2017-2025. See every name, location, and amount.',
   alternates: { canonical: 'https://www.opensubsidies.org/recipients' },
 }
 
@@ -40,7 +40,7 @@ export default function RecipientsPage() {
         <p className="text-sm text-gray-700 mt-1">
           The top recipient, {titleCase(recipients[0]?.name)} ({titleCase(recipients[0]?.city)}, {recipients[0]?.state}), collected {fmtMoney(recipients[0]?.amount)} — 
           more than {fmtMoney(recipients[0]?.amount - recipients[recipients.length - 1]?.amount)} above the lowest ranked recipient.
-          {topStates[0] && ` ${topStates[0][0]} leads with ${topStates[0][1]} recipients in the top 2,000.`}
+          {topStates[0] && ` ${topStates[0][0]} leads with ${topStates[0][1]} recipients in the top 5,000.`}
         </p>
       </div>
 

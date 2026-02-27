@@ -80,7 +80,7 @@ export default function SearchClient({ states, counties, programs, recipients }:
                 { label: 'States', count: '59', href: '/states', icon: '🗺️' },
                 { label: 'Counties', count: '28,875', href: '/counties', icon: '🏘️' },
                 { label: 'Programs', count: '157', href: '/programs', icon: '🌾' },
-                { label: 'Recipients', count: '2,000', href: '/recipients', icon: '👤' },
+                { label: 'Recipients', count: '5,000', href: '/recipients', icon: '👤' },
               ].map((cat) => (
                 <Link key={cat.label} href={cat.href} className="border border-gray-200 rounded-xl p-5 text-center hover:shadow-md hover:border-green-300 transition-all no-underline">
                   <div className="text-2xl mb-2">{cat.icon}</div>

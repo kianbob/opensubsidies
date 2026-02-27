@@ -10,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   function slugify(s: string) { return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') }
 
   const countyIndex = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'public', 'data', 'county-index.json'), 'utf8')) as { fips: string; amount: number }[]
-  const topCounties = [...countyIndex].sort((a, b) => b.amount - a.amount).slice(0, 500)
+  const topCounties = [...countyIndex].sort((a, b) => b.amount - a.amount).slice(0, 3000)
 
   const recipientIndex = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'public', 'data', 'recipient-index.json'), 'utf8')) as { slug: string }[]
 
