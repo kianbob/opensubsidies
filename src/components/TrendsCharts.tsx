@@ -11,10 +11,10 @@ function fmtMoney(n: number): string {
 }
 
 export default function TrendsCharts({ yearly }: { yearly: YearData[] }) {
-  // Filter to complete years with meaningful data (exclude 2025 partial)
-  const data = yearly.filter(y => y.year >= 2017 && y.year <= 2024 && y.amount > 100000).map(y => ({
+  const data = yearly.filter(y => y.year >= 2017 && y.year <= 2025 && y.amount > 100000).map(y => ({
     ...y,
     amountB: y.amount / 1e9,
+    label: y.year === 2025 ? '2025*' : String(y.year),
   }))
 
   return (
@@ -25,9 +25,9 @@ export default function TrendsCharts({ yearly }: { yearly: YearData[] }) {
           <ResponsiveContainer width="100%" height="100%">
             <LineChart data={data}>
               <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="year" />
+              <XAxis dataKey="label" />
               <YAxis tickFormatter={(v: number) => `$${v.toFixed(0)}B`} />
-              <Tooltip formatter={(v: number) => fmtMoney(v * 1e9)} labelFormatter={(l: number) => `Year: ${l}`} />
+              <Tooltip formatter={(v: number) => fmtMoney(v * 1e9)} labelFormatter={(l: string) => l.includes('*') ? `${l} (partial)` : `Year: ${l}`} />
               <Line type="monotone" dataKey="amountB" stroke="#15803d" strokeWidth={2.5} dot={{ r: 3 }} name="Spending" />
             </LineChart>
           </ResponsiveContainer>
@@ -40,9 +40,9 @@ export default function TrendsCharts({ yearly }: { yearly: YearData[] }) {
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={data}>
               <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="year" />
+              <XAxis dataKey="label" />
               <YAxis tickFormatter={(v: number) => `${(v / 1000).toFixed(0)}K`} />
-              <Tooltip formatter={(v: number) => v.toLocaleString()} labelFormatter={(l: number) => `Year: ${l}`} />
+              <Tooltip formatter={(v: number) => v.toLocaleString()} labelFormatter={(l: string) => l.includes('*') ? `${l} (partial)` : `Year: ${l}`} />
               <Bar dataKey="payments" fill="#15803d" opacity={0.8} name="Payments" />
             </BarChart>
           </ResponsiveContainer>

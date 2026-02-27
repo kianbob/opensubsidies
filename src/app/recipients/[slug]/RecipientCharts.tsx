@@ -14,12 +14,11 @@ function fmtMoney(n: number) {
 const COLORS = ['#15803d', '#22c55e', '#86efac', '#166534', '#4ade80', '#bbf7d0', '#14532d', '#a3e635']
 
 export function YearlyChart({ data }: { data: { year: number; amount: number }[] }) {
-  const filtered = data.filter(d => d.year <= 2024)
   return (
     <div className="bg-white rounded-xl border p-4">
       <h3 className="font-semibold mb-3">Yearly Subsidy Payments</h3>
       <ResponsiveContainer width="100%" height={300}>
-        <BarChart data={filtered}>
+        <BarChart data={data}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="year" />
           <YAxis tickFormatter={fmtMoney} width={70} />

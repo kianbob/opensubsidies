@@ -18,13 +18,13 @@ const events = [
 
 export default function SpendingTimeline({ yearly }: { yearly: YearData[] }) {
   const data = yearly
-    .filter(y => y.year >= 2017 && y.year <= 2024)
-    .map(y => ({ ...y, amountB: y.amount / 1e9 }))
+    .filter(y => y.year >= 2017 && y.year <= 2025)
+    .map(y => ({ ...y, amountB: y.amount / 1e9, label: y.year === 2025 ? '2025*' : String(y.year) }))
 
   return (
     <div className="bg-white rounded-xl shadow-sm p-6">
       <h3 className="text-lg font-bold mb-1">Farm Subsidy Spending Timeline</h3>
-      <p className="text-sm text-gray-500 mb-4">2017–2024 · Key policy events marked · 2025 excluded (partial year)</p>
+      <p className="text-sm text-gray-500 mb-4">2017–2025 · Key policy events marked</p>
       <div className="h-80">
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart data={data} margin={{ top: 30, right: 10, left: 0, bottom: 0 }}>
@@ -35,19 +35,20 @@ export default function SpendingTimeline({ yearly }: { yearly: YearData[] }) {
               </linearGradient>
             </defs>
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="year" />
+            <XAxis dataKey="label" />
             <YAxis tickFormatter={(v: number) => `$${v.toFixed(0)}B`} />
             <Tooltip
               formatter={(v: number) => [fmtMoney(v * 1e9), 'Total Spending']}
-              labelFormatter={(l: number) => `Year: ${l}`}
+              labelFormatter={(l: string) => l.includes('*') ? `${l} (partial year)` : `Year: ${l}`}
             />
             {events.map(e => (
-              <ReferenceLine key={e.year} x={e.year} stroke={e.color} strokeDasharray="3 3" label={{ value: e.label, position: 'top', fontSize: 12, offset: 5 }} />
+              <ReferenceLine key={e.year} x={String(e.year)} stroke={e.color} strokeDasharray="3 3" label={{ value: e.label, position: 'top', fontSize: 12, offset: 5 }} />
             ))}
             <Area type="monotone" dataKey="amountB" stroke="#16a34a" fillOpacity={1} fill="url(#colorAmount)" strokeWidth={2} />
           </AreaChart>
         </ResponsiveContainer>
       </div>
+      <p className="text-xs text-gray-400 mt-2">* 2025 is a partial year — only payments with a 2025 program year are included.</p>
     </div>
   )
 }
