@@ -145,15 +145,15 @@ export default function HomePage() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {programs.map((p: { program: string; amount: number; payments: number }, i: number) => (
-            <div key={i} className="bg-white rounded-xl shadow-sm p-5 border-l-4 border-primary">
+            <Link key={i} href={`/programs/${slugify(p.program)}`} className="bg-white rounded-xl shadow-sm p-5 border-l-4 border-primary hover:shadow-md transition-shadow">
               <div className="flex items-start justify-between">
                 <div className="flex-1">
-                  <h3 className="font-semibold text-gray-900 text-sm">{formatProgram(p.program)}</h3>
+                  <h3 className="font-semibold text-primary text-sm">{formatProgram(p.program)}</h3>
                   <p className="text-xs text-gray-500 mt-1">{fmt(p.payments)} payments</p>
                 </div>
                 <span className="text-lg font-bold text-primary">{fmtMoney(p.amount)}</span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
