@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { loadData, fmt, fmtMoney } from '@/lib/utils'
+import { loadData, fmt, fmtMoney, formatProgram, titleCase } from '@/lib/utils'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ShareButtons from '@/components/ShareButtons'
 import StateYearlyChart from '@/components/StateYearlyChart'
@@ -96,7 +96,7 @@ export default async function StateDetailPage({ params }: { params: Promise<{ sl
               {topPrograms.map((p, i) => (
                 <tr key={i} className="hover:bg-gray-50">
                   <td className="px-4 py-3 text-gray-500">{i + 1}</td>
-                  <td className="px-4 py-3">{p.program}</td>
+                  <td className="px-4 py-3">{formatProgram(p.program)}</td>
                   <td className="px-4 py-3 text-right font-mono">{fmtMoney(p.amount)}</td>
                 </tr>
               ))}
@@ -115,8 +115,8 @@ export default async function StateDetailPage({ params }: { params: Promise<{ sl
                 {topRecipients.slice(0, 25).map((r, i) => (
                   <tr key={i} className="hover:bg-gray-50">
                     <td className="px-4 py-3 text-gray-500">{i + 1}</td>
-                    <td className="px-4 py-3 font-medium">{r.name}</td>
-                    <td className="px-4 py-3 text-gray-600 hidden md:table-cell">{r.city}</td>
+                    <td className="px-4 py-3 font-medium">{titleCase(r.name)}</td>
+                    <td className="px-4 py-3 text-gray-600 hidden md:table-cell">{titleCase(r.city)}</td>
                     <td className="px-4 py-3 text-right font-mono text-primary">{fmtMoney(r.amount)}</td>
                   </tr>
                 ))}
@@ -136,7 +136,7 @@ export default async function StateDetailPage({ params }: { params: Promise<{ sl
                 {counties.map((c, i) => (
                   <tr key={c.fips || i} className="hover:bg-gray-50">
                     <td className="px-4 py-3 text-gray-500">{i + 1}</td>
-                    <td className="px-4 py-3">{c.county}</td>
+                    <td className="px-4 py-3"><Link href={`/counties/${c.fips}`} className="text-green-700 hover:underline">{c.county}</Link></td>
                     <td className="px-4 py-3 text-right font-mono">{fmt(c.payments)}</td>
                     <td className="px-4 py-3 text-right font-mono">{fmtMoney(c.amount)}</td>
                   </tr>
@@ -152,7 +152,7 @@ export default async function StateDetailPage({ params }: { params: Promise<{ sl
         <h2 className="font-[family-name:var(--font-heading)] text-gray-900">About {state.name} Farm Subsidies</h2>
         <p>
           From 2017 to 2025, the USDA Farm Service Agency distributed {fmtMoney(state.amount)} in farm subsidy
-          payments to recipients in {state.name}. The state&apos;s largest program was {topPrograms[0]?.program} at
+          payments to recipients in {state.name}. The state&apos;s largest program was {formatProgram(topPrograms[0]?.program || '')} at
           {' '}{fmtMoney(topPrograms[0]?.amount)}. {counties.length > 0 ? `Payments went to recipients in ${counties.length} counties.` : ''}
         </p>
         <p>

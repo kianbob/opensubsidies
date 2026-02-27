@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { loadData, fmt, fmtMoney } from '@/lib/utils'
+import { loadData, fmt, fmtMoney, formatProgram, titleCase } from '@/lib/utils'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
@@ -58,10 +58,10 @@ export default function RecipientsPage() {
             {recipients.map((r, i) => (
               <tr key={i} className="border-b border-gray-200 hover:bg-green-50">
                 <td className="py-2 pr-4 text-gray-500">{i + 1}</td>
-                <td className="py-2 pr-4 font-medium">{r.name}</td>
-                <td className="py-2 pr-4 text-gray-600">{r.city}, {r.state}</td>
+                <td className="py-2 pr-4 font-medium">{titleCase(r.name)}</td>
+                <td className="py-2 pr-4 text-gray-600">{titleCase(r.city)}, {r.state}</td>
                 <td className="py-2 pr-4 text-right tabular-nums font-medium">{fmtMoney(r.amount)}</td>
-                <td className="py-2 text-xs text-gray-500">{r.topPrograms?.[0]?.program ?? '—'}</td>
+                <td className="py-2 text-xs text-gray-500">{formatProgram(r.topPrograms?.[0]?.program ?? '—')}</td>
               </tr>
             ))}
           </tbody>

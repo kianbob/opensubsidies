@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { loadData, fmt, fmtMoney, slugify } from '@/lib/utils'
+import { loadData, fmt, fmtMoney, slugify, formatProgram } from '@/lib/utils'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ProgramsChart from '@/components/ProgramsChart'
 
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function ProgramsPage() {
   const programs = loadData('programs.json') as { program: string; code: string; payments: number; amount: number }[]
   const sorted = [...programs].sort((a, b) => b.amount - a.amount)
-  const top15 = sorted.slice(0, 15).map(p => ({ name: p.program.length > 30 ? p.program.slice(0, 30) + '…' : p.program, amount: p.amount }))
+  const top15 = sorted.slice(0, 15).map(p => ({ name: formatProgram(p.program).length > 30 ? formatProgram(p.program).slice(0, 30) + '…' : formatProgram(p.program), amount: p.amount }))
 
   return (
     <main className="max-w-6xl mx-auto px-4 py-8">
@@ -61,7 +61,7 @@ export default function ProgramsPage() {
               {sorted.map((p, i) => (
                 <tr key={p.code} className="border-b border-gray-200 hover:bg-green-50">
                   <td className="py-2 pr-4 text-gray-500">{i + 1}</td>
-                  <td className="py-2 pr-4"><Link href={`/programs/${slugify(p.program)}`} className="text-primary hover:underline">{p.program}</Link></td>
+                  <td className="py-2 pr-4"><Link href={`/programs/${slugify(p.program)}`} className="text-primary hover:underline">{formatProgram(p.program)}</Link></td>
                   <td className="py-2 pr-4 text-gray-500">{p.code}</td>
                   <td className="py-2 pr-4 text-right tabular-nums">{fmt(p.payments)}</td>
                   <td className="py-2 text-right tabular-nums font-medium">{fmtMoney(p.amount)}</td>

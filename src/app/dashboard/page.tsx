@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import { loadData, fmt, fmtMoney } from '@/lib/utils'
+import { loadData, fmt, fmtMoney, formatProgram } from '@/lib/utils'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import { YearlyTrendChart, TopStatesBarChart, TopProgramsPieChart } from '@/components/DashboardCharts'
 
@@ -16,7 +16,7 @@ export default function DashboardPage() {
   const programs = loadData('programs.json') as { program: string; amount: number }[]
 
   const topStates = [...states].sort((a, b) => b.amount - a.amount).slice(0, 10).map(s => ({ name: s.abbr, amount: s.amount }))
-  const topPrograms = [...programs].sort((a, b) => b.amount - a.amount).slice(0, 8).map(p => ({ name: p.program, value: p.amount }))
+  const topPrograms = [...programs].sort((a, b) => b.amount - a.amount).slice(0, 8).map(p => ({ name: formatProgram(p.program), value: p.amount }))
 
   const cards = [
     { label: 'Total Payments', value: fmtMoney(stats.totalAmount) },

@@ -24,3 +24,5 @@ export function slugify(s: string): string {
 export function titleCase(s: string): string {
   return s.toLowerCase().replace(/\b\w/g, c => c.toUpperCase())
 }
+
+export { formatProgram } from './format-program'

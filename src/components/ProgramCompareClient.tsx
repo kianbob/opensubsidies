@@ -1,5 +1,6 @@
 // @ts-nocheck
 'use client'
+import { formatProgram } from '@/lib/format-program'
 import { useState, useEffect, useMemo } from 'react'
 import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts'
 
@@ -66,7 +67,7 @@ export default function ProgramCompareClient() {
             className="border rounded-lg px-3 py-2 text-sm bg-white truncate">
             <option value="">{i < 2 ? 'Select program' : 'Add program (optional)'}</option>
             {topPrograms.map(p => (
-              <option key={p.program} value={p.program}>{p.program.length > 50 ? p.program.slice(0, 50) + '…' : p.program}</option>
+              <option key={p.program} value={p.program}>{formatProgram(p.program).length > 50 ? formatProgram(p.program).slice(0, 50) + '…' : formatProgram(p.program)}</option>
             ))}
           </select>
         ))}
@@ -77,7 +78,7 @@ export default function ProgramCompareClient() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
             {picks.map((p, i) => (
               <div key={p.program} className="bg-white rounded-xl shadow-sm border-t-4 p-4" style={{ borderColor: COLORS[i] }}>
-                <h3 className="font-bold text-sm leading-tight">{p.program}</h3>
+                <h3 className="font-bold text-sm leading-tight">{formatProgram(p.program)}</h3>
                 <p className="text-sm text-gray-600 mt-2">Total: <span className="font-mono font-semibold text-gray-900">{fmtM(p.amount)}</span></p>
                 <p className="text-sm text-gray-600">Payments: <span className="font-mono">{p.payments.toLocaleString()}</span></p>
                 <p className="text-sm text-gray-600">Avg: <span className="font-mono">{fmtM(p.amount / p.payments)}</span></p>
@@ -94,7 +95,7 @@ export default function ProgramCompareClient() {
                 <Tooltip formatter={v => fmtM(v as number)} />
                 <Legend />
                 {picks.map((p, i) => (
-                  <Bar key={p.program} dataKey={`prog${i}`} name={p.program.length > 30 ? p.program.slice(0, 30) + '…' : p.program} fill={COLORS[i]} />
+                  <Bar key={p.program} dataKey={`prog${i}`} name={formatProgram(p.program).length > 30 ? formatProgram(p.program).slice(0, 30) + '…' : formatProgram(p.program)} fill={COLORS[i]} />
                 ))}
               </BarChart>
             </ResponsiveContainer>
@@ -110,7 +111,7 @@ export default function ProgramCompareClient() {
                     <th className="px-3 py-2 text-left font-semibold">Metric</th>
                     {picks.map((p, i) => (
                       <th key={i} className="px-3 py-2 text-right font-semibold" style={{ color: COLORS[i] }}>
-                        {p.program.length > 20 ? p.program.slice(0, 20) + '…' : p.program}
+                        {formatProgram(p.program).length > 20 ? formatProgram(p.program).slice(0, 20) + '…' : formatProgram(p.program)}
                       </th>
                     ))}
                   </tr>

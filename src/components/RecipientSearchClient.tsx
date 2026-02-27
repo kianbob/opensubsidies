@@ -1,5 +1,6 @@
 // @ts-nocheck
 'use client'
+import { formatProgram } from '@/lib/format-program'
 import { useState, useMemo } from 'react'
 
 type Recipient = {
@@ -67,7 +68,7 @@ export default function RecipientSearchClient({ recipients }: { recipients: Reci
             {r.topPrograms && r.topPrograms.length > 0 && (
               <div className="mt-3 pt-3 border-t border-gray-50">
                 <p className="text-xs text-gray-400 mb-1">Top Program</p>
-                <p className="text-sm text-gray-700">{r.topPrograms[0].program} — {fmtMoney(r.topPrograms[0].amount)}</p>
+                <p className="text-sm text-gray-700">{formatProgram(r.topPrograms[0].program)} — {fmtMoney(r.topPrograms[0].amount)}</p>
               </div>
             )}
           </div>

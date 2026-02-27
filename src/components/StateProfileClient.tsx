@@ -1,5 +1,6 @@
 // @ts-nocheck
 'use client'
+import { formatProgram } from '@/lib/format-program'
 import { useState, useMemo } from 'react'
 
 type StateData = {
@@ -124,7 +125,7 @@ export default function StateProfileClient({
           <div className="px-6 pb-6">
             <p className="text-xs text-gray-400 uppercase tracking-wider mb-2">Top Program</p>
             {state.topPrograms && state.topPrograms[0] && (
-              <p className="text-sm text-gray-700 font-medium">{state.topPrograms[0].program} — {fmtMoney(state.topPrograms[0].amount)}</p>
+              <p className="text-sm text-gray-700 font-medium">{formatProgram(state.topPrograms[0].program)} — {fmtMoney(state.topPrograms[0].amount)}</p>
             )}
           </div>
 

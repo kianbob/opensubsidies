@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
-import { loadData, fmtMoney } from '@/lib/utils'
+import { loadData, fmtMoney, formatProgram } from '@/lib/utils'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -76,7 +76,7 @@ export default function StateProgramsPage() {
                   <td className="px-4 py-3">
                     <Link href={`/states/${s.abbr.toLowerCase()}`} className="text-primary hover:underline font-medium">{s.name}</Link>
                   </td>
-                  <td className="px-4 py-3 text-gray-700 text-xs">{s.topPrograms?.[0]?.program || '—'}</td>
+                  <td className="px-4 py-3 text-gray-700 text-xs">{formatProgram(s.topPrograms?.[0]?.program || '—')}</td>
                   <td className="px-4 py-3 text-right font-mono">{fmtMoney(s.topPrograms?.[0]?.amount || 0)}</td>
                   <td className="px-4 py-3 text-right font-mono text-gray-500 hidden md:table-cell">{fmtMoney(s.amount)}</td>
                 </tr>

@@ -1,6 +1,6 @@
 // @ts-nocheck
 'use client'
-
+import { formatProgram } from '@/lib/format-program'
 import { useState, useMemo, useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
@@ -72,7 +72,7 @@ export default function SearchClient({ states, counties, programs, recipients }:
               <h2 className="text-lg font-semibold text-green-800 mb-2">Programs</h2>
               {results.programs.map(p => (
                 <div key={p.code} className="py-2 px-3">
-                  <span className="font-medium">{p.program}</span> — {fmtMoney(p.amount)}
+                  <span className="font-medium">{formatProgram(p.program)}</span> — {fmtMoney(p.amount)}
                 </div>
               ))}
             </section>

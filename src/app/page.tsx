@@ -1,6 +1,13 @@
+import { Metadata } from 'next'
 import Link from 'next/link'
-import { loadData, fmtMoney, fmt } from '@/lib/utils'
+import { loadData, fmtMoney, fmt, formatProgram, titleCase } from '@/lib/utils'
 import SpendingTimeline from '@/components/SpendingTimeline'
+
+export const metadata: Metadata = {
+  title: 'OpenSubsidies — Where $147 Billion in Farm Subsidies Really Goes',
+  description: 'Track every dollar of U.S. farm subsidies. 31 million+ payment records, 157 programs, every state and county. Free, open data from USDA Farm Service Agency, 2017-2025.',
+  alternates: { canonical: 'https://www.opensubsidies.us' },
+}
 
 export default function HomePage() {
   const stats = loadData('stats.json')
@@ -122,7 +129,7 @@ export default function HomePage() {
                   </td>
                   <td className="px-4 py-3 text-right font-mono">{fmtMoney(s.amount)}</td>
                   <td className="px-4 py-3 text-right text-gray-600 hidden md:table-cell">{fmt(s.payments)}</td>
-                  <td className="px-4 py-3 text-gray-600 text-xs hidden lg:table-cell">{s.topPrograms?.[0]?.program || ''}</td>
+                  <td className="px-4 py-3 text-gray-600 text-xs hidden lg:table-cell">{formatProgram(s.topPrograms?.[0]?.program || '')}</td>
                 </tr>
               ))}
             </tbody>
@@ -141,7 +148,7 @@ export default function HomePage() {
             <div key={i} className="bg-white rounded-xl shadow-sm p-5 border-l-4 border-primary">
               <div className="flex items-start justify-between">
                 <div className="flex-1">
-                  <h3 className="font-semibold text-gray-900 text-sm">{p.program}</h3>
+                  <h3 className="font-semibold text-gray-900 text-sm">{formatProgram(p.program)}</h3>
                   <p className="text-xs text-gray-500 mt-1">{fmt(p.payments)} payments</p>
                 </div>
                 <span className="text-lg font-bold text-primary">{fmtMoney(p.amount)}</span>
@@ -171,8 +178,8 @@ export default function HomePage() {
               {recipients.map((r: { name: string; state: string; city: string; amount: number }, i: number) => (
                 <tr key={i} className="hover:bg-gray-50">
                   <td className="px-4 py-3 text-gray-500">{i + 1}</td>
-                  <td className="px-4 py-3 font-medium">{r.name}</td>
-                  <td className="px-4 py-3 text-gray-600">{r.city}, {r.state}</td>
+                  <td className="px-4 py-3 font-medium">{titleCase(r.name)}</td>
+                  <td className="px-4 py-3 text-gray-600">{titleCase(r.city)}, {r.state}</td>
                   <td className="px-4 py-3 text-right font-mono text-primary font-semibold">{fmtMoney(r.amount)}</td>
                 </tr>
               ))}
@@ -188,7 +195,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
             <div>
               <div className="text-3xl font-bold text-red-700">{fmtMoney(recipients[0]?.amount)}</div>
-              <div className="text-sm text-gray-600 mt-1">Top recipient collected<br /><span className="font-medium">{recipients[0]?.name}</span></div>
+              <div className="text-sm text-gray-600 mt-1">Top recipient collected<br /><span className="font-medium">{titleCase(recipients[0]?.name || '')}</span></div>
             </div>
             <div>
               <div className="text-3xl font-bold text-amber-700">{fmtMoney(stats.totalAmount / stats.totalPayments)}</div>

@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { loadData, fmt, fmtMoney, slugify } from '@/lib/utils'
+import { loadData, fmt, fmtMoney, slugify, formatProgram } from '@/lib/utils'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ShareButtons from '@/components/ShareButtons'
 import StateYearlyChart from '@/components/StateYearlyChart'
@@ -22,8 +22,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const program = programs.find(p => slugify(p.program) === slug)
   if (!program) return { title: 'Program Not Found' }
   return {
-    title: `${program.program} — ${fmtMoney(program.amount)} in Farm Subsidies`,
-    description: `The ${program.program} distributed ${fmtMoney(program.amount)} across ${fmt(program.payments)} payments from 2017-2025.`,
+    title: `${formatProgram(program.program)} — ${fmtMoney(program.amount)} in Farm Subsidies`,
+    description: `The ${formatProgram(program.program)} distributed ${fmtMoney(program.amount)} across ${fmt(program.payments)} payments from 2017-2025.`,
     alternates: { canonical: `https://www.opensubsidies.us/programs/${slug}` },
   }
 }
@@ -56,9 +56,9 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
 
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
-      <Breadcrumbs items={[{ label: 'Programs', href: '/programs' }, { label: program.program }]} />
+      <Breadcrumbs items={[{ label: 'Programs', href: '/programs' }, { label: formatProgram(program.program) }]} />
       <div className="flex items-start justify-between mb-2">
-        <h1 className="text-2xl md:text-3xl font-bold font-[family-name:var(--font-heading)]">{program.program}</h1>
+        <h1 className="text-2xl md:text-3xl font-bold font-[family-name:var(--font-heading)]">{formatProgram(program.program)}</h1>
         <ShareButtons title={`${program.program}: ${fmtMoney(program.amount)} in farm subsidies`} />
       </div>
       <p className="text-gray-600 mb-8">USDA Program Code: {program.code} · Ranked #{rank} of {programs.length} programs</p>
