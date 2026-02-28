@@ -12,6 +12,12 @@ interface EntityType {
   topAmount: number
 }
 
+function fmtMoney(n: number) {
+  if (Math.abs(n) >= 1e9) return '$' + (n / 1e9).toFixed(1) + 'B'
+  if (Math.abs(n) >= 1e6) return '$' + (n / 1e6).toFixed(1) + 'M'
+  return '$' + n.toLocaleString()
+}
+
 export default function EntityTypesClient({ data }: { data: EntityType[] }) {
   const totalAmount = data.reduce((s, d) => s + d.amount, 0)
   const pieData = data.map(d => ({ name: d.type, value: d.amount }))
@@ -23,11 +29,12 @@ export default function EntityTypesClient({ data }: { data: EntityType[] }) {
         <div className="bg-white rounded-xl shadow-sm p-4">
           <h3 className="text-lg font-bold text-gray-900 mb-2">By Total Amount</h3>
           <ResponsiveContainer width="100%" height={350}>
-            <PieChart margin={{ top: 20, bottom: 20, left: 20, right: 20 }}>
-              <Pie data={pieData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={80} label={({ name, percent }) => `${name.length > 15 ? name.slice(0, 15) + '…' : name} ${(percent * 100).toFixed(0)}%`} labelLine={true}>
+            <PieChart>
+              <Pie data={pieData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={90} innerRadius={35} label={({ percent }) => `${(percent * 100).toFixed(0)}%`} labelLine={false}>
                 {pieData.map((_, i) => <Cell key={i} fill={COLORS[i % COLORS.length]} />)}
               </Pie>
-              <Tooltip formatter={(v: number) => `$${(v / 1e9).toFixed(1)}B`} />
+              <Tooltip formatter={(v: number) => fmtMoney(v)} />
+              <Legend />
             </PieChart>
           </ResponsiveContainer>
         </div>
@@ -61,7 +68,7 @@ export default function EntityTypesClient({ data }: { data: EntityType[] }) {
               <tr key={d.type} className="border-b border-gray-100 hover:bg-gray-50">
                 <td className="py-3 px-2 font-medium">{d.type}</td>
                 <td className="text-right py-3 px-2">{d.count.toLocaleString()}</td>
-                <td className="text-right py-3 px-2">${(d.amount / 1e9).toFixed(1)}B</td>
+                <td className="text-right py-3 px-2">{fmtMoney(d.amount)}</td>
                 <td className="text-right py-3 px-2">${Math.round(d.amount / d.count).toLocaleString()}</td>
                 <td className="py-3 px-2 text-gray-600">{d.topRecipient}</td>
               </tr>

@@ -1,7 +1,7 @@
 // @ts-nocheck
 'use client'
 
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, PieChart, Pie, Cell } from 'recharts'
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, PieChart, Pie, Cell, Legend } from 'recharts'
 import { formatProgram } from '@/lib/format-program'
 
 function fmtMoney(n: number) {
@@ -35,12 +35,13 @@ export function ProgramPieChart({ data }: { data: { program: string; amount: num
   return (
     <div className="bg-white rounded-xl border p-4">
       <h3 className="font-semibold mb-3">Subsidies by Program</h3>
-      <ResponsiveContainer width="100%" height={350}>
-        <PieChart margin={{ top: 20, bottom: 20, left: 20, right: 20 }}>
-          <Pie data={pieData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={80} label={({ name, percent }) => `${name.length > 18 ? name.slice(0, 18) + '…' : name} ${(percent * 100).toFixed(0)}%`} labelLine={true}>
+      <ResponsiveContainer width="100%" height={380}>
+        <PieChart>
+          <Pie data={pieData} dataKey="value" nameKey="name" cx="50%" cy="45%" outerRadius={90} innerRadius={35} label={({ percent }) => `${(percent * 100).toFixed(0)}%`} labelLine={false}>
             {pieData.map((_, i) => <Cell key={i} fill={COLORS[i % COLORS.length]} />)}
           </Pie>
           <Tooltip formatter={(v: number) => fmtMoney(v)} />
+          <Legend />
         </PieChart>
       </ResponsiveContainer>
     </div>
