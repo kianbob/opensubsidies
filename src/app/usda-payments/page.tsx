@@ -1,3 +1,4 @@
+import ArticleSchema from '@/components/ArticleSchema'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import Link from 'next/link'
 import { fmt, fmtMoney } from '@/lib/utils'
@@ -23,6 +24,7 @@ export default function UsdaPaymentsPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-10">
       <Breadcrumbs items={[{ label: 'USDA Payments' }]} />
+      <ArticleSchema title="USDA Payments: Complete Database of Farm Service Agency Disbursements" description="Explore $147B+ in USDA Farm Service Agency payments. Search FSA disbursements by state, county, program, or recipient. Complete database from 2017-2025." slug="usda-payments" />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'FAQPage',

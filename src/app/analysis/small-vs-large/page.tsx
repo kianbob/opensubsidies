@@ -44,7 +44,7 @@ export default function SmallVsLarge() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
-      <ArticleSchema title="Small Farms vs. Large Operations: Who Really Benefits from Subsidies?" description="The average vs. median payment gap reveals how farm subsidies overwhelmingly benefit the largest operations." slug="small-vs-large" />
+      <ArticleSchema title="Small Farms vs. Large Operations: Who Really Benefits from Subsidies?" description="The average vs. median payment gap reveals how farm subsidies overwhelmingly benefit the largest operations." slug="analysis/small-vs-large" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'Small vs. Large Farms' }]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'Article',

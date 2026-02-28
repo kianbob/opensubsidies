@@ -25,7 +25,7 @@ export default function CorporateFarms() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
-      <ArticleSchema title="When Corporations Collect: The Biggest Non-Family Farm Subsidy Recipients" description="LLCs, partnerships, and corporations collecting millions in farm subsidies. Are payment limits working?" slug="corporate-farms" />
+      <ArticleSchema title="When Corporations Collect: The Biggest Non-Family Farm Subsidy Recipients" description="LLCs, partnerships, and corporations collecting millions in farm subsidies. Are payment limits working?" slug="analysis/corporate-farms" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'Corporate Farm Recipients' }]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'Article',

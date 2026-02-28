@@ -1,3 +1,4 @@
+import ArticleSchema from '@/components/ArticleSchema'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ShareButtons from '@/components/ShareButtons'
 import Link from 'next/link'
@@ -18,6 +19,7 @@ export default function DogeFarmSubsidiesPage() {
     <article className="max-w-4xl mx-auto px-4 py-10">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"How much does the US spend on farm subsidies?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"From 2017 to 2025, the USDA distributed $147.29 billion in farm subsidy payments across 157 programs and 31.8 million individual payments through the Farm Service Agency.\"}},{\"@type\":\"Question\",\"name\":\"What are zombie programs in farm subsidies?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Zombie programs are USDA subsidy programs that have fewer than 100 payments each but persist through bureaucratic inertia. At least 43 such programs exist, consuming administrative overhead while serving almost nobody.\"}},{\"@type\":\"Question\",\"name\":\"Could DOGE cut farm subsidies?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"The Department of Government Efficiency could target several areas: consolidating the 157 separate programs, eliminating zombie programs with minimal recipients, and reviewing the top recipients who collect from multiple programs simultaneously.\"}}]}" }} />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'DOGE and Farm Subsidies' }]} />
+      <ArticleSchema title="DOGE and Farm Subsidies: What Government Efficiency Means for USDA Payments" description="How would DOGE (Department of Government Efficiency) evaluate $147B in USDA farm subsidies? 157 programs, 46 zombie programs, and billions in emergency spending." slug="doge-farm-subsidies" />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'Article',

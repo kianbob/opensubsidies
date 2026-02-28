@@ -72,7 +72,7 @@ export default function AboutPage() {
             { icon: '🌾', title: `${fmt(stats.totalPrograms)} Programs`, desc: 'Crop subsidies, conservation, disaster relief, and loans' },
             { icon: '🗺️', title: `${fmt(stats.totalStates)} States & Territories`, desc: 'With detailed county-level breakdowns' },
             { icon: '🏘️', title: `${fmt(stats.totalCounties)} Counties`, desc: 'Individual subsidy totals for every county' },
-            { icon: '👤', title: 'Top 2,000 Recipients', desc: 'Names, locations, and payment amounts' },
+            { icon: '👤', title: 'Top 5,000 Recipients', desc: 'Names, locations, and payment amounts' },
             { icon: '📝', title: '22+ Analysis Articles', desc: 'Investigating concentration, geographic disparities, and policy questions' },
             { icon: '🏢', title: 'Entity Type Analysis', desc: 'How subsidies flow to individuals, corporations, and partnerships', href: '/entity-types' },
             { icon: '🧮', title: 'Taxpayer Cost Calculator', desc: 'See how much farm subsidies cost you personally ($109/year average)', href: '/tools/taxpayer-calculator' },

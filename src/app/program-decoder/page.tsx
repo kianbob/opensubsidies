@@ -55,7 +55,7 @@ const CATEGORIES: { name: string; icon: string; description: string; programs: {
     icon: '🐄',
     description: 'Programs specifically for dairy farmers, protecting against volatile milk prices and high feed costs.',
     programs: [
-      { acronym: 'DMC', fullName: 'Dairy Margin Coverage', searchKey: 'DAIRY MARGIN COVERAGE', what: 'Insurance-like program that pays dairy farmers when the margin between milk prices and feed costs falls below a chosen coverage level.', who: 'Dairy farmers nationwide, with premiums subsidized for the first 5 million pounds of milk (favoring smaller operations).' },
+      { acronym: 'DMC', fullName: 'Dairy Margin Coverage', searchKey: 'DMC PRGM', what: 'Insurance-like program that pays dairy farmers when the margin between milk prices and feed costs falls below a chosen coverage level.', who: 'Dairy farmers nationwide, with premiums subsidized for the first 5 million pounds of milk (favoring smaller operations).' },
     ],
   },
   {
@@ -63,7 +63,7 @@ const CATEGORIES: { name: string; icon: string; description: string; programs: {
     icon: '🐂',
     description: 'Programs for ranchers facing drought, disease, and other threats to livestock operations.',
     programs: [
-      { acronym: 'LFP', fullName: 'Livestock Forage Program', searchKey: 'LIVESTOCK FORAGE PROGRAM', what: 'Payments to ranchers in drought-affected counties who face increased feed costs because pasture conditions have deteriorated.', who: 'Cattle, sheep, and goat ranchers in counties experiencing drought (as measured by the U.S. Drought Monitor).' },
+      { acronym: 'LFP', fullName: 'Livestock Forage Program', searchKey: 'LIVESTOCK FORAGE', what: 'Payments to ranchers in drought-affected counties who face increased feed costs because pasture conditions have deteriorated.', who: 'Cattle, sheep, and goat ranchers in counties experiencing drought (as measured by the U.S. Drought Monitor).' },
       { acronym: 'ELAP', fullName: 'Emergency Assistance for Livestock, Honeybees and Farm-raised Fish', searchKey: 'EMERG ASSIST LIVESTOCK BEES FISH', what: 'Covers losses from disease, adverse weather, and feed/water shortages not covered by other programs.', who: 'Livestock producers, beekeepers, and aquaculture operations facing losses beyond what LFP covers.' },
     ],
   },

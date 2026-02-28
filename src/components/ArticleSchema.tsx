@@ -11,10 +11,10 @@ export default function ArticleSchema({ title, description, slug, date = 'Februa
     description,
     datePublished: '2026-02-01',
     dateModified: '2026-02-27',
-    url: `https://www.opensubsidies.org/analysis/${slug}`,
+    url: `https://www.opensubsidies.org/${slug}`,
     author: { '@type': 'Organization', name: 'OpenSubsidies', url: 'https://www.opensubsidies.org' },
     publisher: { '@type': 'Organization', name: 'OpenSubsidies', url: 'https://www.opensubsidies.org' },
-    mainEntityOfPage: { '@type': 'WebPage', '@id': `https://www.opensubsidies.org/analysis/${slug}` },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `https://www.opensubsidies.org/${slug}` },
   }
 
   return (

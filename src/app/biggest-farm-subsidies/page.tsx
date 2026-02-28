@@ -1,3 +1,4 @@
+import ArticleSchema from '@/components/ArticleSchema'
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ShareButtons from '@/components/ShareButtons'
@@ -82,6 +83,7 @@ export default function BiggestFarmSubsidiesPage() {
     <div className="max-w-4xl mx-auto px-4 py-10">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Breadcrumbs items={[{ label: 'Biggest Farm Subsidies' }]} />
+      <ArticleSchema title="Biggest Farm Subsidies: Largest Programs and Top Recipients" description="The biggest farm subsidy programs and largest recipients. CRP leads at $15.7B, followed by CFAP and Price Loss Coverage. See the top 15 programs and recipients." slug="biggest-farm-subsidies" />
 
       <h1 className="text-3xl md:text-4xl font-bold font-[family-name:var(--font-heading)] mb-2">
         Biggest Farm Subsidies: Programs &amp; Recipients

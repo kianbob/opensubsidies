@@ -22,7 +22,7 @@ export default function ConservationVsCommodity() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
-      <ArticleSchema title="Conservation vs. Commodity: Two Philosophies of Farm Spending" description="CRP pays farmers not to farm. Commodity programs pay them to produce. How do these two approaches compare in federal farm spending?" slug="conservation-vs-commodity" />
+      <ArticleSchema title="Conservation vs. Commodity: Two Philosophies of Farm Spending" description="CRP pays farmers not to farm. Commodity programs pay them to produce. How do these two approaches compare in federal farm spending?" slug="analysis/conservation-vs-commodity" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'Conservation vs. Commodity' }]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'Article',

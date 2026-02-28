@@ -23,7 +23,7 @@ export default function ZombieProgramsPage() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
-      <ArticleSchema title="Zombie Programs: The USDA Programs Nobody Uses" description="43 USDA farm programs have fewer than 100 payments each. These " slug="zombie-programs" />
+      <ArticleSchema title="Zombie Programs: The USDA Programs Nobody Uses" description="43 USDA farm programs have fewer than 100 payments each. These " slug="analysis/zombie-programs" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'Zombie Programs' }]} />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

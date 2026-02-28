@@ -1,3 +1,4 @@
+import ArticleSchema from '@/components/ArticleSchema'
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ShareButtons from '@/components/ShareButtons'
@@ -69,6 +70,7 @@ export default function HowMuchFarmSubsidiesPage() {
     <div className="max-w-4xl mx-auto px-4 py-10">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Breadcrumbs items={[{ label: 'How Much Are Farm Subsidies' }]} />
+      <ArticleSchema title="How Much Does the US Spend on Farm Subsidies? $147B and Counting" description="The US spent $147B on farm subsidies from 2017-2025, averaging ~$16B/year and peaking at $38.7B in 2020. Year-by-year breakdown with per-taxpayer cost." slug="how-much-farm-subsidies" />
 
       <h1 className="text-3xl md:text-4xl font-bold font-[family-name:var(--font-heading)] mb-2">
         How Much Does the US Spend on Farm Subsidies?

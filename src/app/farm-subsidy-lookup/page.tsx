@@ -1,3 +1,4 @@
+import ArticleSchema from '@/components/ArticleSchema'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import Link from 'next/link'
 import { fmt, fmtMoney } from '@/lib/utils'
@@ -23,6 +24,7 @@ export default function FarmSubsidyLookupPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-10">
       <Breadcrumbs items={[{ label: 'Farm Subsidy Lookup' }]} />
+      <ArticleSchema title="Farm Subsidy Lookup: Search Recipients by Name, State, or County" description="Look up farm subsidies by recipient name, state, county, or program. Search our database of $147B+ in USDA farm payments across 157 programs." slug="farm-subsidy-lookup" />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'FAQPage',

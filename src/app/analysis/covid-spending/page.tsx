@@ -22,7 +22,7 @@ export default function CovidSpending() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
-      <ArticleSchema title="COVID Changed Farm Subsidies Forever: The $38.7 Billion Story" description="In 2020, COVID-19 triggered $38.7B in farm subsidies — more than double the previous peak. CFAP, pandemic payments, and how emergency spending reshaped agricult" slug="covid-spending" />
+      <ArticleSchema title="COVID Changed Farm Subsidies Forever: The $38.7 Billion Story" description="In 2020, COVID-19 triggered $38.7B in farm subsidies — more than double the previous peak. CFAP, pandemic payments, and how emergency spending reshaped agricult" slug="analysis/covid-spending" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'COVID Spending' }]} />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

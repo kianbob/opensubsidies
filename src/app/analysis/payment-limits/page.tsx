@@ -24,7 +24,7 @@ export default function PaymentLimits() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
-      <ArticleSchema title="Are Farm Subsidy Payment Limits Working?" description="Top recipients receive far more than the $125K/yr cap through LLCs and partnerships." slug="payment-limits" />
+      <ArticleSchema title="Are Farm Subsidy Payment Limits Working?" description="Top recipients receive far more than the $125K/yr cap through LLCs and partnerships." slug="analysis/payment-limits" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'Payment Limits' }]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'Article',

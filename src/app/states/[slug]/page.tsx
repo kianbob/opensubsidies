@@ -100,7 +100,7 @@ export default async function StateDetailPage({ params }: { params: Promise<{ sl
           </div>
         </div>
         <div className="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-100">
-          {isTop20 && <Link href="/analysis/state-dependency" className="text-sm text-[#15803d] hover:underline">📊 State Dependency Rankings →</Link>}
+          {isTop20 && <Link href="/state-dependency" className="text-sm text-[#15803d] hover:underline">📊 State Dependency Rankings →</Link>}
           <Link href="/analysis/per-capita" className="text-sm text-[#15803d] hover:underline">💰 Per Capita Analysis →</Link>
           <Link href="/analysis/state-disparities" className="text-sm text-[#15803d] hover:underline">📈 State Disparities →</Link>
         </div>

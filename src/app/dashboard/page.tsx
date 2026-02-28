@@ -86,7 +86,7 @@ export default function DashboardPage() {
         </p>
         <p>
           See how subsidies break down by <a href="/entity-types" className="text-primary hover:underline">entity type</a> (individuals
-          vs. corporations vs. partnerships), or explore the <a href="/analysis/payment-distribution" className="text-primary hover:underline">payment
+          vs. corporations vs. partnerships), or explore the <a href="/payment-distribution" className="text-primary hover:underline">payment
           distribution analysis</a> to understand how concentrated farm subsidy payments really are.
         </p>
       </section>

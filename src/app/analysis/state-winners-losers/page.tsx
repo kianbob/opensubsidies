@@ -46,7 +46,7 @@ export default function StateWinnersLosersPage() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
-      <ArticleSchema title="State Winners & Losers: Who Gained Most from Emergency Spending?" description="Which states saw the biggest surge from emergency farm programs? Comparing 2017 baseline to 2020 peak ratios reveals clear winners and losers." slug="state-winners-losers" />
+      <ArticleSchema title="State Winners & Losers: Who Gained Most from Emergency Spending?" description="Which states saw the biggest surge from emergency farm programs? Comparing 2017 baseline to 2020 peak ratios reveals clear winners and losers." slug="analysis/state-winners-losers" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'State Winners & Losers' }]} />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

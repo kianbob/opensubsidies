@@ -29,7 +29,7 @@ export default function ProgramProliferationPage() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
-      <ArticleSchema title="157 Programs and Counting: The Complexity of Farm Subsidies" description="Why does the USDA have 157 different farm subsidy programs? An analysis of program proliferation, overlap, and the gap between largest and smallest." slug="program-proliferation" />
+      <ArticleSchema title="157 Programs and Counting: The Complexity of Farm Subsidies" description="Why does the USDA have 157 different farm subsidy programs? An analysis of program proliferation, overlap, and the gap between largest and smallest." slug="analysis/program-proliferation" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'Program Proliferation' }]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'Article',

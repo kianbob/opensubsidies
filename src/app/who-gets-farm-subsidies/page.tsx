@@ -1,3 +1,4 @@
+import ArticleSchema from '@/components/ArticleSchema'
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ShareButtons from '@/components/ShareButtons'
@@ -79,6 +80,7 @@ export default function WhoGetsFarmSubsidiesPage() {
     <div className="max-w-4xl mx-auto px-4 py-10">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Breadcrumbs items={[{ label: 'Who Gets Farm Subsidies' }]} />
+      <ArticleSchema title="Who Gets Farm Subsidies? The Complete Breakdown by Recipient Type" description="Find out who gets farm subsidies in the U.S. Individual farmers receive 79% of payments, but corporations and LLCs collect the largest checks. Explore $147B in USDA data." slug="who-gets-farm-subsidies" />
 
       <h1 className="text-3xl md:text-4xl font-bold font-[family-name:var(--font-heading)] mb-2">
         Who Gets Farm Subsidies?

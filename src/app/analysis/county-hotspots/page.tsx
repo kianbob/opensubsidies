@@ -28,7 +28,7 @@ export default function CountyHotspots() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
-      <ArticleSchema title="County Hotspots: Where Farm Subsidies Concentrate" description="Some individual counties receive more in farm subsidies than entire states. A look at the top 20 county hotspots." slug="county-hotspots" />
+      <ArticleSchema title="County Hotspots: Where Farm Subsidies Concentrate" description="Some individual counties receive more in farm subsidies than entire states. A look at the top 20 county hotspots." slug="analysis/county-hotspots" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'County Hotspots' }]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'Article',

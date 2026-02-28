@@ -20,6 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${year} Farm Subsidies — Spending, Payments & Top States`,
     description: `Explore USDA farm subsidy spending in ${year}. Total payments, top states, and how ${year} compares to other years.`,
+    alternates: { canonical: `https://www.opensubsidies.org/years/${year}` },
   }
 }
 

@@ -17,7 +17,7 @@ const datasets = [
   { name: 'program-yearly.json', desc: 'Top 50 programs with yearly spending trends', size: '18 KB' },
   { name: 'yearly.json', desc: 'Yearly payment totals (program years 2000-2025)', size: '2 KB' },
   { name: 'state-yearly.json', desc: 'State-by-year payment totals for trend analysis', size: '82 KB' },
-  { name: 'top-recipients.json', desc: 'Top 2,000 subsidy recipients with amounts and programs', size: '771 KB' },
+  { name: 'top-recipients.json', desc: 'Top 5,000 subsidy recipients with amounts and programs', size: '771 KB' },
 ]
 
 export default function DownloadsPage() {

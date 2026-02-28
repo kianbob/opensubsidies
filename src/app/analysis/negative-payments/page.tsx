@@ -26,7 +26,7 @@ export default function NegativePaymentsPage() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
-      <ArticleSchema title="Clawbacks and Corrections: When the USDA Takes Money Back" description="Not all farm subsidy payments are positive. Explore the programs and recipients where the USDA clawed back or corrected overpayments." slug="negative-payments" />
+      <ArticleSchema title="Clawbacks and Corrections: When the USDA Takes Money Back" description="Not all farm subsidy payments are positive. Explore the programs and recipients where the USDA clawed back or corrected overpayments." slug="analysis/negative-payments" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'Negative Payments' }]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'Article',

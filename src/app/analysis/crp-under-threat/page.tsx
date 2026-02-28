@@ -33,7 +33,7 @@ export default function CrpUnderThreatPage() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
-      <ArticleSchema title="CRP Under Threat: Is Conservation Keeping Up with Emergency Spending?" description="The Conservation Reserve Program at $15.7B is the largest traditional program. But emergency spending now dwarfs it. What are the policy implications?" slug="crp-under-threat" />
+      <ArticleSchema title="CRP Under Threat: Is Conservation Keeping Up with Emergency Spending?" description="The Conservation Reserve Program at $15.7B is the largest traditional program. But emergency spending now dwarfs it. What are the policy implications?" slug="analysis/crp-under-threat" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'CRP Under Threat' }]} />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

@@ -1,3 +1,4 @@
+import ArticleSchema from '@/components/ArticleSchema'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ShareButtons from '@/components/ShareButtons'
 import Link from 'next/link'
@@ -17,6 +18,7 @@ export default function FarmSubsidyReformPage() {
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'Farm Subsidy Reform' }]} />
+      <ArticleSchema title="Farm Subsidy Reform: What the Data Shows About Fixing American Agriculture" description="Data-driven analysis of farm subsidy reform: payment concentration, emergency spending growth, zombie programs, and 5 reform ideas backed by $147B in USDA data." slug="farm-subsidy-reform" />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'Article',

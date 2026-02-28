@@ -23,7 +23,7 @@ export default function SubsidyConcentration() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
-      <ArticleSchema title="The 10% Problem: How Most Farm Subsidies Go to the Biggest Operations" description="69% of American farms receive zero federal subsidy payments. The top 10% of recipients collect nearly three-fourths of all farm subsidies. Here\" slug="subsidy-concentration" />
+      <ArticleSchema title="The 10% Problem: How Most Farm Subsidies Go to the Biggest Operations" description="69% of American farms receive zero federal subsidy payments. The top 10% of recipients collect nearly three-fourths of all farm subsidies. Here\" slug="analysis/subsidy-concentration" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'Subsidy Concentration' }]} />
       
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

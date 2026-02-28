@@ -21,7 +21,7 @@ export default function DoubleDippersPage() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
-      <ArticleSchema title="Double Dippers: Recipients Collecting from Multiple Programs" description="Over 620,000 farm subsidy recipients collect from 3+ USDA programs simultaneously. Top recipients tap into 14 programs at once, raising questions about payment " slug="double-dippers" />
+      <ArticleSchema title="Double Dippers: Recipients Collecting from Multiple Programs" description="Over 620,000 farm subsidy recipients collect from 3+ USDA programs simultaneously. Top recipients tap into 14 programs at once, raising questions about payment " slug="analysis/double-dippers" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'Double Dippers' }]} />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

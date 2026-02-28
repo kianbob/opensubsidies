@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Farm Subsidy Recipient Lookup — Search by Name',
-  description: 'Look up farm subsidies by name. Search over 2,000 top USDA payment recipients to see total amounts, payment counts, programs, and locations.',
+  description: 'Look up farm subsidies by name. Search over 5,000 top USDA payment recipients to see total amounts, payment counts, programs, and locations.',
   alternates: { canonical: 'https://www.opensubsidies.org/tools/recipient-search' },
 }
 
@@ -18,7 +18,7 @@ const faqSchema = {
       name: 'Can I search for farm subsidy recipients?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. Our recipient search tool lets you look up any of the top 2,000 farm subsidy recipients by name, farm name, or city. All data comes from public USDA Farm Service Agency records covering 2017–2025.',
+        text: 'Yes. Our recipient search tool lets you look up any of the top 5,000 farm subsidy recipients by name, farm name, or city. All data comes from public USDA Farm Service Agency records covering 2017–2025.',
       },
     },
     {
@@ -53,7 +53,7 @@ export default function RecipientSearchPage() {
         Farm Subsidy Recipient Lookup
       </h1>
       <p className="text-gray-600 mb-6">
-        Look up farm subsidies by name. Search across the top 2,000 USDA payment recipients to find total amounts, payment counts, and program details.
+        Look up farm subsidies by name. Search across the top 5,000 USDA payment recipients to find total amounts, payment counts, and program details.
       </p>
       <ShareButtons title="Farm Subsidy Recipient Lookup" />
 
@@ -64,7 +64,7 @@ export default function RecipientSearchPage() {
           How to Look Up Farm Subsidies by Name
         </h2>
         <p>
-          This recipient search tool lets you look up any of the top 2,000 farm subsidy recipients in the
+          This recipient search tool lets you look up any of the top 5,000 farm subsidy recipients in the
           United States. Simply type a name, farm name, or city into the search box above to find matching
           results. Each result shows the recipient&apos;s location, total subsidy amount received between
           2017 and 2025, the number of individual payments, and how many USDA programs they participated in.

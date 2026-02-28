@@ -23,7 +23,7 @@ export default function CRPConservation() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
-      <ArticleSchema title="The Conservation Reserve Program: Paying Farmers Not to Farm" description="A deep dive into the $5.36B CRP program — how it works, why it\" slug="crp-conservation" />
+      <ArticleSchema title="The Conservation Reserve Program: Paying Farmers Not to Farm" description="A deep dive into the $5.36B CRP program — how it works, why it\" slug="analysis/crp-conservation" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'CRP Conservation' }]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'Article',

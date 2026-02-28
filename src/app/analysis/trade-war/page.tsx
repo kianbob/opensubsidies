@@ -21,7 +21,7 @@ export default function TradeWar() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
-      <ArticleSchema title="Trade War Fallout: $39 Billion in Tariff Bailout Payments (2018-2019)" description="The US-China trade war triggered $39B in farm subsidy payments through the Market Facilitation Program. How tariffs reshaped agricultural spending." slug="trade-war" />
+      <ArticleSchema title="Trade War Fallout: $39 Billion in Tariff Bailout Payments (2018-2019)" description="The US-China trade war triggered $39B in farm subsidy payments through the Market Facilitation Program. How tariffs reshaped agricultural spending." slug="analysis/trade-war" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'Trade War Impact' }]} />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

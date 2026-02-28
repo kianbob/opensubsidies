@@ -24,7 +24,7 @@ export default function DisasterSpending() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
-      <ArticleSchema title="The Disaster Money Machine: $20 Billion in Emergency Farm Payments" description="Emergency and disaster programs now dwarf traditional farm subsidies. ECAP, CFAP, and livestock relief programs paid out over $20 billion in 2017-2025." slug="disaster-spending" />
+      <ArticleSchema title="The Disaster Money Machine: $20 Billion in Emergency Farm Payments" description="Emergency and disaster programs now dwarf traditional farm subsidies. ECAP, CFAP, and livestock relief programs paid out over $20 billion in 2017-2025." slug="analysis/disaster-spending" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'Disaster Spending' }]} />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

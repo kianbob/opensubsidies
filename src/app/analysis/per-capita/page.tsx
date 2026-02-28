@@ -41,7 +41,7 @@ export default function PerCapitaPage() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-10">
-      <ArticleSchema title="Farm Subsidies Per Capita: Which States Get the Most Per Person?" description="North Dakota receives over $6,000 per person in farm subsidies while California gets under $100." slug="per-capita" />
+      <ArticleSchema title="Farm Subsidies Per Capita: Which States Get the Most Per Person?" description="North Dakota receives over $6,000 per person in farm subsidies while California gets under $100." slug="analysis/per-capita" />
       <Breadcrumbs items={[{ label: 'Analysis', href: '/analysis' }, { label: 'Per Capita Analysis' }]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'Article',
