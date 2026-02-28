@@ -164,6 +164,22 @@ const articles = [
     category: 'Investigation',
   },
   {
+    slug: 'surprising-recipients',
+    path: '/surprising-recipients',
+    title: 'The 10 Most Surprising Farm Subsidy Recipients',
+    desc: 'State disaster agencies, DC trade groups, sugar cooperatives, and a fish company — the recipients you\'d never expect to find.',
+    date: 'February 2026',
+    category: 'Investigation',
+  },
+  {
+    slug: 'covid-impact',
+    path: '/covid-impact',
+    title: 'Before & After COVID: How the Pandemic Changed Farm Subsidies',
+    desc: 'Farm subsidies jumped 63% in 2020. Compare every metric before and after COVID reshaped USDA spending.',
+    date: 'February 2026',
+    category: 'Spending',
+  },
+  {
     slug: 'doge-farm-subsidies',
     path: '/doge-farm-subsidies',
     title: 'DOGE and Farm Subsidies: What Government Efficiency Means for USDA Payments',

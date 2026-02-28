@@ -253,9 +253,9 @@ export default function HomePage() {
         <h2 className="text-2xl font-bold font-[family-name:var(--font-heading)] mb-6 text-center">New Research</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {[
-            { title: 'Double Dippers', desc: '93% of top recipients collect from multiple programs', href: '/analysis/double-dippers', date: 'Feb 2026' },
-            { title: 'Farm Crisis 2025', desc: 'Bankruptcies up 46% while subsidies flow to the top', href: '/analysis/farm-crisis-2025', date: 'Feb 2026' },
-            { title: 'What $147B Buys', desc: 'What farm subsidies could fund instead', href: '/analysis/what-147b-buys', date: 'Feb 2026' },
+            { title: '🔍 Investigation: FL Emergency Management Is #1 Recipient', desc: '$346.6M across just 6 payments — how a state disaster agency tops every farmer in America', href: '/analysis/emergency-management', date: 'Feb 2026' },
+            { title: 'Most Surprising Recipients', desc: 'DC trade groups, sugar cooperatives, and a fish company collecting millions', href: '/surprising-recipients', date: 'Feb 2026' },
+            { title: 'Before & After COVID', desc: 'How the pandemic changed every farm subsidy metric — and what never went back', href: '/covid-impact', date: 'Feb 2026' },
             { title: 'Zombie Programs', desc: '46 USDA programs nobody uses', href: '/analysis/zombie-programs', date: 'Feb 2026' },
           ].map(item => (
             <Link key={item.href} href={item.href} className="bg-white rounded-xl shadow-sm p-5 border-l-4 border-primary hover:shadow-md transition-shadow">

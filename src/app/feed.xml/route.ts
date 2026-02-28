@@ -24,6 +24,8 @@ const articles = [
   { slug: 'farm-crisis-2025', title: 'The 2025 Farm Crisis: Bankruptcies Up 46%', desc: '315 farm bankruptcies in 2025 while subsidies flow to the largest operations.' },
   { slug: 'zombie-programs', title: 'Zombie Programs: USDA Programs Nobody Uses', desc: '43 programs with fewer than 100 payments each persist through bureaucratic inertia.' },
   { slug: 'emergency-management', title: 'Why Florida Emergency Management Is the #1 Farm Subsidy Recipient', desc: '$346.6M across just 6 payments — how a state disaster agency became the biggest recipient in the system.' },
+  { slug: '../surprising-recipients', title: 'The 10 Most Surprising Farm Subsidy Recipients', desc: 'State disaster agencies, DC trade groups, sugar cooperatives, and a fish company — the recipients you\'d never expect.' },
+  { slug: '../covid-impact', title: 'Before & After COVID: How the Pandemic Changed Farm Subsidies', desc: 'Farm subsidies jumped 63% in 2020. Compare every metric before and after COVID reshaped USDA spending.' },
   { slug: 'what-147b-buys', title: 'What $147 Billion in Farm Subsidies Could Buy Instead', desc: '$147B could fund 2.2M teachers, 5.8M Pell Grants, or 6 years of NASA.' },
 ]
 
