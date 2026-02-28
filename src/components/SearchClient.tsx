@@ -78,7 +78,7 @@ export default function SearchClient({ states, counties, programs, recipients }:
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
                 { label: 'States', count: '59', href: '/states', icon: '🗺️' },
-                { label: 'Counties', count: '28,875', href: '/counties', icon: '🏘️' },
+                { label: 'Counties', count: '3,087', href: '/counties', icon: '🏘️' },
                 { label: 'Programs', count: '157', href: '/programs', icon: '🌾' },
                 { label: 'Recipients', count: '5,000', href: '/recipients', icon: '👤' },
               ].map((cat) => (

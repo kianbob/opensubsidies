@@ -101,17 +101,21 @@ export default async function YearPage({ params }: Props) {
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-100">
-              {statesThisYear.map((s, i) => (
-                <tr key={s.state} className="hover:bg-gray-50">
+              {(yearDetail?.states || statesThisYear).slice(0, 20).map((s: { abbr?: string; state?: string; name?: string; amount: number; payments: number }, i: number) => {
+                const abbr = s.abbr || s.state || ''
+                const displayName = s.name || abbr
+                return (
+                <tr key={abbr} className="hover:bg-gray-50">
                   <td className="px-4 py-2 text-gray-500">{i + 1}</td>
                   <td className="px-4 py-2">
-                    <Link href={`/states/${s.state.toLowerCase()}`} className="font-medium text-primary hover:underline">{s.state}</Link>
+                    <Link href={`/states/${abbr.toLowerCase()}`} className="font-medium text-primary hover:underline">{displayName}</Link>
                   </td>
                   <td className="px-4 py-2 text-right font-mono">{fmtMoney(s.amount)}</td>
                   <td className="px-4 py-2 text-right text-gray-600 hidden md:table-cell">{fmt(s.payments)}</td>
                   <td className="px-4 py-2 text-right text-gray-600 hidden md:table-cell">{((s.amount / thisYear.amount) * 100).toFixed(1)}%</td>
                 </tr>
-              ))}
+                )
+              })}
             </tbody>
           </table>
         </div>

@@ -105,7 +105,7 @@ export default async function RecipientDetailPage({ params }: { params: Promise<
         </div>
         <div className="bg-green-50 rounded-xl p-4">
           <p className="text-sm text-gray-500">Active Years</p>
-          <p className="text-xl font-bold text-green-800">{activeYears} of 9</p>
+          <p className="text-xl font-bold text-green-800">{activeYears > 0 ? `${activeYears} of 9` : 'N/A'}</p>
         </div>
         <div className="bg-green-50 rounded-xl p-4">
           <p className="text-sm text-gray-500">Avg Payment</p>

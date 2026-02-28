@@ -2,7 +2,10 @@
 
 const PROGRAM_NAMES: Record<string, string> = {
   'CFAPCCA2': 'CFAP Round 2',
+  'CFAPCCCCA': 'CFAP CCC Payments (A)',
   'CFAPCARES': 'CFAP CARES Act',
+  'CFAP3 - TUP': 'CFAP3 Top-Up Payments',
+  'SUPP DISASTER RELIEF NON-SPEC CROPS 1': 'Supp Disaster Relief (Non-Specialty Crops)',
   'TMP/MFP 2019 NON SPECIALTY CROPS': 'Market Facilitation Program 2019',
   'EMGNCY RELIEF PRGM-NONSPECIALITY CROPS': 'Emergency Relief Program',
   'AGRICULTURAL RISK COVERAGE PROG - COUNTY': 'Agriculture Risk Coverage (County)',

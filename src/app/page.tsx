@@ -283,7 +283,7 @@ export default function HomePage() {
             <div className="space-y-1.5">
               {[
                 { label: 'States', href: '/states', sub: '59 states & territories' },
-                { label: 'Counties', href: '/counties', sub: '28,875 counties' },
+                { label: 'Counties', href: '/counties', sub: '3,087 counties' },
                 { label: 'Programs', href: '/programs', sub: '157 USDA programs' },
                 { label: 'Top Recipients', href: '/recipients', sub: '5,000 largest' },
                 { label: 'Dashboard', href: '/dashboard', sub: 'Interactive overview' },
