@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ShareButtons from '@/components/ShareButtons'
+import ArticleSchema from '@/components/ArticleSchema'
 import { fmtMoney, slugify, titleCase } from '@/lib/utils'
 
 export const metadata: Metadata = {
@@ -126,6 +127,7 @@ const recipients = [
 export default function SurprisingRecipientsPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-10">
+      <ArticleSchema slug="surprising-recipients" title="The 10 Most Surprising Farm Subsidy Recipients in America" description="State emergency agencies, DC trade groups, and sugar cooperatives collecting hundreds of millions." />
       <Breadcrumbs items={[{ label: 'Surprising Recipients' }]} />
 
       <h1 className="text-3xl md:text-4xl font-bold font-[family-name:var(--font-heading)] mb-4">

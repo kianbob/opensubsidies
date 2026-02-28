@@ -7,8 +7,8 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import CountiesClient from '@/components/CountiesClient'
 
 export const metadata: Metadata = {
-  title: 'Farm Subsidies by County — 28,875 U.S. Counties Ranked',
-  description: 'Search and explore farm subsidy payments across 28,875 U.S. counties. See which counties receive the most USDA farm subsidies.',
+  title: 'Farm Subsidies by County — Top 3,087 U.S. Counties Ranked',
+  description: 'Search and explore farm subsidy payments across thousands of U.S. counties. See which counties receive the most USDA farm subsidies.',
   alternates: { canonical: 'https://www.opensubsidies.org/counties' },
 }
 

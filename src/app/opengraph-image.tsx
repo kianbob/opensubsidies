@@ -18,7 +18,7 @@ export default function Image() {
           <span>·</span>
           <span>50 States</span>
           <span>·</span>
-          <span>28,875 Counties</span>
+          <span>59 States & Territories</span>
         </div>
         <div style={{ fontSize: 18, opacity: 0.6, marginTop: 32 }}>TheDataProject.ai</div>
       </div>

@@ -26,6 +26,8 @@ const allArticles = [
   { slug: '../doge-farm-subsidies', title: 'DOGE and Farm Subsidies', category: 'Policy' },
   { slug: '../farm-subsidy-reform', title: 'Farm Subsidy Reform', category: 'Policy' },
   { slug: 'emergency-management', title: 'Why FL Emergency Management Is #1 Recipient', category: 'Accountability' },
+  { slug: '../surprising-recipients', title: 'Most Surprising Farm Subsidy Recipients', category: 'Accountability' },
+  { slug: '../covid-impact', title: 'Before & After COVID: Farm Subsidies Changed', category: 'Spending' },
 ]
 
 export default function RelatedArticles({ currentSlug }: { currentSlug: string }) {

@@ -23,12 +23,12 @@ const navItems = [
     label: 'Analysis',
     items: [
       { label: 'All Analysis', href: '/analysis' },
+      { label: 'Surprising Recipients', href: '/surprising-recipients' },
+      { label: 'Before & After COVID', href: '/covid-impact' },
       { label: 'COVID Spending', href: '/analysis/covid-spending' },
-      { label: 'Trade War', href: '/analysis/trade-war' },
       { label: 'Subsidy Concentration', href: '/analysis/subsidy-concentration' },
       { label: 'Disaster Spending', href: '/analysis/disaster-spending' },
       { label: 'Farm Subsidy Facts', href: '/facts' },
-      { label: 'Subsidies Explained', href: '/farm-subsidies-explained' },
     ],
   },
   {

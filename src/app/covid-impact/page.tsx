@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ShareButtons from '@/components/ShareButtons'
+import ArticleSchema from '@/components/ArticleSchema'
 import { fmtMoney, fmt } from '@/lib/utils'
 import { loadData } from '@/lib/server-utils'
 import CovidCharts from './CovidCharts'
@@ -37,6 +38,7 @@ export default function CovidImpactPage() {
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-10">
+      <ArticleSchema slug="covid-impact" title="Before & After COVID: How the Pandemic Changed Farm Subsidies Forever" description="Farm subsidies jumped 63% in 2020. Compare every metric before and after." />
       <Breadcrumbs items={[{ label: 'COVID Impact' }]} />
 
       <h1 className="text-3xl md:text-4xl font-bold font-[family-name:var(--font-heading)] mb-4">

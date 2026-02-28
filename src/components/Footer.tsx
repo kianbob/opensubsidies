@@ -25,7 +25,8 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-3 text-sm uppercase tracking-wider">Analysis</h3>
             <ul className="space-y-2 text-sm">
               <li><Link href="/analysis" className="hover:text-white transition-colors">All Analysis</Link></li>
-              <li><Link href="/analysis/covid-spending" className="hover:text-white transition-colors">COVID Spending</Link></li>
+              <li><Link href="/surprising-recipients" className="hover:text-white transition-colors">Surprising Recipients</Link></li>
+              <li><Link href="/covid-impact" className="hover:text-white transition-colors">Before & After COVID</Link></li>
               <li><Link href="/analysis/trade-war" className="hover:text-white transition-colors">Trade War Impact</Link></li>
               <li><Link href="/analysis/subsidy-concentration" className="hover:text-white transition-colors">Subsidy Concentration</Link></li>
               <li><Link href="/analysis/disaster-spending" className="hover:text-white transition-colors">Disaster Spending</Link></li>
