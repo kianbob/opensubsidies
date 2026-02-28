@@ -23,6 +23,7 @@ const articles = [
   { slug: 'double-dippers', title: 'Double Dippers: Recipients Collecting from Multiple Programs', desc: 'Over 620,000 recipients collect from 3+ USDA programs. Top recipients tap 14 programs at once.' },
   { slug: 'farm-crisis-2025', title: 'The 2025 Farm Crisis: Bankruptcies Up 46%', desc: '315 farm bankruptcies in 2025 while subsidies flow to the largest operations.' },
   { slug: 'zombie-programs', title: 'Zombie Programs: USDA Programs Nobody Uses', desc: '43 programs with fewer than 100 payments each persist through bureaucratic inertia.' },
+  { slug: 'emergency-management', title: 'Why Florida Emergency Management Is the #1 Farm Subsidy Recipient', desc: '$346.6M across just 6 payments — how a state disaster agency became the biggest recipient in the system.' },
   { slug: 'what-147b-buys', title: 'What $147 Billion in Farm Subsidies Could Buy Instead', desc: '$147B could fund 2.2M teachers, 5.8M Pell Grants, or 6 years of NASA.' },
 ]
 

@@ -55,7 +55,7 @@ export default function HomePage() {
             { label: 'Total Subsidies', value: fmtMoney(stats.totalAmount), href: '/dashboard' },
             { label: 'Payment Records', value: fmt(stats.totalPayments), href: '/dashboard' },
             { label: 'Programs', value: fmt(stats.totalPrograms), href: '/programs' },
-            { label: 'Counties', value: fmt(stats.totalCounties), href: '/counties' },
+            { label: 'States & Territories', value: '59', href: '/states' },
           ].map(s => (
             <Link key={s.label} href={s.href} className="bg-white rounded-xl shadow-md p-5 text-center hover:shadow-lg transition-shadow">
               <div className="text-2xl md:text-3xl font-bold text-primary">{s.value}</div>
@@ -65,8 +65,12 @@ export default function HomePage() {
         </div>
       </section>
 
+      <div className="max-w-7xl mx-auto px-4 mt-3 text-center">
+        <Link href="/methodology" className="text-xs text-gray-400 hover:text-primary transition-colors">How we calculated this →</Link>
+      </div>
+
       {/* Spending Timeline */}
-      <section className="max-w-7xl mx-auto px-4 pt-12">
+      <section className="max-w-7xl mx-auto px-4 pt-8">
         <SpendingTimeline yearly={yearly} />
       </section>
 
@@ -88,6 +92,30 @@ export default function HomePage() {
               <div className="text-sm text-gray-600 mt-1">zombie programs still exist at USDA</div>
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* The Subsidy Gap */}
+      <section className="max-w-5xl mx-auto px-4 pt-10">
+        <div className="bg-gradient-to-r from-red-50 to-amber-50 rounded-2xl p-8 border border-red-100">
+          <h2 className="text-2xl font-bold font-[family-name:var(--font-heading)] mb-4 text-center">The Subsidy Gap</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div>
+              <div className="text-3xl font-bold text-red-700">{fmtMoney(recipients[0]?.amount)}</div>
+              <div className="text-sm text-gray-600 mt-1">Top recipient collected<br /><span className="font-medium">{titleCase(recipients[0]?.name || '')}</span></div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-amber-700">{fmtMoney(stats.totalAmount / stats.totalPayments)}</div>
+              <div className="text-sm text-gray-600 mt-1">Average payment<br />across all {fmt(stats.totalPayments)} payments</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-gray-700">69%</div>
+              <div className="text-sm text-gray-600 mt-1">of U.S. farms receive<br /><span className="font-medium">zero subsidy payments</span></div>
+            </div>
+          </div>
+          <p className="text-center text-sm text-gray-500 mt-4">
+            <Link href="/analysis/subsidy-concentration" className="text-primary hover:underline">Read our analysis →</Link>
+          </p>
         </div>
       </section>
 
@@ -220,42 +248,21 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* The Disparity */}
-      <section className="max-w-5xl mx-auto px-4 py-12">
-        <div className="bg-gradient-to-r from-red-50 to-amber-50 rounded-2xl p-8 border border-red-100">
-          <h2 className="text-2xl font-bold font-[family-name:var(--font-heading)] mb-4 text-center">The Subsidy Gap</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-            <div>
-              <div className="text-3xl font-bold text-red-700">{fmtMoney(recipients[0]?.amount)}</div>
-              <div className="text-sm text-gray-600 mt-1">Top recipient collected<br /><span className="font-medium">{titleCase(recipients[0]?.name || '')}</span></div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-amber-700">{fmtMoney(stats.totalAmount / stats.totalPayments)}</div>
-              <div className="text-sm text-gray-600 mt-1">Average payment<br />across all {fmt(stats.totalPayments)} payments</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-gray-700">69%</div>
-              <div className="text-sm text-gray-600 mt-1">of U.S. farms receive<br /><span className="font-medium">zero subsidy payments</span></div>
-            </div>
-          </div>
-          <p className="text-center text-sm text-gray-500 mt-4">
-            <Link href="/analysis/subsidy-concentration" className="text-primary hover:underline">Read our analysis →</Link>
-          </p>
-        </div>
-      </section>
-
       {/* New Research */}
       <section className="max-w-7xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold font-[family-name:var(--font-heading)] mb-6 text-center">New Research</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {[
-            { title: 'Double Dippers', desc: '93% of top recipients collect from multiple programs', href: '/analysis/double-dippers' },
-            { title: 'Farm Crisis 2025', desc: 'Bankruptcies up 46% while subsidies flow to the top', href: '/analysis/farm-crisis-2025' },
-            { title: 'What $147B Buys', desc: 'What farm subsidies could fund instead', href: '/analysis/what-147b-buys' },
-            { title: 'Zombie Programs', desc: '46 USDA programs nobody uses', href: '/analysis/zombie-programs' },
+            { title: 'Double Dippers', desc: '93% of top recipients collect from multiple programs', href: '/analysis/double-dippers', date: 'Feb 2026' },
+            { title: 'Farm Crisis 2025', desc: 'Bankruptcies up 46% while subsidies flow to the top', href: '/analysis/farm-crisis-2025', date: 'Feb 2026' },
+            { title: 'What $147B Buys', desc: 'What farm subsidies could fund instead', href: '/analysis/what-147b-buys', date: 'Feb 2026' },
+            { title: 'Zombie Programs', desc: '46 USDA programs nobody uses', href: '/analysis/zombie-programs', date: 'Feb 2026' },
           ].map(item => (
             <Link key={item.href} href={item.href} className="bg-white rounded-xl shadow-sm p-5 border-l-4 border-primary hover:shadow-md transition-shadow">
-              <h3 className="font-semibold text-gray-900">{item.title}</h3>
+              <div className="flex items-center justify-between">
+                <h3 className="font-semibold text-gray-900">{item.title}</h3>
+                <span className="text-xs text-gray-400">{item.date}</span>
+              </div>
               <p className="text-sm text-gray-600 mt-1">{item.desc}</p>
               <span className="text-sm text-primary font-medium mt-2 inline-block">Read →</span>
             </Link>

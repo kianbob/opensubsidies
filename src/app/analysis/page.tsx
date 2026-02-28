@@ -157,6 +157,13 @@ const articles = [
     category: 'Accountability',
   },
   {
+    slug: 'emergency-management',
+    title: 'Why Florida Emergency Management Is the #1 Farm Subsidy Recipient',
+    desc: '$346.6M across just 6 payments — how a state disaster agency became the biggest recipient in the USDA system.',
+    date: 'February 2026',
+    category: 'Investigation',
+  },
+  {
     slug: 'doge-farm-subsidies',
     path: '/doge-farm-subsidies',
     title: 'DOGE and Farm Subsidies: What Government Efficiency Means for USDA Payments',

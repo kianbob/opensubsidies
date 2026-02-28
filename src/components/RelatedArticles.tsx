@@ -25,6 +25,7 @@ const allArticles = [
   { slug: 'what-147b-buys', title: 'What $147B Could Buy Instead', category: 'Spending' },
   { slug: '../doge-farm-subsidies', title: 'DOGE and Farm Subsidies', category: 'Policy' },
   { slug: '../farm-subsidy-reform', title: 'Farm Subsidy Reform', category: 'Policy' },
+  { slug: 'emergency-management', title: 'Why FL Emergency Management Is #1 Recipient', category: 'Accountability' },
 ]
 
 export default function RelatedArticles({ currentSlug }: { currentSlug: string }) {
