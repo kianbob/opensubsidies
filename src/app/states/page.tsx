@@ -4,6 +4,7 @@ import { fmt, fmtMoney } from '@/lib/utils'
 import { loadData } from '@/lib/server-utils'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import StatesChart from '@/components/StatesChart'
+import StatesTableClient from './StatesTableClient'
 
 export const metadata: Metadata = {
   title: 'Farm Subsidies by State — All 59 States and Territories',
@@ -47,31 +48,7 @@ export default function StatesPage() {
       </section>
 
       <section>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b-2 border-green-700 text-left">
-                <th className="py-2 pr-4">#</th>
-                <th className="py-2 pr-4">State</th>
-                <th className="py-2 pr-4 text-right">Payments</th>
-                <th className="py-2 text-right">Total Amount</th>
-              </tr>
-            </thead>
-            <tbody>
-              {sorted.map((s, i) => (
-                <tr key={s.abbr} className="border-b border-gray-200 hover:bg-green-50">
-                  <td className="py-2 pr-4 text-gray-500">{i + 1}</td>
-                  <td className="py-2 pr-4">
-                    <Link href={`/states/${s.abbr.toLowerCase()}`} className="text-green-700 hover:underline font-medium">{s.name}</Link>
-                    <span className="text-gray-400 ml-1">({s.abbr})</span>
-                  </td>
-                  <td className="py-2 pr-4 text-right tabular-nums">{fmt(s.payments)}</td>
-                  <td className="py-2 text-right tabular-nums font-medium">{fmtMoney(s.amount)}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <StatesTableClient states={sorted} />
       </section>
 
       <section className="mt-10 prose max-w-none text-gray-600">

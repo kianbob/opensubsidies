@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { fmt, fmtMoney, formatProgram, titleCase, slugify } from '@/lib/utils'
 import { loadData } from '@/lib/server-utils'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import RecipientsTableClient from './RecipientsTableClient'
 
 export const metadata: Metadata = {
   title: 'Top 5,000 Farm Subsidy Recipients — Who Gets the Most?',
@@ -44,30 +45,7 @@ export default function RecipientsPage() {
         </p>
       </div>
 
-      <div className="overflow-x-auto">
-        <table className="w-full text-sm">
-          <thead>
-            <tr className="border-b-2 border-green-700 text-left">
-              <th className="py-2 pr-4">#</th>
-              <th className="py-2 pr-4">Recipient</th>
-              <th className="py-2 pr-4">Location</th>
-              <th className="py-2 pr-4 text-right">Amount</th>
-              <th className="py-2">Top Program</th>
-            </tr>
-          </thead>
-          <tbody>
-            {recipients.map((r, i) => (
-              <tr key={i} className="border-b border-gray-200 hover:bg-green-50">
-                <td className="py-2 pr-4 text-gray-500">{i + 1}</td>
-                <td className="py-2 pr-4 font-medium"><Link href={`/recipients/${slugify(`${r.name}-${r.city}-${r.state}`)}`} className="text-green-700 hover:underline">{titleCase(r.name)}</Link></td>
-                <td className="py-2 pr-4 text-gray-600">{titleCase(r.city)}, {r.state}</td>
-                <td className="py-2 pr-4 text-right tabular-nums font-medium">{fmtMoney(r.amount)}</td>
-                <td className="py-2 text-xs text-gray-500">{formatProgram(r.topPrograms?.[0]?.program ?? '—')}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+      <RecipientsTableClient recipients={recipients} />
 
       {/* SEO Content */}
       <section className="mt-10 prose max-w-none text-gray-600">

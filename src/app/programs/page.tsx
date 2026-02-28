@@ -4,6 +4,7 @@ import { fmt, fmtMoney, slugify, formatProgram } from '@/lib/utils'
 import { loadData } from '@/lib/server-utils'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ProgramsChart from '@/components/ProgramsChart'
+import ProgramsTableClient from './ProgramsTableClient'
 
 export const metadata: Metadata = {
   title: 'All 157 USDA Farm Subsidy Programs Ranked',
@@ -47,28 +48,7 @@ export default function ProgramsPage() {
       </section>
 
       <section>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b-2 border-green-700 text-left">
-                <th className="py-2 pr-4">#</th>
-                <th className="py-2 pr-4">Program</th>
-                <th className="py-2 pr-4 text-right">Payments</th>
-                <th className="py-2 text-right">Amount</th>
-              </tr>
-            </thead>
-            <tbody>
-              {sorted.map((p, i) => (
-                <tr key={p.code} className="border-b border-gray-200 hover:bg-green-50">
-                  <td className="py-2 pr-4 text-gray-500">{i + 1}</td>
-                  <td className="py-2 pr-4"><Link href={`/programs/${slugify(p.program)}`} className="text-primary hover:underline">{formatProgram(p.program)}</Link></td>
-                  <td className="py-2 pr-4 text-right tabular-nums">{fmt(p.payments)}</td>
-                  <td className="py-2 text-right tabular-nums font-medium">{fmtMoney(p.amount)}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <ProgramsTableClient programs={sorted} />
       </section>
 
       {/* SEO Content */}
