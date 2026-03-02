@@ -30,6 +30,10 @@ const tools = [
   { href: '/tools/county-finder', title: 'County Finder', desc: 'Search all U.S. counties to find farm subsidy totals and payment counts for your area.', icon: '📍' },
   { href: '/tools/state-report-card', title: 'State Report Card', desc: 'Grade any state A-F on subsidy concentration, dependency, program diversity, conservation, and emergency spending.', icon: '📊' },
   { href: '/tools/subsidy-tracker', title: 'County Subsidy Tracker', desc: 'Track your county\'s subsidies with comparisons to state and national averages.', icon: '📍' },
+  { href: '/tools/subsidy-map-explorer', title: 'Subsidy Map Explorer', desc: 'Interactive state map showing top programs, per-capita spending, and farm dependency ratios.', icon: '🗺️' },
+  { href: '/tools/program-compare', title: 'Program Compare', desc: 'Side-by-side comparison of 2–3 USDA programs with spending trends and payment stats.', icon: '📊' },
+  { href: '/tools/who-benefits', title: 'Who Benefits?', desc: 'Enter your state or ZIP to see what farm subsidy programs are active in your area.', icon: '🌾' },
+  { href: '/tools/subsidy-timeline', title: 'Subsidy Timeline', desc: '92 years of farm subsidy history — from the New Deal to today\'s emergency programs.', icon: '⏳' },
 ]
 
 export default function ToolsPage() {
