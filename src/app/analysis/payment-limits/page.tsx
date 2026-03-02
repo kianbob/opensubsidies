@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   title: 'Are Farm Subsidy Payment Limits Working?',
   description: 'Top recipients receive far more than the $125K/yr cap through LLCs and partnerships. An analysis of USDA payment data.',
   alternates: { canonical: 'https://www.opensubsidies.org/analysis/payment-limits' },
+  openGraph: {
+    title: `Are Farm Subsidy Payment Limits Working?`,
+    description: `Top recipients receive far more than the $125K/yr cap through LLCs and partnerships. An analysis of USDA payment data.`,
+    url: 'https://www.opensubsidies.org/analysis/payment-limits',
+    type: 'article',
+  },
 }
 
 export default function PaymentLimits() {

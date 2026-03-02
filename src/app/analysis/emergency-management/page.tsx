@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   title: 'Why Florida Emergency Management Is the #1 Farm Subsidy Recipient',
   description: 'Florida Dept of Emergency Management collected $346.6M in USDA farm subsidies — more than any farmer in America. How a state disaster agency became the biggest recipient in the system.',
   alternates: { canonical: 'https://www.opensubsidies.org/analysis/emergency-management' },
+  openGraph: {
+    title: `Why Florida Emergency Management Is the #1 Farm Subsidy Recipient`,
+    description: `Florida Dept of Emergency Management collected $346.6M in USDA farm subsidies — more than any farmer in America. How a state disaster agency became the biggest recipient in the system.`,
+    url: 'https://www.opensubsidies.org/analysis/emergency-management',
+    type: 'article',
+  },
 }
 
 export default function EmergencyManagementPage() {

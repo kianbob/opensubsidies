@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   title: 'Who Pays for Farm Subsidies? The Taxpayer Burden by State',
   description: 'Every American taxpayer pays $109/year for farm subsidies. But some states pay far more than they receive. The net donors, net recipients, and what your money could buy instead.',
   alternates: { canonical: 'https://www.opensubsidies.org/analysis/who-pays' },
+  openGraph: {
+    title: `Who Pays for Farm Subsidies? The Taxpayer Burden by State`,
+    description: `Every American taxpayer pays $109/year for farm subsidies. But some states pay far more than they receive. The net donors, net recipients, and what your money could buy instead.`,
+    url: 'https://www.opensubsidies.org/analysis/who-pays',
+    type: 'article',
+  },
 }
 
 // State population estimates for per-capita calculations

@@ -7,22 +7,46 @@ import { fmt, fmtMoney, slugify, formatProgram } from '@/lib/utils'
 type Program = { program: string; code: string; payments: number; amount: number }
 type SortKey = 'program' | 'payments' | 'amount'
 
+type Category = 'All' | 'Conservation' | 'Emergency' | 'Commodity' | 'Trade War' | 'Dairy' | 'Livestock' | 'Other'
+
+const CATEGORY_KEYWORDS: Record<Exclude<Category, 'All' | 'Other'>, string[]> = {
+  Conservation: ['conservation', 'crp', 'csp', 'eqip', 'acep', 'wetland', 'stewardship', 'environmental'],
+  Emergency: ['emergency', 'disaster', 'cfap', 'coronavirus', 'covid', 'eidl', 'elap', 'lfp', 'lip', 'tap', 'whip'],
+  Commodity: ['commodity', 'arc', 'plc', 'price loss', 'agriculture risk', 'loan deficiency', 'marketing loan'],
+  'Trade War': ['market facilitation', 'mfp', 'trade'],
+  Dairy: ['dairy', 'dmc', 'dmpp', 'milk', 'margin protection'],
+  Livestock: ['livestock', 'cattle', 'hog', 'poultry', 'lfp', 'lip', 'elap'],
+}
+
+function categorize(program: string): Category {
+  const lower = program.toLowerCase()
+  for (const [cat, keywords] of Object.entries(CATEGORY_KEYWORDS)) {
+    if (keywords.some(kw => lower.includes(kw))) return cat as Category
+  }
+  return 'Other'
+}
+
+const CATEGORIES: Category[] = ['All', 'Conservation', 'Emergency', 'Commodity', 'Trade War', 'Dairy', 'Livestock', 'Other']
+
 export default function ProgramsTableClient({ programs }: { programs: Program[] }) {
   const [sortBy, setSortBy] = useState<SortKey>('amount')
   const [sortDir, setSortDir] = useState<'asc' | 'desc'>('desc')
   const [search, setSearch] = useState('')
+  const [category, setCategory] = useState<Category>('All')
 
   const sorted = useMemo(() => {
-    let list = programs.filter(p =>
-      !search || formatProgram(p.program).toLowerCase().includes(search.toLowerCase()) || p.code.toLowerCase().includes(search.toLowerCase())
-    )
+    let list = programs.filter(p => {
+      if (search && !formatProgram(p.program).toLowerCase().includes(search.toLowerCase()) && !p.code.toLowerCase().includes(search.toLowerCase())) return false
+      if (category !== 'All' && categorize(p.program) !== category) return false
+      return true
+    })
     list = [...list].sort((a, b) => {
       const mul = sortDir === 'desc' ? -1 : 1
       if (sortBy === 'program') return mul * formatProgram(a.program).localeCompare(formatProgram(b.program))
       return mul * (a[sortBy] - b[sortBy])
     })
     return list
-  }, [programs, sortBy, sortDir, search])
+  }, [programs, sortBy, sortDir, search, category])
 
   function toggleSort(key: SortKey) {
     if (sortBy === key) setSortDir(d => d === 'desc' ? 'asc' : 'desc')
@@ -33,6 +57,23 @@ export default function ProgramsTableClient({ programs }: { programs: Program[] 
 
   return (
     <div>
+      {/* Category Filter Badges */}
+      <div className="flex flex-wrap gap-2 mb-4">
+        {CATEGORIES.map(cat => (
+          <button
+            key={cat}
+            onClick={() => setCategory(cat)}
+            className={`px-3 py-1.5 text-sm rounded-full font-medium transition-colors ${
+              category === cat
+                ? 'bg-[#15803d] text-white'
+                : 'bg-green-50 text-green-800 border border-green-200 hover:bg-green-100'
+            }`}
+          >
+            {cat}
+          </button>
+        ))}
+      </div>
+
       <div className="flex flex-wrap gap-3 mb-4">
         <input
           type="text"

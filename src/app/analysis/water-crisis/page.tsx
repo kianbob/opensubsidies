@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   title: 'Farm Subsidies and the Water Crisis: Subsidizing Drought',
   description: 'How farm subsidies encourage water-intensive crops in drought-stricken states. The Colorado River, Ogallala Aquifer, and California\'s water wars — follow the subsidy money.',
   alternates: { canonical: 'https://www.opensubsidies.org/analysis/water-crisis' },
+  openGraph: {
+    title: `Farm Subsidies and the Water Crisis: Subsidizing Drought`,
+    description: `How farm subsidies encourage water-intensive crops in drought-stricken states. The Colorado River, Ogallala Aquifer, and California's water wars — follow the subsidy money.`,
+    url: 'https://www.opensubsidies.org/analysis/water-crisis',
+    type: 'article',
+  },
 }
 
 export default function WaterCrisis() {

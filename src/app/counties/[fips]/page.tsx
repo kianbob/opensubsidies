@@ -202,6 +202,37 @@ export default async function CountyDetailPage({ params }: { params: Promise<{ f
         </div>
       </div>
 
+      {/* AI Overview */}
+      <section className="mb-10">
+        <div className="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-xl p-6">
+          <h2 className="text-xl font-bold font-[family-name:var(--font-heading)] mb-3 flex items-center gap-2">
+            <span>🤖</span> AI Overview
+          </h2>
+          <div className="space-y-3 text-sm text-gray-700">
+            <p>
+              <strong>{county.county} County</strong> ranks <strong>#{nationalRank}</strong> out of {fmt(sortedCounties.length)} U.S. counties
+              in total farm subsidy payments, and <strong>#{stateRank}</strong> within {county.stateName}.
+            </p>
+            <p>
+              {(() => {
+                const stateAvg = stateCounties.reduce((s, c) => s + c.amount, 0) / stateCounties.length
+                const ratio = county.totalAmount / stateAvg
+                return ratio > 1.2
+                  ? `This county receives ${((ratio - 1) * 100).toFixed(0)}% more than the average ${county.stateName} county (${fmtMoney(stateAvg)}), indicating it is a major agricultural hub within the state.`
+                  : ratio < 0.8
+                  ? `This county receives ${((1 - ratio) * 100).toFixed(0)}% less than the average ${county.stateName} county (${fmtMoney(stateAvg)}), suggesting a smaller agricultural footprint relative to state peers.`
+                  : `This county is close to the ${county.stateName} average of ${fmtMoney(stateAvg)} per county.`
+              })()}
+            </p>
+            <p>
+              Peak spending in <strong>{peakYear.year}</strong> ({fmtMoney(peakYear.amount)}) was likely driven by{' '}
+              {peakYear.year === 2020 ? 'COVID-era CFAP emergency payments' : peakYear.year >= 2018 && peakYear.year <= 2019 ? 'trade war Market Facilitation Program payments' : 'commodity and conservation program cycles'}.
+              The average payment of {fmtMoney(avgPayment)} is {avgRatio > 1.1 ? `${((avgRatio - 1) * 100).toFixed(0)}% above` : avgRatio < 0.9 ? `${((1 - avgRatio) * 100).toFixed(0)}% below` : 'near'} the national average of {fmtMoney(nationalAvg)}.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* SEO content */}
       <section className="prose max-w-none mb-10">
         <h2 className="text-2xl font-bold font-[family-name:var(--font-heading)]">About Farm Subsidies in {county.county} County</h2>

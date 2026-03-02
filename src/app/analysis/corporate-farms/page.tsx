@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   title: 'When Corporations Collect: The Biggest Non-Family Farm Subsidy Recipients',
   description: 'LLCs, partnerships, and corporations collecting millions in farm subsidies. Are payment limits working?',
   alternates: { canonical: 'https://www.opensubsidies.org/analysis/corporate-farms' },
+  openGraph: {
+    title: `When Corporations Collect: The Biggest Non-Family Farm Subsidy Recipients`,
+    description: `LLCs, partnerships, and corporations collecting millions in farm subsidies. Are payment limits working?`,
+    url: 'https://www.opensubsidies.org/analysis/corporate-farms',
+    type: 'article',
+  },
 }
 
 export default function CorporateFarms() {

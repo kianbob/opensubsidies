@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   title: '10 Myths About Farm Subsidies (and What the Data Actually Shows)',
   description: 'Farm subsidies go to small family farms, keep food prices low, and help struggling farmers. Right? We checked $147 billion in USDA data. Here\'s what we found.',
   alternates: { canonical: 'https://www.opensubsidies.org/analysis/subsidy-myths' },
+  openGraph: {
+    title: `10 Myths About Farm Subsidies (and What the Data Actually Shows)`,
+    description: `Farm subsidies go to small family farms, keep food prices low, and help struggling farmers. Right? We checked $147 billion in USDA data. Here's what we found.`,
+    url: 'https://www.opensubsidies.org/analysis/subsidy-myths',
+    type: 'article',
+  },
 }
 
 export default function SubsidyMyths() {

@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   title: 'The Disaster Money Machine: $20 Billion in Emergency Farm Payments',
   description: 'Emergency and disaster programs now dwarf traditional farm subsidies. ECAP, CFAP, and livestock relief programs paid out over $20 billion in 2017-2025.',
   alternates: { canonical: 'https://www.opensubsidies.org/analysis/disaster-spending' },
+  openGraph: {
+    title: `The Disaster Money Machine: $20 Billion in Emergency Farm Payments`,
+    description: `Emergency and disaster programs now dwarf traditional farm subsidies. ECAP, CFAP, and livestock relief programs paid out over $20 billion in 2017-2025.`,
+    url: 'https://www.opensubsidies.org/analysis/disaster-spending',
+    type: 'article',
+  },
 }
 
 export default function DisasterSpending() {

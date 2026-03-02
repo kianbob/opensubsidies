@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   title: 'State Winners & Losers: Who Gained Most from Emergency Spending?',
   description: 'Which states saw the biggest surge from emergency farm programs? Comparing 2017 baseline to 2020 peak ratios reveals clear winners and losers.',
   alternates: { canonical: 'https://www.opensubsidies.org/analysis/state-winners-losers' },
+  openGraph: {
+    title: `State Winners & Losers: Who Gained Most from Emergency Spending?`,
+    description: `Which states saw the biggest surge from emergency farm programs? Comparing 2017 baseline to 2020 peak ratios reveals clear winners and losers.`,
+    url: 'https://www.opensubsidies.org/analysis/state-winners-losers',
+    type: 'article',
+  },
 }
 
 type StateYearlyRow = { state: string; year: number; payments: number; amount: number }

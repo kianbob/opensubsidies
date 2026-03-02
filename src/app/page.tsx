@@ -69,6 +69,21 @@ export default function HomePage() {
         <Link href="/methodology" className="text-xs text-gray-400 hover:text-primary transition-colors">How we calculated this →</Link>
       </div>
 
+      {/* Data Freshness */}
+      <section className="max-w-7xl mx-auto px-4 mt-6">
+        <div className="bg-green-50 border border-green-200 rounded-xl px-6 py-4 flex flex-wrap items-center justify-between gap-4">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-green-800">
+            <span className="flex items-center gap-1.5"><span className="inline-block w-2 h-2 rounded-full bg-green-500" />Data coverage: <strong>2017–2025</strong></span>
+            <span>Total records: <strong>31.8M</strong></span>
+            <span>Last USDA update: <strong>February 2026</strong></span>
+          </div>
+          <div className="flex gap-3 text-sm">
+            <Link href="/methodology" className="text-green-700 hover:text-green-900 underline underline-offset-2">Methodology</Link>
+            <Link href="/downloads" className="text-green-700 hover:text-green-900 underline underline-offset-2">Downloads</Link>
+          </div>
+        </div>
+      </section>
+
       {/* Spending Timeline */}
       <section className="max-w-7xl mx-auto px-4 pt-8">
         <SpendingTimeline yearly={yearly} />

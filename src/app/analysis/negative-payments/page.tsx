@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   title: 'Clawbacks and Corrections: When the USDA Takes Money Back',
   description: 'Not all farm subsidy payments are positive. Explore the programs and recipients where the USDA clawed back or corrected overpayments.',
   alternates: { canonical: 'https://www.opensubsidies.org/analysis/negative-payments' },
+  openGraph: {
+    title: `Clawbacks and Corrections: When the USDA Takes Money Back`,
+    description: `Not all farm subsidy payments are positive. Explore the programs and recipients where the USDA clawed back or corrected overpayments.`,
+    url: 'https://www.opensubsidies.org/analysis/negative-payments',
+    type: 'article',
+  },
 }
 
 type Program = { program: string; code: string; payments: number; amount: number }

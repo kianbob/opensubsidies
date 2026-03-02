@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   title: 'Texas Gets $3.8B, Vermont Gets $37M: The Geography of Farm Subsidies',
   description: 'Farm subsidy payments vary enormously by state. Texas receives 100x more than Vermont. Explore the geographic distribution.',
   alternates: { canonical: 'https://www.opensubsidies.org/analysis/state-disparities' },
+  openGraph: {
+    title: `Texas Gets $3.8B, Vermont Gets $37M: The Geography of Farm Subsidies`,
+    description: `Farm subsidy payments vary enormously by state. Texas receives 100x more than Vermont. Explore the geographic distribution.`,
+    url: 'https://www.opensubsidies.org/analysis/state-disparities',
+    type: 'article',
+  },
 }
 
 export default function StateDisparities() {

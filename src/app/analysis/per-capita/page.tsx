@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   title: 'Farm Subsidies Per Capita: Which States Get the Most Per Person?',
   description: 'North Dakota receives over $6,000 per person in farm subsidies while California gets under $100. See how farm subsidy spending breaks down per capita.',
   alternates: { canonical: 'https://www.opensubsidies.org/analysis/per-capita' },
+  openGraph: {
+    title: `Farm Subsidies Per Capita: Which States Get the Most Per Person?`,
+    description: `North Dakota receives over $6,000 per person in farm subsidies while California gets under $100. See how farm subsidy spending breaks down per capita.`,
+    url: 'https://www.opensubsidies.org/analysis/per-capita',
+    type: 'article',
+  },
 }
 
 // Census 2024 estimated populations for state subsidy per-capita

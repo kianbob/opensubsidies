@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   title: 'Small Farms vs. Large Operations: Who Really Benefits from Subsidies?',
   description: 'The average vs. median payment gap reveals how farm subsidies overwhelmingly benefit the largest operations.',
   alternates: { canonical: 'https://www.opensubsidies.org/analysis/small-vs-large' },
+  openGraph: {
+    title: `Small Farms vs. Large Operations: Who Really Benefits from Subsidies?`,
+    description: `The average vs. median payment gap reveals how farm subsidies overwhelmingly benefit the largest operations.`,
+    url: 'https://www.opensubsidies.org/analysis/small-vs-large',
+    type: 'article',
+  },
 }
 
 export default function SmallVsLarge() {

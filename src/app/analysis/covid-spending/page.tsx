@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   title: 'COVID Changed Farm Subsidies Forever: The $38.7 Billion Story',
   description: 'In 2020, COVID-19 triggered $38.7B in farm subsidies — more than double the previous peak. CFAP, pandemic payments, and how emergency spending reshaped agriculture.',
   alternates: { canonical: 'https://www.opensubsidies.org/analysis/covid-spending' },
+  openGraph: {
+    title: `COVID Changed Farm Subsidies Forever: The $38.7 Billion Story`,
+    description: `In 2020, COVID-19 triggered $38.7B in farm subsidies — more than double the previous peak. CFAP, pandemic payments, and how emergency spending reshaped agriculture.`,
+    url: 'https://www.opensubsidies.org/analysis/covid-spending',
+    type: 'article',
+  },
 }
 
 export default function CovidSpending() {

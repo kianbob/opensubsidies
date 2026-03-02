@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   title: 'The Conservation Reserve Program: Paying Farmers Not to Farm',
   description: 'A deep dive into the $5.36B CRP program — how it works, why it\'s controversial, and its environmental benefits.',
   alternates: { canonical: 'https://www.opensubsidies.org/analysis/crp-conservation' },
+  openGraph: {
+    title: `The Conservation Reserve Program: Paying Farmers Not to Farm`,
+    description: `A deep dive into the $5.36B CRP program — how it works, why it's controversial, and its environmental benefits.`,
+    url: 'https://www.opensubsidies.org/analysis/crp-conservation',
+    type: 'article',
+  },
 }
 
 export default function CRPConservation() {

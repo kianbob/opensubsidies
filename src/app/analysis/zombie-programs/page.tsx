@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   title: 'Zombie Programs: The USDA Programs Nobody Uses',
   description: '43 USDA farm programs have fewer than 100 payments each. These "zombie programs" persist through bureaucratic inertia, consuming administrative resources while serving almost nobody.',
   alternates: { canonical: 'https://www.opensubsidies.org/analysis/zombie-programs' },
+  openGraph: {
+    title: `Zombie Programs: The USDA Programs Nobody Uses`,
+    description: `43 USDA farm programs have fewer than 100 payments each. These "zombie programs" persist through bureaucratic inertia, consuming administrative resources while serving almost nobody.`,
+    url: 'https://www.opensubsidies.org/analysis/zombie-programs',
+    type: 'article',
+  },
 }
 
 export default function ZombieProgramsPage() {

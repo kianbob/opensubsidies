@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   title: 'County Hotspots: Where Farm Subsidies Concentrate',
   description: 'Some individual counties receive more in farm subsidies than entire states. A look at the top 20 county hotspots.',
   alternates: { canonical: 'https://www.opensubsidies.org/analysis/county-hotspots' },
+  openGraph: {
+    title: `County Hotspots: Where Farm Subsidies Concentrate`,
+    description: `Some individual counties receive more in farm subsidies than entire states. A look at the top 20 county hotspots.`,
+    url: 'https://www.opensubsidies.org/analysis/county-hotspots',
+    type: 'article',
+  },
 }
 
 export default function CountyHotspots() {

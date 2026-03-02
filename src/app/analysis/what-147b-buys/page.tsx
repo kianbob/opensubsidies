@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   title: 'What $147 Billion in Farm Subsidies Could Buy Instead',
   description: '$147 billion in farm subsidies could fund 2.2 million teachers, 5.8 million Pell Grants, or 6 years of NASA. Here\'s what America spent on farm payments — and what else it could have bought.',
   alternates: { canonical: 'https://www.opensubsidies.org/analysis/what-147b-buys' },
+  openGraph: {
+    title: `What $147 Billion in Farm Subsidies Could Buy Instead`,
+    description: `$147 billion in farm subsidies could fund 2.2 million teachers, 5.8 million Pell Grants, or 6 years of NASA. Here's what America spent on farm payments — and what else it could have bought.`,
+    url: 'https://www.opensubsidies.org/analysis/what-147b-buys',
+    type: 'article',
+  },
 }
 
 export default function What147BBuysPage() {

@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   title: 'The 2025 Farm Crisis: Bankruptcies Up 46% While Subsidies Flow to the Top',
   description: 'Farm bankruptcies hit 315 in 2025, up 46%. Meanwhile, farm subsidies continue flowing primarily to the largest operations. The disconnect between who gets help and who needs it.',
   alternates: { canonical: 'https://www.opensubsidies.org/analysis/farm-crisis-2025' },
+  openGraph: {
+    title: `The 2025 Farm Crisis: Bankruptcies Up 46% While Subsidies Flow to the Top`,
+    description: `Farm bankruptcies hit 315 in 2025, up 46%. Meanwhile, farm subsidies continue flowing primarily to the largest operations. The disconnect between who gets help and who needs it.`,
+    url: 'https://www.opensubsidies.org/analysis/farm-crisis-2025',
+    type: 'article',
+  },
 }
 
 export default function FarmCrisis2025Page() {

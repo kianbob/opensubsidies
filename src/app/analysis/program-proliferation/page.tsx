@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   title: '157 Programs and Counting: The Complexity of Farm Subsidies',
   description: 'Why does the USDA have 157 different farm subsidy programs? An analysis of program proliferation, overlap, and the gap between largest and smallest.',
   alternates: { canonical: 'https://www.opensubsidies.org/analysis/program-proliferation' },
+  openGraph: {
+    title: `157 Programs and Counting: The Complexity of Farm Subsidies`,
+    description: `Why does the USDA have 157 different farm subsidy programs? An analysis of program proliferation, overlap, and the gap between largest and smallest.`,
+    url: 'https://www.opensubsidies.org/analysis/program-proliferation',
+    type: 'article',
+  },
 }
 
 type Program = { program: string; code: string; payments: number; amount: number }

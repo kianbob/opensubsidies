@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   title: 'What Does the Average Farmer Actually Get? The $4,600 Reality',
   description: '31.8M payments divided by $147B = ~$4,600 average. But the median is far lower. The inequality of farm subsidies explained.',
   alternates: { canonical: 'https://www.opensubsidies.org/analysis/average-farmer' },
+  openGraph: {
+    title: `What Does the Average Farmer Actually Get? The $4,600 Reality`,
+    description: `31.8M payments divided by $147B = ~$4,600 average. But the median is far lower. The inequality of farm subsidies explained.`,
+    url: 'https://www.opensubsidies.org/analysis/average-farmer',
+    type: 'article',
+  },
 }
 
 export default function AverageFarmerPage() {

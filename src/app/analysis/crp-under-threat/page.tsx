@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   title: 'CRP Under Threat: Is Conservation Keeping Up with Emergency Spending?',
   description: 'The Conservation Reserve Program at $15.7B is the largest traditional program. But emergency spending now dwarfs it. What are the policy implications?',
   alternates: { canonical: 'https://www.opensubsidies.org/analysis/crp-under-threat' },
+  openGraph: {
+    title: `CRP Under Threat: Is Conservation Keeping Up with Emergency Spending?`,
+    description: `The Conservation Reserve Program at $15.7B is the largest traditional program. But emergency spending now dwarfs it. What are the policy implications?`,
+    url: 'https://www.opensubsidies.org/analysis/crp-under-threat',
+    type: 'article',
+  },
 }
 
 export default function CrpUnderThreatPage() {

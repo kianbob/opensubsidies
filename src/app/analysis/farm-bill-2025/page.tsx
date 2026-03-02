@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   title: 'The 2025 Farm Bill Debate: What\'s at Stake for $147 Billion in Subsidies',
   description: 'The Farm Bill shapes every dollar of farm subsidies, conservation, SNAP, and crop insurance. What the data shows about current programs and what reform proposals would change.',
   alternates: { canonical: 'https://www.opensubsidies.org/analysis/farm-bill-2025' },
+  openGraph: {
+    title: `The 2025 Farm Bill Debate: What's at Stake for $147 Billion in Subsidies`,
+    description: `The Farm Bill shapes every dollar of farm subsidies, conservation, SNAP, and crop insurance. What the data shows about current programs and what reform proposals would change.`,
+    url: 'https://www.opensubsidies.org/analysis/farm-bill-2025',
+    type: 'article',
+  },
 }
 
 export default function FarmBill2025() {

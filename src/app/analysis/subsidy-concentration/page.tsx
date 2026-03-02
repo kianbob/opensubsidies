@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   title: 'The 10% Problem: How Most Farm Subsidies Go to the Biggest Operations',
   description: '69% of American farms receive zero federal subsidy payments. The top 10% of recipients collect nearly three-fourths of all farm subsidies. Here\'s the data.',
   alternates: { canonical: 'https://www.opensubsidies.org/analysis/subsidy-concentration' },
+  openGraph: {
+    title: `The 10% Problem: How Most Farm Subsidies Go to the Biggest Operations`,
+    description: `69% of American farms receive zero federal subsidy payments. The top 10% of recipients collect nearly three-fourths of all farm subsidies. Here's the data.`,
+    url: 'https://www.opensubsidies.org/analysis/subsidy-concentration',
+    type: 'article',
+  },
 }
 
 export default function SubsidyConcentration() {

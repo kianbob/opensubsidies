@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   title: 'Conservation vs. Commodity: Two Philosophies of Farm Spending',
   description: 'CRP pays farmers not to farm. Commodity programs pay them to produce. How do these two approaches compare in federal farm spending?',
   alternates: { canonical: 'https://www.opensubsidies.org/analysis/conservation-vs-commodity' },
+  openGraph: {
+    title: `Conservation vs. Commodity: Two Philosophies of Farm Spending`,
+    description: `CRP pays farmers not to farm. Commodity programs pay them to produce. How do these two approaches compare in federal farm spending?`,
+    url: 'https://www.opensubsidies.org/analysis/conservation-vs-commodity',
+    type: 'article',
+  },
 }
 
 export default function ConservationVsCommodity() {

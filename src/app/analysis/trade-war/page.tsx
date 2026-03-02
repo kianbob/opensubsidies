@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   title: 'Trade War Fallout: $39 Billion in Tariff Bailout Payments (2018-2019)',
   description: 'The US-China trade war triggered $39B in farm subsidy payments through the Market Facilitation Program. How tariffs reshaped agricultural spending.',
   alternates: { canonical: 'https://www.opensubsidies.org/analysis/trade-war' },
+  openGraph: {
+    title: `Trade War Fallout: $39 Billion in Tariff Bailout Payments (2018-2019)`,
+    description: `The US-China trade war triggered $39B in farm subsidy payments through the Market Facilitation Program. How tariffs reshaped agricultural spending.`,
+    url: 'https://www.opensubsidies.org/analysis/trade-war',
+    type: 'article',
+  },
 }
 
 export default function TradeWar() {
