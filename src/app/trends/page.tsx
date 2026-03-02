@@ -15,8 +15,9 @@ type YearData = { year: number; payments: number; amount: number }
 
 export default function TrendsPage() {
   const yearly = loadData('yearly.json') as YearData[]
+  const stats = loadData('stats.json') as { totalAmount: number }
   const meaningful = yearly.filter(y => y.amount > 100000)
-  const totalAll = yearly.reduce((s, y) => s + y.amount, 0)
+  const totalAll = stats.totalAmount
   const peakYear = meaningful.reduce((a, b) => a.amount > b.amount ? a : b)
   const recent = meaningful.filter(y => y.year >= 2020)
   const recentTotal = recent.reduce((s, y) => s + y.amount, 0)

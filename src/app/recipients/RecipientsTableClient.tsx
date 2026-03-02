@@ -4,7 +4,7 @@ import { useState, useMemo } from 'react'
 import Link from 'next/link'
 import { fmt, fmtMoney, formatProgram, titleCase, slugify } from '@/lib/utils'
 
-type Recipient = { name: string; state: string; city: string; amount: number; payments: number; topPrograms: { program: string; amount: number }[] }
+type Recipient = { name: string; state: string; city: string; amount: number; payments: number; topProgram?: string; topPrograms?: { program: string; amount: number }[] }
 type SortKey = 'name' | 'amount' | 'payments' | 'state'
 
 export default function RecipientsTableClient({ recipients }: { recipients: Recipient[] }) {
@@ -89,7 +89,7 @@ export default function RecipientsTableClient({ recipients }: { recipients: Reci
                 <td className="py-2 pr-4 font-medium"><Link href={`/recipients/${slugify(`${r.name}-${r.city}-${r.state}`)}`} className="text-green-700 hover:underline">{titleCase(r.name)}</Link></td>
                 <td className="py-2 pr-4 text-gray-600">{titleCase(r.city)}, {r.state}</td>
                 <td className="py-2 pr-4 text-right tabular-nums font-medium">{fmtMoney(r.amount)}</td>
-                <td className="py-2 text-xs text-gray-500">{formatProgram(r.topPrograms?.[0]?.program ?? '—')}</td>
+                <td className="py-2 text-xs text-gray-500">{formatProgram(r.topProgram || r.topPrograms?.[0]?.program || '—')}</td>
               </tr>
             ))}
           </tbody>

@@ -230,11 +230,167 @@ export default function FarmSubsidyDatabasePage() {
           <li><Link href="/tools/subsidy-quiz" className="text-green-700 underline">Farm Subsidy Quiz</Link> — Test your knowledge</li>
         </ul>
 
+        <h2 className="font-[family-name:var(--font-heading)]">Key Database Statistics</h2>
+        <p>
+          Our farm subsidy database reveals striking patterns in how agricultural payments
+          are distributed across the United States:
+        </p>
+
+        <h3 className="font-[family-name:var(--font-heading)]">Top States by Total Subsidies</h3>
+        <p>
+          Texas leads the nation with <strong>$12.6 billion</strong> in total farm subsidies
+          from 2017-2025, driven primarily by Price Loss Coverage and Livestock Forage payments.
+          Iowa follows closely at <strong>$11.7 billion</strong>, with CRP rental payments
+          as its single largest program. Kansas ($8.6B), Illinois ($8.3B), and Minnesota
+          ($8.2B) round out the top five.
+        </p>
+
+        <h3 className="font-[family-name:var(--font-heading)]">Payment Concentration</h3>
+        <p>
+          A significant finding in our database is the concentration of payments. The top
+          10 states receive approximately 60% of all farm subsidies. Within states, payments
+          are further concentrated among large operations. Our <Link href="/analysis/subsidy-concentration" className="text-green-700 underline">concentration analysis</Link> explores
+          this pattern in detail.
+        </p>
+
+        <h3 className="font-[family-name:var(--font-heading)]">Program Distribution</h3>
+        <p>
+          Of the 157 programs tracked, the top 10 account for the vast majority of spending.
+          CRP Annual Rental is the single largest program nationally, followed by Price Loss
+          Coverage, Market Facilitation Program, CFAP payments, and Agricultural Risk Coverage.
+          Emergency and disaster payments have grown dramatically, now representing over 30%
+          of total spending — a sharp increase from historical norms.
+        </p>
+
+        <h3 className="font-[family-name:var(--font-heading)]">Year-Over-Year Trends</h3>
+        <p>
+          Farm subsidy spending has fluctuated significantly over our 9-year coverage period.
+          The trade war era (2018-2019) saw massive MFP bailout payments. COVID-19 triggered
+          billions in CFAP payments in 2020-2021. More recently, emergency relief programs
+          for drought and natural disasters have driven spending upward. Explore these trends
+          on our <Link href="/trends" className="text-green-700 underline">spending trends page</Link>.
+        </p>
+
+        <h3 className="font-[family-name:var(--font-heading)]">Geographic Patterns</h3>
+        <p>
+          Farm subsidies follow distinct geographic patterns. The Great Plains and Midwest
+          dominate commodity and conservation payments. The Southeast receives significant
+          disaster aid. California, despite being the nation&apos;s largest agricultural state
+          by revenue, ranks 9th in subsidies because its specialty crop sector receives
+          relatively less federal support. Our <Link href="/subsidy-map" className="text-green-700 underline">interactive subsidy map</Link> visualizes
+          these patterns.
+        </p>
+
+        <h2 className="font-[family-name:var(--font-heading)]">Who Uses This Database?</h2>
+        <p>
+          Our farm subsidy database serves a diverse audience:
+        </p>
+        <ul>
+          <li>
+            <strong>Journalists</strong> use our data to investigate agricultural policy,
+            identify payment patterns, and hold policymakers accountable
+          </li>
+          <li>
+            <strong>Researchers</strong> access our structured data for academic studies on
+            rural economics, environmental policy, and food systems
+          </li>
+          <li>
+            <strong>Farmers</strong> compare their area&apos;s subsidies to state and national
+            averages and explore available programs
+          </li>
+          <li>
+            <strong>Policymakers</strong> analyze spending patterns to inform farm bill
+            negotiations and program design
+          </li>
+          <li>
+            <strong>Taxpayers</strong> learn where their tax dollars go and how farm subsidies
+            affect their communities
+          </li>
+          <li>
+            <strong>Students</strong> use our interactive tools for research projects and
+            coursework on agricultural economics and public policy
+          </li>
+        </ul>
+
         <h2 className="font-[family-name:var(--font-heading)]">Download the Data</h2>
         <p>
           Need the raw data for your own analysis? Visit our <Link href="/downloads" className="text-green-700 underline">downloads page</Link> to
           get JSON datasets for all states, counties, programs, and recipients. All data
           is free to use for research, journalism, and educational purposes.
+        </p>
+
+        <h2 className="font-[family-name:var(--font-heading)]">Comparing Our Database to Other Sources</h2>
+        <p>
+          Several organizations track farm subsidies, but OpenSubsidies offers unique
+          advantages for researchers and the public:
+        </p>
+        <ul>
+          <li>
+            <strong>Real-time accessibility:</strong> All data loads instantly in your browser.
+            No registration required, no query limits, no paywalls.
+          </li>
+          <li>
+            <strong>Interactive visualizations:</strong> Charts, maps, and comparison tools
+            make the data accessible to non-technical users.
+          </li>
+          <li>
+            <strong>Comprehensive coverage:</strong> 31.7 million records across 157 programs,
+            including COVID-era and trade war payments that many databases miss.
+          </li>
+          <li>
+            <strong>County-level detail:</strong> Drill down to any of 3,000+ counties for
+            localized payment data and rankings.
+          </li>
+          <li>
+            <strong>Analytical context:</strong> Our analysis articles explain the data in
+            plain English, connecting numbers to policy implications.
+          </li>
+        </ul>
+
+        <h2 className="font-[family-name:var(--font-heading)]">Understanding Farm Subsidy Programs</h2>
+        <p>
+          The USDA operates a complex web of farm programs, each with different purposes,
+          eligibility criteria, and payment structures. Our <Link href="/program-decoder" className="text-green-700 underline">Program Decoder</Link> explains
+          every major program acronym in plain English: CRP, PLC, ARC, CFAP, MFP, EQIP,
+          and dozens more.
+        </p>
+        <p>
+          Understanding these programs is essential for interpreting the database. For example,
+          a large CRP payment to a county doesn&apos;t mean farmers are getting rich — it means
+          they&apos;ve retired environmentally sensitive land from production. A spike in CFAP
+          payments reflects pandemic-era emergency aid, not ongoing farm policy.
+        </p>
+        <p>
+          Our <Link href="/categories" className="text-green-700 underline">program categories page</Link> organizes
+          all 157 programs by type — conservation, commodity, disaster, dairy, and more —
+          making it easier to understand the landscape.
+        </p>
+
+        <h2 className="font-[family-name:var(--font-heading)]">Data Quality and Limitations</h2>
+        <p>
+          While our database is comprehensive, users should be aware of some limitations:
+        </p>
+        <ul>
+          <li>
+            Our data covers USDA Farm Service Agency payments only. It does not include
+            crop insurance (administered by RMA), SNAP/food stamps, or other USDA programs
+            outside the FSA.
+          </li>
+          <li>
+            Some recipient names may appear in multiple variations due to business entity
+            structures. We normalize where possible but some duplication may exist.
+          </li>
+          <li>
+            County-level data reflects the county where the payment was recorded, which
+            may differ from where the farming operation is physically located.
+          </li>
+          <li>
+            Historical comparisons should account for inflation. A dollar in 2017 is worth
+            more than a dollar in 2025.
+          </li>
+        </ul>
+        <p>
+          For complete details on our data processing approach, see our <Link href="/methodology" className="text-green-700 underline">methodology page</Link>.
         </p>
 
         {/* FAQ Section */}

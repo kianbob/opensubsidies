@@ -326,6 +326,69 @@ export default function ConservationReserveProgramPage() {
           the nation.
         </p>
 
+        <h2 className="font-[family-name:var(--font-heading)]">CRP Payment Trends Over Time</h2>
+        <p>
+          CRP spending has remained relatively stable compared to other farm programs, which
+          have seen dramatic spikes during trade wars and pandemic years. Annual CRP rental
+          payments have averaged approximately $1.7 billion per year from 2017 to 2025.
+        </p>
+        <p>
+          However, the stability of CRP spending masks underlying changes. As contracts expire
+          and enrollment declines, total annual payments have edged downward. At the same time,
+          per-acre rental rates have increased to compete with rising farmland values and
+          crop prices. The net effect is roughly flat spending on fewer acres.
+        </p>
+        <p>
+          This stands in stark contrast to emergency and disaster programs, which have surged
+          from near-zero to billions per year. The relative decline of conservation spending
+          as a share of total farm subsidies is one of the most significant trends in
+          agricultural policy. See our <Link href="/analysis/conservation-vs-commodity" className="text-green-700 underline">conservation vs. commodity analysis</Link> for
+          more on this shift.
+        </p>
+
+        <h2 className="font-[family-name:var(--font-heading)]">Who Participates in CRP?</h2>
+        <p>
+          CRP participants range from small family farms with a few enrolled acres to large
+          operations with thousands of acres in the program. The typical CRP participant is
+          a landowner in the Great Plains or Midwest who has marginal cropland that is
+          highly erodible or adjacent to waterways.
+        </p>
+        <p>
+          Many CRP participants are older farmers who use the program as a transition tool —
+          the stable annual payments provide income while reducing the physical demands of
+          active farming. Some conservation organizations also work with landowners to
+          encourage enrollment for wildlife habitat purposes.
+        </p>
+        <p>
+          Absentee landowners can also participate in CRP, which has raised questions about
+          whether the program sometimes pays for conservation on land that wouldn&apos;t be farmed
+          regardless. The USDA has tightened eligibility requirements over the years to
+          address these concerns, requiring that land must have been actively cropped in
+          recent years to qualify.
+        </p>
+
+        <h2 className="font-[family-name:var(--font-heading)]">Economic Impact of CRP</h2>
+        <p>
+          Beyond environmental benefits, CRP has significant economic effects on rural
+          communities. The $15.7 billion in payments represents a substantial income stream
+          for rural areas. Studies have shown that CRP payments support local businesses,
+          help stabilize farm income during volatile crop markets, and contribute to rural
+          property values.
+        </p>
+        <p>
+          CRP also supports a growing outdoor recreation economy. Lands enrolled in CRP
+          provide hunting, birdwatching, and other recreational opportunities that generate
+          economic activity in rural communities. In states like South Dakota and Kansas,
+          pheasant hunting on CRP lands is a major economic driver.
+        </p>
+        <p>
+          Critics argue that CRP removes productive farmland from the market, potentially
+          increasing food prices and reducing export competitiveness. However, supporters
+          counter that the program primarily targets marginal land with low productivity,
+          and that the environmental services provided — clean water, wildlife habitat,
+          carbon storage — have economic value that exceeds the cost of the payments.
+        </p>
+
         <h2 className="font-[family-name:var(--font-heading)]">Explore CRP Data</h2>
         <p>
           Want to dive deeper into CRP data? Here are some useful starting points:

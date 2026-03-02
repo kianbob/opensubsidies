@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 }
 
 export default function RecipientsPage() {
-  const recipients = loadData('top-recipients.json') as { name: string; state: string; city: string; amount: number; payments: number; topPrograms: { program: string; amount: number }[] }[]
+  const recipients = loadData('top-recipients.json') as { name: string; state: string; city: string; amount: number; payments: number; topProgram?: string; topPrograms?: { program: string; amount: number }[] }[]
   const totalTop1000 = recipients.reduce((s, r) => s + r.amount, 0)
   const avgPayment = totalTop1000 / recipients.reduce((s, r) => s + r.payments, 0)
 
