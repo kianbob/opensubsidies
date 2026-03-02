@@ -25,6 +25,10 @@ const articles = [
   { slug: 'zombie-programs', title: 'Zombie Programs: USDA Programs Nobody Uses', desc: '43 programs with fewer than 100 payments each persist through bureaucratic inertia.' },
   { slug: 'emergency-management', title: 'Why Florida Emergency Management Is the #1 Farm Subsidy Recipient', desc: '$346.6M across just 6 payments — how a state disaster agency became the biggest recipient in the system.' },
   { slug: 'what-147b-buys', title: 'What $147 Billion in Farm Subsidies Could Buy Instead', desc: '$147B could fund 2.2M teachers, 5.8M Pell Grants, or 6 years of NASA.' },
+  { slug: 'farm-bill-2025', title: 'The 2025 Farm Bill Debate: What\'s at Stake for $147 Billion in Subsidies', desc: 'The Farm Bill shapes every dollar of farm subsidies, conservation, SNAP, and crop insurance.' },
+  { slug: 'water-crisis', title: 'Farm Subsidies and the Water Crisis: Subsidizing Drought', desc: 'How farm subsidies encourage water-intensive crops in drought-stricken states.' },
+  { slug: 'subsidy-myths', title: '10 Myths About Farm Subsidies (and What the Data Actually Shows)', desc: 'We checked $147 billion in USDA data against common beliefs. Most are wrong.' },
+  { slug: 'who-pays', title: 'Who Pays for Farm Subsidies? The Taxpayer Burden by State', desc: 'Every American taxpayer pays $109/year. Some states pay far more than they receive.' },
 ]
 
 const standalonArticles = [

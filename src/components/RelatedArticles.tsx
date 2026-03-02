@@ -28,6 +28,10 @@ const allArticles = [
   { slug: 'emergency-management', title: 'Why FL Emergency Management Is #1 Recipient', category: 'Accountability' },
   { slug: '../surprising-recipients', title: 'Most Surprising Farm Subsidy Recipients', category: 'Accountability' },
   { slug: '../covid-impact', title: 'Before & After COVID: Farm Subsidies Changed', category: 'Spending' },
+  { slug: 'farm-bill-2025', title: 'The 2025 Farm Bill Debate', category: 'Policy' },
+  { slug: 'water-crisis', title: 'Farm Subsidies and the Water Crisis', category: 'Environment' },
+  { slug: 'subsidy-myths', title: '10 Myths About Farm Subsidies', category: 'Explainer' },
+  { slug: 'who-pays', title: 'Who Pays for Farm Subsidies?', category: 'Spending' },
 ]
 
 export default function RelatedArticles({ currentSlug }: { currentSlug: string }) {

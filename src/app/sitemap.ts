@@ -35,6 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/subsidy-map', '/program-decoder', '/state-dependency',
     '/analysis/double-dippers', '/analysis/farm-crisis-2025',
     '/analysis/zombie-programs', '/analysis/emergency-management', '/analysis/what-147b-buys',
+    '/analysis/farm-bill-2025', '/analysis/water-crisis', '/analysis/subsidy-myths', '/analysis/who-pays',
     '/surprising-recipients', '/covid-impact',
     '/farm-subsidy-lookup', '/doge-farm-subsidies', '/farm-subsidy-reform', '/usda-payments',
     '/tools/subsidy-quiz', '/tools/county-finder',

@@ -202,6 +202,34 @@ const articles = [
     date: 'February 2026',
     category: 'Spending',
   },
+  {
+    slug: 'farm-bill-2025',
+    title: 'The 2025 Farm Bill Debate: What\'s at Stake for $147 Billion in Subsidies',
+    desc: 'The Farm Bill shapes every dollar of farm subsidies, conservation, SNAP, and crop insurance. What the data shows about current programs and what reform proposals would change.',
+    date: 'March 2026',
+    category: 'Policy',
+  },
+  {
+    slug: 'water-crisis',
+    title: 'Farm Subsidies and the Water Crisis: Subsidizing Drought',
+    desc: 'How farm subsidies encourage water-intensive crops in drought-stricken states. The Colorado River, Ogallala Aquifer, and California\'s water wars.',
+    date: 'March 2026',
+    category: 'Environment',
+  },
+  {
+    slug: 'subsidy-myths',
+    title: '10 Myths About Farm Subsidies (and What the Data Actually Shows)',
+    desc: 'Farm subsidies go to small family farms, keep food prices low, and help struggling farmers. Right? We checked $147 billion in USDA data.',
+    date: 'March 2026',
+    category: 'Explainer',
+  },
+  {
+    slug: 'who-pays',
+    title: 'Who Pays for Farm Subsidies? The Taxpayer Burden by State',
+    desc: 'Every American taxpayer pays $109/year for farm subsidies. Some states pay far more than they receive. The net donors, net recipients, and what your money could buy instead.',
+    date: 'March 2026',
+    category: 'Spending',
+  },
 ]
 
 export default function AnalysisPage() {
