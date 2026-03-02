@@ -38,7 +38,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/analysis/farm-bill-2025', '/analysis/water-crisis', '/analysis/subsidy-myths', '/analysis/who-pays',
     '/surprising-recipients', '/covid-impact',
     '/farm-subsidy-lookup', '/doge-farm-subsidies', '/farm-subsidy-reform', '/usda-payments',
-    '/tools/subsidy-quiz', '/tools/county-finder',
+    '/tools/subsidy-quiz', '/tools/county-finder', '/tools/state-report-card', '/tools/subsidy-tracker',
+    '/farm-subsidy-database', '/conservation-reserve-program',
     '/who-gets-farm-subsidies', '/how-much-farm-subsidies', '/biggest-farm-subsidies',
     ...Array.from({ length: 9 }, (_, i) => `/years/${2017 + i}`)]
 

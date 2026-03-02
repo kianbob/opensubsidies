@@ -349,7 +349,7 @@ export default function ConservationReserveProgramPage() {
       </div>
 
       <div className="mt-12">
-        <RelatedArticles />
+        <RelatedArticles currentSlug="conservation-reserve-program" />
       </div>
     </div>
   )

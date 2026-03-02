@@ -28,6 +28,8 @@ const tools = [
   { href: '/tools/timeline-explorer', title: 'Timeline Explorer', desc: 'Interactive timeline of farm subsidy spending with annotated policy events.', icon: '⏳' },
   { href: '/tools/subsidy-quiz', title: 'Farm Subsidy Quiz', desc: 'Test your knowledge with 10 data-driven questions about where $147 billion really goes.', icon: '🧠' },
   { href: '/tools/county-finder', title: 'County Finder', desc: 'Search all U.S. counties to find farm subsidy totals and payment counts for your area.', icon: '📍' },
+  { href: '/tools/state-report-card', title: 'State Report Card', desc: 'Grade any state A-F on subsidy concentration, dependency, program diversity, conservation, and emergency spending.', icon: '📊' },
+  { href: '/tools/subsidy-tracker', title: 'County Subsidy Tracker', desc: 'Track your county\'s subsidies with comparisons to state and national averages.', icon: '📍' },
 ]
 
 export default function ToolsPage() {
