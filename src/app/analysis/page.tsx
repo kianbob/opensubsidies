@@ -230,6 +230,41 @@ const articles = [
     date: 'March 2026',
     category: 'Spending',
   },
+  {
+    slug: 'red-state-blue-state',
+    title: 'Red State, Blue State: Farm Subsidies and Political Hypocrisy',
+    desc: 'States that vote against "big government" receive disproportionately more farm subsidies. Per-capita disparities and dependency data reveal the irony.',
+    date: 'March 2026',
+    category: 'Politics',
+  },
+  {
+    slug: 'sugar-subsidy-racket',
+    title: 'The Sugar Subsidy Racket: America\'s Most Egregious Farm Program',
+    desc: 'The US sugar program costs consumers $3.7 billion/year in higher prices to benefit ~4,500 sugar farms. Import quotas, price floors, and the lobby behind it.',
+    date: 'March 2026',
+    category: 'Policy',
+  },
+  {
+    slug: 'ethanol-subsidy-machine',
+    title: 'The Ethanol Subsidy Machine: How Corn Subsidies Fuel a Questionable Energy Policy',
+    desc: '40% of US corn goes to ethanol — a fuel that barely breaks even on energy. Billions in subsidies, environmental costs, and Iowa\'s political entrenchment.',
+    date: 'March 2026',
+    category: 'Policy',
+  },
+  {
+    slug: 'farm-lobby',
+    title: 'The Farm Lobby: How $147 Billion in Subsidies Survives Every Reform Attempt',
+    desc: 'The farm lobby spends $130M+/year on lobbying. The Farm Bill logrolling coalition (SNAP + subsidies) makes reform virtually impossible.',
+    date: 'March 2026',
+    category: 'Politics',
+  },
+  {
+    slug: 'land-concentration',
+    title: 'Land Concentration: How Farm Subsidies Flow to Landowners, Not Farmers',
+    desc: '50% of US farmland is owned by people over 65. Bill Gates is the largest private owner. Subsidies inflate land values and flow to owners through higher rents.',
+    date: 'March 2026',
+    category: 'Concentration',
+  },
 ]
 
 export default function AnalysisPage() {

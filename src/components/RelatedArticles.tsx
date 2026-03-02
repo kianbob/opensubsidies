@@ -32,6 +32,11 @@ const allArticles = [
   { slug: 'water-crisis', title: 'Farm Subsidies and the Water Crisis', category: 'Environment' },
   { slug: 'subsidy-myths', title: '10 Myths About Farm Subsidies', category: 'Explainer' },
   { slug: 'who-pays', title: 'Who Pays for Farm Subsidies?', category: 'Spending' },
+  { slug: 'red-state-blue-state', title: 'Red State, Blue State: Political Hypocrisy', category: 'Politics' },
+  { slug: 'sugar-subsidy-racket', title: 'The Sugar Subsidy Racket', category: 'Policy' },
+  { slug: 'ethanol-subsidy-machine', title: 'The Ethanol Subsidy Machine', category: 'Policy' },
+  { slug: 'farm-lobby', title: 'The Farm Lobby', category: 'Politics' },
+  { slug: 'land-concentration', title: 'Land Concentration', category: 'Concentration' },
 ]
 
 export default function RelatedArticles({ currentSlug }: { currentSlug: string }) {

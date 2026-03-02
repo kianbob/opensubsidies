@@ -36,6 +36,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/analysis/double-dippers', '/analysis/farm-crisis-2025',
     '/analysis/zombie-programs', '/analysis/emergency-management', '/analysis/what-147b-buys',
     '/analysis/farm-bill-2025', '/analysis/water-crisis', '/analysis/subsidy-myths', '/analysis/who-pays',
+    '/analysis/red-state-blue-state', '/analysis/sugar-subsidy-racket', '/analysis/ethanol-subsidy-machine',
+    '/analysis/farm-lobby', '/analysis/land-concentration',
     '/surprising-recipients', '/covid-impact',
     '/farm-subsidy-lookup', '/doge-farm-subsidies', '/farm-subsidy-reform', '/usda-payments',
     '/tools/subsidy-quiz', '/tools/county-finder', '/tools/state-report-card', '/tools/subsidy-tracker',

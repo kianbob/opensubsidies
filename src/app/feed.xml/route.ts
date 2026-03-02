@@ -29,6 +29,11 @@ const articles = [
   { slug: 'water-crisis', title: 'Farm Subsidies and the Water Crisis: Subsidizing Drought', desc: 'How farm subsidies encourage water-intensive crops in drought-stricken states.' },
   { slug: 'subsidy-myths', title: '10 Myths About Farm Subsidies (and What the Data Actually Shows)', desc: 'We checked $147 billion in USDA data against common beliefs. Most are wrong.' },
   { slug: 'who-pays', title: 'Who Pays for Farm Subsidies? The Taxpayer Burden by State', desc: 'Every American taxpayer pays $109/year. Some states pay far more than they receive.' },
+  { slug: 'red-state-blue-state', title: 'Red State, Blue State: Farm Subsidies and Political Hypocrisy', desc: 'States that vote against big government receive disproportionately more farm subsidies.' },
+  { slug: 'sugar-subsidy-racket', title: 'The Sugar Subsidy Racket: America\'s Most Egregious Farm Program', desc: 'The US sugar program costs consumers $3.7 billion/year to benefit ~4,500 sugar farms.' },
+  { slug: 'ethanol-subsidy-machine', title: 'The Ethanol Subsidy Machine: Corn Subsidies and Questionable Energy Policy', desc: '40% of US corn goes to ethanol, backed by billions in subsidies for a fuel that barely breaks even.' },
+  { slug: 'farm-lobby', title: 'The Farm Lobby: How $147 Billion in Subsidies Survives Every Reform Attempt', desc: 'The farm lobby spends $130M+/year on lobbying. The Farm Bill coalition makes reform impossible.' },
+  { slug: 'land-concentration', title: 'Land Concentration: How Farm Subsidies Flow to Landowners, Not Farmers', desc: '50% of farmland owned by people over 65. Subsidies inflate land values and flow to owners.' },
 ]
 
 const standalonArticles = [
