@@ -3,6 +3,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import { fmtMoney, formatProgram } from '@/lib/utils'
 import { loadData } from '@/lib/server-utils'
 import type { Metadata } from 'next'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'Top Farm Subsidy Program by State — Which Programs Dominate Where?',
@@ -100,6 +101,8 @@ export default function StateProgramsPage() {
           </table>
         </div>
       </section>
+      <RelatedArticles currentSlug="state-programs" />
     </div>
+
   )
 }

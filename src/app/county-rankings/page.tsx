@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import CountyRankingsClient from '@/components/CountyRankingsClient'
 import type { Metadata } from 'next'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'County Rankings — Farm Subsidies by County',
@@ -49,6 +50,8 @@ export default function CountyRankingsPage() {
           ))}
         </div>
       </div>
+      <RelatedArticles currentSlug="county-rankings" />
     </div>
+
   )
 }

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import EmergencySpendingChart from '@/components/EmergencySpendingChart'
 import type { Metadata } from 'next'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'Farm Emergency Payments: CFAP, MFP, and Disaster Relief',
@@ -99,6 +100,8 @@ export default function EmergencySpendingPage() {
           <li><Link href="/facts" className="text-primary hover:underline">25 Farm Subsidy Facts</Link></li>
         </ul>
       </div>
+      <RelatedArticles currentSlug="emergency-spending" />
     </div>
+
   )
 }

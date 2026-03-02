@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import type { Metadata } from 'next'
 import { Suspense } from 'react'
@@ -20,6 +21,24 @@ export default function CountyFinderPage() {
       <Suspense fallback={<div className="text-center py-16 text-gray-400">Loading county finder…</div>}>
         <CountyFinderClient />
       </Suspense>
+
+      <section className="mt-12 border-t border-gray-200 pt-8">
+        <h2 className="text-xl font-bold font-[family-name:var(--font-heading)] mb-4">You Might Also Like</h2>
+        <div className="grid md:grid-cols-3 gap-4">
+          <Link href="/tools/recipient-search" className="p-4 rounded-xl border border-gray-200 hover:border-green-600 hover:shadow-md transition-all">
+            <h3 className="font-semibold text-green-800">Recipient Search</h3>
+            <p className="text-sm text-gray-600 mt-1">Find specific subsidy recipients</p>
+          </Link>
+          <Link href="/counties" className="p-4 rounded-xl border border-gray-200 hover:border-green-600 hover:shadow-md transition-all">
+            <h3 className="font-semibold text-green-800">All Counties</h3>
+            <p className="text-sm text-gray-600 mt-1">Browse all county rankings</p>
+          </Link>
+          <Link href="/analysis/county-hotspots" className="p-4 rounded-xl border border-gray-200 hover:border-green-600 hover:shadow-md transition-all">
+            <h3 className="font-semibold text-green-800">County Hotspots</h3>
+            <p className="text-sm text-gray-600 mt-1">Where subsidies concentrate</p>
+          </Link>
+        </div>
+      </section>
     </div>
   )
 }

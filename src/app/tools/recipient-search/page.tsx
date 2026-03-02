@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ShareButtons from '@/components/ShareButtons'
 import RecipientSearchClient from './RecipientSearchClient'
@@ -101,6 +102,24 @@ export default function RecipientSearchPage() {
           released through published datasets and FOIA requests. OpenSubsidies aggregates 31.7 million
           records to make this data easy to search and explore.
         </p>
+      </section>
+
+      <section className="mt-12 border-t border-gray-200 pt-8">
+        <h2 className="text-xl font-bold font-[family-name:var(--font-heading)] mb-4">You Might Also Like</h2>
+        <div className="grid md:grid-cols-3 gap-4">
+          <Link href="/tools/county-finder" className="p-4 rounded-xl border border-gray-200 hover:border-green-600 hover:shadow-md transition-all">
+            <h3 className="font-semibold text-green-800">County Finder</h3>
+            <p className="text-sm text-gray-600 mt-1">Look up subsidies by county</p>
+          </Link>
+          <Link href="/tools/subsidy-tracker" className="p-4 rounded-xl border border-gray-200 hover:border-green-600 hover:shadow-md transition-all">
+            <h3 className="font-semibold text-green-800">Subsidy Tracker</h3>
+            <p className="text-sm text-gray-600 mt-1">Track payments over time</p>
+          </Link>
+          <Link href="/analysis/corporate-farms" className="p-4 rounded-xl border border-gray-200 hover:border-green-600 hover:shadow-md transition-all">
+            <h3 className="font-semibold text-green-800">Corporate Farms</h3>
+            <p className="text-sm text-gray-600 mt-1">Top corporate recipients exposed</p>
+          </Link>
+        </div>
       </section>
     </div>
   )

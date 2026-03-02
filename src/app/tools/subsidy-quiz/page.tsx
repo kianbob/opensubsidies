@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import type { Metadata } from 'next'
 import { Suspense } from 'react'
@@ -20,6 +21,24 @@ export default function SubsidyQuizPage() {
       <Suspense fallback={<div className="text-center py-16 text-gray-400">Loading quiz…</div>}>
         <QuizClient />
       </Suspense>
+
+      <section className="mt-12 border-t border-gray-200 pt-8">
+        <h2 className="text-xl font-bold font-[family-name:var(--font-heading)] mb-4">You Might Also Like</h2>
+        <div className="grid md:grid-cols-3 gap-4">
+          <Link href="/tools/calculator" className="p-4 rounded-xl border border-gray-200 hover:border-green-600 hover:shadow-md transition-all">
+            <h3 className="font-semibold text-green-800">Subsidy Calculator</h3>
+            <p className="text-sm text-gray-600 mt-1">Put amounts in context</p>
+          </Link>
+          <Link href="/tools/taxpayer-calculator" className="p-4 rounded-xl border border-gray-200 hover:border-green-600 hover:shadow-md transition-all">
+            <h3 className="font-semibold text-green-800">Taxpayer Calculator</h3>
+            <p className="text-sm text-gray-600 mt-1">Your personal subsidy share</p>
+          </Link>
+          <Link href="/analysis/subsidy-myths" className="p-4 rounded-xl border border-gray-200 hover:border-green-600 hover:shadow-md transition-all">
+            <h3 className="font-semibold text-green-800">Subsidy Myths</h3>
+            <p className="text-sm text-gray-600 mt-1">8 myths about farm subsidies debunked</p>
+          </Link>
+        </div>
+      </section>
     </div>
   )
 }

@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { loadData } from '@/lib/server-utils'
 import DistributionClient from './DistributionClient'
 import type { Metadata } from 'next'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'The Power Law of Farm Subsidies: Most Get Little, Few Get Millions',
@@ -53,6 +54,8 @@ export default function PaymentDistributionPage() {
           our <Link href="/recipients" className="text-primary hover:underline">top recipients database</Link>.
         </p>
       </section>
+      <RelatedArticles currentSlug="payment-distribution" />
     </div>
+
   )
 }

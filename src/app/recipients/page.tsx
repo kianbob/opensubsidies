@@ -23,6 +23,7 @@ export default function RecipientsPage() {
 
   return (
     <main className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.opensubsidies.org"},{"@type":"ListItem","position":2,"name":"Recipients","item":"https://www.opensubsidies.org/recipients"}]}` }} />
       <Breadcrumbs items={[{ label: 'Recipients' }]} />
       <h1 className="text-3xl font-bold font-[family-name:var(--font-heading)] mb-2">Top Farm Subsidy Recipients</h1>
       <p className="text-gray-600 mb-6">The top {recipients.length.toLocaleString()} recipients of USDA farm subsidies from 2017 to 2025, ranked by total amount.</p>

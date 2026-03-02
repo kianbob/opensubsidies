@@ -4,6 +4,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import TrendsCharts from '@/components/TrendsCharts'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'Program Trends — Farm Subsidy Spending Over Time',
@@ -89,6 +90,8 @@ export default function TrendsPage() {
           ))}
         </div>
       </div>
+      <RelatedArticles currentSlug="trends" />
     </div>
+
   )
 }

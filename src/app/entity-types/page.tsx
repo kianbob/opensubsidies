@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { loadData } from '@/lib/server-utils'
 import EntityTypesClient from './EntityTypesClient'
 import type { Metadata } from 'next'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'Who Gets Farm Subsidies? Individual Farmers vs Corporations vs Government',
@@ -48,6 +49,8 @@ export default function EntityTypesPage() {
           Browse all <Link href="/recipients" className="text-primary hover:underline">top recipients</Link> to see who collects the most.
         </p>
       </section>
+      <RelatedArticles currentSlug="entity-types" />
     </div>
+
   )
 }

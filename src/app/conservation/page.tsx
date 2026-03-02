@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import type { Metadata } from 'next'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'Conservation Programs: CRP, ACEP, and Farm Conservation Subsidies',
@@ -138,6 +139,8 @@ export default function ConservationPage() {
           <li><Link href="/facts" className="text-primary hover:underline">25 Farm Subsidy Facts</Link></li>
         </ul>
       </div>
+      <RelatedArticles currentSlug="conservation" />
     </div>
+
   )
 }

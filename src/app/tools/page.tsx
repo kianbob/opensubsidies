@@ -35,6 +35,7 @@ const tools = [
 export default function ToolsPage() {
   return (
     <div className="max-w-5xl mx-auto px-4 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.opensubsidies.org"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://www.opensubsidies.org/tools"}]}` }} />
       <Breadcrumbs items={[{ label: 'Tools' }]} />
       <h1 className="text-3xl font-bold font-[family-name:var(--font-heading)] mb-2">Interactive Tools</h1>
       <p className="text-gray-600 mb-8">Tools to explore, compare, and analyze farm subsidy data.</p>

@@ -19,6 +19,7 @@ export default function CountiesPage() {
 
   return (
     <main className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.opensubsidies.org"},{"@type":"ListItem","position":2,"name":"Counties","item":"https://www.opensubsidies.org/counties"}]}` }} />
       <Breadcrumbs items={[{ label: 'Counties' }]} />
       <h1 className="text-3xl font-bold font-[family-name:var(--font-heading)] mb-2">Farm Subsidies by County</h1>
       <p className="text-gray-600 mb-6">Top {fmt(sorted.length)} counties ranked by total farm subsidy payments from 2017 to 2025.</p>

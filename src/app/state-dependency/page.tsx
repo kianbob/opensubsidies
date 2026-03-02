@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { loadData } from '@/lib/server-utils'
 import DependencyClient from './DependencyClient'
 import type { Metadata } from 'next'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'Farm Subsidy Dependency: Which States Rely Most on Federal Payments?',
@@ -80,6 +81,8 @@ export default function StateDependencyPage() {
           <li><Link href="/subsidy-map" className="text-primary hover:underline">Interactive Subsidy Map</Link></li>
         </ul>
       </section>
+      <RelatedArticles currentSlug="state-dependency" />
     </div>
+
   )
 }

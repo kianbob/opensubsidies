@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { loadData } from '@/lib/server-utils'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import StateProfileClient from './StateProfileClient'
@@ -37,6 +38,24 @@ export default function StateProfilePage() {
           Choose a state from the dropdown to load its profile. Data is fetched on demand so the page stays fast.
           For deeper analysis, click the &quot;View full state page&quot; link to see county-level breakdowns, all programs, and more.
         </p>
+      </section>
+
+      <section className="mt-12 border-t border-gray-200 pt-8">
+        <h2 className="text-xl font-bold font-[family-name:var(--font-heading)] mb-4">You Might Also Like</h2>
+        <div className="grid md:grid-cols-3 gap-4">
+          <Link href="/tools/state-comparison" className="p-4 rounded-xl border border-gray-200 hover:border-green-600 hover:shadow-md transition-all">
+            <h3 className="font-semibold text-green-800">State Comparison</h3>
+            <p className="text-sm text-gray-600 mt-1">Compare states side by side</p>
+          </Link>
+          <Link href="/tools/state-report-card" className="p-4 rounded-xl border border-gray-200 hover:border-green-600 hover:shadow-md transition-all">
+            <h3 className="font-semibold text-green-800">State Report Card</h3>
+            <p className="text-sm text-gray-600 mt-1">Grade your state on subsidies</p>
+          </Link>
+          <Link href="/analysis/state-disparities" className="p-4 rounded-xl border border-gray-200 hover:border-green-600 hover:shadow-md transition-all">
+            <h3 className="font-semibold text-green-800">State Disparities</h3>
+            <p className="text-sm text-gray-600 mt-1">Why some states get more</p>
+          </Link>
+        </div>
       </section>
     </div>
   )

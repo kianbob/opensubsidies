@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import type { Metadata } from 'next'
 import { Suspense } from 'react'
@@ -20,6 +21,24 @@ export default function SubsidyTrackerPage() {
       <Suspense fallback={<div className="text-center py-16 text-gray-400">Loading tracker…</div>}>
         <SubsidyTrackerClient />
       </Suspense>
+
+      <section className="mt-12 border-t border-gray-200 pt-8">
+        <h2 className="text-xl font-bold font-[family-name:var(--font-heading)] mb-4">You Might Also Like</h2>
+        <div className="grid md:grid-cols-3 gap-4">
+          <Link href="/tools/recipient-search" className="p-4 rounded-xl border border-gray-200 hover:border-green-600 hover:shadow-md transition-all">
+            <h3 className="font-semibold text-green-800">Recipient Search</h3>
+            <p className="text-sm text-gray-600 mt-1">Find specific subsidy recipients</p>
+          </Link>
+          <Link href="/tools/timeline-explorer" className="p-4 rounded-xl border border-gray-200 hover:border-green-600 hover:shadow-md transition-all">
+            <h3 className="font-semibold text-green-800">Timeline Explorer</h3>
+            <p className="text-sm text-gray-600 mt-1">Year-by-year spending history</p>
+          </Link>
+          <Link href="/analysis/double-dippers" className="p-4 rounded-xl border border-gray-200 hover:border-green-600 hover:shadow-md transition-all">
+            <h3 className="font-semibold text-green-800">Double Dippers</h3>
+            <p className="text-sm text-gray-600 mt-1">Recipients collecting from multiple programs</p>
+          </Link>
+        </div>
+      </section>
     </div>
   )
 }
