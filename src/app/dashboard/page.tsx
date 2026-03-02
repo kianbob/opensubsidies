@@ -73,6 +73,29 @@ export default function DashboardPage() {
         </section>
       </div>
 
+      {/* Key Trends */}
+      <section className="mt-10 mb-10 bg-gradient-to-r from-[#15803d]/10 to-emerald-50 border border-[#15803d]/30 rounded-xl p-6">
+        <h2 className="text-xl font-bold font-[family-name:var(--font-heading)] text-gray-900 mb-4">📈 Key Trends in the Data</h2>
+        <ul className="space-y-3 text-sm text-gray-800">
+          <li className="flex gap-2">
+            <span className="text-[#15803d] font-bold">1.</span>
+            <span><strong>Emergency spending now dwarfs traditional subsidies.</strong> Programs like CFAP, MFP, and disaster relief routinely exceed baseline commodity support — the &ldquo;safety net&rdquo; has become the main event.</span>
+          </li>
+          <li className="flex gap-2">
+            <span className="text-[#15803d] font-bold">2.</span>
+            <span><strong>Concentration is increasing.</strong> The top 10% of recipients collect the majority of subsidy dollars, and the gap between large and small operations continues to widen.</span>
+          </li>
+          <li className="flex gap-2">
+            <span className="text-[#15803d] font-bold">3.</span>
+            <span><strong>Geographic inequality persists.</strong> A handful of states (TX, IA, IL, KS, MN) capture a disproportionate share of payments, while many states receive relatively little.</span>
+          </li>
+          <li className="flex gap-2">
+            <span className="text-[#15803d] font-bold">4.</span>
+            <span><strong>Post-COVID spending hasn&apos;t fully retreated.</strong> While pandemic-era peaks have passed, annual spending remains elevated above pre-2018 levels, suggesting a structural shift in farm support.</span>
+          </li>
+        </ul>
+      </section>
+
       <section className="mt-10 prose max-w-none text-gray-600">
         <h2 className="font-[family-name:var(--font-heading)] text-gray-900">Understanding the Dashboard</h2>
         <p>

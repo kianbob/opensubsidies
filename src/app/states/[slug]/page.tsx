@@ -73,6 +73,30 @@ export default async function StateDetailPage({ params }: { params: Promise<{ sl
       </div>
       <p className="text-gray-600 mb-8">{state.name} ({state.abbr}) received {fmtMoney(state.amount)} across {fmt(state.payments)} USDA Farm Service Agency payments from 2017 to 2025.</p>
 
+      {/* AI Overview Insight Box — top 10 states only */}
+      {(['TX','IA','KS','IL','MN','NE','ND','SD','CA','MO'] as const).includes(state.abbr as never) && (() => {
+        const shareOfNational = ((state.amount / stats.totalAmount) * 100).toFixed(1)
+        const topProgramShare = topPrograms[0] ? ((topPrograms[0].amount / state.amount) * 100).toFixed(0) : '0'
+        const covid = yearly.find(y => y.year === 2020)
+        const pre = yearly.find(y => y.year === 2017)
+        const covidSpike = covid && pre && pre.amount > 0 ? (covid.amount / pre.amount).toFixed(1) : null
+        return (
+          <div className="bg-gradient-to-r from-[#15803d]/10 to-emerald-50 border border-[#15803d]/30 rounded-xl p-5 mb-8">
+            <p className="text-sm font-bold text-[#15803d] uppercase tracking-wide mb-2">⚡ Quick Insights — {state.name}</p>
+            <ul className="text-sm text-gray-800 space-y-1.5">
+              <li>📊 Accounts for <strong>{shareOfNational}%</strong> of all U.S. farm subsidy dollars</li>
+              <li>🏆 Top program ({formatProgram(topPrograms[0]?.program || '')}) represents <strong>{topProgramShare}%</strong> of the state&apos;s total subsidies</li>
+              {covidSpike && Number(covidSpike) > 1.3 && (
+                <li>📈 COVID-era spending (2020) was <strong>{covidSpike}×</strong> the 2017 baseline</li>
+              )}
+              {perCapita !== null && (
+                <li>💰 Every resident effectively &ldquo;contributes&rdquo; to <strong>{fmtMoney(perCapita)}</strong> in subsidies per capita</li>
+              )}
+            </ul>
+          </div>
+        )
+      })()}
+
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
         <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">Total Subsidies</p><p className="text-xl font-bold text-green-800">{fmtMoney(state.amount)}</p></div>
         <div className="bg-green-50 rounded-xl p-4"><p className="text-sm text-gray-500">Payments</p><p className="text-xl font-bold text-green-800">{fmt(state.payments)}</p></div>

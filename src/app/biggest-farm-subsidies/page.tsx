@@ -1,4 +1,5 @@
 import ArticleSchema from '@/components/ArticleSchema'
+import RelatedArticles from '@/components/RelatedArticles'
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ShareButtons from '@/components/ShareButtons'
@@ -216,6 +217,7 @@ export default function BiggestFarmSubsidiesPage() {
           <Link href="/analysis/subsidy-concentration" className="text-green-700 hover:underline">Subsidy Concentration</Link>
         </div>
       </div>
+      <RelatedArticles currentSlug="biggest-farm-subsidies" />
     </div>
   )
 }

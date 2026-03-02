@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import RelatedArticles from '@/components/RelatedArticles'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import type { Metadata } from 'next'
 
@@ -287,6 +288,7 @@ export default function FarmSubsidiesExplainedPage() {
           ))}
         </div>
       </div>
+      <RelatedArticles currentSlug="farm-subsidies-explained" />
     </div>
   )
 }

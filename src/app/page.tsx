@@ -32,7 +32,7 @@ export default function HomePage() {
             Data from USDA Farm Service Agency · 2017–2025 · Open data, no paywalls
           </p>
           <p className="text-xs text-green-300 mb-6">
-            🟢 9 years of data (2017–2025) · 31.8M payments · Last updated February 2026
+            🟢 9 years of data (2017–2025) · 31.8M payments · Last updated March 2026
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link href="/states" className="px-6 py-3 bg-white text-primary font-semibold rounded-lg hover:bg-green-50 transition-colors">

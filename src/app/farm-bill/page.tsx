@@ -1,4 +1,5 @@
 import Breadcrumbs from '@/components/Breadcrumbs'
+import RelatedArticles from '@/components/RelatedArticles'
 import ShareButtons from '@/components/ShareButtons'
 import Link from 'next/link'
 import type { Metadata } from 'next'
@@ -145,6 +146,7 @@ export default function FarmBillPage() {
           right here on OpenSubsidies as new payment data becomes available.
         </p>
       </div>
+      <RelatedArticles currentSlug="farm-bill" />
     </article>
   )
 }

@@ -1,4 +1,5 @@
 import ArticleSchema from '@/components/ArticleSchema'
+import RelatedArticles from '@/components/RelatedArticles'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import Link from 'next/link'
 import { fmt, fmtMoney } from '@/lib/utils'
@@ -120,6 +121,7 @@ export default function FarmSubsidyLookupPage() {
           ))}
         </div>
       </div>
+      <RelatedArticles currentSlug="farm-subsidy-lookup" />
     </div>
   )
 }
