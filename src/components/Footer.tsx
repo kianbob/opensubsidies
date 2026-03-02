@@ -64,6 +64,7 @@ export default function Footer() {
               <li><a href="https://www.openimmigration.us" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">OpenImmigration</a></li>
               <li><a href="https://www.vaccinewatch.org" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">VaccineWatch</a></li>
               <li><a href="https://www.warcosts.org" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">WarCosts</a></li>
+              <li><a href="https://www.openprescriber.org" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">OpenPrescriber</a></li>
               <li><a href="https://thedataproject.ai" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">TheDataProject.ai</a></li>
             </ul>
             <h3 className="text-white font-semibold mb-3 mt-6 text-sm uppercase tracking-wider">Connect</h3>
