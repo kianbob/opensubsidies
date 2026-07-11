@@ -5,7 +5,7 @@ import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'Conservation Programs: CRP, ACEP, and Farm Conservation Subsidies',
-  description: 'How much goes to conservation vs commodity vs emergency farm programs? Explore CRP, ACEP, and other conservation subsidies with real USDA data.',
+  description: 'Conservation programs received $18.6B from 2017-2025, with CRP alone distributing $15.7B. Compare CRP, EQIP, CSP, and ACEP spending with real USDA payment data.',
   alternates: { canonical: 'https://www.opensubsidies.org/conservation' },
 }
 

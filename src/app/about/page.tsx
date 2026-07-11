@@ -6,7 +6,7 @@ import { loadData } from '@/lib/server-utils'
 
 export const metadata: Metadata = {
   title: 'About OpenSubsidies — Free Farm Subsidy Transparency Platform',
-  description: 'OpenSubsidies makes $147B in USDA farm subsidy data accessible and searchable. Learn about our mission, data sources, and methodology.',
+  description: 'OpenSubsidies makes $147B across 31.8M USDA farm payments searchable — covering 157 programs, 59 states/territories, and 28,875 counties. 100% free, no paywall.',
   alternates: { canonical: 'https://www.opensubsidies.org/about' },
 }
 

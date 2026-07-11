@@ -37,6 +37,9 @@ const allArticles = [
   { slug: 'ethanol-subsidy-machine', title: 'The Ethanol Subsidy Machine', category: 'Policy' },
   { slug: 'farm-lobby', title: 'The Farm Lobby', category: 'Politics' },
   { slug: 'land-concentration', title: 'Land Concentration', category: 'Concentration' },
+  { slug: 'farm-bill-2026', title: '2026 Farm Bill Debates: What\'s at Stake', category: 'Policy' },
+  { slug: 'subsidy-reform-proposals', title: 'Farm Subsidy Reform Proposals', category: 'Policy' },
+  { slug: 'doge-farm-cuts', title: 'DOGE Impact on Farm Programs', category: 'Accountability' },
 ]
 
 export default function RelatedArticles({ currentSlug }: { currentSlug: string }) {

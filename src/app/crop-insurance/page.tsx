@@ -6,7 +6,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Crop Insurance Subsidies: The Hidden Half of Farm Support',
-  description: 'Federal crop insurance adds $10-13 billion/year in subsidies beyond FSA payments. How crop insurance works, who benefits, and how it compares to direct farm subsidies.',
+  description: 'Federal crop insurance adds $10-13B/year in hidden subsidies — taxpayers cover 60% of premiums. Combined with $147B in FSA payments, total farm support exceeds $250B since 2017.',
   alternates: { canonical: 'https://www.opensubsidies.org/crop-insurance' },
 }
 

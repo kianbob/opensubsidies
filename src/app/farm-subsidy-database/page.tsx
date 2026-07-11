@@ -7,7 +7,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Farm Subsidy Database — Search USDA Farm Payment Records | OpenSubsidies',
-  description: 'Search the most comprehensive farm subsidy database online. Explore 31.7 million USDA farm payment records across 50 states, 157 programs, and 9 years of data.',
+  description: 'Search 31.8M USDA farm payment records totaling $147B+ across 59 states/territories, 157 programs, and 28,875 counties. The most comprehensive free farm subsidy database online.',
   keywords: ['farm subsidy database', 'USDA farm payment database', 'farm subsidy search', 'USDA payments lookup', 'farm subsidies data'],
   alternates: { canonical: 'https://www.opensubsidies.org/farm-subsidy-database' },
 }

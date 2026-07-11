@@ -6,7 +6,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'What is the Farm Bill? Complete Guide to Farm Legislation',
-  description: 'The Farm Bill is omnibus legislation reauthorized every ~5 years governing farm subsidies, nutrition (SNAP), conservation, crop insurance, and more. Currently on extension of the 2018 Farm Bill.',
+  description: 'The Farm Bill controls $428B+ in spending over 5 years — covering SNAP, $147B in farm subsidies, crop insurance, and conservation. The 2018 Farm Bill remains on extension as Congress debates the next reauthorization.',
   alternates: { canonical: 'https://www.opensubsidies.org/farm-bill' },
 }
 

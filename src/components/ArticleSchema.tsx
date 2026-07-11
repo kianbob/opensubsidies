@@ -10,7 +10,7 @@ export default function ArticleSchema({ title, description, slug, date = 'Februa
     headline: title,
     description,
     datePublished: '2026-02-01',
-    dateModified: '2026-02-27',
+    dateModified: '2026-07-11',
     url: `https://www.opensubsidies.org/${slug}`,
     author: { '@type': 'Organization', name: 'OpenSubsidies', url: 'https://www.opensubsidies.org' },
     publisher: { '@type': 'Organization', name: 'OpenSubsidies', url: 'https://www.opensubsidies.org' },

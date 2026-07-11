@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Farm Subsidies Explained: What They Are, Who Gets Them, and How Much',
-  description: 'A comprehensive guide to USDA farm subsidies: what they are, who gets them, how much the government spends, the biggest programs, and why they\'re controversial. Backed by real data.',
+  description: 'The U.S. spent $147B on farm subsidies from 2017-2025 across 157 programs. Learn how subsidies work, why the top 10% of recipients collect 74% of payments, and what reform looks like.',
   alternates: { canonical: 'https://www.opensubsidies.org/farm-subsidies-explained' },
 }
 
